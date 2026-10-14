@@ -13,7 +13,7 @@ def brand_of(c):
     return ALIAS.get(b,b)
 def slugish(x): return re.sub(r"[^a-z0-9]+","",x.lower())
 UNITS={"ounce":"oz","ounces":"oz","sheets":"sheets","sheet":"sheets","sheets/roll":"sheets/roll","gram":"g"}
-src=[("data/cases_seed.json","seed"),("raw/manual_cases.json","manual"),("raw/table_cases.json","tables"),("raw/mouseprint_cases.json","mouseprint"),("raw/vzhh_cases.json","vzhh"),("raw/off_rev_final.json","off")]
+src=[("data/cases_seed.json","seed"),("raw/manual_cases.json","manual"),("raw/table_cases.json","tables"),("raw/mouseprint_cases.json","mouseprint"),("raw/vzhh_cases.json","vzhh"),("raw/cb_cases.json","cb"),("raw/off_rev_final.json","off")]
 if not os.path.exists("data/cases_seed.json"): os.rename("data/cases.json","data/cases_seed.json")
 out={};order=[]
 for f,tag in src:
@@ -49,11 +49,27 @@ CAT=[("Toilet Paper",r"toilet|bath tissue|toilettenpapier|charmin|cottonelle|qui
 ("Pasta, Rice & Meals",r"dips?\b|hummus|meat alternative|salami|mozzarella|veggie|vegan|fleisch|pasta|spaghetti|nudeln|rice|reis|dinner|mac|soup|suppe|pizza|meal|lasagne|salad|salat|taco|sauce|soße|gravy|ketchup|mayo|dressing|pesto|würz|gewürz|fix\b"),
 ("Baking & Spreads",r"cake mix|backmischung|flour|mehl|sugar|zucker|jam|marmelade|konfitüre|honey|honig|peanut butter|nutella|spread|aufstrich|syrup|pancake"),("Bread & Bakery",r"bread|brot|bagel|toast|brötchen|muffin|tart"),
 ("Pet Food",r"dog food|cat food|katzen|hunde|whiskas|iams|sheba|pedigree|purina|felix")]
+CAT=[("Health & Supplements",r"gaviscon|lanacane|venen|zirkulin|curafit|taxofit|tetesept|kapseln|magnesium|biotin|billy boy|first aid|balm|einschlafen"),
+("Tobacco & Alcohol",r"tabak|pall mall|glo neo|baileys|captain morgan|mojito|verpoort|winston|lancia|giants"),
+("Frozen Foods",r"iglo|frosta|freeze pop|funpops|frutti di mare|prawns|kabeljau|deutsche see"),
+("Household",r"spee|bref|pril|kreide|always|binde|slipeinlagen|pflegetücher|babydream|nagellack|rasierklingen|gillette"),
+("Personal Care",r"nivea|maria nila|haarspray|elnett|head & shoulders|garnier|alverde|puder|skin stories|dr\. hauschka|gesichtsöl|rituals|scrub|beauty cream bar"),
+("Chocolate & Candy",r"lebkuchen|vivani|marabou|kägi|katjes|trolli|winegums|gums|vitaminis|hitschies|yogurette|ferrero|nocciolata|feine bitter"),
+("Dairy",r"halloumi|salakis|brunch|alpro|andros|zaziki|hirte|bedda|rama|lätta|becel|deli reform|zentis belmandel|natur$"),
+("Coffee & Tea",r"teekanne|kakao|kaba|nesquik|suchard"),("Juice & Drinks",r"valensina|pepsi|bitter lemon|orancia|florida"),
+("Breakfast Cereals",r"hearts & hoops|choco balls|clusters|cini minis"),("Baking & Spreads",r"sweet ‘n low|sesam|olivenöl|paprika|cocos|zetti|rote grütze|dessert|knorr|bouillon"),
+("Meat & Fish",r"hering|beyond meat|protein chunks|beef jerky|jack links|lammsteak"),("Cookies & Crackers",r"marmor|kuchen|christmas cake|salzbrezeln|tuc|wasa"),("Pasta, Rice & Meals",r"lentil penne"),
+("Pet Food",r"wolfsblut|trockenfutter"),("Baby",r"beba")]+CAT
 for c in out.values():
     c["product"]=FIX.get(c["product"],c["product"]).replace("’","'")
     t=(c["product"]+" "+(c.get("category") or "")+" "+c.get("maker","")).lower()
     c["category"]=next((k for k,r in CAT if re.search(r,t)),"Other")
 cases=[c for c in out.values() if c["product"] not in DROP]
+CATFIX={'Meat & Fish': ['Revilla chorizo'], 'Tobacco & Alcohol': ['Peroni', 'Beck', 'La Trappe'], 'Dairy': ['Philadelphia Light', 'Blue Band', 'Vache Qui Rit', 'gruyere', 'Maaslander'], 'Personal Care': ['Pantene Pro-V Curl', 'Andrélon', 'Dove Deeply'], 'Juice & Drinks': ['Dixap'], 'Cookies & Crackers': ['Jodekoek', 'Gemberkoek', 'ontbijtkoek', 'Beschuit'], 'Breakfast Cereals': ['Zonnatura', "L'Atelier"], 'Laundry': ['Seepje', 'Vanish', 'Robijn', 'Dreft', 'Lenor'], 'Frozen Foods': ['diepvriescroissants'], 'Chips & Snacks': ['Multimix', 'Johnny Cashew', 'Eat Natural'], 'Chocolate & Candy': ['Van Melle', 'Sportlife', 'Klene', 'Mentos'], 'Pasta, Rice & Meals': ['Ananas stukjes'], 'Dish & Cleaning': ['vaatwastabletten'], 'Baby': ['Pampers'], 'Household': ['Ambi Pur'], 'Coffee & Tea': ['Dolce Gusto', 'Lipton']}
+for c in cases:
+    if c.get("category")=="Other":
+        for k,v in CATFIX.items():
+            if any(w.lower() in c["product"].lower() for w in v): c["category"]=k;break
 json.dump(cases,open("data/cases.json","w"),indent=1,ensure_ascii=False)
 import collections
 print(len(cases),collections.Counter(c["source_tag"] for c in cases),collections.Counter(c["country"] for c in cases))

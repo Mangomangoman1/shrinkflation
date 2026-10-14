@@ -802,7 +802,7 @@
  {
   "product": "Cadbury Brunch Chocolate Chip Bars",
   "brand": "Cadbury",
-  "category": "Juice & Drinks",
+  "category": "Dairy",
   "before": 6,
   "after": 5,
   "unit": "bars",
@@ -1149,7 +1149,13 @@
   "evidence": "are now shrinking in size. And with Christmas not too far away, it’s bad news for fans of the traditional festive tubs of chocolates. Quality Street tubs have shrunk from 600g to 550g this year. Yet at Morrisons the price rose from £6 to £7 – that's a 27% rise per 100g. Meanwhile, multipacks of Cadbury",
   "evidence_type": "consumer-group / news investigation",
   "confidence": "high",
-  "source_tag": "manual"
+  "source_tag": "manual",
+  "also_reported": [
+   {
+    "url": "https://theguardian.com/business/2025/sep/08/shrinkflation-bites-as-boxes-of-quality-street-and-celebrations-lose-weight",
+    "source": "Shrinkflation bites as boxes of Quality Street and Celebrations lose weight | Food & drink industry | The Guardian"
+   }
+  ]
  },
  {
   "product": "Cadbury Dairy Milk Freddo multipack",
@@ -1218,7 +1224,7 @@
  {
   "product": "Gaviscon Liquid Aniseed",
   "brand": "Gaviscon",
-  "category": "Other",
+  "category": "Health & Supplements",
   "before": 600,
   "after": 500,
   "unit": "ml",
@@ -1410,7 +1416,7 @@
  {
   "product": "Woolworths Rocky Road tarts",
   "brand": "Woolworths",
-  "category": "Bread & Bakery",
+  "category": "Baking & Spreads",
   "before": 240,
   "after": 180,
   "unit": "g",
@@ -1426,7 +1432,7 @@
  {
   "product": "Woolworths Salted Caramel tarts",
   "brand": "Woolworths",
-  "category": "Chocolate & Candy",
+  "category": "Baking & Spreads",
   "before": 210,
   "after": 180,
   "unit": "g",
@@ -1474,7 +1480,7 @@
  {
   "product": "Aldi Kringle & Co iced Christmas cake",
   "brand": "Aldi",
-  "category": "Other",
+  "category": "Baking & Spreads",
   "before": 100,
   "after": 90,
   "unit": "g",
@@ -1771,6 +1777,678 @@
   "source_url": "https://www.foodwatch.org/fr/actualites/2024/shrinkflation-une-reglementation-en-preparation-pour-plus-de-transparence-dans-les-rayons",
   "source": "Shrinkflation : vers une réglementation sur la voie de la transparence | foodwatch France",
   "evidence": "€/kilo à 11,59€/kilo, en tenant compte de l’inflation. Entre 2022 et 2023, Auchan a réduit la taille de ses tranches de jambon supérieur sans couenne de 11,1% (de 45g à 40g). Le prix au kilo de ce produit a augmenté de 8%, passant de 16,48€/kilo à 17,81€/kilo, en tenant compte de l’inflation",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Toblerone 360g bar (UK)",
+  "brand": "Toblerone",
+  "category": "Juice & Drinks",
+  "before": 360,
+  "after": 340,
+  "unit": "g",
+  "when": "2025",
+  "country": "UK",
+  "source_url": "https://theguardian.com/business/2025/sep/08/shrinkflation-bites-as-boxes-of-quality-street-and-celebrations-lose-weight",
+  "source": "Shrinkflation bites as boxes of Quality Street and Celebrations lose weight | Food & drink industry | The Guardian",
+  "evidence": "ch has already struck and made the tubs of the confectionery lighter. Someone has also taken a bite out of Toblerone, with 20g shaved off its chocolatey peaks, reducing a 360g bar to 340g. The latest round of shrinkflation means anyone prising the lid off the Quality Street box may be underwhelmed by the n",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Celebrations tub (2025)",
+  "brand": "Celebrations",
+  "category": "Juice & Drinks",
+  "before": 550,
+  "after": 500,
+  "unit": "g",
+  "when": "2025",
+  "country": "UK",
+  "source_url": "https://theguardian.com/business/2025/sep/08/shrinkflation-bites-as-boxes-of-quality-street-and-celebrations-lose-weight",
+  "source": "Shrinkflation bites as boxes of Quality Street and Celebrations lose weight | Food & drink industry | The Guardian",
+  "evidence": "ets – as 50g has been lost from the weight, taking it from 600g to 550g. Meanwhile, at 500g, there’s less to celebrate about tubs of Mars’s Celebrations, which weighed 550g in 2024. The writing may have been on the wall earlier this year when Nestlé announced it was altering how Quality Street’s Pur",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Quality Street Purple One (per sweet)",
+  "brand": "Quality Street",
+  "category": "Juice & Drinks",
+  "before": 9.59,
+  "after": 8.46,
+  "unit": "g",
+  "when": "2025",
+  "country": "UK",
+  "source_url": "https://theguardian.com/business/2025/sep/08/shrinkflation-bites-as-boxes-of-quality-street-and-celebrations-lose-weight",
+  "source": "Shrinkflation bites as boxes of Quality Street and Celebrations lose weight | Food & drink industry | The Guardian",
+  "evidence": "é announced it was altering how Quality Street’s Purple One and Orange Crunch looked. As well as changing shape, they are now lighter: the unwrapped Purple One used to weigh 9.59g and is now 8.46g. The new look Orange Crunch is down from 9.06g to 8.72g. You can’t even seek solace from shrinkflation in a Terry’s Cho",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Quality Street Orange Crunch (per sweet)",
+  "brand": "Quality Street",
+  "category": "Juice & Drinks",
+  "before": 9.06,
+  "after": 8.72,
+  "unit": "g",
+  "when": "2025",
+  "country": "UK",
+  "source_url": "https://theguardian.com/business/2025/sep/08/shrinkflation-bites-as-boxes-of-quality-street-and-celebrations-lose-weight",
+  "source": "Shrinkflation bites as boxes of Quality Street and Celebrations lose weight | Food & drink industry | The Guardian",
+  "evidence": "unch looked. As well as changing shape, they are now lighter: the unwrapped Purple One used to weigh 9.59g and is now 8.46g. The new look Orange Crunch is down from 9.06g to 8.72g. You can’t even seek solace from shrinkflation in a Terry’s Chocolate Orange as earlier this year the ball dwindled fro",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Terry's Chocolate Orange (2025)",
+  "brand": "Terry's",
+  "category": "Juice & Drinks",
+  "before": 157,
+  "after": 145,
+  "unit": "g",
+  "when": "2025",
+  "country": "UK",
+  "source_url": "https://theguardian.com/business/2025/sep/08/shrinkflation-bites-as-boxes-of-quality-street-and-celebrations-lose-weight",
+  "source": "Shrinkflation bites as boxes of Quality Street and Celebrations lose weight | Food & drink industry | The Guardian",
+  "evidence": "e new look Orange Crunch is down from 9.06g to 8.72g. You can’t even seek solace from shrinkflation in a Terry’s Chocolate Orange as earlier this year the ball dwindled from 157g to 145g. Toblerone, owned by the US food company Mondelēz, is no stranger to shrinkage. In 2016, it faced a backlash after it w",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Twix white chocolate Easter egg",
+  "brand": "Twix",
+  "category": "Juice & Drinks",
+  "before": 316,
+  "after": 258,
+  "unit": "g",
+  "when": "2025",
+  "country": "UK",
+  "source_url": "https://www.theguardian.com/money/2025/mar/27/surging-cost-of-cocoa-leads-uk-shoppers-to-shell-out-more-for-smaller-easter-eggs",
+  "source": "Surging cost of cocoa leads UK shoppers to shell out more for smaller Easter eggs | Consumer affairs | The Guardian",
+  "evidence": "d stayed the same size. At Tesco, Which? found a Twix white chocolate Easter egg had increased from £5 to £6 in the run-up to Easter year on year, and had also shrunk from 316g to 258g, meaning the unit price (per 100g) had gone up by 47%. At Morrisons, Nestlé’s KitKat Chunky milk chocolate Easter egg s",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "KitKat Chunky milk chocolate Easter egg",
+  "brand": "KitKat",
+  "category": "Juice & Drinks",
+  "before": 129,
+  "after": 110,
+  "unit": "g",
+  "when": "2025",
+  "country": "UK",
+  "source_url": "https://www.theguardian.com/money/2025/mar/27/surging-cost-of-cocoa-leads-uk-shoppers-to-shell-out-more-for-smaller-easter-eggs",
+  "source": "Surging cost of cocoa leads UK shoppers to shell out more for smaller Easter eggs | Consumer affairs | The Guardian",
+  "evidence": "47%. At Morrisons, Nestlé’s KitKat Chunky milk chocolate Easter egg stayed at the same price in the run-up to Easter year on year at £1.50 but reduced in size from 129g to 110g, making it 17% more expensive per 100g. With shoppers getting less bang for their buck, Reena Sewraz, the senior money",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Brut deodorant stick (Woolworths)",
+  "brand": "Woolworths",
+  "category": "Personal Care",
+  "before": 75,
+  "after": 50,
+  "unit": "g",
+  "when": "2025",
+  "country": "AU",
+  "source_url": "https://www.theguardian.com/business/2025/jan/24/woolworths-selling-downsized-brut-deodorant-for-more-than-double-unit-cost-of-old-product",
+  "source": "Brut farce: Woolworths selling downsized deodorant for more than double unit cost of old product | Woolworths | The Guar",
+  "evidence": "defending court claims that they have deceived customers with fake discounts. PharmaCare-owned Brut recently shrank the size of its deodorant stick by a third from 75g to 50g, as the item’s retail price at Woolworths increased from $7 to $10. The new version now costs $20 per 100g – more than",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Revilla chorizo €1 pack",
+  "brand": "Revilla",
+  "category": "Meat & Fish",
+  "before": 80,
+  "after": 70,
+  "unit": "g",
+  "when": "2022",
+  "country": "ES",
+  "source_url": "https://www.ocu.org/consumo-familia/supermercados/noticias/reduflacion",
+  "source": "Reduflación | OCU",
+  "evidence": "ampofrío o Revilla también lo están haciendo: El sobre de chorizo Revilla se vende a un precio fijo de 1 euro, como se indica en el envase, pero antes contenía 80 gramos de embutido pero ahora contiene tan solo 70 gramos. Antes tenía 14 lonchas de chorizo… y ahora solo 12. Campofrío vendía por 1 euro un envase de 110 g de jamón cocido , q",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Campofrío jamón cocido €1 pack",
+  "brand": "Campofrío",
+  "category": "Baking & Spreads",
+  "before": 110,
+  "after": 90,
+  "unit": "g",
+  "when": "2022",
+  "country": "ES",
+  "source_url": "https://www.ocu.org/consumo-familia/supermercados/noticias/reduflacion",
+  "source": "Reduflación | OCU",
+  "evidence": "por 1 euro un envase de 110 g de jamón cocido , que hace unos meses paso a ser de 100 g. Ahora, ha lanzado una promoción en la que regala un 10% más ¡sobre un envase que contiene 90 g! El precio sigue siendo 1 euro y, cuando finalice la promoción, tendrá casi un 20% menos de jamón que al principio del",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Pepsi-Cola large bottle (Spain)",
+  "brand": "Pepsi",
+  "category": "Juice & Drinks",
+  "before": 2000,
+  "after": 1750,
+  "unit": "ml",
+  "when": "2022",
+  "country": "ES",
+  "source_url": "https://www.ocu.org/consumo-familia/supermercados/noticias/reduflacion",
+  "source": "Reduflación | OCU",
+  "evidence": "n dando bastante menos. ¿Pepsi de 2 litros? Ya no... Otro caso es el de un conocido refresco, Pepsi-Cola: la botella de 2 litros ha dejado paso a la botella de 1,75 litros. Y el cambio ha coincidido además con un aumento de precios: en 2021 el precio medio de este producto era 1,33 euros y",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Cola-Cao cocoa powder",
+  "brand": "Cola Cao",
+  "category": "Coffee & Tea",
+  "before": 800,
+  "after": 760,
+  "unit": "g",
+  "when": "2022",
+  "country": "ES",
+  "source_url": "https://www.ocu.org/acciones-colectivas/reduflacion",
+  "source": "Contra la reduflación",
+  "evidence": "ierta de precios y una falta de respeto. ¡Ya está bien de que nos tomen por tontos! Productos que ahora dan menos por el mismo precio El Cola-Cao de 800 gramos tiene ahora 760: 40 gramos menos por el mismo precio. La margarina Tulipán de 500 gramos pesa ahora solo 450. La Pepsi Cola de 2 litros",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Tulipán margarine",
+  "brand": "Tulipán",
+  "category": "Dairy",
+  "before": 500,
+  "after": 450,
+  "unit": "g",
+  "when": "2022",
+  "country": "ES",
+  "source_url": "https://www.ocu.org/acciones-colectivas/reduflacion",
+  "source": "Contra la reduflación",
+  "evidence": "ctos que ahora dan menos por el mismo precio El Cola-Cao de 800 gramos tiene ahora 760: 40 gramos menos por el mismo precio. La margarina Tulipán de 500 gramos pesa ahora solo 450. La Pepsi Cola de 2 litros ha pasado a ser de 1,75 l. El sobre de chorizo Revilla de 1 euro ha pasado de tener 80 gramo",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Dr. Oetker muesli (Austria)",
+  "brand": "Dr. Oetker",
+  "category": "Breakfast Cereals",
+  "before": 600,
+  "after": 450,
+  "unit": "g",
+  "when": "2025",
+  "country": "AT",
+  "source_url": "https://vorarlberg.orf.at/stories/3322840/",
+  "source": "Der Inhalt wird weniger, der Preis bleibt - vorarlberg.ORF.at",
+  "evidence": "ninformation: In den vergangenen sieben Jahren wurden mehr als 60 Produkte verkleinert, während der Preis gleich blieb. Beispiele reichen vom Dr.-Oetker-Müsli (600 auf 450 Gramm) über Twinings Earl Grey (25 auf 20 Teebeutel) bis hin zu Dr. Oetkers Roter Grütze (500 auf 400 Gramm). Auch das belieb",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Twinings Earl Grey (Austria)",
+  "brand": "Twinings",
+  "category": "Coffee & Tea",
+  "before": 25,
+  "after": 20,
+  "unit": "tea bags",
+  "when": "2025",
+  "country": "AT",
+  "source_url": "https://vorarlberg.orf.at/stories/3322840/",
+  "source": "Der Inhalt wird weniger, der Preis bleibt - vorarlberg.ORF.at",
+  "evidence": "en wurden mehr als 60 Produkte verkleinert, während der Preis gleich blieb. Beispiele reichen vom Dr.-Oetker-Müsli (600 auf 450 Gramm) über Twinings Earl Grey (25 auf 20 Teebeutel) bis hin zu Dr. Oetkers Roter Grütze (500 auf 400 Gramm). Auch das beliebte Magnum-Eis ist betroffen: Sowohl im Einzelv",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Dr. Oetker Rote Grütze (Austria)",
+  "brand": "Dr. Oetker",
+  "category": "Baking & Spreads",
+  "before": 500,
+  "after": 400,
+  "unit": "g",
+  "when": "2025",
+  "country": "AT",
+  "source_url": "https://vorarlberg.orf.at/stories/3322840/",
+  "source": "Der Inhalt wird weniger, der Preis bleibt - vorarlberg.ORF.at",
+  "evidence": "eis gleich blieb. Beispiele reichen vom Dr.-Oetker-Müsli (600 auf 450 Gramm) über Twinings Earl Grey (25 auf 20 Teebeutel) bis hin zu Dr. Oetkers Roter Grütze (500 auf 400 Gramm). Auch das beliebte Magnum-Eis ist betroffen: Sowohl im Einzelverkauf als auch in der Großpackung wurde die Füllm",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Ovomaltine cocoa (Austria)",
+  "brand": "Ovomaltine",
+  "category": "Coffee & Tea",
+  "before": 1000,
+  "after": 750,
+  "unit": "g",
+  "when": "2023",
+  "country": "AT",
+  "source_url": "https://www.ak-umwelt.at/leben/?issue=2024-01",
+  "source": "Mogelpackung Shrinkflation\n | Wirtschaft & Umwelt",
+  "evidence": "nformation. So wurden bei Mozarttalern und -kugeln von Mirabell einfach ein Stück weniger in die Packung gegeben. Auch der Kakao von Ovomaltine wurde von einst 1.000 g über 900 g auf 750 g verringert, was mit einer Preissteigerung von 23 bis 33 % einherging. Frankreich als Vorreiter gegen versteckte Preiser",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Iglo Atlantik Lachs (Austria)",
+  "brand": "Iglo",
+  "category": "Frozen Foods",
+  "before": 250,
+  "after": 220,
+  "unit": "g",
+  "when": "2023",
+  "country": "AT",
+  "source_url": "https://vbg.arbeiterkammer.at/akblog/konsum/kw9-3-shrinkflation-hersteller-tricks-teuerung.html",
+  "source": "Wenn weniger mehr kostet: So tricksen Hersteller | AK Vorarlberg",
+  "evidence": "wer nachvollziehbar, weil der äußere Eindruck unverändert bleibt. Ein typisches Beispiel zeigte sich 2023 bei Iglo: Das Unter­nehmen hatte den »Atlantik Lachs« von 250 auf 220 Gramm reduziert, während die Verpackung und der Preis gleich blieben. Solche Anpassungen sind nur mit sehr genauem Hinsehen z",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Pringles Originals (Italy)",
+  "brand": "Pringles",
+  "category": "Chips & Snacks",
+  "before": 190,
+  "after": 175,
+  "unit": "g",
+  "when": "2024",
+  "country": "IT",
+  "source_url": "https://www.altroconsumo.it/alimentazione/fare-la-spesa/news/shrinkflation",
+  "source": "Cos'è la shrinkflation: prodotti ed esempi per riconoscerla",
+  "evidence": "mo riscontrato una doppia riduzione di formato è Pringles Originals : prima passato da confezioni da 200 a 190 grammi e ora ridotto ulteriormente di 15 grammi, arrivando a 175 grammi (il prezzo al chilo è cresciuto del 22%). In più, in alcuni punti vendita, come i discount, troviamo un formato più gra",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Amica Chips classic",
+  "brand": "Amica Chips",
+  "category": "Chips & Snacks",
+  "before": 200,
+  "after": 190,
+  "unit": "g",
+  "when": "2024",
+  "country": "IT",
+  "source_url": "https://www.altroconsumo.it/alimentazione/fare-la-spesa/news/shrinkflation",
+  "source": "Cos'è la shrinkflation: prodotti ed esempi per riconoscerla",
+  "evidence": "i discount, troviamo un formato più grande, da 185g , in alternativa a quello da 175g. Restando sulle patatine, anche Amica Chips (versione classica) è passata dalle buste da 200 grammi a quelle da 190, registrando un +109% nel prezzo al chilo . Birra Peroni Nastro Azzurro Non sono esenti da dinamiche di shrinkflation l",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Peroni Nastro Azzurro bottle",
+  "brand": "Peroni",
+  "category": "Tobacco & Alcohol",
+  "before": 66,
+  "after": 62,
+  "unit": "cl",
+  "when": "2024",
+  "country": "IT",
+  "source_url": "https://www.altroconsumo.it/alimentazione/fare-la-spesa/news/shrinkflation",
+  "source": "Cos'è la shrinkflation: prodotti ed esempi per riconoscerla",
+  "evidence": "eroni Nastro Azzurro Non sono esenti da dinamiche di shrinkflation le birre confezionate . Nell'immagine possiamo notare come Peroni Nastro Azzurro sia passata da una bottiglia da 66 cl a quella da 62 , perdendo così 4 cl. Il prezzo è cresciuto del 18% , ora infatti la birra costa 2,71 euro al litro. In più è comparsa",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Beck's can (Italy)",
+  "brand": "Beck's",
+  "category": "Tobacco & Alcohol",
+  "before": 50,
+  "after": 44,
+  "unit": "cl",
+  "when": "2024",
+  "country": "IT",
+  "source_url": "https://www.altroconsumo.it/alimentazione/fare-la-spesa/news/shrinkflation",
+  "source": "Cos'è la shrinkflation: prodotti ed esempi per riconoscerla",
+  "evidence": "ent's Super , passate dal formato da 50 a quello da 44 cl, con un rincaro del prezzo al litro del 21% . Un cambio di formato c''è stato anche per Becks, la cui lattina da 50 cl è passata a 44 , il prezzo al litro in questo caso è salito del 28%. Prosciutto cotto Non sono esenti da pratiche di shrinkflation gli",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Nocciolata Rigoni di Asiago 270g jar",
+  "brand": "Rigoni di Asiago",
+  "category": "Chocolate & Candy",
+  "before": 270,
+  "after": 250,
+  "unit": "g",
+  "when": "2024",
+  "country": "IT",
+  "source_url": "https://www.altroconsumo.it/alimentazione/fare-la-spesa/news/shrinkflation",
+  "source": "Cos'è la shrinkflation: prodotti ed esempi per riconoscerla",
+  "evidence": "prodotti della Nocciolata Rigoni di Asiago ha subito una riduzione delle confezioni. Se prima i vasetti erano disponibili nei formati da 270, 350 e 700 grammi, ora sono passati a 250, 325 e 650 grammi . Anche in questo caso, il prezzo al chilo è lievitato tra l'11% del formato grande al 38% per il più piccolo . Gli yog",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Nocciolata Rigoni di Asiago 350g jar",
+  "brand": "Rigoni di Asiago",
+  "category": "Chocolate & Candy",
+  "before": 350,
+  "after": 325,
+  "unit": "g",
+  "when": "2024",
+  "country": "IT",
+  "source_url": "https://www.altroconsumo.it/alimentazione/fare-la-spesa/news/shrinkflation",
+  "source": "Cos'è la shrinkflation: prodotti ed esempi per riconoscerla",
+  "evidence": "prodotti della Nocciolata Rigoni di Asiago ha subito una riduzione delle confezioni. Se prima i vasetti erano disponibili nei formati da 270, 350 e 700 grammi, ora sono passati a 250, 325 e 650 grammi . Anche in questo caso, il prezzo al chilo è lievitato tra l'11% del formato grande al 38% per il più piccolo . Gli yog",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Nocciolata Rigoni di Asiago 700g jar",
+  "brand": "Rigoni di Asiago",
+  "category": "Chocolate & Candy",
+  "before": 700,
+  "after": 650,
+  "unit": "g",
+  "when": "2024",
+  "country": "IT",
+  "source_url": "https://www.altroconsumo.it/alimentazione/fare-la-spesa/news/shrinkflation",
+  "source": "Cos'è la shrinkflation: prodotti ed esempi per riconoscerla",
+  "evidence": "prodotti della Nocciolata Rigoni di Asiago ha subito una riduzione delle confezioni. Se prima i vasetti erano disponibili nei formati da 270, 350 e 700 grammi, ora sono passati a 250, 325 e 650 grammi . Anche in questo caso, il prezzo al chilo è lievitato tra l'11% del formato grande al 38% per il più piccolo . Gli yog",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Nidra soap bar",
+  "brand": "Nidra",
+  "category": "Personal Care",
+  "before": 100,
+  "after": 90,
+  "unit": "g",
+  "when": "2024",
+  "country": "IT",
+  "source_url": "https://www.altroconsumo.it/alimentazione/fare-la-spesa/news/shrinkflation",
+  "source": "Cos'è la shrinkflation: prodotti ed esempi per riconoscerla",
+  "evidence": "te, mentre prima le confezioni ne contenevano 4 (Neutro Roberts in formato speciale 3+1 gratis) mentre Nidra ha alleggerito le proprie saponette di 10 grammi : prima erano da 100 grammi, oggi da 90. Bagnoschiuma Vidal tonificante al muschio bianco C'è poi una tendenza piuttosto evidente che riguarda i bagnodoccia. I",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Vidal muschio bianco body wash (large)",
+  "brand": "Vidal",
+  "category": "Personal Care",
+  "before": 750,
+  "after": 650,
+  "unit": "ml",
+  "when": "2024",
+  "country": "IT",
+  "source_url": "https://www.altroconsumo.it/alimentazione/fare-la-spesa/news/shrinkflation",
+  "source": "Cos'è la shrinkflation: prodotti ed esempi per riconoscerla",
+  "evidence": "hanno ridotto la quantità di prodotto presente nei flaconi grandi . Se in precedenza la quantità di bagnoschiuma contenuta in un flacone grande era di 750 ml, ora arriva in molti casi a 650 ml . Non abbiamo riscontrato lo stesso fenomeno sui formati piccoli, compresi tra i 200 e i 300 ml. Vediamo l'esempio di V",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Philadelphia Light (Italy)",
+  "brand": "Philadelphia",
+  "category": "Dairy",
+  "before": 200,
+  "after": 190,
+  "unit": "g",
+  "when": "2022",
+  "country": "IT",
+  "source_url": "https://finanza.lastampa.it/News/2022/10/05/altroconsumo-analizza-la-shrinkflation-fenomeno-insidioso-interviene-l+antitrust/NDdfMjAyMi0xMC0wNV9UTEI",
+  "source": "Altroconsumo analizza la shrinkflation: fenomeno insidioso, interviene l’Antitrust",
+  "evidence": "ti dagli ACmakers che hanno visto una riduzione della quantità contenuta nelle confezioni, senza un’adeguata rimodulazione del prezzo, vi sono le confezioni di Philadelphia light (passate da 200 a 190g), di Kinder Brioss (da 280 a 270g), di Krumiri Bistefani (da 300 a 290g), di detergente piatti Nelsen (da 1.000 a 900 ml",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Kinder Brioss",
+  "brand": "Kinder",
+  "category": "Chocolate & Candy",
+  "before": 280,
+  "after": 270,
+  "unit": "g",
+  "when": "2022",
+  "country": "IT",
+  "source_url": "https://finanza.lastampa.it/News/2022/10/05/altroconsumo-analizza-la-shrinkflation-fenomeno-insidioso-interviene-l+antitrust/NDdfMjAyMi0xMC0wNV9UTEI",
+  "source": "Altroconsumo analizza la shrinkflation: fenomeno insidioso, interviene l’Antitrust",
+  "evidence": "della quantità contenuta nelle confezioni, senza un’adeguata rimodulazione del prezzo, vi sono le confezioni di Philadelphia light (passate da 200 a 190g), di Kinder Brioss (da 280 a 270g), di Krumiri Bistefani (da 300 a 290g), di detergente piatti Nelsen (da 1.000 a 900 ml) e di fazzoletti usa e getta, il",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Krumiri Bistefani",
+  "brand": "Bistefani",
+  "category": "Cookies & Crackers",
+  "before": 300,
+  "after": 290,
+  "unit": "g",
+  "when": "2022",
+  "country": "IT",
+  "source_url": "https://finanza.lastampa.it/News/2022/10/05/altroconsumo-analizza-la-shrinkflation-fenomeno-insidioso-interviene-l+antitrust/NDdfMjAyMi0xMC0wNV9UTEI",
+  "source": "Altroconsumo analizza la shrinkflation: fenomeno insidioso, interviene l’Antitrust",
+  "evidence": "nfezioni, senza un’adeguata rimodulazione del prezzo, vi sono le confezioni di Philadelphia light (passate da 200 a 190g), di Kinder Brioss (da 280 a 270g), di Krumiri Bistefani (da 300 a 290g), di detergente piatti Nelsen (da 1.000 a 900 ml) e di fazzoletti usa e getta, il cui contenuto in ogni singolo pacchett",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Nelsen dish detergent",
+  "brand": "Nelsen",
+  "category": "Laundry",
+  "before": 1000,
+  "after": 900,
+  "unit": "ml",
+  "when": "2022",
+  "country": "IT",
+  "source_url": "https://finanza.lastampa.it/News/2022/10/05/altroconsumo-analizza-la-shrinkflation-fenomeno-insidioso-interviene-l+antitrust/NDdfMjAyMi0xMC0wNV9UTEI",
+  "source": "Altroconsumo analizza la shrinkflation: fenomeno insidioso, interviene l’Antitrust",
+  "evidence": "sono le confezioni di Philadelphia light (passate da 200 a 190g), di Kinder Brioss (da 280 a 270g), di Krumiri Bistefani (da 300 a 290g), di detergente piatti Nelsen (da 1.000 a 900 ml) e di fazzoletti usa e getta, il cui contenuto in ogni singolo pacchetto è passato in molti casi da 10 a 9 fazzoletti. A",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Piraquê Maizena biscuits",
+  "brand": "Piraquê",
+  "category": "Cookies & Crackers",
+  "before": 200,
+  "after": 175,
+  "unit": "g",
+  "when": "2023",
+  "country": "BR",
+  "source_url": "https://procon.niteroi.rj.gov.br/2023/09/26/embalagem-de-produtos-no-mercado-encolhe-mas-o-preco-continua-o-mesmo/",
+  "source": "Embalagem de produtos no mercado encolhe, mas o preço continua o mesmo. | Secretaria de Defesa do Consumidor",
+  "evidence": "eiras dos mercados. A tática usada pela indústria é conhecida como reduflação. Um dos casos é o tradicional biscoito de Maizena, da Piraquê, cuja embalagem foi reduzida de 200g para 175g. Já o wafer da mesma marca foi de 160g para 100g. Os molhos de tomates da marca Quero e Tarantella foram reduzidos de 3",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Piraquê wafer",
+  "brand": "Piraquê",
+  "category": "Cookies & Crackers",
+  "before": 160,
+  "after": 100,
+  "unit": "g",
+  "when": "2023",
+  "country": "BR",
+  "source_url": "https://procon.niteroi.rj.gov.br/2023/09/26/embalagem-de-produtos-no-mercado-encolhe-mas-o-preco-continua-o-mesmo/",
+  "source": "Embalagem de produtos no mercado encolhe, mas o preço continua o mesmo. | Secretaria de Defesa do Consumidor",
+  "evidence": "nhecida como reduflação. Um dos casos é o tradicional biscoito de Maizena, da Piraquê, cuja embalagem foi reduzida de 200g para 175g. Já o wafer da mesma marca foi de 160g para 100g. Os molhos de tomates da marca Quero e Tarantella foram reduzidos de 340g para 300g. Da mesma forma, o suco em pó da Ta",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Quero / Tarantella tomato sauce",
+  "brand": "Quero",
+  "category": "Pasta, Rice & Meals",
+  "before": 340,
+  "after": 300,
+  "unit": "g",
+  "when": "2023",
+  "country": "BR",
+  "source_url": "https://procon.niteroi.rj.gov.br/2023/09/26/embalagem-de-produtos-no-mercado-encolhe-mas-o-preco-continua-o-mesmo/",
+  "source": "Embalagem de produtos no mercado encolhe, mas o preço continua o mesmo. | Secretaria de Defesa do Consumidor",
+  "evidence": "Piraquê, cuja embalagem foi reduzida de 200g para 175g. Já o wafer da mesma marca foi de 160g para 100g. Os molhos de tomates da marca Quero e Tarantella foram reduzidos de 340g para 300g. Da mesma forma, o suco em pó da Tang passou de 25g para 18g. Nem a comida para cachorro escapou: a embalagem de Pedigr",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Tang powdered drink",
+  "brand": "Tang",
+  "category": "Juice & Drinks",
+  "before": 25,
+  "after": 18,
+  "unit": "g",
+  "when": "2023",
+  "country": "BR",
+  "source_url": "https://procon.niteroi.rj.gov.br/2023/09/26/embalagem-de-produtos-no-mercado-encolhe-mas-o-preco-continua-o-mesmo/",
+  "source": "Embalagem de produtos no mercado encolhe, mas o preço continua o mesmo. | Secretaria de Defesa do Consumidor",
+  "evidence": "da mesma marca foi de 160g para 100g. Os molhos de tomates da marca Quero e Tarantella foram reduzidos de 340g para 300g. Da mesma forma, o suco em pó da Tang passou de 25g para 18g. Nem a comida para cachorro escapou: a embalagem de Pedigree, para cães entre 12 meses e 7 anos, teve uma redução de 10",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Pedigree adult dog food (Brazil)",
+  "brand": "Pedigree",
+  "category": "Pet Food",
+  "before": 1000,
+  "after": 900,
+  "unit": "g",
+  "when": "2023",
+  "country": "BR",
+  "source_url": "https://procon.niteroi.rj.gov.br/2023/09/26/embalagem-de-produtos-no-mercado-encolhe-mas-o-preco-continua-o-mesmo/",
+  "source": "Embalagem de produtos no mercado encolhe, mas o preço continua o mesmo. | Secretaria de Defesa do Consumidor",
+  "evidence": "em pó da Tang passou de 25g para 18g. Nem a comida para cachorro escapou: a embalagem de Pedigree, para cães entre 12 meses e 7 anos, teve uma redução de 10%, de 1kg para 900g. A confeiteira Natalia Mendes, de 37 anos, foi surpreendida com os novos tamanhos das mercadorias na hora das compras.",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Tostitos Hint of Lime",
+  "brand": "Tostitos",
+  "category": "Chips & Snacks",
+  "before": 13,
+  "after": 11,
+  "unit": "oz",
+  "when": "2021",
+  "country": "US",
+  "source_url": "https://www.cnn.com/2024/10/16/business/tostitos-chips-shrinkflation-pepsi",
+  "source": "Tostitos and Ruffles shrank their bags of chips. It backfired | CNN Business",
+  "evidence": "meticulously tracks shrinkflation, found that Tostitos’ “Hint of Guacamole” version shrank by one ounce from 12 to 11 ounces, while its “Hint of Lime” version dropped from 13 ounces to 11. Dworsky also found that Ruffles shaved off a half-ounce to a “Sour Cream & Onion” bag in 2013. “It’s about time,” Dwor",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Chobani Flips yogurt",
+  "brand": "Chobani",
+  "category": "Dairy",
+  "before": 5.3,
+  "after": 4.5,
+  "unit": "oz",
+  "when": "2022",
+  "country": "US",
+  "source_url": "https://www.npr.org/2022/06/08/1103766334/shrinkflation-globally-manufacturers-shrink-package-sizes",
+  "source": "'Shrinkflation' accelerates globally as manufacturers shrink package sizes : NPR",
+  "evidence": "hrinkflation,\" and it's accelerating worldwide. In the U.S., a small box of Kleenex now has 60 tissues; a few months ago, it had 65. Chobani Flips yogurts have shrunk from 5.3 ounces to 4.5 ounces. In the U.K., Nestle slimmed down its Nescafe Azera Americano coffee tins from 100 grams to 90 grams. In India, a bar o",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Nescafé Azera Americano tin (UK)",
+  "brand": "Nescafé",
+  "category": "Coffee & Tea",
+  "before": 100,
+  "after": 90,
+  "unit": "g",
+  "when": "2022",
+  "country": "UK",
+  "source_url": "https://www.npr.org/2022/06/08/1103766334/shrinkflation-globally-manufacturers-shrink-package-sizes",
+  "source": "'Shrinkflation' accelerates globally as manufacturers shrink package sizes : NPR",
+  "evidence": "onths ago, it had 65. Chobani Flips yogurts have shrunk from 5.3 ounces to 4.5 ounces. In the U.K., Nestle slimmed down its Nescafe Azera Americano coffee tins from 100 grams to 90 grams. In India, a bar of Vim dish soap has shrunk from 155 grams to 135 grams. Shrinkflation isn't new, experts say. But it",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Vim dish soap bar (India)",
+  "brand": "Vim",
+  "category": "Dish & Cleaning",
+  "before": 155,
+  "after": 135,
+  "unit": "g",
+  "when": "2022",
+  "country": "IN",
+  "source_url": "https://www.npr.org/2022/06/08/1103766334/shrinkflation-globally-manufacturers-shrink-package-sizes",
+  "source": "'Shrinkflation' accelerates globally as manufacturers shrink package sizes : NPR",
+  "evidence": "to 4.5 ounces. In the U.K., Nestle slimmed down its Nescafe Azera Americano coffee tins from 100 grams to 90 grams. In India, a bar of Vim dish soap has shrunk from 155 grams to 135 grams. Shrinkflation isn't new, experts say. But it proliferates in times of high inflation as companies grapple with rising",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Folgers coffee canister",
+  "brand": "Folgers",
+  "category": "Coffee & Tea",
+  "before": 51,
+  "after": 43.5,
+  "unit": "oz",
+  "when": "2022",
+  "country": "US",
+  "source_url": "https://www.npr.org/2022/06/08/1103766334/shrinkflation-globally-manufacturers-shrink-package-sizes",
+  "source": "'Shrinkflation' accelerates globally as manufacturers shrink package sizes : NPR",
+  "evidence": "ite dozens of examples, from Cottonelle Ultra Clean Care toilet paper, which has shrunk from 340 sheets per roll to 312, to Folgers coffee, which downsized its 51-ounce container to 43.5 ounces but still says it will make up to 400 cups. (Folgers says it's using a new technology that results in lighter-weight be",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Pantene Pro-V Curl Perfection conditioner",
+  "brand": "Pantene",
+  "category": "Personal Care",
+  "before": 12,
+  "after": 10.4,
+  "unit": "fl oz",
+  "when": "2022",
+  "country": "US",
+  "source_url": "https://www.npr.org/2022/06/08/1103766334/shrinkflation-globally-manufacturers-shrink-package-sizes",
+  "source": "'Shrinkflation' accelerates globally as manufacturers shrink package sizes : NPR",
+  "evidence": "uests for comment on the reduced package sizes. Procter & Gamble Co. didn't respond when asked about Pantene Pro-V Curl Perfection conditioner, which downsized from 12 fluid ounces to 10.4 fluid ounces but still costs $3.99. Earth's Best Organic Sunny Day Snack Bars went from eight bars per box to seven, but the price l",
   "evidence_type": "consumer-group / news investigation",
   "confidence": "high",
   "source_tag": "manual"
@@ -2141,7 +2819,7 @@
   "evidence_type": "Wayback Machine retailer-page comparison (third-party study)",
   "confidence": "high",
   "source_tag": "tables",
-  "category": "Other"
+  "category": "Frozen Foods"
  },
  {
   "product": "Party-size sour cream and onion Lay's",
@@ -2343,7 +3021,7 @@
   "evidence_type": "Consumer Reports investigation",
   "confidence": "high",
   "source_tag": "tables",
-  "category": "Other"
+  "category": "Health & Supplements"
  },
  {
   "product": "Chicken of the Sea salmon",
@@ -3593,7 +4271,7 @@
   "evidence_type": "consumer-advocate report (photo of old/new packages)",
   "confidence": "high",
   "source_tag": "mouseprint",
-  "category": "Other"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Charmin",
@@ -3627,7 +4305,7 @@
   "evidence_type": "consumer-advocate report (photo of old/new packages)",
   "confidence": "high",
   "source_tag": "mouseprint",
-  "category": "Other"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Johnson's Baby Shampoo",
@@ -4157,7 +4835,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Personal Care"
+  "category": "Dairy"
  },
  {
   "product": "MilkyWay Multipack",
@@ -4226,7 +4904,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Health & Supplements"
  },
  {
   "product": "Iglo Blubb Sticks",
@@ -4249,7 +4927,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Frozen Foods"
  },
  {
   "product": "Katlenburger Johannisbeer-Weinschorle",
@@ -4295,7 +4973,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Spee Color Gel All in 1",
@@ -4318,7 +4996,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Bounty Multipack",
@@ -4387,7 +5065,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Coffee & Tea"
  },
  {
   "product": "Allos Frucht Pur 75% Himbeere",
@@ -4462,7 +5140,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Zirkulin Schneller Einschlafen",
@@ -4485,7 +5163,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Health & Supplements"
  },
  {
   "product": "Rittersport Edelkakao Klasse Die Aromatische 74%",
@@ -4508,7 +5186,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Chocolate & Candy"
+  "category": "Coffee & Tea"
  },
  {
   "product": "Rewe frei von Landbrot",
@@ -4646,7 +5324,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Pasta, Rice & Meals"
  },
  {
   "product": "Purina Felix Doppelt Lecker Huhn & Truthahn",
@@ -4692,7 +5370,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Breakfast Cereals"
  },
  {
   "product": "Fage Total griechischer Joghurt 0,2% Fett",
@@ -4738,7 +5416,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Chips & Snacks"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Naturgut Bio Steinofen-Pizza Spinat-Feta",
@@ -4784,7 +5462,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Personal Care"
  },
  {
   "product": "HiPP Pre PUR Anfangsmilch",
@@ -4853,7 +5531,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Alnatura Schoko Dinkel Kugeln",
@@ -4922,7 +5600,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Personal Care"
  },
  {
   "product": "mymuesli Low Sugar Choco Crunch",
@@ -5037,7 +5715,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Lenor Weichspüler Aprilfrisch",
@@ -5060,7 +5738,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Laundry"
+  "category": "Household"
  },
  {
   "product": "Nadler Hering in Gelee",
@@ -5083,7 +5761,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Meat & Fish"
  },
  {
   "product": "Deli Reform Das Original",
@@ -5106,7 +5784,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Wiltmann Bio Rein Rind Salami",
@@ -5440,7 +6118,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Cookies & Crackers"
  },
  {
   "product": "Teekanne Magenfein",
@@ -5463,7 +6141,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Coffee & Tea"
  },
  {
   "product": "Valensina Milde Orange",
@@ -5486,7 +6164,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Schwyzer Kräuterli Sanddorn-Orange",
@@ -5532,7 +6210,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Cookies & Crackers"
  },
  {
   "product": "West Red Tabak",
@@ -5555,7 +6233,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "Treets Peanuts",
@@ -5739,7 +6417,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "Ostmann Suppengewürz",
@@ -6038,7 +6716,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Personal Care"
  },
  {
   "product": "Kägi fret Classic",
@@ -6061,7 +6739,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Alnatura Sesam ungeschält",
@@ -6084,7 +6762,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Knorr Pasta Pot Käse & Sahne",
@@ -6107,7 +6785,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Dairy"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Lay‘s Bugles Paprika-Style",
@@ -6130,7 +6808,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Chips & Snacks"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Numis Med pH 5.5 Waschlotion",
@@ -6176,7 +6854,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Meat & Fish"
  },
  {
   "product": "Mirácoli Pasta Sauce XXL Basilikum",
@@ -6245,7 +6923,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Personal Care"
  },
  {
   "product": "Curafit Kieselerde + Zink + Biotin",
@@ -6268,7 +6946,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Health & Supplements"
  },
  {
   "product": "Dove Advanced Care Duschcreme Reichhaltige Pflege",
@@ -6337,7 +7015,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Health & Supplements"
  },
  {
   "product": "Alverde Naturkosmetik Mineral Puder",
@@ -6360,7 +7038,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Personal Care"
  },
  {
   "product": "Original Sahne Muh-Muhs",
@@ -6429,7 +7107,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Pringles Original",
@@ -6475,7 +7153,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Meat & Fish"
  },
  {
   "product": "Lorenz Snack-Hits",
@@ -6567,7 +7245,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Schwip Schwap Zero Cola & Orange",
@@ -6613,7 +7291,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Baking & Spreads"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Marabou Mjölkchoklad",
@@ -6636,7 +7314,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Nestlé Nesquik Original",
@@ -6659,7 +7337,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Coffee & Tea"
  },
  {
   "product": "Cremissimo Bourbon Vanille",
@@ -6705,7 +7383,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Breakfast Cereals"
  },
  {
   "product": "Fuchs Italienische Kräuter",
@@ -6935,7 +7613,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "Oryza Milchreis",
@@ -7004,7 +7682,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Health & Supplements"
  },
  {
   "product": "Skin Stories Tattoo Repair Balm",
@@ -7027,7 +7705,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Health & Supplements"
  },
  {
   "product": "Biopolar Lagonda Mozzarella",
@@ -7142,7 +7820,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Pasta, Rice & Meals"
+  "category": "Frozen Foods"
  },
  {
   "product": "Gutbio Fenchel-Tee (Aldi)",
@@ -7188,7 +7866,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Nocciolata",
@@ -7211,7 +7889,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Werder Bio Tomaten Ketchup",
@@ -7257,7 +7935,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Cookies & Crackers"
+  "category": "Coffee & Tea"
  },
  {
   "product": "Katjes Family Winegums",
@@ -7280,7 +7958,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Katjes Yoghurt-Gums",
@@ -7303,7 +7981,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Katjes Vitaminis",
@@ -7326,7 +8004,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Naturata Sweet-Chili Sauce",
@@ -7372,7 +8050,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Frozen Foods"
  },
  {
   "product": "Listerine Mundspülung Total Care Zahnfleisch-Schutz",
@@ -7487,7 +8165,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Meat & Fish"
  },
  {
   "product": "Alnatura Pizza Margherita",
@@ -7579,7 +8257,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Always Dailies Cotton Protection Slipeinlagen normal",
@@ -7602,7 +8280,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Ökovital Bio-Helix Lakritzschnecken",
@@ -7717,7 +8395,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "Costa Frutti di Mare Premium",
@@ -7740,7 +8418,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Frozen Foods"
  },
  {
   "product": "Garnier Ambre Solaire Sensitive expert+ Milch LSF 50+",
@@ -7763,7 +8441,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Dairy"
+  "category": "Personal Care"
  },
  {
   "product": "Persil Color Megaperls",
@@ -7809,7 +8487,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "Lyttos Halloumi",
@@ -7832,7 +8510,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Moser Roth Chocolat Amandes Edel Marzipan Zartbitter (Aldi)",
@@ -7901,7 +8579,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Milkana Runddose Käse Vielfalt",
@@ -7947,7 +8625,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Costa Wildlachsfilets",
@@ -8016,7 +8694,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Frozen Foods"
  },
  {
   "product": "Taxofit Magnesium 400 + Kalium",
@@ -8039,7 +8717,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Health & Supplements"
  },
  {
   "product": "Nestlé Schokolade Die Weisse Crisp",
@@ -8131,7 +8809,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Golßener Spreewälder Vegetarischer Feinkostsalat",
@@ -8200,7 +8878,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Cookies & Crackers"
  },
  {
   "product": "Bohlsener Mühle Keksfreunde Schoko",
@@ -8246,7 +8924,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "Bens Original Basmati-Reis",
@@ -8292,7 +8970,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Kaba Kakao",
@@ -8315,7 +8993,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Coffee & Tea"
  },
  {
   "product": "Suchard Express Kakao",
@@ -8338,7 +9016,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Coffee & Tea"
  },
  {
   "product": "Giants Red Tabak",
@@ -8361,7 +9039,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "Iglo Wok-Gemüse",
@@ -8384,7 +9062,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Frozen Foods"
  },
  {
   "product": "Zetti Knusperflocken Vollmilch",
@@ -8407,7 +9085,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Breakfast Cereals"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Butchers Pepper Burger Patties",
@@ -8476,7 +9154,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "myChoco Mandel-Honig-Meersalz",
@@ -8522,7 +9200,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Salakis Tradition",
@@ -8545,7 +9223,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Salakis Natur",
@@ -8568,7 +9246,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Leerdammer Caractère",
@@ -8660,7 +9338,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "CD Seife",
@@ -8729,7 +9407,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Chips & Snacks"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Lorenz NicNacs",
@@ -8798,7 +9476,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Chips & Snacks"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Funny Frisch Chipsfrisch ungarisch",
@@ -8844,7 +9522,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "Gut & Günstig feine Beerenmischung",
@@ -8959,7 +9637,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Sahnekefir mild auf Pfirsich-Maracuja",
@@ -9051,7 +9729,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Zetti Cocos Flocken",
@@ -9074,7 +9752,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Wonnemeyer Rote Grütze (Aldi)",
@@ -9097,7 +9775,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Peberbolcher Zuckerfreie Bonbons",
@@ -9166,7 +9844,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "Rama Der Klassiker",
@@ -9189,7 +9867,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Block House American Dressing",
@@ -9235,7 +9913,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Pet Food"
  },
  {
   "product": "Funny Frisch Ofen Chips Paprika",
@@ -9258,7 +9936,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Chips & Snacks"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Sanella Margarine",
@@ -9304,7 +9982,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Knorr Bouillon mit Rind",
@@ -9327,7 +10005,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Ombia Med Duschöl (Aldi)",
@@ -9373,7 +10051,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Haribo Tropifrutti",
@@ -9511,7 +10189,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Frozen Foods"
  },
  {
   "product": "Böhme Fruchtkaramellen",
@@ -9557,7 +10235,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Dairy"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Escal Kaltwasser Wildkabeljau",
@@ -9580,7 +10258,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Juice & Drinks"
+  "category": "Frozen Foods"
  },
  {
   "product": "Jack‘s Farm Lammsteaks gesalzen (Aldi)",
@@ -9603,7 +10281,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Meat & Fish"
  },
  {
   "product": "Lay‘s Kartoffelchips Paprika",
@@ -9626,7 +10304,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Chips & Snacks"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Olivano‘s Linsen- Bulgursalat pikant",
@@ -9695,7 +10373,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Personal Care"
  },
  {
   "product": "Westminster Grüner Tee (Aldi)",
@@ -9741,7 +10419,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Chips & Snacks"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Steinofen-Pizza Mozzarella, Spinat & Feta",
@@ -9787,7 +10465,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Pringles Original",
@@ -9925,7 +10603,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Pasta, Rice & Meals"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Kleenex Box Balsam",
@@ -9971,7 +10649,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Personal Care"
  },
  {
   "product": "Valensina Pink Grapfruit",
@@ -9994,7 +10672,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Beba Junior",
@@ -10017,7 +10695,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Baby"
  },
  {
   "product": "Knorr Natürlich Lecker! Fix Lasagne",
@@ -10040,7 +10718,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Pasta, Rice & Meals"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Fa Seife Refreshing Lemon",
@@ -10086,7 +10764,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Juice & Drinks"
+  "category": "Personal Care"
  },
  {
   "product": "Nesquik Knusper Frühstück",
@@ -10109,7 +10787,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Breakfast Cereals"
+  "category": "Coffee & Tea"
  },
  {
   "product": "Coral Colorwaschmittel Optimal Color",
@@ -10234,7 +10912,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Breakfast Cereals"
  },
  {
   "product": "Nature Box Feste Duschpflege",
@@ -10602,7 +11280,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Chips & Snacks"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Mein Veggie Tag Veganer Bio Aufschnitt",
@@ -10648,7 +11326,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Pril Kraft-Gel Ultra Plus",
@@ -10671,7 +11349,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Penny Happy End Feuchtes Toilettenpapier",
@@ -10717,7 +11395,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Milka Weihnachtsmann 90 g",
@@ -10838,7 +11516,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Iglo Rahm-Spinat",
@@ -10861,7 +11539,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Frozen Foods"
  },
  {
   "product": "Ringsalami Pur Porc",
@@ -10930,7 +11608,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Tandil Weichspüler",
@@ -11068,7 +11746,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Dairy"
  },
  {
   "product": "Hitschler Hitschies",
@@ -11091,7 +11769,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Yogurette",
@@ -11114,7 +11792,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Winston Volume Tabak Red",
@@ -11137,7 +11815,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Tobacco & Alcohol"
  },
  {
   "product": "Mélange du Jardin Gewürzmischung",
@@ -11183,7 +11861,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Coffee & Tea"
+  "category": "Health & Supplements"
  },
  {
   "product": "Sante Jeden Tag Shampoo Apfel Quitte",
@@ -11298,7 +11976,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Breakfast Cereals"
  },
  {
   "product": "Dr. Hauschka Gesichtsöl",
@@ -11321,7 +11999,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Personal Care"
  },
  {
   "product": "Arya Laya Aloe Vera Body Lotion",
@@ -11367,7 +12045,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Personal Care"
  },
  {
   "product": "Kitkat Chunky Sammelpack",
@@ -11436,7 +12114,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Household"
  },
  {
   "product": "Pedigree Jumbone Riesenknochen",
@@ -11505,7 +12183,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Knorr Fix Gulasch",
@@ -11528,7 +12206,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Pasta, Rice & Meals"
+  "category": "Baking & Spreads"
  },
  {
   "product": "HiPP 100% Bio Direktsaft Karotte",
@@ -11574,7 +12252,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Baking & Spreads"
  },
  {
   "product": "Wasa Delicate Rounds French herbs",
@@ -11597,7 +12275,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Other"
+  "category": "Cookies & Crackers"
  },
  {
   "product": "Dulano Truthahn Salami Light",
@@ -11690,5 +12368,1019 @@
   "confidence": "high",
   "source_tag": "vzhh",
   "category": "Chips & Snacks"
+ },
+ {
+  "product": "Johma Rundvleessalade",
+  "brand": "Johma",
+  "before": 500.0,
+  "after": 400.0,
+  "unit": "g",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€2,99",
+  "new_price": "€2,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: €2,99 Inhoud: van 500 gram naar 400 gram (-20%). Prijs per 100 gram: +25%. Reactie Johma: 'De aanpassing van 500 gram naar 400 gram voor de Johma bijgerechten is het directe gevolg van een verregaande kwaliteitsverbetering. Het recept is volledig vernieuwd. We werken nu met kwalitatief hoogw",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Pasta, Rice & Meals"
+ },
+ {
+  "product": "Andrélon Intense Repair Conditioner",
+  "brand": "Andrélon",
+  "before": 250.0,
+  "after": 200.0,
+  "unit": "ml",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€6,19",
+  "new_price": "€5,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €6,19 naar €5,99 Inhoud: van 250 ml naar 200 ml (-20%). Prijs per 100 ml: +21%. Reactie Andélon: 'We willen in de eerste plaats melden dat de uiteindelijke verkoopprijs wordt bepaald door de retailers. De adviesprijs die wij meegeven aan onze klanten delen wij niet omdat dit onderdeel is",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Personal Care"
+ },
+ {
+  "product": "Milky Way",
+  "brand": "Milky Way",
+  "before": 6.0,
+  "after": 5.0,
+  "unit": "bars",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€3,39",
+  "new_price": "€3,39",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: €3,39 Inhoud: van 6 repen naar 5 repen (-17%). Prijs per reep: +20%. Reactie Milky Way: 'Verpakkingen wijzigen regelmatig. Verschillende landen delen verpakkingsformats en we zoeken continue naar het meest efficiënte gebruik van verpakkingsmateriaal. Daarbij wordt ook gekeken naar de behoeft",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chocolate & Candy"
+ },
+ {
+  "product": "Covelt Dixap Appel",
+  "brand": "Covelt",
+  "before": 500.0,
+  "after": 400.0,
+  "unit": "ml",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€4,65",
+  "new_price": "€4,35",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €4,65 naar €4,35 Inhoud: van 500 ml naar 400 ml (-20%). Prijs per 100 ml: +17%. Reactie Covelt: 'De oorspronkelijke fles en dop werden niet langer geproduceerd door onze verpakkingsleverancier. Daarom zijn wij overgestapt op een nieuwe fles. Omdat onze producten extern worden afgevuld, i",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Juice & Drinks"
+ },
+ {
+  "product": "Enkhuizer Jodekoek Original",
+  "brand": "Enkhuizer",
+  "before": 372.0,
+  "after": 298.0,
+  "unit": "g",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€2,59",
+  "new_price": "€2,39",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €2,59 naar €2,39 Inhoud: van 372 gram naar 298 gram (-20%). Prijs per 100 gram: +15%. Reactie Enkhuizer Jodekoek: 'Vanuit het merk geloven we in eerlijkheid en transparantie, zelfs wanneer de markt ons uitdaagt. Daarin hebben we gekozen voor een lagere inhoud en een lagere prijs, zodat d",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Cookies & Crackers"
+ },
+ {
+  "product": "Peijnenburg Gemberkoek",
+  "brand": "Peijnenburg",
+  "before": 465.0,
+  "after": 348.0,
+  "unit": "g",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€2,69",
+  "new_price": "€2,29",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €2,69 naar €2,29 Inhoud: van 465 gram naar 348 gram (-25%). Prijs per 100 gram: +14%. Reactie Peijnenburg: 'Wij hebben gekozen voor een kleinere inhoud en een lagere prijs om het product betaalbaar te houden voor consumenten. Tegelijke rtijd is de receptuur aangepast, met als doel een sm",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Cookies & Crackers"
+ },
+ {
+  "product": "Head & Shoulders 2 in 1 Menthol Fresh Shampoo",
+  "brand": "Head & Shoulders",
+  "before": 300.0,
+  "after": 250.0,
+  "unit": "ml",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€7,69",
+  "new_price": "€7,29",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €7,69 naar €7,29 Inhoud: van 300 ml naar 250 ml (-17%). Prijs per 100 ml: +14%. Reactie Head & Shoulders: 'Bij P&G blijven wij ons productaanbod continu vernieuwen en afstemmen op de behoeften van consumenten, zodat we consumenten de juiste waarde kunnen blijven bieden in combinatie met",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Personal Care"
+ },
+ {
+  "product": "Zonnatura Teff meergranenontbijt",
+  "brand": "Zonnatura",
+  "before": 300.0,
+  "after": 250.0,
+  "unit": "g",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€3,79",
+  "new_price": "€3,59",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €3,79 naar €3,59 Inhoud: van 300 gram naar 250 gram (-17%). Prijs per 100 gram: +14%. Reactie Zonnatura: 'De eerder aangeboden Teff-verpakking van 300 gram in een kartonnen doos is vervangen door een hersluitbare pouch (zak) van 250 gram. De aanpassing van de verpakking heeft direct gele",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Breakfast Cereals"
+ },
+ {
+  "product": "Andrélon Intense Repair Shampoo",
+  "brand": "Andrélon",
+  "before": 300.0,
+  "after": 250.0,
+  "unit": "ml",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€6,89",
+  "new_price": "€6,49",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €6,89 naar €6,49 Inhoud: van 300 ml naar 250 ml (-17%). Prijs per 100 ml: +13%. Reactie Andrélon: 'We willen in de eerste plaats melden dat de uiteindelijke verkoopprijs wordt bepaald door de retailers. De adviesprijs die wij meegeven aan onze klanten delen wij niet omdat dit onderdeel i",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Personal Care",
+  "also_reported": [
+   {
+    "url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+    "source": "Consumentenbond — Krimpflatie (2024)"
+   }
+  ]
+ },
+ {
+  "product": "M&M's Peanut",
+  "brand": "M&M's",
+  "before": 400.0,
+  "after": 363.0,
+  "unit": "g",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€5,99",
+  "new_price": "€5,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: €5,99 Inhoud: van 400 naar 363 gram (-9%). Prijs per 100 gram: +10%. Reactie M&M's: 'Verpakkingen wijzigen regelmatig. Verschillende landen delen verpakkingsformats en we zoeken continue naar het meest efficiënte gebruik van verpakkingsmateriaal. Daarbij wordt ook gekeken naar de behoefte va",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chocolate & Candy"
+ },
+ {
+  "product": "Seepje Wasmiddel Universeel",
+  "brand": "Seepje",
+  "before": 23.0,
+  "after": 21.0,
+  "unit": "loads",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€10,99",
+  "new_price": "€10,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: €10,99 Inhoud: van 23 naar 21 wasbeurten (-9%). Prijs per wasbeurt: +10%. Reactie Seepje: 'De inhoud van het product is verlaagd van 1000 ml naar 945 ml. Tegelijkertijd is de verpakking aangepast. Zo is het artwork vernieuwd en is op de verpakking gecommuniceerd dat de formule is verbeterd.",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Laundry"
+ },
+ {
+  "product": "Becel Original Margarine",
+  "brand": "Becel",
+  "before": 600.0,
+  "after": 550.0,
+  "unit": "g",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€3,99",
+  "new_price": "€3,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: €3,99 Inhoud: van 600 gram naar 550 gram (-8%). Prijs per 100 gram: +9%. Reactie Becel: 'Voor deze producten investeren wij voortdurend in innovatie, onze bedrijfsvoering en productie om kwalitatief goede producten tegen betaalbare prijzen te kunnen blijven aanbieden. Zo hebben we bijvoorbee",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Dairy"
+ },
+ {
+  "product": "Verkade Extra Puur Chocoladereep",
+  "brand": "Extra",
+  "before": 111.0,
+  "after": 90.0,
+  "unit": "g",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€2,65",
+  "new_price": "€2,35",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €2,65 naar €2,35 Inhoud: van 111 gram naar 90 gram (-19%). Prijs per 100 gram: +9%. Reactie Verkade: 'We hebben het chocoladeassortiment van Verkade in mei 2025 vernieuwd als onderdeel van een volledige herlancering van het portfolio. Daarbij zijn onder meer de verpakkingen vernieuwd, is",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Juice & Drinks"
+ },
+ {
+  "product": "Blue Band Vloeibaar",
+  "brand": "Blue",
+  "before": 750.0,
+  "after": 700.0,
+  "unit": "ml",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€3,59",
+  "new_price": "€3,65",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €3,59 naar €3,65. Inhoud: van 750 naar 700 ml (-7%). Prijs per 100 ml: +9%. Reactie Blue Band: 'Om onze hoogwaardige producten tegen betaalbare prijzen te kunnen blijven aanbieden, investeren wij voortdurend in innovatie, onze bedrijfsvoering en onze productie. Door de ontwikkelingen in",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Dairy"
+ },
+ {
+  "product": "Jumbo Macadamiamix Gezouten",
+  "brand": "Jumbo",
+  "before": 130.0,
+  "after": 100.0,
+  "unit": "g",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€3,99",
+  "new_price": "€3,29",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €3,99 naar €3,29 Inhoud: van 130 gram naar 100 gram (-23%). Prijs per 100 gram: +7%. Reactie Jumbo: 'We hebben voor de aanpassing gekozen zodat het artikel beter past in de kies en mix aanbieding voor de klant (2 voor €5). We hebben een inkoopprijsverhoging moeten betalen voor dit artike",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Pasta, Rice & Meals"
+ },
+ {
+  "product": "Dettol Original Allesreiniger",
+  "brand": "Dettol",
+  "before": 1500.0,
+  "after": 1000.0,
+  "unit": "ml",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€5,99",
+  "new_price": "€4,29",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €5,99 naar €4,29 Inhoud: van 1500 ml naar 1000 ml (-33%). Prijs per 100 ml: +7%. Reactie Dettol: 'De wijziging is het gevolg van beperkingen in de productiecapaciteit voor 1,5 liter flessen in de fabriek. Binnen de Europese Unie is de Benelux de enige regio waar deze niet-biocide, verdun",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Dish & Cleaning"
+ },
+ {
+  "product": "Snickers IJs",
+  "brand": "Snickers",
+  "before": 6.0,
+  "after": 5.0,
+  "unit": "bars",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€4,99",
+  "new_price": "€4,39",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: van €4,99 naar €4,39 Inhoud: van 6 repen naar 5 repen (-17%). Prijs per reep: +5%. Reactie Snickers: 'Verpakkingen wijzigen regelmatig. Verschillende landen delen verpakkingsformats en we zoeken continue naar het meest efficiënte gebruik van verpakkingsmateriaal. Daarbij wordt ook gekeken na",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chocolate & Candy"
+ },
+ {
+  "product": "Danerolles Chocolate Croissants",
+  "brand": "Danerolles",
+  "before": 275.0,
+  "after": 265.0,
+  "unit": "g",
+  "when": "2026",
+  "country": "NL",
+  "old_price": "€3,89",
+  "new_price": "€3,89",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2026/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2026)",
+  "evidence": "Prijs: €3,89 Inhoud: van 275 naar 265 gram (-4%). Prijs per 100 gram: +4%. Reactie Danerolles: 'Wij hebben Danerolles Pains au Chocolat uit het assortiment gehaald en vervangen door de vernieuwde Danerolles Chocolate Croissants. Het deeggewicht is ongewijzigd gebleven op 240 gram. Het chocoladegewi",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Juice & Drinks"
+ },
+ {
+  "product": "Jumbo diepvriescroissants",
+  "brand": "Jumbo",
+  "before": 370.0,
+  "after": 240.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€1,60",
+  "new_price": "€1,60",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €1,60 voor €1,56 Inhoud: van 370 naar 240 gram (-35%) Prijs per 100 gram: +50% Reactie fabrikant: 'De prijzen van levensmiddelen zijn in het afgelopen jaar helaas flink gestegen, ook bij ons. Om producten betaalbaar te houden passen wij de inhoud dan soms aan. Als deelnemer van het Plast",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Frozen Foods"
+ },
+ {
+  "product": "Peijnenburg ontbijtkoek volkoren gesneden",
+  "brand": "Peijnenburg",
+  "before": 485.0,
+  "after": 345.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€2,49",
+  "new_price": "€2,49",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €2,49 voor €2,29 Inhoud: van 485 naar 345 gram (-29%) Prijs per 100 gram: +29%",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Cookies & Crackers"
+ },
+ {
+  "product": "Vision zonnebrandmiddel",
+  "brand": "Vision",
+  "before": 200.0,
+  "after": 180.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€25,99",
+  "new_price": "€29,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €25,99 naar €29,99 Inhoud: van 200 naar 180 gram (-10%) Prijs per 100 ml: +28% Reactie fabrikant: 'Het besluit om verpakkingsformaten voor Vision aan te passen is genomen na zorgvuldige afweging van verschillende factoren. Waaronder stijgende grondstofkosten, productie-uitdagingen en mar",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Breakfast Cereals"
+ },
+ {
+  "product": "La Trappe tripel",
+  "brand": "La",
+  "before": 1800.0,
+  "after": 1320.0,
+  "unit": "ml",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€8,29",
+  "new_price": "€8,29",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €8,29 voor €7,29 Inhoud: van 1800 naar 1320 ml (-27%) Prijs per 100 ml: +20% Reactie fabrikant: 'De nieuwe verpakking en de prijsstijging zijn een toevallige samenloop van omstandigheden geweest. Met de introductie van het 4-pack moesten wij door de kostprijsstijgingen in die periode, te",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Tobacco & Alcohol"
+ },
+ {
+  "product": "Aldi Thee biscuits",
+  "brand": "Aldi",
+  "before": 370.0,
+  "after": 300.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€0,68",
+  "new_price": "€0,68",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €0,68 voor €0,65 Inhoud: van 370 naar 300 gram (-19%) Prijs per 100 gram: +18% Reactie fabrikant: 'De theekoekjes bleken in verhouding een (veel) te grote verpakking te hebben. Dat hebben we aangepast naar de -in de markt- gebruikelijke grootte van 300 gram. De aangepaste prijs is zichtb",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Cookies & Crackers"
+ },
+ {
+  "product": "AH Multimix nootjes",
+  "brand": "AH",
+  "before": 150.0,
+  "after": 140.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€1,50",
+  "new_price": "€1,50",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €1,50 voor €1,65 Inhoud: van 150 naar 140 gram (-7%) Prijs per 100 gram: +18%",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chips & Snacks"
+ },
+ {
+  "product": "Van Melle toffees",
+  "brand": "Van",
+  "before": 275.0,
+  "after": 225.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€2,39",
+  "new_price": "€2,29",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €2,39 naar €2,29 Inhoud: van 275 naar 225 gram (-18%) Prijs per 100 gram: +17% Reactie fabrikant: 'Door onder andere gestegen grondstof-, transport- en energieprijzen hebben wij besloten de verpakking te verkleinen. Daardoor blijft het bereikbaar voor consumenten. Met het verlagen van he",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chocolate & Candy"
+ },
+ {
+  "product": "Jumbo Ananas stukjes",
+  "brand": "Jumbo",
+  "before": 200.0,
+  "after": 175.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€2,29",
+  "new_price": "€2,29",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: €2,29 Inhoud: van 200 naar 175 gram (-13%) Prijs per 100 gram: +14% Reactie fabrikant: 'Bij de Kies & Mix fruitbakjes zijn onze inkoopprijzen helaas fors gestegen. Hoewel we er alles aan doen om prijsstijgingen voor onze klanten zo beperkt mogelijk te houden, ontkwamen we er niet aan om aanp",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Pasta, Rice & Meals"
+ },
+ {
+  "product": "Vanish Oxi action",
+  "brand": "Vanish",
+  "before": 550.0,
+  "after": 530.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€9,19",
+  "new_price": "€9,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €9,19 naar €9,99 Inhoud: van 550 naar 530 gram (-4%) Prijs per 100 gram: +13% Reactie fabrikant: 'Bij alle producten wordt de inhoud duidelijk op de verpakking vermeld volgens de lokale en EU-regelgeving. Wij geven hiermee volledige transparantie richting de consument. De prijzen worden",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Laundry"
+ },
+ {
+  "product": "Nestlé L'Atelier hazelnoot & rozijn",
+  "brand": "Nestlé",
+  "before": 170.0,
+  "after": 150.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€2,99",
+  "new_price": "€2,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: €2,99 Inhoud: van 170 naar 150 gram (-12%) Prijs per 100 gram: +13%",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Breakfast Cereals"
+ },
+ {
+  "product": "Sportlife kauwgum",
+  "brand": "Sportlife",
+  "before": 114.0,
+  "after": 102.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€4,35",
+  "new_price": "€4,35",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: €4,35 Inhoud: van 114 naar 102 gram (-11%) Prijs per 100 gram: +12% Reactie fabrikant: 'Het recept van onze Sportlife kauwgom hebben we aangepast. Op al onze Sportlife verpakkingen staat aangegeven dat we de receptuur hebben aangepast met daarbij hoeveel kauwgoms er in het potje zit. Wij gev",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chocolate & Candy"
+ },
+ {
+  "product": "Sun All-in-one vaatwastabletten",
+  "brand": "All",
+  "before": 25.0,
+  "after": 21.0,
+  "unit": "pieces",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€10,59",
+  "new_price": "€9,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €10,59 naar €9,99 Inhoud: van 25 naar 21 stuks (-16%) Prijs per stuk: +12% Reactie fabrikant: 'De kostprijzen stijgen wereldwijd. In de praktijk kunnen niet alle hogere kosten gecompenseerd worden door besparingen waar wij als eerst naar kijken. Een doorberekening kan dan in de vorm van",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Dish & Cleaning"
+ },
+ {
+  "product": "La Vache Qui Rit smeerkaas",
+  "brand": "La",
+  "before": 128.0,
+  "after": 120.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€1,89",
+  "new_price": "€1,89",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €1,89 voor €1,99 Inhoud: van 128 naar 120 gram (-6%) Prijs per 100 gram: +12%",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Dairy"
+ },
+ {
+  "product": "Klene Puur drop",
+  "brand": "Klene",
+  "before": 200.0,
+  "after": 180.0,
+  "unit": "g",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€2,89",
+  "new_price": "€2,89",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: €2,89 Inhoud: van 200 naar 180 gram (-10%) Prijs per 100 gram: +11% Reactie fabrikant: 'Wij hebben sinds vorig jaar te maken met fors gestegen prijzen. Daarom hebben wij besloten een verkleinde verpakking met een lager netto gewicht aan te bieden zodat het bereikbaar blijft voor consumenten.",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chocolate & Candy"
+ },
+ {
+  "product": "Pampers Baby-Dry maat 5",
+  "brand": "Pampers",
+  "before": 23.0,
+  "after": 21.0,
+  "unit": "luiers",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€9,99",
+  "new_price": "€9,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: €9,99 Inhoud: van 23 naar 21 luiers (-9%) Prijs per luier: +10% Reactie fabrikant: 'In 2023 hebben wij een nieuwe innovatie op het gebied van getapete luiers geïntroduceerd, namelijk de Stop & Protect-pocket. Het gaat om een ​​ingenieus en revolutionair systeem aan de achterkant van de luier",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Baby"
+ },
+ {
+  "product": "Robijn wascapsules color",
+  "brand": "Robijn",
+  "before": 29.0,
+  "after": 26.0,
+  "unit": "capsules",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€15,49",
+  "new_price": "€15,49",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €15,49 voor €15,19 Inhoud: van 29 naar 26 capsules (-9%) Prijs per capsule: +10%",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Laundry"
+ },
+ {
+  "product": "Finish Quantum All-in-one vaatwastabletten",
+  "brand": "Finish",
+  "before": 35.0,
+  "after": 33.0,
+  "unit": "tablets",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€15,99",
+  "new_price": "€15,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: van €15,99 voor €16,49 Inhoud: van 35 naar 33 tabletten (-6%) Prijs per tablet: +9%",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Dish & Cleaning"
+ },
+ {
+  "product": "Ariel waspoeder",
+  "brand": "Ariel",
+  "before": 18.0,
+  "after": 17.0,
+  "unit": "loads",
+  "when": "2024",
+  "country": "NL",
+  "old_price": "€10,19",
+  "new_price": "€10,19",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2024/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2024)",
+  "evidence": "Prijs: €10,19 Inhoud: van 18 naar 17 wasbeurten (-6%) Prijs per wasbeurt: 6% Reactie fabrikant: 'Wij zijn voortdurend bezig met het innoveren en aanpassen van ons productaanbod. Daarbij zijn wij altijd transparant over de hoeveelheid product in een verpakking. Net als over de wascycli die duidelijk",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Laundry"
+ },
+ {
+  "product": "Ambi Pur luchtverfrisser",
+  "brand": "Ambi",
+  "before": 300.0,
+  "after": 185.0,
+  "unit": "ml",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€4,39",
+  "new_price": "€4,49",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: van €4,39 naar €4,49. Inhoud: van 300 naar 185 ml (-38%). Prijs per 100 ml: +66%. Reactie Ambi Pur: 'Bij P&G innoveren en passen we voortdurend onze productassortimenten aan om de juiste waarde aan onze consumenten te blijven bieden. We zijn altijd transparant over het volume dat in een verp",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Household"
+ },
+ {
+  "product": "Nesquik",
+  "brand": "Nesquik",
+  "before": 500.0,
+  "after": 300.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€3,39",
+  "new_price": "€2,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: van €3,39 naar €2,99. Inhoud: van 500 naar 300 gram (-40%). Prijs per 100 gram: +47%. Reactie Nesquik: 'Naar aanleiding van recent onderzoek hebben we besloten om de verpakking van Nesquik aan te passen. Deze wijziging is ingevoerd omdat een kleinere verpakking beter aansluit bij de voorkeur",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Coffee & Tea"
+ },
+ {
+  "product": "Knorr Veggie Wraps",
+  "brand": "Knorr",
+  "before": 370.0,
+  "after": 240.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€3,09",
+  "new_price": "€2,75",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: van €3,09 naar €2,75. Inhoud: van 370 naar 240 gram (-35%). Prijs per 100 gram: +37%. Reactie Knorr: 'De nutritionele waarden van de wraps zijn verbeterd. We hebben ons hierbij gefocust op het verminderen van verzadigd vet, zout en suiker en het verhogen van de hoeveelheid vezels. Zo bevatte",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Baking & Spreads"
+ },
+ {
+  "product": "Dreft-wasmiddel",
+  "brand": "Dreft-wasmiddel",
+  "before": 1200.0,
+  "after": 945.0,
+  "unit": "ml",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€9,99",
+  "new_price": "€9,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €9,99. Inhoud: van 1200 naar 945 ml (-21%). Prijs per 100 ml: +27%. Reactie Dreft: 'In een tijd waarin de kosten in de gehele keten sterk zijn gestegen, hebben we gezocht naar slimme en innovatieve oplossingen. We hebben bewust geïnvesteerd in een 99% gerecyclede verpakking, een betere formu",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Laundry"
+ },
+ {
+  "product": "Eat Natural Fruit & Nut-repen",
+  "brand": "Eat",
+  "before": 150.0,
+  "after": 120.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€3,19",
+  "new_price": "€3,19",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €3,19. Inhoud: van 150 naar 120 gram (-20%). Prijs per 100 gram: +25%. Reactie Eat Natural: 'Net als bij veel andere fabrikanten is er sprake van een kostenstijging waaronder factoren als ingrediënten, verpakking, productie en logistiek. Om deze factoren in evenwicht te brengen en onze consu",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chips & Snacks"
+ },
+ {
+  "product": "Honig Mexicaanse Wraps",
+  "brand": "Honig",
+  "before": 305.0,
+  "after": 265.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€3,39",
+  "new_price": "€3,69",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: van €3,39 naar €3,69. Inhoud: van 305 naar 265 gram (-13%). Prijs per 100 gram: +25%. Reactie Honig: 'In plaats van 6 wraps bevat ons Honig Familie Maaltijdpakket Mexicaanse Wraps nu 8 kleinere wraps. Deze wijziging wordt duidelijk op de voorkant van de verpakking vermeld. Tegelijkertijd heb",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Baking & Spreads"
+ },
+ {
+  "product": "Ariel-wasmiddelcapsules",
+  "brand": "Ariel-wasmiddelcapsules",
+  "before": 12.0,
+  "after": 10.0,
+  "unit": "capsules",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€9,99",
+  "new_price": "€9,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €9,99. Inhoud: van 12 naar 10 capsules (-17%). Prijs per capsule: +20%. Reactie Ariel: 'Bij P&G innoveren en passen we voortdurend onze productassortimenten aan om de juiste waarde aan onze consumenten te blijven bieden. We zijn altijd transparant over het volume dat in een verpakking zit, w",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Laundry"
+ },
+ {
+  "product": "Dove Deeply Nourishing Douchegel",
+  "brand": "Dove",
+  "before": 250.0,
+  "after": 225.0,
+  "unit": "ml",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€5,19",
+  "new_price": "€5,49",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: van €5,19 naar €5,49. Inhoud: van 250 naar 225 ml (-10%). Prijs per 100 ml: +18%. Reactie Dove: 'We hebben in 2024 onze douchelijn aangepast om beter te voldoen aan onze doelgroep. Dit zijn vrouwen die meer dan 'basic' hydratatie verwachten van een douchegel. Een iets meer geavanceerd en voe",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Personal Care"
+ },
+ {
+  "product": "Dolce Gusto Lungo-koffiecups",
+  "brand": "Dolce",
+  "before": 104.0,
+  "after": 90.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€5,59",
+  "new_price": "€5,59",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €5,59. Inhoud: van 104 naar 90 gram (-13%). Prijs per 100 gram: +16%. Reactie Dolce Gusto: 'Wij waarderen de inzet van consumentenorganisaties zoals Consumentenbond bij het bevorderen van transparantie en eerlijkheid in de voedselindustrie. We streven ernaar onze producten zo betaalbaar moge",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Coffee & Tea"
+ },
+ {
+  "product": "AH Franse gruyere geraspt",
+  "brand": "AH",
+  "before": 150.0,
+  "after": 130.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€3,99",
+  "new_price": "€3,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €3,99 Inhoud: van 150 naar 130 gram (-13%) Prijs per 100 gram: +15% Reactie AH: 'Wij herkennen de inhoudswijziging die pas zeer recent is doorgevoerd. De verkoopprijs is iets later ook evenredig gedaald. Omdat het oude folie bij de leverancier onverwachts enkele dagen eerder op is gegaan heb",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Dairy"
+ },
+ {
+  "product": "AH Steenoven pizza piccante",
+  "brand": "AH",
+  "before": 447.0,
+  "after": 372.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€3,79",
+  "new_price": "€3,59",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: van €3,79 naar €3,59 Inhoud: van 447 naar 372 gram (-17%) Prijs per 100 gram: +14% Reactie AH: 'Dit product is inderdaad in gewicht verlaagd. Ten eerste omdat we de verpakking wilden verkleinen zodat deze in de winkel beter op schap gepresenteerd kan worden. En ten tweede zodat we deze pizza",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Pasta, Rice & Meals"
+ },
+ {
+  "product": "Johnny Cashew Honing Zeezout",
+  "brand": "Johnny",
+  "before": 125.0,
+  "after": 100.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€3,29",
+  "new_price": "€2,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: van €3,29 naar €2,99 Inhoud: van 125 naar 100 gram (-20%) Prijs per 100 gram: +14% Reactie Johnny Cashew: 'Onze zakjes zijn vervangen door een vernieuwde versie. De receptuur is verbeterd, de zakjes blijven beter staan en we hebben de inhoud van 125 naar 100 gram aangepast. Door ons zakje ee",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chips & Snacks"
+ },
+ {
+  "product": "Mentos Pepermuntballen",
+  "brand": "Mentos",
+  "before": 242.0,
+  "after": 220.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€2,19",
+  "new_price": "€2,19",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €2,19 Inhoud: van 242 naar 220 gram (-9%) Prijs per 100 gram: +10% Reactie Mentos: 'Graag willen wij reageren op de ene melding die de Consumentenbond heeft ontvangen m.b.t. de gewijzigde inhoud van de Mentos Pepermuntballen. Als producent van Mentos Pepermuntballen heeft Perfetti van Melle",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chocolate & Candy"
+ },
+ {
+  "product": "Hertog IJssalon Drie Chocolades",
+  "brand": "Hertog",
+  "before": 900.0,
+  "after": 825.0,
+  "unit": "ml",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€4,99",
+  "new_price": "€4,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €4,99 Inhoud: van 900 naar 825 ml (-8%) Prijs per 100 ml: +9% Reactie Hertog: 'De Hertog IJssalon heeft in 2024 een relaunch gehad. Deze relaunch houdt in dat we de lijn opnieuw hebben uitgebracht, met een nieuwe artwork on pack maar ook met in verhouding méér toppings en sauzen. Zo kunnen w",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Juice & Drinks"
+ },
+ {
+  "product": "Lenor Wasverzachter Zeebries",
+  "brand": "Lenor",
+  "before": 41.0,
+  "after": 40.0,
+  "unit": "loads",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€6,59",
+  "new_price": "€6,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: van €6,59 naar €6,99 Inhoud: van 41 naar 40 wasbeurten (-2%) Prijs per wasbeurt: +9% Reactie Lenor: 'Bij P&G innoveren en passen we voortdurend onze productassortimenten aan om de juiste waarde aan onze consumenten te blijven bieden. We zijn altijd transparant over het volume dat in een verp",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Laundry"
+ },
+ {
+  "product": "Maaslander Belegen-kaasplakken",
+  "brand": "Maaslander",
+  "before": 150.0,
+  "after": 140.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€2,99",
+  "new_price": "€2,99",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €2,99 Inhoud: van 150 naar 140 gram (-7%) Prijs per 100 gram: +7% Reactie Maaslander: 'De melkprijs is gestegen met 35%. Om onze kaas, ondanks deze hoge stijging, betaalbaar te houden voor de consument, hebben wij gekozen voor een minimale gewichtsvermindering van de kaas in plaats van een p",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Dairy"
+ },
+ {
+  "product": "Lipton Russian Earl Grey",
+  "brand": "Lipton",
+  "before": 34.0,
+  "after": 32.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€2,89",
+  "new_price": "€2,89",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €2,89 Inhoud: van 34 naar 32 gram (-6%) Prijs per 100 gram: +6% Reactie Lipton: 'Er is een verbetering geweest op de blend en de verpakking. Vanuit Lipton doen wij niet aan prijsinflatie op producten. De retailer is verantwoordelijk voor het bepalen van de prijs op het schap.'",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Coffee & Tea"
+ },
+ {
+  "product": "Lay's Max-chips",
+  "brand": "Lay's",
+  "before": 300.0,
+  "after": 275.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€2,89",
+  "new_price": "€2,79",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: van €2,89 naar €2,79 Inhoud: van 300 naar 275 gram (-8%) Prijs per 100 gram: +5% Reactie Lay's: 'In april 2024 hebben we de verpakkingen van Lay's Max Naturel 300 gram en Lay's Max Paprika 300 gram vervangen door een verpakking van 275 gram. Bij PepsiCo volgen we continu het consumentengedra",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Chips & Snacks"
+ },
+ {
+  "product": "Danerolles Pains au Chocolat",
+  "brand": "Danerolles",
+  "before": 290.0,
+  "after": 275.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€3,89",
+  "new_price": "€3,89",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €3,89 Inhoud: van 290 naar 275 gram (-5%) Prijs per 100 gram: +5% Reactie Danerolles: 'Afgelopen jaar hebben we de receptuur van Danerolles Pain au Chocolat vernieuwd. De reden voor de vernieuwde receptuur is consument gedreven. We hebben de Pains au Chocolat volledig plantaardig – conform t",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Juice & Drinks"
+ },
+ {
+  "product": "AH Beschuit naturel",
+  "brand": "AH",
+  "before": 130.0,
+  "after": 125.0,
+  "unit": "g",
+  "when": "2025",
+  "country": "NL",
+  "old_price": "€0,59",
+  "new_price": "€0,59",
+  "source_url": "https://www.consumentenbond.nl/acties-claims/nieuws/2025/krimpflatie",
+  "source": "Consumentenbond — Krimpflatie (2025)",
+  "evidence": "Prijs: €0,59 Inhoud: van 130 naar 125 gram (-4%) Prijs per 100 gram: +4% Reactie AH: 'Sinds 2022 stijgt de prijs voor beschuit op de Nederlandse markt. Bij Albert Heijn hebben wij als enige in de markt een formaat van 130 gram gevoerd. Terwijl al jaren 125 gram de standaard was in de markt. Totdat",
+  "evidence_type": "consumer association investigation (manufacturer response)",
+  "confidence": "high",
+  "source_tag": "cb",
+  "category": "Cookies & Crackers"
  }
 ]

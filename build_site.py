@@ -84,8 +84,8 @@ const go=()=>{const t=q.value.toLowerCase().trim();r.innerHTML='';if(t.length<2)
 q.addEventListener('input',go);const p=new URLSearchParams(location.search).get('q');if(p){q.value=p;go()}})();"""
 PAGES=[]
 SLUGS=set()
-COUNTRY={'US':'United States','UK':'United Kingdom','DE':'Germany','FR':'France','CA':'Canada','AU':'Australia','EU':'Europe'}
-FLAG={'US':'🇺🇸','UK':'🇬🇧','DE':'🇩🇪','FR':'🇫🇷','CA':'🇨🇦','AU':'🇦🇺','EU':'🇪🇺'}
+COUNTRY={'US':'United States','UK':'United Kingdom','DE':'Germany','FR':'France','CA':'Canada','AU':'Australia','EU':'Europe','NL':'Netherlands','ES':'Spain','AT':'Austria','IT':'Italy','BR':'Brazil','IN':'India'}
+FLAG={'US':'🇺🇸','UK':'🇬🇧','DE':'🇩🇪','FR':'🇫🇷','CA':'🇨🇦','AU':'🇦🇺','EU':'🇪🇺','NL':'🇳🇱','ES':'🇪🇸','AT':'🇦🇹','IT':'🇮🇹','BR':'🇧🇷','IN':'🇮🇳'}
 NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/about.html', 'About')]
 def slug(x): return re.sub(r"[^a-z0-9]+","-",x.lower().replace("&","and")).strip("-")
 def fmt(v,u): return f"{round(v,1) if v>=10 else round(v,2):g} {u}"
