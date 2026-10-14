@@ -1,0 +1,555 @@
+[
+ {
+  "code": "0810607024244",
+  "name": "POPCORNERS",
+  "brand": "PopCorners",
+  "category": "Chips",
+  "db": "off"
+ },
+ {
+  "code": "0194346191581",
+  "name": "Heirloom Blue Corn and Multigrain Tortilla Chips",
+  "brand": "bettergoods",
+  "category": "Chips",
+  "db": "off"
+ },
+ {
+  "code": "0810091780381",
+  "name": "Queso Grain Free Puff Snacks",
+  "brand": "Siete",
+  "category": "Chips",
+  "db": "off"
+ },
+ {
+  "code": "6009710723234",
+  "name": "Sweet chilli pepper flavoured corn chips",
+  "brand": "Doritos",
+  "category": "Chips",
+  "db": "off"
+ },
+ {
+  "code": "0856802008825",
+  "name": "SEA SALT & VINEGAR FLAVOR PROTEIN CHIPS",
+  "brand": "WILDE",
+  "category": "Chips",
+  "db": "off"
+ },
+ {
+  "code": "0764218651248",
+  "name": "Quinoa Chips Sea Salt",
+  "brand": "Simply",
+  "category": "Chips",
+  "db": "off"
+ },
+ {
+  "code": "8425197712024",
+  "name": "Chocolate con leche y almendras",
+  "brand": "CHOCOLATES MARUJA S.L.",
+  "category": "Chocolate Candies",
+  "db": "off"
+ },
+ {
+  "code": "8000500037560",
+  "name": "bueno",
+  "brand": "Kinder",
+  "category": "Chocolate Candies",
+  "db": "off"
+ },
+ {
+  "code": "80177616",
+  "name": "FILLED MILK CHOCOLATE WITH A MILKY FILLING",
+  "brand": "Kinder",
+  "category": "Chocolate Candies",
+  "db": "off"
+ },
+ {
+  "code": "4000539142628",
+  "name": "DUBAI Style CHOCOLATE PISTACHIO & KADAYIF",
+  "brand": "Lindt",
+  "category": "Chocolate Candies",
+  "db": "off"
+ },
+ {
+  "code": "7622210249661",
+  "name": "Dark Chocolate",
+  "brand": "Cadbury Bournville",
+  "category": "Chocolate Candies",
+  "db": "off"
+ },
+ {
+  "code": "7614500010617",
+  "name": "Dark Chocolate with Honey and Almond Nougat",
+  "brand": "Toblerone",
+  "category": "Chocolate Candies",
+  "db": "off"
+ },
+ {
+  "code": "5901588018195",
+  "name": "Czekolada mocno gorzka 80%",
+  "brand": "E. Wedel",
+  "category": "Chocolate Candies",
+  "db": "off"
+ },
+ {
+  "code": "0857484006611",
+  "name": "dark chocolate coconut whips",
+  "brand": "UNREAL",
+  "category": "Chocolate Candies",
+  "db": "off"
+ },
+ {
+  "code": "7622210449283",
+  "name": "Prince",
+  "brand": "Mondelez Schweiz GmbH",
+  "category": "Cookies",
+  "db": "off"
+ },
+ {
+  "code": "3175680011480",
+  "name": "S\u00e9same",
+  "brand": "Gerbl\u00e9",
+  "category": "Cookies",
+  "db": "off"
+ },
+ {
+  "code": "6111031005064",
+  "name": "Tonik",
+  "brand": "tonik",
+  "category": "Cookies",
+  "db": "off"
+ },
+ {
+  "code": "8000500310427",
+  "name": "Biscuits NUTELLA Biscuits Noisettes et Cacao x22 - 304g",
+  "brand": "Ferrero Technical Services Srl",
+  "category": "Cookies",
+  "db": "off"
+ },
+ {
+  "code": "7622210601988",
+  "name": "Granola L'Original",
+  "brand": "LU",
+  "category": "Cookies",
+  "db": "off"
+ },
+ {
+  "code": "6111259341197",
+  "name": "Momo black",
+  "brand": "Excelo",
+  "category": "Cookies",
+  "db": "off"
+ },
+ {
+  "code": "6111259347861",
+  "name": "Pauz",
+  "brand": "pauz",
+  "category": "Cookies",
+  "db": "off"
+ },
+ {
+  "code": "3175681134904",
+  "name": "Sabl\u00e9 Nature sans sucres",
+  "brand": "Gerbl\u00e9",
+  "category": "Cookies",
+  "db": "off"
+ },
+ {
+  "code": "0856069005155",
+  "name": "ALMOND FLOUR CRACKERS Farmhouse Cheddar",
+  "brand": "Simple Mills",
+  "category": "Crackers",
+  "db": "off"
+ },
+ {
+  "code": "0853665005091",
+  "name": "Super Seed Everything Crackers",
+  "brand": "Mary's Organic",
+  "category": "Crackers",
+  "db": "off"
+ },
+ {
+  "code": "0819898010189",
+  "name": "Rosemary & Olive Oil Stoneground Wheat Crackers",
+  "brand": "Back To Nature",
+  "category": "Crackers",
+  "db": "off"
+ },
+ {
+  "code": "0810021671512",
+  "name": "Organic Seed Flour Crackers Garlic & Herb",
+  "brand": "Simple Mills",
+  "category": "Crackers",
+  "db": "off"
+ },
+ {
+  "code": "0013800047199",
+  "name": "Four Cheese Pizza",
+  "brand": "Lean Cuisine",
+  "category": "Frozen Pizzas",
+  "db": "off"
+ },
+ {
+  "code": "0606541601272",
+  "name": "Uncured Pepperoni Cauliflower Crust Pizza",
+  "brand": "Milton's",
+  "category": "Frozen Pizzas",
+  "db": "off"
+ },
+ {
+  "code": "0042272001019",
+  "name": "Pizza Cheese",
+  "brand": "Amy's",
+  "category": "Frozen Pizzas",
+  "db": "off"
+ },
+ {
+  "code": "0871459001821",
+  "name": "Thin Crust Pizza Meatless Supreme",
+  "brand": "Daiya",
+  "category": "Frozen Pizzas",
+  "db": "off"
+ },
+ {
+  "code": "0071921214579",
+  "name": "Rising Crust Original Four Cheese",
+  "brand": "DiGiorno",
+  "category": "Frozen Pizzas",
+  "db": "off"
+ },
+ {
+  "code": "0860012623013",
+  "name": "Mushroom & Truffle Pizza",
+  "brand": "Roncadin Inc.",
+  "category": "Frozen Pizzas",
+  "db": "off"
+ },
+ {
+  "code": "0871459001524",
+  "name": "Fire-Roasted Vegetable Gluten-Free Thin Crust Pizza",
+  "brand": "Daiya",
+  "category": "Frozen Pizzas",
+  "db": "off"
+ },
+ {
+  "code": "4750050341405",
+  "name": "K\u0101rums biezpiena sieri\u0146\u0161",
+  "brand": "K\u0101rums",
+  "category": "Ice Creams",
+  "db": "off"
+ },
+ {
+  "code": "0074570024001",
+  "name": "strawberry ice cream",
+  "brand": "H\u00e4agen-Dazs",
+  "category": "Ice Creams",
+  "db": "off"
+ },
+ {
+  "code": "8901262173483",
+  "name": "Amul Fruit 'N' Nut Fantasy",
+  "brand": "Amul",
+  "category": "Ice Creams",
+  "db": "off"
+ },
+ {
+  "code": "8711327575080",
+  "name": "MINT",
+  "brand": "Magnum",
+  "category": "Ice Creams",
+  "db": "off"
+ },
+ {
+  "code": "0074570650576",
+  "name": "vanilla bean ice cream",
+  "brand": "H\u00e4agen-Dazs",
+  "category": "Ice Creams",
+  "db": "off"
+ },
+ {
+  "code": "0071899051015",
+  "name": "Homemade Vanilla",
+  "brand": "Blue Bell Ice Cream",
+  "category": "Ice Creams",
+  "db": "off"
+ },
+ {
+  "code": "0074570014002",
+  "name": "chocolate ice cream",
+  "brand": "H\u00e4agen-Dazs",
+  "category": "Ice Creams",
+  "db": "off"
+ },
+ {
+  "code": "0186852000389",
+  "name": "Gelato - Madagascan Vanilla Bean",
+  "brand": "Talenti",
+  "category": "Ice Creams",
+  "db": "off"
+ },
+ {
+  "code": "0096619555505",
+  "name": "Organic Creamy Peanut Butter",
+  "brand": "Kirkland",
+  "category": "Peanut Butters",
+  "db": "off"
+ },
+ {
+  "code": "0051500255162",
+  "name": "Creamy Peanut Butter",
+  "brand": "Jif",
+  "category": "Peanut Butters",
+  "db": "off"
+ },
+ {
+  "code": "0037600110754",
+  "name": "Creamy Peanut Butter",
+  "brand": "Skippy",
+  "category": "Peanut Butters",
+  "db": "off"
+ },
+ {
+  "code": "0034000400126",
+  "name": "Reeses Creamy Peanut Butter",
+  "brand": "Reese's",
+  "category": "Peanut Butters",
+  "db": "off"
+ },
+ {
+  "code": "0096619225798",
+  "name": "beurre de noix m\u00e9lang\u00e9es avec graines",
+  "brand": "Kirkland",
+  "category": "Peanut Butters",
+  "db": "off"
+ },
+ {
+  "code": "0051500720011",
+  "name": "CREAMY PEANUT BUTTER",
+  "brand": "Jif",
+  "category": "Peanut Butters",
+  "db": "off"
+ },
+ {
+  "code": "0051500243213",
+  "name": "Peanut Butter Spread",
+  "brand": "Jif",
+  "category": "Peanut Butters",
+  "db": "off"
+ },
+ {
+  "code": "6111271520044",
+  "name": "peanut butter crunchy",
+  "brand": "",
+  "category": "Peanut Butters",
+  "db": "off"
+ },
+ {
+  "code": "5449000054227",
+  "name": "Coca-Cola Original Taste",
+  "brand": "COCA-COLA SERVICES SA/NV",
+  "category": "Sodas",
+  "db": "off"
+ },
+ {
+  "code": "5449000214799",
+  "name": "Coca-Cola sans sucres",
+  "brand": "COCA-COLA SERVICES SA/NV",
+  "category": "Sodas",
+  "db": "off"
+ },
+ {
+  "code": "5449000000996",
+  "name": "Coca-Cola Original",
+  "brand": "COCA-COLA SERVICES SA/NV",
+  "category": "Sodas",
+  "db": "off"
+ },
+ {
+  "code": "5449000000439",
+  "name": "Coca Cola Original taste",
+  "brand": "Coca-Cola",
+  "category": "Sodas",
+  "db": "off"
+ },
+ {
+  "code": "5449000036872",
+  "name": "Hawai Tropical",
+  "brand": "Coca cola",
+  "category": "Sodas",
+  "db": "off"
+ },
+ {
+  "code": "42105220",
+  "name": "Coca Cola",
+  "brand": "Coca-Cola",
+  "category": "Sodas",
+  "db": "off"
+ },
+ {
+  "code": "6111243860376",
+  "name": "Ice Passion",
+  "brand": "ice",
+  "category": "Sodas",
+  "db": "off"
+ },
+ {
+  "code": "90162602",
+  "name": "Red Bull Energy Drink",
+  "brand": "Red Bull",
+  "category": "Sodas",
+  "db": "off"
+ },
+ {
+  "code": "6111242100206",
+  "name": "Le nature",
+  "brand": "Jaouda",
+  "category": "Yogurts",
+  "db": "off"
+ },
+ {
+  "code": "6111242100305",
+  "name": "jaouda Cremy",
+  "brand": "jaouda",
+  "category": "Yogurts",
+  "db": "off"
+ },
+ {
+  "code": "6111032001003",
+  "name": "Assil vanille",
+  "brand": "Danone",
+  "category": "Yogurts",
+  "db": "off"
+ },
+ {
+  "code": "6111242103702",
+  "name": "Yaourt Grec Muesli",
+  "brand": "Jaouda",
+  "category": "Yogurts",
+  "db": "off"
+ },
+ {
+  "code": "6111242100930",
+  "name": "\u0631\u0627\u064a\u0628\u064a \u062c\u0648\u062f\u0629",
+  "brand": "Jaouda",
+  "category": "Yogurts",
+  "db": "off"
+ },
+ {
+  "code": "6111242102002",
+  "name": "\u063a\u0644\u0627\u0644 \u0627\u0644\u0642\u0645\u062d",
+  "brand": "Jaouda",
+  "category": "Yogurts",
+  "db": "off"
+ },
+ {
+  "code": "6111242102781",
+  "name": "Tendre nature",
+  "brand": "Tendre",
+  "category": "Yogurts",
+  "db": "off"
+ },
+ {
+  "code": "0016000275287",
+  "name": "Cheerios",
+  "brand": "Cheerios",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0749174098894",
+  "name": "Plant Powered Laundry Detergent",
+  "brand": "ECOS",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "0732913227808",
+  "name": "Natural Liquid Laundry Detergent Free & Clear",
+  "brand": "Seventh Generation",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "0072613739455",
+  "name": "Ultra Free Clear HE Liquid Laundry Detergents",
+  "brand": "All",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "0749174096395",
+  "name": "Laundry Detergent",
+  "brand": "Ecos",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "0042000875905",
+  "name": "Toilet paper",
+  "brand": "Quilted Northern",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0073286621092",
+  "name": "TM 65 10 Bath Tissue Roll",
+  "brand": "Tork",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0196633816788",
+  "name": "Bath Tissue",
+  "brand": "Kirkland",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0035000451187",
+  "name": "Dish Soap",
+  "brand": "Palmolive",
+  "category": "Dish Soap",
+  "db": "opf"
+ },
+ {
+  "code": "0808124703490",
+  "name": "Clean Day Dish Soap Mint Scent",
+  "brand": "",
+  "category": "Dish Soap",
+  "db": "opf"
+ },
+ {
+  "code": "0035000498618",
+  "name": "Ajax Ultra Lemon Scent Liquid Dish Soap",
+  "brand": "Ajax",
+  "category": "Dish Soap",
+  "db": "opf"
+ },
+ {
+  "code": "0041512159930",
+  "name": "ultra absorbent  big roll paper towels",
+  "brand": "first street since 1871",
+  "category": "Paper Towels",
+  "db": "opf"
+ },
+ {
+  "code": "0030772087114",
+  "name": "Paper towels",
+  "brand": "Bounty",
+  "category": "Paper Towels",
+  "db": "opf"
+ },
+ {
+  "code": "0030772156636",
+  "name": "Bounty Paper Towel 6DP",
+  "brand": "Bounty",
+  "category": "Paper Towels",
+  "db": "opf"
+ },
+ {
+  "code": "0042000445887",
+  "name": "Brawny Paper Towel 6 DBL Rolls",
+  "brand": "Brawny",
+  "category": "Paper Towels",
+  "db": "opf"
+ }
+]
