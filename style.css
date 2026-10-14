@@ -46,6 +46,8 @@ tbody tr:first-child td{font-weight:700}
 .spark{display:block;width:100%;height:64px;margin:var(--s2) 0}.spark.s{width:120px;height:28px;margin:0}
 .spark polyline{fill:none;stroke:var(--ink);stroke-width:2;vector-effect:non-scaling-stroke}.spark .d{fill:var(--sig)}.spark .e{fill:var(--ink)}
 .search input,#q{width:100%;font:700 1.15rem var(--f);padding:.7rem .8rem;border:2px solid var(--ink);border-radius:0;background:var(--panel);color:var(--ink)}
+.flt{display:flex;flex-wrap:wrap;gap:.5rem;margin:var(--s3) 0}.flt select,.flt input{font:700 .95rem var(--f);padding:.5rem;border:2px solid var(--ink);background:var(--panel);color:var(--ink);border-radius:0}.flt input{flex:1 1 12rem}
+blockquote.q{margin:0;padding:var(--s3);background:var(--panel);border-left:4px solid var(--ink);font-size:.95rem}
 #res{list-style:none;padding:0}#res li{border-bottom:1px solid var(--hair);padding:.5rem 0}
 .feed{list-style:none;padding:0}.feed li{border-bottom:1px solid var(--hair);padding:.6rem 0}
 .empty{border:1px dashed var(--muted);padding:var(--s3);background:var(--panel)}
