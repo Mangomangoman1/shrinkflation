@@ -2,7 +2,7 @@
  {
   "brand": "Cocoa Puffs",
   "product": "Cocoa Puffs Family Size",
-  "category": "Tissues",
+  "category": "Breakfast Cereals",
   "before": 19.3,
   "after": 18.1,
   "unit": "oz",
@@ -608,7 +608,7 @@
   "source_tag": "seed"
  },
  {
-  "brand": "Corn Pops",
+  "brand": "Kellogg's",
   "product": "Kellogg's Corn Pops",
   "category": "Breakfast Cereals",
   "before": 18.1,
@@ -1639,7 +1639,7 @@
  },
  {
   "product": "Redpath sugar (Walmart test)",
-  "brand": "Redpath",
+  "brand": "Walmart",
   "category": "Baking & Spreads",
   "before": 2000,
   "after": 1500,
@@ -2707,7 +2707,7 @@
   "evidence_type": "Wayback Machine retailer-page comparison (third-party study)",
   "confidence": "high",
   "source_tag": "tables",
-  "category": "Tissues"
+  "category": "Breakfast Cereals"
  },
  {
   "product": "Honey Nut Chex",
@@ -3663,7 +3663,7 @@
  },
  {
   "product": "Kellogg's Corn Pops",
-  "brand": "Corn Pops",
+  "brand": "Kellogg's",
   "before": 14.3,
   "after": 13.1,
   "unit": "oz",

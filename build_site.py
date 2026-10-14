@@ -60,6 +60,10 @@ blockquote.q{margin:0;padding:var(--s3);background:var(--panel);border-left:4px 
 .empty{border:1px dashed var(--muted);padding:var(--s3);background:var(--panel)}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;padding:0;list-style:none}.chips a{display:inline-block;padding:.3rem .6rem;border:1px solid var(--ink);text-decoration:none;font-size:.875rem;font-weight:700;background:var(--panel)}
 .chips a:hover{background:var(--ink);color:var(--paper)}
+.alert{background:var(--panel);border:2px solid var(--ink);padding:0 var(--s3) var(--s3);margin:var(--s5) 0 0;max-width:34rem}.alert h2{border-top:0;margin:var(--s2) 0;font-size:1.25rem;border-bottom:8px solid var(--ink);padding-bottom:var(--s1)}
+.alert fieldset{border:0;padding:0;margin:0 0 var(--s2)}.alert .ck{display:block;padding:.2rem 0;font-weight:700}.alert .row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}.alert .row .ml{flex-basis:100%}
+.alert input[type=email]{flex:1 1 14rem;font:700 1rem var(--f);padding:.6rem;border:2px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:0}.alert button{font:900 .95rem var(--f);text-transform:uppercase;letter-spacing:.04em;padding:.65rem 1rem;border:2px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:0;cursor:pointer}
+.alert [disabled]{opacity:.55;cursor:not-allowed}.alert .st{min-height:1.2em;margin:.4rem 0 0;font-weight:700}
 footer{border-top:8px solid var(--ink);background:var(--panel);padding:var(--s4) 0;font-size:.875rem;color:var(--muted)}
 footer a{color:var(--ink)}
 @media(max-width:600px){.tag{display:none}.hide-s{display:none}td,th{padding:.45rem .3rem}}
@@ -86,7 +90,7 @@ PAGES=[]
 SLUGS=set()
 COUNTRY={'US':'United States','UK':'United Kingdom','DE':'Germany','FR':'France','CA':'Canada','AU':'Australia','EU':'Europe','NL':'Netherlands','ES':'Spain','AT':'Austria','IT':'Italy','BR':'Brazil','IN':'India'}
 FLAG={'US':'🇺🇸','UK':'🇬🇧','DE':'🇩🇪','FR':'🇫🇷','CA':'🇨🇦','AU':'🇦🇺','EU':'🇪🇺','NL':'🇳🇱','ES':'🇪🇸','AT':'🇦🇹','IT':'🇮🇹','BR':'🇧🇷','IN':'🇮🇳'}
-NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/about.html', 'About')]
+NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/alerts/', 'Alerts'), ('/about.html', 'About')]
 def slug(x): return re.sub(r"[^a-z0-9]+","-",x.lower().replace("&","and")).strip("-")
 def fmt(v,u): return f"{round(v,1) if v>=10 else round(v,2):g} {u}"
 def disp(s):
@@ -94,6 +98,7 @@ def disp(s):
     if q and re.search(r"\d",q) and len(q)<=28: return q
     return fmt(s["size"],s["unit"])
 def page(path,title,desc,body,ld=None,js=None):
+    if CUR_ALERT: body+=alert_box(CUR_ALERT); CUR_ALERT.clear(); js=(js or '')+ALERT_JS
     ld_s="".join(f'<script type="application/ld+json">{json.dumps(x,ensure_ascii=False)}</script>' for x in (ld or []))
     p=OUT/path; p.parent.mkdir(parents=True,exist_ok=True); url=SITE+"/"+path.replace("index.html","")
     p.write_text(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
@@ -105,6 +110,23 @@ def page(path,title,desc,body,ld=None,js=None):
 f'<main class="w">{body}</main><footer><div class="w"><b style="color:var(--ink)">ShrinkRadar</b> — did it shrink? · Data: Open Food Facts, Open Products Facts, Open Prices (ODbL); documented cases cite their sources. <a href="/feed.xml">RSS</a> · Updated {TODAY}.</div></footer>'
       +(f'<script>{js}</script>' if js else "")+'</body></html>')
     PAGES.append(path)
+CUR_ALERT=[]
+ACFG=json.loads((R/"alerts_config.json").read_text()) if (R/"alerts_config.json").exists() else {}
+ALERTS_API=ACFG.get("api","")  # empty = backend not live -> forms disabled
+def alert_box(scopes,heading="Get an email when it shrinks"):
+    live=bool(ALERTS_API)
+    opts="".join(f'<label class="ck"><input type="checkbox" name="scope" value="{k}:{E(v)}"{" checked" if i==0 else ""}{"" if live else " disabled"}> {E(t)} <span class="m">({k})</span></label>' for i,(k,v,t) in enumerate(scopes))
+    dis="" if live else " disabled"
+    note=('<p class="m">Double opt-in: we email a confirmation link first. One-click unsubscribe in every email. <a href="/alerts/#privacy">Privacy</a>.</p>' if live else
+          '<p class="m"><b>Coming soon.</b> Email alerts are not switched on yet. Follow <a href="/feed.xml">RSS</a> meanwhile. <a href="/alerts/">About alerts</a>.</p>')
+    return (f'<section class="alert" aria-labelledby="al-h"><h2 id="al-h">{E(heading)}</h2><form class="alertf" data-api="{E(ALERTS_API)}"{"" if live else " aria-disabled=\"true\""}>'
+            f'<fieldset{dis}><legend class="ml">Alert me about</legend>{opts}</fieldset>'
+            f'<div class="row"><label class="ml" for="ae">Email</label><input id="ae" type="email" name="email" required autocomplete="email" placeholder="you@example.com"{dis}>'
+            f'<button type="submit"{dis}>Subscribe</button></div><p class="st" role="status" aria-live="polite"></p>{note}</form></section>')
+ALERT_JS="""document.querySelectorAll('form.alertf').forEach(f=>f.addEventListener('submit',async e=>{e.preventDefault();const st=f.querySelector('.st'),api=f.dataset.api;if(!api){st.textContent='Alerts are not live yet.';return}
+const scopes=[...f.querySelectorAll('input[name=scope]:checked')].map(i=>i.value);if(!scopes.length){st.textContent='Pick at least one.';return}
+st.textContent='Sending…';try{const r=await fetch(api+'/subscribe',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({email:f.email.value,scopes,source:location.pathname,hp:f.hp?f.hp.value:''})});
+st.textContent=r.ok?'Check your inbox to confirm.':'Something went wrong. Try again later.'}catch(_){st.textContent='Network error. Try again later.'}}));"""
 def unitp(s): return s["price"]/s["size"]*100 if s.get("price") and s.get("size") else None
 def crumbs(*items):
     return {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":i+1,"name":n,**({"item":SITE+u} if u else {})} for i,(n,u) in enumerate(items)]}
@@ -173,6 +195,7 @@ def main():
             crumbs(("Products","/products/"),(p["category"],f'/categories/{p["cslug"]}.html'),(p["title"],None)),
             {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":f'Did {p["title"]} shrink?',"acceptedAnswer":{"@type":"Answer","text":f"{verdict}. "+re.sub("<[^>]+>","",ans)}}]}]
         size_txt=f' Current size: {fmt(L["size"],L["unit"])}.' if L else ""
+        CUR_ALERT[:]=[('product',p['code'],p['title']),('brand',p['bslug'],p['brand'] or 'Unbranded'),('category',p['cslug'],p['category'])]
         page(f'products/{p["slug"]}.html',f'Did {p["title"]} shrink? Size & price history | {NAME}',
              f'Has {p["title"]} gotten smaller? Daily-tracked package size, price and unit price history.{size_txt}',
              f'<p class="crumbs"><a href="/categories/{p["cslug"]}.html">{E(p["category"])}</a> / <a href="/brands/{p["bslug"]}.html">{E(p["brand"] or "Unbranded")}</a> / <span class="upc">UPC {p["code"]}</span></p>'
@@ -199,6 +222,7 @@ def main():
                +(f' <a href="{E(c["archive_url"])}">Archived copy</a>.' if c.get("archive_url") else "")+(f' {E(c["note"])}' if c.get("note") else "")+'</p></section>'
                +(f'<h2>What the source says</h2><blockquote class="q">“{E(c["evidence"])}”</blockquote>' if c.get("evidence") else "")
                +(('<h2>Also reported by</h2><ul>'+"".join(f'<li><a href="{E(a["url"])}">{E(a["source"])}</a></li>' for a in c["also_reported"])+'</ul>') if c.get("also_reported") else ""))
+        CUR_ALERT[:]=[('brand',slug(c['brand']),c['brand']),('category',slug(c['category']),c['category'])]
         page(f'cases/{c["slug"]}.html',f'Did {c["product"]} shrink? {fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])} | {NAME}',desc,
              f'<p class="crumbs"><a href="/cases/">Known cases</a> / <a href="/categories/{c["cslug"]}.html">{E(c["category"])}</a> / <a href="/brands/{c["bslug"]}.html">{E(c["brand"])}</a></p>'
              f'<h1>Did {E(c["product"])} shrink?</h1>{badge(c["before"],c["after"],c["unit"])}{label}'
@@ -236,6 +260,7 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
             body=f'<p class="crumbs"><a href="/{kind}/">{label}</a></p><h1>Did {E(v["name"])} products shrink?</h1>'
             if v["c"]: body+=f'<h2>Documented cases ({len(v["c"])})</h2><ul class="grid">'+"".join(ccard(c) for c in v["c"])+'</ul>'
             if v["p"]: body+=f'<h2>Tracked daily ({len(v["p"])})</h2><ul class="grid">'+"".join(pcard(p) for p in v["p"])+'</ul>'
+            CUR_ALERT[:]=[('brand' if kind=='brands' else 'category',k,v['name'])]
             page(f'{kind}/{k}.html',f'{v["name"]} shrinkflation: did {v["name"]} products get smaller? | {NAME}',
                  f'{len(v["c"])} documented cases and {len(v["p"])} {v["name"]} products tracked daily for size and unit-price changes.',body,[crumbs((label,f"/{kind}/"),(v["name"],None))])
         page(f'{kind}/index.html',f'Shrinkflation by {label.lower()} | {NAME}',f'Browse shrinkflation tracking by {label.lower()}.',
@@ -254,13 +279,23 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
          [{"@context":"https://schema.org","@type":"WebSite","name":NAME,"url":SITE+"/","potentialAction":{"@type":"SearchAction","target":SITE+"/search.html?q={search_term_string}","query-input":"required name=search_term_string"}},
           {"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/","logo":SITE+"/favicon.svg"}])
     idx=[{"t":p["title"],"u":f'/products/{p["slug"]}.html',"k":p["category"]} for p in prods]+[{"t":c["product"]+" (documented case)","u":f'/cases/{c["slug"]}.html',"k":c["category"]} for c in cases]
+    AI=[{"id":f'f:{p["code"]}:{d}:{t[:4]}',"type":"finding","date":d,"title":p["title"],"text":t,"url":f'{SITE}/products/{p["slug"]}.html',"product":p["code"],"brand":p["bslug"],"category":p["cslug"],"brand_name":p["brand"],"category_name":p["category"]} for d,p,t in findings]
+    AI+=[{"id":"c:"+c["slug"],"type":"case","date":c["when"],"title":c["product"],"text":f'{fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])} ({c["pct"]:.0f}% less) · {COUNTRY.get(c["country"],c["country"])}, {c["when"]}',"url":f'{SITE}/cases/{c["slug"]}.html',"product":None,"brand":slug(c["brand"]),"category":slug(c["category"]),"brand_name":c["brand"],"category_name":c["category"]} for c in cases]
+    (R/"data/alert_items.json").write_text(json.dumps(AI,ensure_ascii=False,indent=0))
     (OUT/"search.json").write_text(json.dumps(idx,ensure_ascii=False))
     page("search.html",f'Search: did my product shrink? | {NAME}','Search tracked products and documented shrinkflation cases.',
          '<h1>Search</h1><label for="q" class="ml">Product, brand or category</label><input id="q" autofocus placeholder="e.g. Doritos, cereal, Charmin"><ul id="res"></ul><noscript>Search needs JavaScript; browse <a href="/products/">products</a> or <a href="/cases/">cases</a>.</noscript>',js=SEARCH_JS)
+    CUR_ALERT[:]=[('all','all','All new findings and documented cases')]
+    page("alerts/index.html",f'Shrinkflation email alerts | {NAME}','Get an email when a product, brand or category you follow shrinks.',
+         '<div class="prose"><h1>Email alerts</h1><p>Follow a product, a brand, a category, or everything. When our daily check logs a size cut or a new documented case matches what you follow, you get one digest email that day. Nothing on days with no news.</p>'
+         '<p>To follow a specific product, brand or category, use the alert box at the bottom of its page. Here you can follow <b>everything</b>.</p>'
+         '<h2 id="how">How it works</h2><ul><li><b>Double opt-in.</b> We send a confirmation link; nothing else is sent until you click it.</li><li><b>Daily digest</b>, at most one email a day.</li><li><b>Manage or unsubscribe</b> from the link in every email (one click, no login).</li><li>Free. A paid tier with extras (instant alerts, CSV) may come later. Free alerts stay free.</li></ul>'
+         '<h2 id="privacy">Privacy</h2><p>We store your email address, what you follow, and when you confirmed. Nothing else: no tracking pixels and no link tracking. Email is delivered by our email provider only to send alerts. We never sell or share addresses. Unsubscribing deletes what you follow; unconfirmed sign-ups are deleted after 7 days. To have your data erased, use the manage link.</p></div>',
+         [crumbs(("Alerts",None))])
     page("about.html",f'About & methodology | {NAME}','How ShrinkRadar tracks shrinkflation: sources, method and corrections.',
          '<div class="prose"><h1>About ShrinkRadar</h1><p>ShrinkRadar answers one question: <i>did it shrink?</i> We check a fixed list of everyday products daily. Net quantity comes from Open Food Facts / Open Products Facts; prices come from the crowdsourced Open Prices database (most recent US price). We only publish values we actually fetched — missing data is shown as missing, never estimated.</p>'
          '<p>A <b>finding</b> is logged when a newer check shows a smaller net quantity in the same unit, or a higher price per 100 g/ml.</p><p><b>Known cases</b> are historical before/after size cuts compiled from Verbraucherzentrale Hamburg’s Mogelpackungsliste, the Mouse Print* archive (Edgar Dworsky), Which?, CHOICE, CBC, foodwatch, Consumer Reports, LendingTree’s Wayback-Machine study, the U.S. Senate/USW report, news outlets and Wikipedia. Each case shows the source we fetched and a quote of what it says; cases we could not verify are left out.</p>'
-         '<p>Spotted a shrink? Corrections and tips are welcome.</p></div>',[{"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/"}])
+         '<h2 id="privacy">Privacy &amp; email alerts</h2><p>No ads, cookies or analytics trackers. Email alerts (when live) store only your address, what you follow and the confirmation time. Double opt-in, one-click unsubscribe, never shared or sold. <a href="/alerts/#privacy">Details</a>.</p><p>Spotted a shrink? Corrections and tips are welcome.</p></div>',[{"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/"}])
     # RSS: findings + cases
     items=[(d,f'{p["title"]}: {t}',f'{SITE}/products/{p["slug"]}.html') for d,p,t in findings[:50]]+[(TODAY if not findings else findings[-1][0],f'Known case: {c["product"]} {fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])}',f'{SITE}/cases/{c["slug"]}.html') for c in cases]
     rss="".join(f'<item><title>{E(t)}</title><link>{u}</link><guid>{u}</guid><pubDate>{format_datetime(datetime.datetime.fromisoformat(d).replace(tzinfo=datetime.timezone.utc))}</pubDate></item>' for d,t,u in items)

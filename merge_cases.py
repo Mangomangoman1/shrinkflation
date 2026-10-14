@@ -38,7 +38,7 @@ for f,tag in src:
         out[key]=c
 FIX={"costcotuna":"Kirkland tuna (Costco)","tropicana":"Tropicana orange juice","Tide 84 oz to 80 oz":"Tide","Tostitos Hint of …":"Tostitos Hint of Guacamole","Turkey Hill ice cream changes":"Turkey Hill ice cream","Publix Baby Shampoo":"Johnson's Baby Shampoo"}
 DROP={"Jif still 18 oz.","Cinemark 24 oz cup"}
-CAT=[("Toilet Paper",r"toilet|bath tissue|toilettenpapier|charmin|cottonelle|quilted northern|angel soft|mega roll"),("Paper Towels",r"paper towel|küchenrolle|kitchen roll"),("Tissues",r"tissue|taschentücher|kleenex|puffs"),
+CAT=[("Toilet Paper",r"toilet|bath tissue|toilettenpapier|charmin|cottonelle|quilted northern|angel soft|mega roll"),("Paper Towels",r"paper towel|küchenrolle|kitchen roll"),("Tissues",r"tissue|taschentücher|kleenex|kosmetikt|^puffs$|puffs (facial|tissue)"),
 ("Laundry",r"detergent|laundry|fabric|softener|waschmittel|weichspüler|downy|tide|gain|persil|comfort|vernel|ariel"),("Dish & Cleaning",r"dish|dawn|spülmittel|cleaner|reiniger|wipes|swiffer|febreze|lysol|somat|finish|jif cream|air fresh"),
 ("Oral Care",r"tooth|zahn|crest|colgate|listerine|mouthwash|aquafresh|sensodyne"),("Personal Care",r"shampoo|body wash|soap|duschgel|dusch|deodorant|deo|seife|lotion|creme|tresemme|dove body"),
 ("Coffee & Tea",r"coffee|kaffee|tea\b|tee\b|k-cups|nescaf|folgers|maxwell|peet|jacobs|pg tips"),("Juice & Drinks",r"juice|saft|orange juice|tropicana|simply orange|drink|gatorade|powerade|cola|limo|sirup|syrup|wasser|water|beer|bier|eistee"),
@@ -70,6 +70,8 @@ for c in cases:
     if c.get("category")=="Other":
         for k,v in CATFIX.items():
             if any(w.lower() in c["product"].lower() for w in v): c["category"]=k;break
+for c in cases:
+    if c["brand"]=="Puffs": c["category"]="Tissues"
 json.dump(cases,open("data/cases.json","w"),indent=1,ensure_ascii=False)
 import collections
 print(len(cases),collections.Counter(c["source_tag"] for c in cases),collections.Counter(c["country"] for c in cases))

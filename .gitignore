@@ -2,3 +2,5 @@ baseline.log
 expand.log
 check.log
 __pycache__/
+alerts/out/
+alerts.log

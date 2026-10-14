@@ -1,0 +1,15 @@
+name = "shrinkradar-alerts"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+routes = [{ pattern = "alerts.shrinkradar.com", custom_domain = true }]
+[[d1_databases]]
+binding = "DB"
+database_name = "shrinkradar-alerts"
+database_id = "REPLACE_WITH_D1_ID"   # from: wrangler d1 create shrinkradar-alerts
+[vars]
+SITE = "https://shrinkradar.com"
+FROM = "ShrinkRadar Alerts <alerts@mail.shrinkradar.com>"
+FREE_MAX_SUBS = "25"
+# secrets (wrangler secret put): RESEND_API_KEY, ADMIN_TOKEN
+[triggers]
+crons = ["17 3 * * *"]
