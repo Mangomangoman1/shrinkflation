@@ -551,5 +551,775 @@
   "brand": "Brawny",
   "category": "Paper Towels",
   "db": "opf"
+ },
+ {
+  "code": "20621483",
+  "name": "Special Flakes Bran Flakes",
+  "brand": "Crownfield",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0096619194261",
+  "name": "Ancient Grains Probiotic Granola",
+  "brand": "Kirkland Signature",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0016000264694",
+  "name": "Oats 'N Honey Granola Bars",
+  "brand": "Nature Valley",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0058449770565",
+  "name": "Pumpkin Seed + Flax Granola",
+  "brand": "Nature's Path Organic",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0884912004710",
+  "name": "grape-nuts cereal",
+  "brand": "Post",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0016000275263",
+  "name": "Cheerios",
+  "brand": "General Mills",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0016000170032",
+  "name": "Cheerios",
+  "brand": "General Mills",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "6111018903161",
+  "name": "Nescaf\u00e9 Classic",
+  "brand": "Nescaf\u00e9",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "6111101001361",
+  "name": "Asta",
+  "brand": "Asta",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "3261342002108",
+  "name": "Pur Arabica Moulu biologique",
+  "brand": "Caf\u00e9s M\u00e9o",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "7501059285118",
+  "name": "COFFEE MATE AVELLANA",
+  "brand": "Nestl\u00e9",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0028000743079",
+  "name": "Coffee",
+  "brand": "Nescaf\u00e9",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "20084035",
+  "name": "Family Cappuccino Chocolate",
+  "brand": "Lidl",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "8690627023500",
+  "name": "Turkish Coffee",
+  "brand": "Kurukahveci",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0028000466312",
+  "name": "NESCAF\u00c9 CL\u00c1SICO",
+  "brand": "NESCAF\u00c9",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0074471000500",
+  "name": "Caf\u00e9 Espresso Molido",
+  "brand": "Caf\u00e9 Bustelo",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0025500304014",
+  "name": "Classic Roast (Medium) Coffee",
+  "brand": "Folgers",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0074471017201",
+  "name": "Caf\u00e9 Espresso Molido",
+  "brand": "Caf\u00e9 Bustelo",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0025500304076",
+  "name": "Classic Roast",
+  "brand": "Folgers",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0762111184016",
+  "name": "Pike Place Medium Roast",
+  "brand": "Starbucks",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0096619177677",
+  "name": "Colombian Coffee",
+  "brand": "Kirkland Signature",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0025500304199",
+  "name": "Coffee",
+  "brand": "Folgers",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0810063343040",
+  "name": "Dark Roast Ground",
+  "brand": "Death Wish Coffee Co",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0028000553609",
+  "name": "Taster's Choice French Roast",
+  "brand": "Nescafe",
+  "category": "Instant Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0028000192174",
+  "name": "NESCAF\u00c9 GOLD ESPRESSO BLONDE",
+  "brand": "NESCAF\u00c9",
+  "category": "Instant Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0028000593933",
+  "name": "Taster's Choice House Blend",
+  "brand": "Nescafe",
+  "category": "Instant Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0025500000886",
+  "name": "Classic Decaf",
+  "brand": "Folgers",
+  "category": "Instant Coffees",
+  "db": "off"
+ },
+ {
+  "code": "8901030373930",
+  "name": "Bru gold",
+  "brand": "Bru",
+  "category": "Instant Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0078742259314",
+  "name": "Great Value Premium Instant Coffee",
+  "brand": "Great Value",
+  "category": "Instant Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0028000542313",
+  "name": "Cl\u00e1sico Decaf",
+  "brand": "Nescafe",
+  "category": "Instant Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0025500200835",
+  "name": "Folgers  classic roast coffe",
+  "brand": "",
+  "category": "Instant Coffees",
+  "db": "off"
+ },
+ {
+  "code": "8076809523509",
+  "name": "P\u00e2tes linguine collezione 500g",
+  "brand": "Barilla",
+  "category": "Pastas",
+  "db": "off"
+ },
+ {
+  "code": "8076800195019",
+  "name": "2 x Capellini Nr. 1",
+  "brand": "Barilla",
+  "category": "Pastas",
+  "db": "off"
+ },
+ {
+  "code": "8801073113893",
+  "name": "Carboana Buldak Spicy Ramen",
+  "brand": "Samyang",
+  "category": "Pastas",
+  "db": "off"
+ },
+ {
+  "code": "8008343200059",
+  "name": "Spaghetti grossi - No. 5",
+  "brand": "Rummo",
+  "category": "Pastas",
+  "db": "off"
+ },
+ {
+  "code": "0041789002113",
+  "name": "Ramen Noodle Soup Chicken Flavor",
+  "brand": "Maruchan",
+  "category": "Pastas",
+  "db": "off"
+ },
+ {
+  "code": "3038350013804",
+  "name": "Penne rigate qualit\u00e9 sup\u00e9rieure 500g",
+  "brand": "Panzani",
+  "category": "Pastas",
+  "db": "off"
+ },
+ {
+  "code": "0021000658831",
+  "name": "mac & cheese",
+  "brand": "Kraft",
+  "category": "Pastas",
+  "db": "off"
+ },
+ {
+  "code": "8402001010200",
+  "name": "Spaghetti integral",
+  "brand": "Hacendado",
+  "category": "Pastas",
+  "db": "off"
+ },
+ {
+  "code": "0044000081201",
+  "name": "Toasted Chips",
+  "brand": "Ritz",
+  "category": "Chips",
+  "db": "off"
+ },
+ {
+  "code": "7802000020186",
+  "name": "Doritos Sabor Queso M\u00e1s Intenso",
+  "brand": "Doritos",
+  "category": "Chips",
+  "db": "off"
+ },
+ {
+  "code": "0722252101204",
+  "name": "ClifBar Crunchy Peanut Butter",
+  "brand": "Clif",
+  "category": "Granola Bars",
+  "db": "off"
+ },
+ {
+  "code": "0096619313952",
+  "name": "Granola Bar",
+  "brand": "Soft & Chewy",
+  "category": "Granola Bars",
+  "db": "off"
+ },
+ {
+  "code": "0096619215607",
+  "name": "Nut Bars with Cocoa Drizzle & Sea Salt",
+  "brand": "Kirkland Signature",
+  "category": "Granola Bars",
+  "db": "off"
+ },
+ {
+  "code": "0016000442825",
+  "name": "Sweet & Salty Nut Peanut Chewy Granola Bar",
+  "brand": "Nature Valley",
+  "category": "Granola Bars",
+  "db": "off"
+ },
+ {
+  "code": "0687456213064",
+  "name": "ORGANIC CHEWY GRANOLA BARS mixed berry",
+  "brand": "MADEGOOD",
+  "category": "Granola Bars",
+  "db": "off"
+ },
+ {
+  "code": "0687456221045",
+  "name": "Organic Granola Bites",
+  "brand": "Made Good",
+  "category": "Granola Bars",
+  "db": "off"
+ },
+ {
+  "code": "0602652419294",
+  "name": "breakfast protein Almond Butter",
+  "brand": "KIND",
+  "category": "Granola Bars",
+  "db": "off"
+ },
+ {
+  "code": "0602652419300",
+  "name": "breakfast protein Dark Chocolate Cocoa",
+  "brand": "KIND",
+  "category": "Granola Bars",
+  "db": "off"
+ },
+ {
+  "code": "0099482491536",
+  "name": "Four Cheese Thin Crust Pizza",
+  "brand": "365 Whole Foods Market",
+  "category": "Frozen Pizzas",
+  "db": "off"
+ },
+ {
+  "code": "0022000159335",
+  "name": "ALTOIDS Curiously Strong Mints Peppermint",
+  "brand": "Altoids",
+  "category": "Candies",
+  "db": "off"
+ },
+ {
+  "code": "7622210303646",
+  "name": "Daim",
+  "brand": "Daim",
+  "category": "Candies",
+  "db": "off"
+ },
+ {
+  "code": "5060384263076",
+  "name": "Sour Shox",
+  "brand": "Candy Kittens",
+  "category": "Candies",
+  "db": "off"
+ },
+ {
+  "code": "4014400926279",
+  "name": "Mamba",
+  "brand": "Mamba",
+  "category": "Candies",
+  "db": "off"
+ },
+ {
+  "code": "8801069402451",
+  "name": "Strawberry & Cream",
+  "brand": "Chupa Chups",
+  "category": "Candies",
+  "db": "off"
+ },
+ {
+  "code": "0034856890089",
+  "name": "Fruit Snacks",
+  "brand": "Welch's",
+  "category": "Candies",
+  "db": "off"
+ },
+ {
+  "code": "03400704",
+  "name": "Ice Breakers Cool Mint",
+  "brand": "Hershey",
+  "category": "Candies",
+  "db": "off"
+ },
+ {
+  "code": "0873983000028",
+  "name": "hi-chew",
+  "brand": "Morinaga",
+  "category": "Candies",
+  "db": "off"
+ },
+ {
+  "code": "6111246721261",
+  "name": "Fromage Blanc Nature",
+  "brand": "Milky Food Professional",
+  "category": "Cheeses",
+  "db": "off"
+ },
+ {
+  "code": "6111242106949",
+  "name": "Jben",
+  "brand": "Jaouda",
+  "category": "Cheeses",
+  "db": "off"
+ },
+ {
+  "code": "6111246721278",
+  "name": "Cream cheese",
+  "brand": "Original",
+  "category": "Cheeses",
+  "db": "off"
+ },
+ {
+  "code": "6111203006653",
+  "name": "La Hollandaise Cheddar",
+  "brand": "la Hollandaise",
+  "category": "Cheeses",
+  "db": "off"
+ },
+ {
+  "code": "6111246722039",
+  "name": "fromage herbes milky food",
+  "brand": "milky foof",
+  "category": "Cheeses",
+  "db": "off"
+ },
+ {
+  "code": "3161711000622",
+  "name": "Caprice des Dieux",
+  "brand": "Caprice des dieux",
+  "category": "Cheeses",
+  "db": "off"
+ },
+ {
+  "code": "3073781141429",
+  "name": "Kiri 7.5g protein creamy cheese with fresh yogurt greek style",
+  "brand": "Kiri",
+  "category": "Cheeses",
+  "db": "off"
+ },
+ {
+  "code": "0021000612239",
+  "name": "Cream Cheese",
+  "brand": "Philadelphia",
+  "category": "Cheeses",
+  "db": "off"
+ },
+ {
+  "code": "5025125000006",
+  "name": "White Ciabattin",
+  "brand": "Jason's Sourdough",
+  "category": "Breads",
+  "db": "off"
+ },
+ {
+  "code": "13356194",
+  "name": "SPICY CHICKEN & 'NDUJA PIZZA",
+  "brand": "",
+  "category": "Breads",
+  "db": "off"
+ },
+ {
+  "code": "3228850006035",
+  "name": "Pain de mie longue conservation",
+  "brand": "Harrys",
+  "category": "Breads",
+  "db": "off"
+ },
+ {
+  "code": "5025125000129",
+  "name": "JASON'S SOURDOUGH",
+  "brand": "JASON'S SOURDOUGH",
+  "category": "Breads",
+  "db": "off"
+ },
+ {
+  "code": "0013764027053",
+  "name": "Organic Bread 21 Whole Grains and Seeds",
+  "brand": "Dave's Killer Bread",
+  "category": "Breads",
+  "db": "off"
+ },
+ {
+  "code": "0013764027138",
+  "name": "THIN-SLICED",
+  "brand": "Dave\u2019s Killer Bread",
+  "category": "Breads",
+  "db": "off"
+ },
+ {
+  "code": "8710637105390",
+  "name": "Wraps Multigrains",
+  "brand": "Gruma Netherlands B.V.",
+  "category": "Breads",
+  "db": "off"
+ },
+ {
+  "code": "3228857001491",
+  "name": "Harrys pain de mie extra moelleux complet sans sucres ajout\u00e9s 500g",
+  "brand": "Harrys",
+  "category": "Breads",
+  "db": "off"
+ },
+ {
+  "code": "6111184004129",
+  "name": "Mayonnaise recette originale",
+  "brand": "Star",
+  "category": "Sauces",
+  "db": "off"
+ },
+ {
+  "code": "6111184004730",
+  "name": "Ketchup star",
+  "brand": "Star",
+  "category": "Sauces",
+  "db": "off"
+ },
+ {
+  "code": "8715700407760",
+  "name": "Tomato Ketchup BIO",
+  "brand": "H.J. Heinz B.V.",
+  "category": "Sauces",
+  "db": "off"
+ },
+ {
+  "code": "0078895126396",
+  "name": "Premium Soy Sauce",
+  "brand": "Lee Kum Kee",
+  "category": "Sauces",
+  "db": "off"
+ },
+ {
+  "code": "3270190136880",
+  "name": "Moutarde de Dijon",
+  "brand": "Carrefour BIO",
+  "category": "Sauces",
+  "db": "off"
+ },
+ {
+  "code": "0747479000413",
+  "name": "Marinara",
+  "brand": "Rao's Homemade",
+  "category": "Sauces",
+  "db": "off"
+ },
+ {
+  "code": "0097339000054",
+  "name": "Mexican hot sauce",
+  "brand": "Salsa Tamazula S.A. De C.V.",
+  "category": "Sauces",
+  "db": "off"
+ },
+ {
+  "code": "0815074022809",
+  "name": "Classic Mayo",
+  "brand": "Chosen Foods",
+  "category": "Sauces",
+  "db": "off"
+ },
+ {
+  "code": "00550246",
+  "name": "Dark Chocolate covered Honey Grahams with Sea Salt",
+  "brand": "Trader Joe's",
+  "category": "Crackers",
+  "db": "off"
+ },
+ {
+  "code": "0850046663079",
+  "name": "CRACKERS - SEA SALT",
+  "brand": "TOP SEEDZ",
+  "category": "Crackers",
+  "db": "off"
+ },
+ {
+  "code": "0810021671994",
+  "name": "Sweet Thins Honey Cinnamon",
+  "brand": "Simple Mills",
+  "category": "Crackers",
+  "db": "off"
+ },
+ {
+  "code": "0850064476262",
+  "name": "Original Crackers",
+  "brand": "Mary's Gone Crackers",
+  "category": "Crackers",
+  "db": "off"
+ },
+ {
+  "code": "02505901",
+  "name": "Apple Juice",
+  "brand": "Minute Maid",
+  "category": "Juices",
+  "db": "off"
+ },
+ {
+  "code": "0014800925340",
+  "name": "Mott's tomato juice",
+  "brand": "Mott's",
+  "category": "Juices",
+  "db": "off"
+ },
+ {
+  "code": "0657622721006",
+  "name": "Pomegranate Blue",
+  "brand": "Honest Ade",
+  "category": "Juices",
+  "db": "off"
+ },
+ {
+  "code": "0697068120278",
+  "name": "Ultimate Immune Drink",
+  "brand": "Uncle Matt's Organic",
+  "category": "Juices",
+  "db": "off"
+ },
+ {
+  "code": "0030304600323",
+  "name": "100% Fresh Squeezed Orange Juice",
+  "brand": "",
+  "category": "Juices",
+  "db": "off"
+ },
+ {
+  "code": "0020500901089",
+  "name": "Juice Bowl Fruit Juice",
+  "brand": "Juice Bowl",
+  "category": "Juices",
+  "db": "off"
+ },
+ {
+  "code": "0041755001317",
+  "name": "Grape",
+  "brand": "Langers",
+  "category": "Juices",
+  "db": "off"
+ },
+ {
+  "code": "0041152290055",
+  "name": "Clement Pappas Orange Juice",
+  "brand": "Clement Pappas & Co.",
+  "category": "Juices",
+  "db": "off"
+ },
+ {
+  "code": "0180999001001",
+  "name": "Popcorn Himalayan Pink Salt",
+  "brand": "Lesser Evil",
+  "category": "Popcorn",
+  "db": "off"
+ },
+ {
+  "code": "0850251004018",
+  "name": "Original Popcorn",
+  "brand": "Skinny Pop",
+  "category": "Popcorn",
+  "db": "off"
+ },
+ {
+  "code": "0850251004643",
+  "name": "ORIGINAL POPCORN",
+  "brand": "SKINNY POP",
+  "category": "Popcorn",
+  "db": "off"
+ },
+ {
+  "code": "0850045947576",
+  "name": "Popcorn",
+  "brand": "Lesser Evil Snacks",
+  "category": "Popcorn",
+  "db": "off"
+ },
+ {
+  "code": "0818780011938",
+  "name": "Sweet & Salty Kettle Corn",
+  "brand": "Boom Chicka Pop",
+  "category": "Popcorn",
+  "db": "off"
+ },
+ {
+  "code": "20042431",
+  "name": "Mikrowellen Popcorn salzig",
+  "brand": "Snaktastic",
+  "category": "Popcorn",
+  "db": "off"
+ },
+ {
+  "code": "0818780013000",
+  "name": "Sweet & Salty Kettle Corn",
+  "brand": "Angie's Boom Chicka Pop",
+  "category": "Popcorn",
+  "db": "off"
+ },
+ {
+  "code": "0027000488058",
+  "name": "WHOLE GRAIN POPPING CORN",
+  "brand": "CONAGRA BRANDS",
+  "category": "Popcorn",
+  "db": "off"
+ },
+ {
+  "code": "0071100005516",
+  "name": "The Original Ranch Condiment & Dressing",
+  "brand": "Hidden Valley",
+  "category": "Salad Dressings",
+  "db": "off"
+ },
+ {
+  "code": "0021000026494",
+  "name": "Miracle Whip Dressing",
+  "brand": "Miracle Whip",
+  "category": "Salad Dressings",
+  "db": "off"
+ },
+ {
+  "code": "0863699000146",
+  "name": "Ranch Dressing & Marinade",
+  "brand": "Primal Kitchen",
+  "category": "Salad Dressings",
+  "db": "off"
+ },
+ {
+  "code": "0071100005783",
+  "name": "THE ORIGINAL Ranch ORIGINAL RANCH",
+  "brand": "Hidden Valley",
+  "category": "Salad Dressings",
+  "db": "off"
+ },
+ {
+  "code": "8715700125886",
+  "name": "Salad Cream",
+  "brand": "Heinz",
+  "category": "Salad Dressings",
+  "db": "off"
+ },
+ {
+  "code": "0041321005756",
+  "name": "Ranch Dressing",
+  "brand": "Wish-Bone",
+  "category": "Salad Dressings",
+  "db": "off"
+ },
+ {
+  "code": "0071100213997",
+  "name": "Ranch Plant Powered Topping & Dressing",
+  "brand": "Hidden Valley",
+  "category": "Salad Dressings",
+  "db": "off"
+ },
+ {
+  "code": "0815074022830",
+  "name": "Classic Ranch Dressing & Dip",
+  "brand": "Chosen Foods",
+  "category": "Salad Dressings",
+  "db": "off"
  }
 ]

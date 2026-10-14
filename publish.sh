@@ -8,4 +8,4 @@ gh repo view "$REPO" >/dev/null 2>&1 || gh repo create "$REPO" --public --source
 git push origin main
 git subtree split --prefix site -b gh-pages-tmp && git push -f origin gh-pages-tmp:gh-pages && git branch -D gh-pages-tmp
 gh api -X POST "repos/$REPO/pages" -f "source[branch]=gh-pages" -f "source[path]=/" 2>/dev/null || echo "Pages already enabled"
-echo "Live soon at https://mangomangoman1.github.io/shrinkflation/ (set SITE in build_site.py; add site/CNAME for custom domain)"
+echo "Published: https://shrinkradar.com/"; python3 indexnow.py || echo "IndexNow submit failed (non-fatal)"
