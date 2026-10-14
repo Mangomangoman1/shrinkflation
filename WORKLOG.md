@@ -37,3 +37,9 @@
 - "Other" category: 0 (regex + CATFIX overrides for NL/IT/ES names). Added NL/ES/AT/IT/BR/IN to country maps.
 - Not done: Wayback mining. Inaccessible: Korea KCA (IP block/queue; Yonhap/Donga fetch failed), RadarSuper 429, CB 2022/2023 404, Reddit, G1 category-only.
 - Published, IndexNow 200 (1635 URLs).
+
+## 2026-10-14 — email alerts (built, not live)
+- Stack: Cloudflare Worker + D1 + Resend (alerts/). Double opt-in, manage, RFC 8058 one-click unsubscribe, free/pro plan column, idempotent daily sends.
+- The site has alert boxes on product, case, brand and category pages, plus /alerts/ (follow everything) and a privacy section on About. They stay disabled ("Coming soon") until alerts_config.json sets the API.
+- daily.sh runs alerts/digest.py, a dry run by default. Baseline: 671 items. Sample email: design-shots/alert-email.png.
+- Fix: Cocoa Puffs and Reese's Puffs were categorised as Tissues; they are now Breakfast Cereals.
