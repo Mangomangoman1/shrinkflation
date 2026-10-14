@@ -64,6 +64,9 @@ blockquote.q{margin:0;padding:var(--s3);background:var(--panel);border-left:4px 
 .alert fieldset{border:0;padding:0;margin:0 0 var(--s2)}.alert .ck{display:block;padding:.2rem 0;font-weight:700}.alert .row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}.alert .row .ml{flex-basis:100%}
 .alert input[type=email]{flex:1 1 14rem;font:700 1rem var(--f);padding:.6rem;border:2px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:0}.alert button{font:900 .95rem var(--f);text-transform:uppercase;letter-spacing:.04em;padding:.65rem 1rem;border:2px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:0;cursor:pointer}
 .alert [disabled]{opacity:.55;cursor:not-allowed}.alert .st{min-height:1.2em;margin:.4rem 0 0;font-weight:700}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:var(--s3);margin:var(--s3) 0}.calc fieldset{border:2px solid var(--ink);background:var(--panel);margin:0;padding:var(--s2) var(--s3) var(--s3)}.calc legend{padding:0 .3rem;background:var(--panel)}
+.calc label{display:block;font-weight:700;font-size:.875rem;margin-top:var(--s2)}.calc input,.calc select{display:block;width:100%;margin-top:.2rem;font:700 1.15rem var(--f);padding:.55rem .6rem;border:2px solid var(--ink);border-radius:0;background:var(--paper);color:var(--ink)}
+.label .big.no{color:var(--ok)}.label .big.yes{color:var(--sig)}[hidden]{display:none!important}
 footer{border-top:8px solid var(--ink);background:var(--panel);padding:var(--s4) 0;font-size:.875rem;color:var(--muted)}
 footer a{color:var(--ink)}
 @media(max-width:600px){.tag{display:none}.hide-s{display:none}td,th{padding:.45rem .3rem}}
@@ -90,7 +93,7 @@ PAGES=[]
 SLUGS=set()
 COUNTRY={'US':'United States','UK':'United Kingdom','DE':'Germany','FR':'France','CA':'Canada','AU':'Australia','EU':'Europe','NL':'Netherlands','ES':'Spain','AT':'Austria','IT':'Italy','BR':'Brazil','IN':'India'}
 FLAG={'US':'🇺🇸','UK':'🇬🇧','DE':'🇩🇪','FR':'🇫🇷','CA':'🇨🇦','AU':'🇦🇺','EU':'🇪🇺','NL':'🇳🇱','ES':'🇪🇸','AT':'🇦🇹','IT':'🇮🇹','BR':'🇧🇷','IN':'🇮🇳'}
-NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/alerts/', 'Alerts'), ('/about.html', 'About')]
+NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/worst/', 'Worst offenders'), ('/calculator/', 'Calculator'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/alerts/', 'Alerts'), ('/about.html', 'About')]
 def slug(x): return re.sub(r"[^a-z0-9]+","-",x.lower().replace("&","and")).strip("-")
 def fmt(v,u): return f"{round(v,1) if v>=10 else round(v,2):g} {u}"
 def disp(s):
@@ -130,6 +133,44 @@ st.textContent=r.ok?'Check your inbox to confirm.':'Something went wrong. Try ag
 def unitp(s): return s["price"]/s["size"]*100 if s.get("price") and s.get("size") else None
 def crumbs(*items):
     return {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":i+1,"name":n,**({"item":SITE+u} if u else {})} for i,(n,u) in enumerate(items)]}
+UNITFIX={"Stück":"pieces","Waschladungen":"loads","luiers":"diapers","grams":"g","L":"l","Waschgänge":"loads"}
+def fix_case(c):
+    """Display-level clean-up of merged cases (brand mis-detections, foreign unit words)."""
+    pr=c["product"].strip(); w=pr.split()
+    if c.get("brand")=="All" and not pr.lower().startswith("all "): c["brand"]=w[0]
+    if (c.get("brand") or "").endswith(".") and len(w)>1 and w[0]==c["brand"]: c["brand"]=" ".join(w[:2])
+    c["unit"]=UNITFIX.get(c["unit"],c["unit"])
+def money(s):
+    """'0,49 €' / '€1,29' / '$3.99' / '£1.25' -> (0.49,'€'); None if unparseable."""
+    if not s: return None
+    t=str(s); cur=next((k for k in "€£$" if k in t),"")
+    m=re.search(r"\d+(?:[.,]\d{1,2})?",t.replace(" ",""))
+    if not m: return None
+    v=float(m.group().replace(",",".")); return (v,cur) if v>0 else None
+def calc_url(c):
+    q={"b":f'{c["before"]:g}',"a":f'{c["after"]:g}',"u":c["unit"]}
+    a,b=money(c.get("old_price")),money(c.get("new_price"))
+    if a and b and a[1]==b[1]: q.update(pb=f"{a[0]:.2f}",pa=f"{b[0]:.2f}",c=a[1])
+    from urllib.parse import urlencode
+    return E("/calculator/?"+urlencode(q))
+def real_change(c):
+    """Per-unit price change in % using the case's old/new shelf price, or None."""
+    a,b=money(c.get("old_price")),money(c.get("new_price"))
+    if not a or not b or a[1]!=b[1]: return None
+    return ((b[0]/c["after"])/(a[0]/c["before"])-1)*100
+CALC_JS="""(()=>{const $=i=>document.getElementById(i),F=['b','pb','a','pa','u','c'],o=$('out'),P=new URLSearchParams(location.search);
+F.forEach(k=>{if(P.get(k))$(k).value=P.get(k)});const n=v=>parseFloat(String(v).replace(',','.'));
+const f=(x,d=2)=>x.toLocaleString('en-US',{minimumFractionDigits:d,maximumFractionDigits:d});const t=(i,v)=>{$(i).textContent=v};
+const go=()=>{const b=n($('b').value),a=n($('a').value),pb=n($('pb').value),pa=n($('pa').value),u=$('u').value.trim()||'unit',c=$('c').value;
+const q=new URLSearchParams();F.forEach(k=>{if($(k).value)q.set(k,$(k).value)});history.replaceState(null,'',q.toString()?'?'+q:location.pathname);
+if(!(b>0&&a>0)){o.hidden=true;return}o.hidden=false;const cut=(1-a/b)*100;
+t('r-cut',(cut>0?'−':'+')+f(Math.abs(cut),1)+'%');t('r-same',(b/a-1>=0?'+':'−')+f(Math.abs(b/a-1)*100,1)+'%');
+const hp=pb>0,np=hp?(pa>0?pa:pb):0;document.querySelectorAll('.np').forEach(e=>e.hidden=!hp);
+let v;if(hp){const k=/^(g|ml)$/i.test(u)?100:1,ul=(k>1?'100 ':'')+u,ub=pb/b*k,ua=np/a*k,ch=(ua/ub-1)*100;t('r-ub',c+f(ub,ub<1?3:2)+' / '+ul);t('r-ua',c+f(ua,ua<1?3:2)+' / '+ul);
+t('r-real',(ch>=0?'+':'−')+f(Math.abs(ch),1)+'%');t('r-fair',c+f(pb*a/b));$('r-real').className='big np '+(ch>0.05?'yes':'no');
+v=ch>0.05?`You get ${f(Math.abs(cut),1)}% ${cut>=0?'less':'more'} for ${np>=pb?f((np/pb-1)*100,1)+'% more':f((1-np/pb)*100,1)+'% less'} money: a real price rise of ${f(ch,1)}% per ${u}. At the old rate the new pack would cost ${c}${f(pb*a/b)}.`:`Per ${u} this is not more expensive than before (${f(ch,1)}%).`}
+else v=cut>0?`If the price stayed the same, you now pay ${f((b/a-1)*100,1)}% more per ${u}. Add the prices to see the real change.`:'The pack did not get smaller.';t('verdict',v)};
+F.forEach(k=>$(k).addEventListener('input',go));go()})();"""
 def main():
     if OUT.exists(): shutil.rmtree(OUT)
     OUT.mkdir(); (OUT/"style.css").write_text(CSS)
@@ -141,10 +182,11 @@ def main():
         p["title"]=(p["name"] if p["brand"].lower() in p["name"].lower() else f'{p["brand"]} {p["name"]}').strip()
         p["slug"]=slug(p["title"])[:60]+"-"+p["code"][-6:]; p["bslug"]=slug(p["brand"] or "unbranded"); p["cslug"]=slug(p["category"])
     for c in cases:
+        fix_case(c)
         c["when"]=str(c.get("when") or "n/d"); c["country"]=c.get("country") or "US"; c["year"]=(re.findall(r"(?:19|20)\d\d",c["when"]) or ["n/d"])[-1]
         base=slug(c["product"]+"-"+c["country"]+"-"+c["when"])[:80]; c["slug"]=base; k=2
         while c["slug"] in SLUGS: c["slug"]=f"{base}-{k}"; k+=1
-        SLUGS.add(c["slug"]); c["bslug"]=slug(c["brand"]); c["cslug"]=slug(c["category"]); c["pct"]=(1-c["after"]/c["before"])*100
+        SLUGS.add(c["slug"]); c["bslug"]=slug(c["brand"]); c["cslug"]=slug(c["category"]); c["pct"]=(1-c["after"]/c["before"])*100; c["real"]=real_change(c)
     findings=[]
     for p in prods:
         ok=[s for s in by.get(p["code"],[]) if s.get("size")]
@@ -215,11 +257,12 @@ def main():
                f'<div class="row"><span>Hidden unit-price rise at same price</span><b>+{(c["before"]/c["after"]-1)*100:.1f}%</b></div>'
                f'<div class="row"><span>When</span><b>{E(c["when"])}</b></div>'
                f'<div class="row"><span>Country</span><b>{E(COUNTRY.get(c["country"],c["country"]))}</b></div>'
-               +(f'<div class="row"><span>Price</span><b>{E(c["old_price"])} → {E(c["new_price"])}</b></div>' if c.get("old_price") and c.get("new_price") else "")+
+               +(f'<div class="row"><span>Price</span><b>{E(c["old_price"])} → {E(c["new_price"])}</b></div>' if c.get("old_price") and c.get("new_price") else "")
+               +(f'<div class="row bar"><span>Real price change per {E(c["unit"])}</span><b class="{"yes" if c["real"]>0.05 else "no"}">{"+" if c["real"]>=0 else "−"}{abs(c["real"]):.1f}%</b></div>' if c["real"] is not None else "")+
                f'<div class="row"><span>Evidence</span><b>{E(c.get("evidence_type","report"))}</b></div>'
                f'<div class="row"><span>Confidence</span><b>{E(c.get("confidence","high"))}</b></div>'
                f'<p>Source: <a href="{E(c["source_url"])}">{E(c["source"])}</a> ({E(dom)}). {E(c.get("verified","Source fetched 2026-10-14"))}.'
-               +(f' <a href="{E(c["archive_url"])}">Archived copy</a>.' if c.get("archive_url") else "")+(f' {E(c["note"])}' if c.get("note") else "")+'</p></section>'
+               +(f' <a href="{E(c["archive_url"])}">Archived copy</a>.' if c.get("archive_url") else "")+(f' {E(c["note"])}' if c.get("note") else "")+f' <a href="{calc_url(c)}"><b>Check the math in the calculator</b></a>.</p></section>'
                +(f'<h2>What the source says</h2><blockquote class="q">“{E(c["evidence"])}”</blockquote>' if c.get("evidence") else "")
                +(('<h2>Also reported by</h2><ul>'+"".join(f'<li><a href="{E(a["url"])}">{E(a["source"])}</a></li>' for a in c["also_reported"])+'</ul>') if c.get("also_reported") else ""))
         CUR_ALERT[:]=[('brand',slug(c['brand']),c['brand']),('category',slug(c['category']),c['category'])]
@@ -242,6 +285,58 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
          f'<div class="flt"><select aria-label="Country">{opt(ctry,"All countries")}</select><select aria-label="Year">{opt(yrs,"All years")}</select><select aria-label="Category">{opt(cats_c,"All categories")}</select><input type="search" placeholder="Filter by product or brand" aria-label="Filter"></div>'
          f'<p class="m"><b id="n">{len(cases)}</b> cases shown</p><div class="tw"><table id="ct"><thead><tr><th>Product</th><th class="n">Before</th><th class="n">After</th><th class="n">Cut</th><th class="n hide-s">Year</th></tr></thead><tbody>{trs}</tbody></table></div>',
          [crumbs(("Known cases",None)),{"@context":"https://schema.org","@type":"Dataset","name":"ShrinkRadar documented shrinkflation cases","description":"Before/after package size reductions with sources","url":SITE+"/cases/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Organization","name":NAME}}],js=FJS)
+    # ---- Worst offenders leaderboard ----
+    def ctr(c,extra=""):
+        return (f'<tr><td><a href="/cases/{c["slug"]}.html">{E(c["product"])}</a><br><span class="m">{E(c["brand"])} · {FLAG.get(c["country"],"")} {c["country"]} · {E(c["when"])}</span></td>'
+                f'<td class="n">{fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])}</td><td class="n yes"><b>−{c["pct"]:.1f}%</b></td>{extra}</tr>')
+    priced=sorted([c for c in cases if c["real"] is not None and c["real"]>0.05],key=lambda c:-c["real"])
+    top_real="".join(ctr(c,f'<td class="n"><span class="m">{E(c["old_price"])} → {E(c["new_price"])}</span><br><b class="yes">+{c["real"]:.1f}%</b></td>') for c in priced[:25])
+    top_cut="".join(ctr(c) for c in sorted(cases,key=lambda c:(-c["pct"],c["product"]))[:25])
+    bg={}
+    for c in cases: bg.setdefault(c["bslug"],[]).append(c)
+    rep=sorted([(k,v) for k,v in bg.items() if len(v)>=3],key=lambda kv:(-len(kv[1]),-sum(c["pct"] for c in kv[1])/len(kv[1])))
+    med=lambda xs: sorted(xs)[len(xs)//2] if len(xs)%2 else sum(sorted(xs)[len(xs)//2-1:len(xs)//2+1])/2
+    rep_tr="".join(f'<tr><td>{i}</td><td><a href="/brands/{k}.html">{E(v[0]["brand"])}</a><br><span class="m">{" ".join(sorted({FLAG.get(c["country"],c["country"]) for c in v}))}</span></td><td class="n"><b>{len(v)}</b></td><td class="n">−{med([c["pct"] for c in v]):.1f}%</td><td class="n hide-s">−{max(c["pct"] for c in v):.1f}%</td></tr>' for i,(k,v) in enumerate(rep[:30],1))
+    cg={}
+    for c in cases: cg.setdefault(c["category"],[]).append(c)
+    cat_tr="".join(f'<tr><td><a href="/categories/{slug(k)}.html">{E(k)}</a></td><td class="n"><b>{len(v)}</b></td><td class="n">−{med([c["pct"] for c in v]):.1f}%</td><td class="n hide-s">{sum(1 for c in v if c["real"] is not None and c["real"]>0.05)}</td></tr>' for k,v in sorted(cg.items(),key=lambda kv:-len(kv[1])))
+    nrep=len(priced); allp=[c for c in cases if c["real"] is not None]
+    page("worst/index.html",f'Worst shrinkflation offenders: biggest cuts, repeat brands & hidden price hikes | {NAME}',
+         f'Leaderboard of the worst shrinkflation from {len(cases)} documented cases: biggest package cuts, hidden per-unit price hikes and the brands caught most often.',
+         f'<h1>Worst offenders</h1><p class="prose">Ranked from {len(cases)} documented, sourced cases. Every row links to the case and its source. '
+         f'Where the source also recorded the shelf price before and after ({len(allp)} cases), we work out what actually happened to the price per gram, millilitre or piece.</p>'
+         f'<p class="chips"><a href="#hidden">Hidden price hikes</a><a href="#cuts">Biggest cuts</a><a href="#brands">Repeat offenders</a><a href="#categories">By category</a></p>'
+         f'<h2 id="hidden">Biggest hidden price hikes</h2><p class="prose m">Real change in price per unit, combining the size cut with the shelf-price change. {nrep} of {len(allp)} priced cases got more expensive per unit. Prices come from the reporting source (mostly Verbraucherzentrale Hamburg and Consumentenbond, so mainly Germany and the Netherlands).</p>'
+         f'<div class="tw"><table><thead><tr><th>Product</th><th class="n">Size</th><th class="n">Cut</th><th class="n">Price · per unit</th></tr></thead><tbody>{top_real}</tbody></table></div>'
+         f'<h2 id="cuts">Biggest package cuts</h2><div class="tw"><table><thead><tr><th>Product</th><th class="n">Size</th><th class="n">Cut</th></tr></thead><tbody>{top_cut}</tbody></table></div>'
+         f'<h2 id="brands">Repeat offenders</h2><p class="prose m">Brands and store brands with three or more documented cases. A brand with many products and much press coverage will show up more often, so treat this as “caught most often”, not a measured rate.</p>'
+         f'<div class="tw"><table><thead><tr><th>#</th><th>Brand</th><th class="n">Cases</th><th class="n">Median cut</th><th class="n hide-s">Worst cut</th></tr></thead><tbody>{rep_tr}</tbody></table></div>'
+         f'<h2 id="categories">By category</h2><div class="tw"><table><thead><tr><th>Category</th><th class="n">Cases</th><th class="n">Median cut</th><th class="n hide-s">Pricier per unit</th></tr></thead><tbody>{cat_tr}</tbody></table></div>'
+         f'<p class="m">Check any pack yourself with the <a href="/calculator/">shrinkflation calculator</a>.</p>',
+         [crumbs(("Worst offenders",None)),{"@context":"https://schema.org","@type":"ItemList","name":"Biggest documented shrinkflation cuts","itemListOrder":"https://schema.org/ItemListOrderDescending",
+           "itemListElement":[{"@type":"ListItem","position":i+1,"url":f'{SITE}/cases/{c["slug"]}.html',"name":c["product"]} for i,c in enumerate(sorted(cases,key=lambda c:(-c["pct"],c["product"]))[:25])]}])
+    # ---- Calculator ----
+    UNITS_DL="".join(f'<option value="{u}">' for u in ["g","oz","ml","fl oz","l","kg","lb","sheets","rolls","pieces","bars","loads","count","sq ft"])
+    calc_faq=[("How do you calculate shrinkflation?","Divide the price by the size before and after the change to get the price per unit (per gram, ounce, sheet…). The percentage difference between the two unit prices is the real price change. A 10% smaller pack at the same price is an 11.1% price rise per unit, because 1 ÷ 0.9 = 1.111."),
+              ("Why is the hidden price rise bigger than the size cut?","Because the same price is now spread over less product. Cutting a pack by a fraction x raises the unit price by x ÷ (1 − x): a 20% cut is a 25% rise, a 50% cut is a 100% rise."),
+              ("What is a fair price for the smaller pack?","Old price × new size ÷ old size. That is what the new pack would cost at the old price per unit.")]
+    page("calculator/index.html",f'Shrinkflation calculator: did the price per unit go up? | {NAME}',
+         'Free shrinkflation calculator. Enter the old and new pack size and price to see the size cut, the price per unit before and after, and the real hidden price increase.',
+         '<h1>Shrinkflation calculator</h1><p class="prose">Enter the pack size and price before and after. You get the real change in price per unit, which is the number the smaller pack is hiding.</p>'
+         '<form class="calc" onsubmit="return false"><fieldset><legend class="ml">Before</legend><label>Size<input id="b" inputmode="decimal" placeholder="e.g. 18"></label><label>Price<input id="pb" inputmode="decimal" placeholder="e.g. 4.99"></label></fieldset>'
+         '<fieldset><legend class="ml">After</legend><label>Size<input id="a" inputmode="decimal" placeholder="e.g. 15.4"></label><label>Price<input id="pa" inputmode="decimal" placeholder="same if blank"></label></fieldset>'
+         f'<fieldset><legend class="ml">Units</legend><label>Unit<input id="u" list="ul" placeholder="oz, g, sheets…"><datalist id="ul">{UNITS_DL}</datalist></label><label>Currency<select id="c"><option value="$">$</option><option value="€">€</option><option value="£">£</option><option value="">none</option></select></label></fieldset></form>'
+         '<section id="out" class="label" aria-live="polite" hidden><div class="hd">Shrink Facts</div>'
+         '<div class="row bar"><span>Size change</span><b class="yes" id="r-cut"></b></div>'
+         '<div class="row"><span>Unit-price rise if the price stayed the same</span><b id="r-same"></b></div>'
+         '<div class="row np"><span>Price per unit before</span><b id="r-ub"></b></div><div class="row np"><span>Price per unit after</span><b id="r-ua"></b></div>'
+         '<div class="row np"><span class="ml">Real price change per unit</span></div><div class="big np" id="r-real"></div>'
+         '<div class="row bar np"><span>Fair price for the new size</span><b id="r-fair"></b></div><p id="verdict"></p></section>'
+         '<noscript><p class="empty">The calculator needs JavaScript. The formula: real change = (new price ÷ new size) ÷ (old price ÷ old size) − 1.</p></noscript>'
+         '<p class="m">Nothing you type leaves your browser. The link in the address bar updates as you type, so you can share a result. Every <a href="/cases/">documented case</a> has a “check the math” link that fills this in.</p>'
+         '<div class="prose"><h2>How it works</h2>'+"".join(f'<h3>{E(q)}</h3><p>{E(a)}</p>' for q,a in calc_faq)+'<p>See the <a href="/worst/">worst offenders</a> for the biggest real price hikes we have on record.</p></div>',
+         [crumbs(("Calculator",None)),{"@context":"https://schema.org","@type":"WebApplication","name":"Shrinkflation calculator","url":SITE+"/calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":0,"priceCurrency":"USD"}},
+          {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in calc_faq]}],js=CALC_JS)
     for kind,key,lab,namef in [("countries","country","Countries",lambda v:COUNTRY.get(v,v)),("years","year","Years",str)]:
         g={}
         for c in cases: g.setdefault(c[key],[]).append(c)
@@ -274,7 +369,7 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
     page("index.html",f'{NAME}: did it shrink? Shrinkflation tracker for groceries & household goods',f'Daily tracking of package sizes and unit prices for {len(prods)} products, plus {len(cases)} documented shrinkflation cases with sources.',
          f'<h1>Did it shrink?</h1><p class="prose">We check the net weight of {len(prods)} everyday products every day and keep a sourced record of {len(cases)} known shrinkflation cases.</p>'
          f'<form class="search" action="/search.html" role="search"><label class="ml" for="q0">Search a product or brand</label><input id="q0" name="q" placeholder="Doritos, cereal, Charmin…"></form>'
-         f'<h2>Latest from daily checks</h2><ul class="feed">{feed}</ul><h2>Biggest documented shrinks</h2><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"])[:6])}</ul><p><a href="/cases/"><b>All {len(cases)} known cases →</b></a></p>'
+         f'<h2>Latest from daily checks</h2><ul class="feed">{feed}</ul><h2>Biggest documented shrinks</h2><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"])[:6])}</ul><p><a href="/cases/"><b>All {len(cases)} known cases →</b></a> · <a href="/worst/"><b>Worst offenders →</b></a> · <a href="/calculator/"><b>Shrinkflation calculator →</b></a></p>'
          f'<h2>Recently checked</h2><ul class="grid">{"".join(pcard(p) for p in prods[:6])}</ul>',
          [{"@context":"https://schema.org","@type":"WebSite","name":NAME,"url":SITE+"/","potentialAction":{"@type":"SearchAction","target":SITE+"/search.html?q={search_term_string}","query-input":"required name=search_term_string"}},
           {"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/","logo":SITE+"/favicon.svg"}])
@@ -303,6 +398,10 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
     (OUT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+
         "".join(f'<url><loc>{SITE}/{p.replace("index.html","")}</loc><lastmod>{TODAY}</lastmod></url>' for p in PAGES)+"</urlset>")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n"); (OUT/".nojekyll").write_text(""); (OUT/"favicon.svg").write_text(FAV); (OUT/"CNAME").write_text("shrinkradar.com\n")
+    # retired brand slugs from earlier mis-detected brands: noindex stubs pointing at the real brands
+    for old,targets in {"dr":["dr-oetker","dr-hauschka"]}.items():
+        if not (OUT/f"brands/{old}.html").exists():
+            (OUT/f"brands/{old}.html").write_text('<!doctype html><meta charset=utf-8><meta name=robots content=noindex><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/style.css><title>Moved</title><main class=w><h1>This brand page moved</h1><ul>'+"".join(f'<li><a href="/brands/{t}.html">{t.replace("-"," ").title()}</a></li>' for t in targets)+'</ul>')
     if INDEXNOW_KEY: (OUT/f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY)
     (OUT/"404.html").write_text('<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/style.css><title>Not found</title><main class=w><h1>Not found</h1><p>Page not found. <a href="/">ShrinkRadar home</a> · <a href="/search.html">Search</a></p>')
     print(len(PAGES),"pages,",len(findings),"findings,",len(cases),"cases")
