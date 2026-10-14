@@ -30,3 +30,10 @@
 - Not usable: Reddit (old.reddit/JSON redirects/blocked), X search (few posts with clear before/after; none accepted), ONS (aggregate only, no product names), ACCC (relies on CHOICE examples, already included).
 - Open Food Facts revision mining (mine_off_revs.py) started; results not yet merged (needs manual review: edits can be data corrections).
 - Site: filterable /cases/ (country, year, category, text), /countries/*, /years/*, evidence quotes + confidence on case pages, Dataset JSON-LD.
+
+## 2026-10-13 — case library 573 → 671
+- New: Consumentenbond NL (mine_cb.py, 56), Guardian UK, Brut AU, OCU ES, ORF/AK AT, Altroconsumo/La Stampa IT, Procon Niterói BR, NPR 2022 (US/UK/IN), CNN Tostitos. All snippets verified against fetched pages (verify_manual.py, 110 ok).
+- OFF revisions: 3 flags reviewed (Roncadin/Costco pizza relabel, generic Coca-Cola code, Nature Valley per-bar vs box) — all data corrections, 0 accepted. Miner still running (~90/289 products).
+- "Other" category: 0 (regex + CATFIX overrides for NL/IT/ES names). Added NL/ES/AT/IT/BR/IN to country maps.
+- Not done: Wayback mining. Inaccessible: Korea KCA (IP block/queue; Yonhap/Donga fetch failed), RadarSuper 429, CB 2022/2023 404, Reddit, G1 category-only.
+- Published, IndexNow 200 (1635 URLs).
