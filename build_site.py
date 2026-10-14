@@ -53,6 +53,8 @@ tbody tr:first-child td{font-weight:700}
 .spark{display:block;width:100%;height:64px;margin:var(--s2) 0}.spark.s{width:120px;height:28px;margin:0}
 .spark polyline{fill:none;stroke:var(--ink);stroke-width:2;vector-effect:non-scaling-stroke}.spark .d{fill:var(--sig)}.spark .e{fill:var(--ink)}
 .search input,#q{width:100%;font:700 1.15rem var(--f);padding:.7rem .8rem;border:2px solid var(--ink);border-radius:0;background:var(--panel);color:var(--ink)}
+.flt{display:flex;flex-wrap:wrap;gap:.5rem;margin:var(--s3) 0}.flt select,.flt input{font:700 .95rem var(--f);padding:.5rem;border:2px solid var(--ink);background:var(--panel);color:var(--ink);border-radius:0}.flt input{flex:1 1 12rem}
+blockquote.q{margin:0;padding:var(--s3);background:var(--panel);border-left:4px solid var(--ink);font-size:.95rem}
 #res{list-style:none;padding:0}#res li{border-bottom:1px solid var(--hair);padding:.5rem 0}
 .feed{list-style:none;padding:0}.feed li{border-bottom:1px solid var(--hair);padding:.6rem 0}
 .empty{border:1px dashed var(--muted);padding:var(--s3);background:var(--panel)}
@@ -81,7 +83,10 @@ SEARCH_JS="""(async()=>{const q=document.getElementById('q'),r=document.getEleme
 const go=()=>{const t=q.value.toLowerCase().trim();r.innerHTML='';if(t.length<2)return;d.filter(x=>x.t.toLowerCase().includes(t)).slice(0,40).forEach(x=>{const li=document.createElement('li');const a=document.createElement('a');a.href=x.u;a.textContent=x.t;li.append(a,' ',Object.assign(document.createElement('span'),{className:'m',textContent:x.k}));r.append(li)})};
 q.addEventListener('input',go);const p=new URLSearchParams(location.search).get('q');if(p){q.value=p;go()}})();"""
 PAGES=[]
-NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/search.html', 'Search'), ('/about.html', 'About')]
+SLUGS=set()
+COUNTRY={'US':'United States','UK':'United Kingdom','DE':'Germany','FR':'France','CA':'Canada','AU':'Australia','EU':'Europe'}
+FLAG={'US':'🇺🇸','UK':'🇬🇧','DE':'🇩🇪','FR':'🇫🇷','CA':'🇨🇦','AU':'🇦🇺','EU':'🇪🇺'}
+NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/about.html', 'About')]
 def slug(x): return re.sub(r"[^a-z0-9]+","-",x.lower().replace("&","and")).strip("-")
 def fmt(v,u): return f"{round(v,1) if v>=10 else round(v,2):g} {u}"
 def disp(s):
@@ -114,7 +119,10 @@ def main():
         p["title"]=(p["name"] if p["brand"].lower() in p["name"].lower() else f'{p["brand"]} {p["name"]}').strip()
         p["slug"]=slug(p["title"])[:60]+"-"+p["code"][-6:]; p["bslug"]=slug(p["brand"] or "unbranded"); p["cslug"]=slug(p["category"])
     for c in cases:
-        c["slug"]=slug(c["product"]+"-"+c["when"]); c["bslug"]=slug(c["brand"]); c["cslug"]=slug(c["category"]); c["pct"]=(1-c["after"]/c["before"])*100
+        c["when"]=str(c.get("when") or "n/d"); c["country"]=c.get("country") or "US"; c["year"]=(re.findall(r"(?:19|20)\d\d",c["when"]) or ["n/d"])[-1]
+        base=slug(c["product"]+"-"+c["country"]+"-"+c["when"])[:80]; c["slug"]=base; k=2
+        while c["slug"] in SLUGS: c["slug"]=f"{base}-{k}"; k+=1
+        SLUGS.add(c["slug"]); c["bslug"]=slug(c["brand"]); c["cslug"]=slug(c["category"]); c["pct"]=(1-c["after"]/c["before"])*100
     findings=[]
     for p in prods:
         ok=[s for s in by.get(p["code"],[]) if s.get("size")]
@@ -134,7 +142,7 @@ def main():
                 f'<div class="nw"><span><span class="ml">Net wt.</span><b>{E(disp(l)) if l else "—"}</b></span>{spark(ok,True)}</div></li>')
     def ccard(c):
         dom=re.sub(r"^https?://(www\.)?([^/]+).*",r"\2",c["source_url"])
-        return (f'<li class="card case"><span class="ml">{E(c["category"])} · {E(c["when"])}</span><h3><a href="/cases/{c["slug"]}.html">{E(c["product"])}</a></h3>'
+        return (f'<li class="card case"><span class="ml">{FLAG.get(c["country"],"")} {E(c["category"])} · {E(c["when"])}</span><h3><a href="/cases/{c["slug"]}.html">{E(c["product"])}</a></h3>'
                 f'{badge(c["before"],c["after"],c["unit"])}<span class="m">Source: <a href="{E(c["source_url"])}">{E(dom)}</a></span></li>')
     for p in prods:
         h=by.get(p["code"],[]); last=h[-1] if h else {}; ok=[s for s in h if s.get("size")]
@@ -183,8 +191,14 @@ def main():
                f'<div class="row bar"><span>Cut</span><b class="yes">−{c["pct"]:.1f}%</b></div>'
                f'<div class="row"><span>Hidden unit-price rise at same price</span><b>+{(c["before"]/c["after"]-1)*100:.1f}%</b></div>'
                f'<div class="row"><span>When</span><b>{E(c["when"])}</b></div>'
-               f'<p>Source: <a href="{E(c["source_url"])}">{E(c["source"])}</a> ({E(dom)}). {E(c["verified"])}.'
-               +(f' <a href="{E(c["archive_url"])}">Archived copy</a>.' if c.get("archive_url") else "")+(f' {E(c["note"])}' if c.get("note") else "")+'</p></section>')
+               f'<div class="row"><span>Country</span><b>{E(COUNTRY.get(c["country"],c["country"]))}</b></div>'
+               +(f'<div class="row"><span>Price</span><b>{E(c["old_price"])} → {E(c["new_price"])}</b></div>' if c.get("old_price") and c.get("new_price") else "")+
+               f'<div class="row"><span>Evidence</span><b>{E(c.get("evidence_type","report"))}</b></div>'
+               f'<div class="row"><span>Confidence</span><b>{E(c.get("confidence","high"))}</b></div>'
+               f'<p>Source: <a href="{E(c["source_url"])}">{E(c["source"])}</a> ({E(dom)}). {E(c.get("verified","Source fetched 2026-10-14"))}.'
+               +(f' <a href="{E(c["archive_url"])}">Archived copy</a>.' if c.get("archive_url") else "")+(f' {E(c["note"])}' if c.get("note") else "")+'</p></section>'
+               +(f'<h2>What the source says</h2><blockquote class="q">“{E(c["evidence"])}”</blockquote>' if c.get("evidence") else "")
+               +(('<h2>Also reported by</h2><ul>'+"".join(f'<li><a href="{E(a["url"])}">{E(a["source"])}</a></li>' for a in c["also_reported"])+'</ul>') if c.get("also_reported") else ""))
         page(f'cases/{c["slug"]}.html',f'Did {c["product"]} shrink? {fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])} | {NAME}',desc,
              f'<p class="crumbs"><a href="/cases/">Known cases</a> / <a href="/categories/{c["cslug"]}.html">{E(c["category"])}</a> / <a href="/brands/{c["bslug"]}.html">{E(c["brand"])}</a></p>'
              f'<h1>Did {E(c["product"])} shrink?</h1>{badge(c["before"],c["after"],c["unit"])}{label}'
@@ -192,9 +206,28 @@ def main():
              +'<h2>Other documented cases</h2><ul class="grid">'+"".join(ccard(o) for o in [o for o in sorted(cases,key=lambda o:(o["cslug"]!=c["cslug"],-o["pct"])) if o is not c][:6])+'</ul>',
              [crumbs(("Known cases","/cases/"),(c["product"],None)),
               {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":f'Did {c["product"]} shrink?',"acceptedAnswer":{"@type":"Answer","text":desc}}]}])
-    page("cases/index.html",f'Known shrinkflation cases: {len(cases)} documented examples | {NAME}',f'{len(cases)} documented shrinkflation cases with before and after sizes, dates and sources: Doritos, Gatorade, Charmin, Oreo, Cocoa Puffs and more.',
-         f'<h1>Known shrinkflation cases</h1><p class="prose">Each case is a reported before/after size change, linked to the source we checked. Biggest cuts first.</p><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"]))}</ul>',
-         [crumbs(("Known cases",None)),{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":i+1,"url":f'{SITE}/cases/{c["slug"]}.html',"name":c["product"]} for i,c in enumerate(cases)]}])
+    yrs=sorted({c["year"] for c in cases},reverse=True); ctry=sorted({c["country"] for c in cases}); cats_c=sorted({c["category"] for c in cases})
+    opt=lambda vals,lab: f'<option value="">{lab}</option>'+"".join(f'<option value="{E(v)}">{E(COUNTRY.get(v,v))}</option>' for v in vals)
+    trs="".join(f'<tr data-c="{c["country"]}" data-y="{E(c["year"])}" data-k="{E(c["category"])}"><td><a href="/cases/{c["slug"]}.html">{E(c["product"])}</a><br><span class="m">{E(c["brand"])} · {FLAG.get(c["country"],"")} {c["country"]}</span></td><td class="n">{fmt(c["before"],c["unit"])}</td><td class="n">{fmt(c["after"],c["unit"])}</td><td class="n yes"><b>−{c["pct"]:.1f}%</b></td><td class="n hide-s">{E(c["when"])}</td></tr>' for c in sorted(cases,key=lambda c:(c["when"]!="n/d",c["when"],c["pct"]),reverse=True))
+    FJS="""(()=>{const f=[...document.querySelectorAll('.flt select,.flt input')],rows=[...document.querySelectorAll('#ct tbody tr')],n=document.getElementById('n');
+const go=()=>{const[c,y,k,t]=f.map(e=>e.value.toLowerCase());let v=0;rows.forEach(r=>{const ok=(!c||r.dataset.c.toLowerCase()==c)&&(!y||r.dataset.y==y)&&(!k||r.dataset.k.toLowerCase()==k)&&(!t||r.textContent.toLowerCase().includes(t));r.hidden=!ok;v+=ok});n.textContent=v};
+f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(location.search);['country','year','category','q'].forEach((k,i)=>{if(p.get(k)){f[i].value=p.get(k);}});go()})();"""
+    page("cases/index.html",f'Known shrinkflation cases: {len(cases)} documented examples | {NAME}',f'{len(cases)} documented shrinkflation cases from the US, UK, Germany, France, Canada and Australia, each with before/after size, date and source.',
+         f'<h1>Known shrinkflation cases</h1><p class="prose">{len(cases)} documented before/after size cuts from consumer agencies, consumer advocates, news investigations and retailer-page archives. Every case links to the source we fetched.</p>'
+         f'<p class="chips">'+"".join(f'<a href="/countries/{k.lower()}.html">{FLAG.get(k,"")} {E(COUNTRY.get(k,k))}</a>' for k in ctry)+'</p>'
+         f'<div class="flt"><select aria-label="Country">{opt(ctry,"All countries")}</select><select aria-label="Year">{opt(yrs,"All years")}</select><select aria-label="Category">{opt(cats_c,"All categories")}</select><input type="search" placeholder="Filter by product or brand" aria-label="Filter"></div>'
+         f'<p class="m"><b id="n">{len(cases)}</b> cases shown</p><div class="tw"><table id="ct"><thead><tr><th>Product</th><th class="n">Before</th><th class="n">After</th><th class="n">Cut</th><th class="n hide-s">Year</th></tr></thead><tbody>{trs}</tbody></table></div>',
+         [crumbs(("Known cases",None)),{"@context":"https://schema.org","@type":"Dataset","name":"ShrinkRadar documented shrinkflation cases","description":"Before/after package size reductions with sources","url":SITE+"/cases/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Organization","name":NAME}}],js=FJS)
+    for kind,key,lab,namef in [("countries","country","Countries",lambda v:COUNTRY.get(v,v)),("years","year","Years",str)]:
+        g={}
+        for c in cases: g.setdefault(c[key],[]).append(c)
+        for k,v in g.items():
+            nm=namef(k)
+            page(f'{kind}/{str(k).lower()}.html',f'Shrinkflation in {nm}: {len(v)} documented cases | {NAME}',f'{len(v)} documented shrinkflation cases {"in "+nm if kind=="countries" else "from "+nm}, with before/after sizes and sources.',
+                 f'<p class="crumbs"><a href="/cases/">Known cases</a> / <a href="/{kind}/">{lab}</a></p><h1>Shrinkflation {"in "+E(nm) if kind=="countries" else "in "+E(nm)}</h1><p>{len(v)} documented cases, biggest cuts first.</p><ul class="grid">'+"".join(ccard(c) for c in sorted(v,key=lambda c:-c["pct"]))+'</ul>',
+                 [crumbs(("Known cases","/cases/"),(nm,None))])
+        page(f'{kind}/index.html',f'Shrinkflation by {lab.lower()} | {NAME}',f'Documented shrinkflation cases by {lab.lower()[:-1]}.',
+             f'<h1>Cases by {lab.lower()[:-1] if lab!="Countries" else "country"}</h1><ul class="chips">'+"".join(f'<li><a href="/{kind}/{str(k).lower()}.html">{E(namef(k))} <span class="m">{len(v)}</span></a></li>' for k,v in sorted(g.items(),reverse=(kind=="years")))+'</ul>',[crumbs((lab,None))])
     def groups(kind,key,label):
         g={}
         for p in prods: g.setdefault(p[key],{"name":p["brand" if kind=="brands" else "category"] or "Unbranded","p":[],"c":[]})["p"].append(p)
