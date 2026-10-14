@@ -83,7 +83,11 @@ q.addEventListener('input',go);const p=new URLSearchParams(location.search).get(
 PAGES=[]
 NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/search.html', 'Search'), ('/about.html', 'About')]
 def slug(x): return re.sub(r"[^a-z0-9]+","-",x.lower().replace("&","and")).strip("-")
-def fmt(v,u): return f"{v:g} {u}"
+def fmt(v,u): return f"{round(v,1) if v>=10 else round(v,2):g} {u}"
+def disp(s):
+    q=(s.get("quantity_label") or "").strip()
+    if q and re.search(r"\d",q) and len(q)<=28: return q
+    return fmt(s["size"],s["unit"])
 def page(path,title,desc,body,ld=None,js=None):
     ld_s="".join(f'<script type="application/ld+json">{json.dumps(x,ensure_ascii=False)}</script>' for x in (ld or []))
     p=OUT/path; p.parent.mkdir(parents=True,exist_ok=True); url=SITE+"/"+path.replace("index.html","")
@@ -127,7 +131,7 @@ def main():
     def pcard(p):
         l=latest(p); ok=[s["size"] for s in by.get(p["code"],[]) if s.get("size")]
         return (f'<li class="card"><span class="ml">{E(p["category"])}</span><h3>{plink(p)}</h3>'
-                f'<div class="nw"><span><span class="ml">Net wt.</span><b>{fmt(l["size"],l["unit"]) if l else "—"}</b></span>{spark(ok,True)}</div></li>')
+                f'<div class="nw"><span><span class="ml">Net wt.</span><b>{E(disp(l)) if l else "—"}</b></span>{spark(ok,True)}</div></li>')
     def ccard(c):
         dom=re.sub(r"^https?://(www\.)?([^/]+).*",r"\2",c["source_url"])
         return (f'<li class="card case"><span class="ml">{E(c["category"])} · {E(c["when"])}</span><h3><a href="/cases/{c["slug"]}.html">{E(c["product"])}</a></h3>'
@@ -144,13 +148,13 @@ def main():
         up=next((unitp(s) for s in reversed(h) if unitp(s)),None); pr=next((s for s in reversed(h) if s.get("price")),None)
         label=(f'<section class="label" aria-label="Size facts"><div class="hd">Size Facts</div>'
                f'<div class="row bar"><span>Did it shrink?</span><b class="{cls}">{verdict}</b></div>'
-               f'<div class="row"><span class="ml">Net wt. (latest)</span></div><div class="big">{fmt(L["size"],L["unit"]) if L else "—"}</div>'
-               f'<div class="row bar"><span class="m">Label: {E(last.get("quantity_label") or "n/a")}</span></div>'
+               f'<div class="row"><span class="ml">Net wt. (latest)</span></div><div class="big">{E(disp(L)) if L else "—"}</div>'
+               f'<div class="row bar"><span class="m">{E(f"Metric: {fmt(L[chr(115)+chr(105)+chr(122)+chr(101)],L[chr(117)+chr(110)+chr(105)+chr(116)])}") if L else "No net quantity on file"}</span></div>'
                f'<div class="row"><span>Price</span><b>{f"${pr[chr(112)+chr(114)+chr(105)+chr(99)+chr(101)]:.2f}" if pr else "no data"}</b></div>'
                f'<div class="row"><span>Unit price</span><b>{f"${up:.2f} / 100 {L.get(chr(117)+chr(110)+chr(105)+chr(116))}" if up else "—"}</b></div>'
                f'<div class="row"><span>Checks</span><b>{len(h)}</b></div><p>{ans}</p></section>')
         tr="".join('<tr><td>{}</td><td class="n">{}</td><td class="n">{}</td><td class="n hide-s">{}</td></tr>'.format(s["date"],
-            fmt(s["size"],s["unit"]) if s.get("size") else '<span class=na>n/a</span>',
+            E(disp(s)) if s.get("size") else '<span class=na>n/a</span>',
             f'${s["price"]:.2f}' if s.get("price") else '<span class=na>—</span>',
             f'${unitp(s):.2f}/100 {s["unit"]}' if unitp(s) else "—") for s in reversed(h))
         src=" · ".join(f'<a href="{E(u)}" rel="nofollow">{n}</a>' for n,u in [("size source",last.get("source_url")),("price source",last.get("price_source"))] if u)
@@ -179,7 +183,8 @@ def main():
                f'<div class="row bar"><span>Cut</span><b class="yes">−{c["pct"]:.1f}%</b></div>'
                f'<div class="row"><span>Hidden unit-price rise at same price</span><b>+{(c["before"]/c["after"]-1)*100:.1f}%</b></div>'
                f'<div class="row"><span>When</span><b>{E(c["when"])}</b></div>'
-               f'<p>Source: <a href="{E(c["source_url"])}">{E(c["source"])}</a> ({E(dom)}). {E(c["verified"])}.</p></section>')
+               f'<p>Source: <a href="{E(c["source_url"])}">{E(c["source"])}</a> ({E(dom)}). {E(c["verified"])}.'
+               +(f' <a href="{E(c["archive_url"])}">Archived copy</a>.' if c.get("archive_url") else "")+(f' {E(c["note"])}' if c.get("note") else "")+'</p></section>')
         page(f'cases/{c["slug"]}.html',f'Did {c["product"]} shrink? {fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])} | {NAME}',desc,
              f'<p class="crumbs"><a href="/cases/">Known cases</a> / <a href="/categories/{c["cslug"]}.html">{E(c["category"])}</a> / <a href="/brands/{c["bslug"]}.html">{E(c["brand"])}</a></p>'
              f'<h1>Did {E(c["product"])} shrink?</h1>{badge(c["before"],c["after"],c["unit"])}{label}'

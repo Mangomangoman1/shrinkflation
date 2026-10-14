@@ -14,3 +14,8 @@
 
 ## 2026-10-13 (late)
 - Design language "Net Wt." (DESIGN.md): nutrition-label rules, Size Facts panel, tabular numerals, signal red only for shrinks, light/dark, inline SVG sparklines, product/case cards, radar logo + favicon. Screenshots in design-shots/.
+
+## 2026-10-14
+- Post-outage expansion run: products 189 → 289 (OFF search heavily 503-throttled; stopped after retries). Second daily check: 276/289 sizes, 102 prices.
+- Cases 24 → 44: +20 from Mouse Print* (Edgar Dworsky) 2025–2026 "Here We Shrink Again" posts, each figure verified in fetched page text. Wayback availability API used to attach archived copies where they exist (few so far).
+- Display: label units shown (e.g. "18 oz (510 g)"), metric rounded.
