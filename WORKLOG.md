@@ -11,3 +11,6 @@
 ## Next
 - Wayback snapshots of manufacturer product pages to date historic sizes; per-UPC OFF revision history (product edit history often shows old quantities).
 - Retailer price sources; more household products; Search Console + Bing Webmaster verification.
+
+## 2026-10-13 (late)
+- Design language "Net Wt." (DESIGN.md): nutrition-label rules, Size Facts panel, tabular numerals, signal red only for shrinks, light/dark, inline SVG sparklines, product/case cards, radar logo + favicon. Screenshots in design-shots/.
