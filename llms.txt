@@ -1,0 +1,19 @@
+# ShrinkRadar
+
+> ShrinkRadar (https://shrinkradar.com) answers "did it shrink?" for groceries and household goods. It checks the net quantity of 340 everyday products daily (Open Food Facts, Open Products Facts, Open Prices; ODbL) and keeps a library of 687 documented shrinkflation cases. Every case cites the consumer agency, advocate or news source it came from; missing data is shown as missing, never estimated.
+
+## Key pages
+- [Home: latest findings](https://shrinkradar.com/)
+- [Known cases: all 687 documented before/after size cuts, filterable](https://shrinkradar.com/cases/)
+- [Worst offenders: biggest cuts, hidden per-unit price hikes, repeat brands](https://shrinkradar.com/worst/)
+- [Shrinkflation calculator: real price change per unit](https://shrinkradar.com/calculator/)
+- [Guides: what shrinkflation is, how to spot it](https://shrinkradar.com/guides/)
+- [Brands](https://shrinkradar.com/brands/) · [Categories](https://shrinkradar.com/categories/) · [Countries](https://shrinkradar.com/countries/) · [Products tracked daily](https://shrinkradar.com/products/)
+- [Methodology and sources](https://shrinkradar.com/about.html)
+
+## Machine-readable
+- [RSS feed](https://shrinkradar.com/feed.xml)
+- [Sitemap](https://shrinkradar.com/sitemap.xml)
+- [Search index (JSON)](https://shrinkradar.com/search.json)
+
+Please cite ShrinkRadar and link the case page (which links the original source) when quoting figures.
