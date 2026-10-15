@@ -84,7 +84,7 @@
 - **Data quality:** root cause of Cadbury/etc. mis-cats was `cola` matching inside `chocolate` (Juice & Drinks before Chocolate & Candy), plus Dairy `brunch`/`milk` catching Cadbury Brunch and Dairy Milk candy. Fixes in merge_cases.py: `\bcola\b`, tightened `milk`/`brunch` lookarounds, and **ALWAYS_FIX** product-substring map that always wins (not only when category==Other). Re-ran merge_cases.py (687 cases unchanged count).
   - **39 recategorized** from the known false-positive set: 35 → Chocolate & Candy (incl. Cadbury Dairy Milk Freddo multipack, all other Cadbury candy/eggs, KitKat, Toblerone, Hershey’s, M&M’s, Maltesers, Twix, Mars fun size, Little Debbie Chocolate Cupcakes, Moser Roth, HEJ bar, Milkybar…), 1 → Cookies (McVitie’s Digestives Dark Chocolate), 1 → Ice Cream (Mövenpick Eis Vanilla Chocolate), 2 → Frozen (Danerolles Chocolate Croissants / Pains au Chocolat). Cadbury Brunch bars → Chocolate & Candy. Juice & Drinks now 32; Chocolate & Candy 115. Remaining Juice false positives: 0 in the chocolate/candy sweep.
 - Build: 1745 pages (build_site.py). Internal link check: 0 broken (46k+ hrefs).
-- Publish + IndexNow via publish.sh (this run).
+- Published: source `530f522`, gh-pages `a090ac7`. IndexNow 200 (1745 URLs). Live QA: /submit/ 200 with form + window.open; Freddo and Cadbury Brunch case pages show chocolate-and-candy. Pages deploy 38826629260 succeeded.
 
 ### Samuel-only asks
 - Google Search Console: verify shrinkradar.com (DNS TXT is best; an HTML file or meta tag works too, send me the token and I'll ship it) and submit /sitemap.xml. Without this we get no feedback on indexing or queries.
