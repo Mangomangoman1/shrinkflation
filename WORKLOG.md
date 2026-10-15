@@ -61,3 +61,23 @@
 - Tried: Wayback CDX (Folgers homepage history OK; charmin sheets empty; availability API 429 after a few calls — mining not productive yet). X posts: vague rants only (Degree 2.7→2.6 uncorroborated) — 0 accepted. Mouse Print WP REST: no newer “Here We Shrink” posts after Spring 2026 Part 2. Reddit still unusable.
 - Tiny fix: check.py HOST map now includes Open Beauty Facts (`obf`).
 - Site rebuilt (1744 pages, 687 cases). Publish + IndexNow via publish.sh.
+
+## 2026-10-15 — SEO and growth routine
+- Head tags on every page: og:image (+ width, height, alt), twitter:card `summary_large_image`, twitter:title, twitter:description, twitter:image, theme-color #111. The share image is `/og.png` (1200×630, drawn with Pillow at build time), because X, Facebook and LinkedIn don't render SVG og:images. `/og.svg` ships alongside as the vector source.
+- Brand and category pages (597 brands + 71 categories, all 668 with FAQPage): there is now a Size Facts answer box for "Did {name} products shrink?". It shows the verdict, number of cases, biggest and median cut, years, countries and how many products we track daily. 438 pages say Yes. The rest say "Not in our case library yet. We track N … daily". Cases are sorted by biggest cut. Pages with cases get a prose line linking to /worst/ and /calculator/. Meta descriptions now lead with the answer.
+- Country pages (13): FAQPage "Has shrinkflation hit {country}?". The answer gives the case count and the biggest cut. They also link to /worst/ and the how-to guide.
+- New /guides/: a hub (guide cards, brands with ≥5 cases, categories by case count, ItemList JSON-LD), /guides/what-is-shrinkflation.html (Article + FAQPage, live figures: median cut, biggest case, priced cases) and /guides/how-to-spot-shrinkflation.html (5-step checklist, Article + FAQPage + HowTo). Guides are in the nav (after Categories), search.json (k="Guide"), the homepage and About.
+- /llms.txt: what the site is, key URLs, feed, sitemap and search.json, plus a citation note. robots.txt unchanged (Allow all + Sitemap; AI crawlers not blocked).
+- Build: 1742 pages. Internal link check: 0 broken. Published (gh-pages 17c5248). IndexNow 200 (1742 URLs). Live 200: /guides/, both guides, /og.png, /og.svg, /llms.txt. The Cadbury brand page is live with FAQPage and twitter:card.
+- Data follow-up noticed: some case categories are wrong, e.g. "Cadbury Dairy Milk Freddo multipack" is in Juice & Drinks and "Cadbury Brunch bars" is in Dairy ("Milk" keyword). These need CATFIX entries in merge_cases.py and a sweep of the "Milk"/"Drink" keyword matches.
+
+### Samuel-only asks
+- Google Search Console: verify shrinkradar.com (DNS TXT is best; an HTML file or meta tag works too, send me the token and I'll ship it) and submit /sitemap.xml. Without this we get no feedback on indexing or queries.
+- Bing Webmaster Tools: verify the site (it can import from GSC) and submit the sitemap. IndexNow already pings Bing.
+- Social accounts (X etc.) if you want distribution. I won't create accounts.
+
+### Legitimate distribution ideas (not done; no outreach without approval)
+- Wikipedia "Shrinkflation": only an external link, and only if it meets WP:EL, e.g. as a sourced dataset. Never self-cite into article text.
+- Consumer journalists and consumer-desk tipsheets (Mouse Print*, Which?, CBC Marketplace, local TV consumer reporters) once a daily-check finding or a strong dataset angle exists, e.g. "the worst hidden per-unit price hikes".
+- Show HN when alerts are live and the daily checks have logged real findings.
+- Non-spam listings: data portals (Kaggle/data.world dataset of the case library under CC BY), Open Food Facts community/reuse pages, personal-finance and frugal-living resource lists that take submissions.
