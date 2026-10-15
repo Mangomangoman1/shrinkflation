@@ -315,9 +315,13 @@ def main():
             f'${unitp(s):.2f}/100 {s["unit"]}' if unitp(s) else "—") for s in reversed(h))
         src=" · ".join(f'<a href="{E(u)}" rel="nofollow">{n}</a>' for n,u in [("size source",last.get("source_url")),("price source",last.get("price_source"))] if u)
         sib=[q for q in prods if q["cslug"]==p["cslug"] and q is not p][:6]
-        ld=[{"@context":"https://schema.org","@type":"Product","name":p["title"],"brand":{"@type":"Brand","name":p["brand"]},"gtin13":p["code"].lstrip("0").zfill(13),"category":p["category"],
-             **({"size":fmt(L["size"],L["unit"])} if L else {}),
-             **({"offers":{"@type":"Offer","price":pr["price"],"priceCurrency":"USD"}} if pr else {})},
+        # These pages report observations, not current offers or product reviews.
+        # Keep product facts in the visible page without claiming Product eligibility.
+        ld=[{"@context":"https://schema.org","@type":"WebPage",
+             "name":f'Did {p["title"]} shrink? Size & price history',
+             "url":f'{SITE}/products/{p["slug"]}.html',
+             "identifier":p["code"],
+             "description":f'Package size and observed price history for {p["title"]}. Brand: {p["brand"] or "Unbranded"}. Category: {p["category"]}.'},
             crumbs(("Products","/products/"),(p["category"],f'/categories/{p["cslug"]}.html'),(p["title"],None)),
             {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":f'Did {p["title"]} shrink?',"acceptedAnswer":{"@type":"Answer","text":f"{verdict}. "+re.sub("<[^>]+>","",ans)}}]}]
         size_txt=f' Current size: {fmt(L["size"],L["unit"])}.' if L else ""
@@ -368,7 +372,7 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
          f'<p class="chips">'+"".join(f'<a href="/countries/{k.lower()}.html">{FLAG.get(k,"")} {E(COUNTRY.get(k,k))}</a>' for k in ctry)+'</p>'
          f'<div class="flt"><select aria-label="Country">{opt(ctry,"All countries")}</select><select aria-label="Year">{opt(yrs,"All years")}</select><select aria-label="Category">{opt(cats_c,"All categories")}</select><input type="search" placeholder="Filter by product or brand" aria-label="Filter"></div>'
          f'<p class="m"><b id="n">{len(cases)}</b> cases shown</p><div class="tw"><table id="ct"><thead><tr><th>Product</th><th class="n">Before</th><th class="n">After</th><th class="n">Cut</th><th class="n hide-s">Year</th></tr></thead><tbody>{trs}</tbody></table></div>',
-         [crumbs(("Known cases",None)),{"@context":"https://schema.org","@type":"Dataset","name":"ShrinkRadar documented shrinkflation cases","description":"Before/after package size reductions with sources","url":SITE+"/cases/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Organization","name":NAME}}],js=FJS)
+         [crumbs(("Known cases",None)),{"@context":"https://schema.org","@type":"Dataset","name":"ShrinkRadar documented shrinkflation cases","description":"Documented shrinkflation cases comparing before-and-after package sizes, with dates, countries, and links to supporting sources.","url":SITE+"/cases/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Organization","name":NAME}}],js=FJS)
     # ---- Worst offenders leaderboard ----
     def ctr(c,extra=""):
         return (f'<tr><td><a href="/cases/{c["slug"]}.html">{E(c["product"])}</a><br><span class="m">{E(c["brand"])} · {FLAG.get(c["country"],"")} {c["country"]} · {E(c["when"])}</span></td>'

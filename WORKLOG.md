@@ -81,3 +81,10 @@
 - Consumer journalists and consumer-desk tipsheets (Mouse Print*, Which?, CBC Marketplace, local TV consumer reporters) once a daily-check finding or a strong dataset angle exists, e.g. "the worst hidden per-unit price hikes".
 - Show HN when alerts are live and the daily checks have logged real findings.
 - Non-spam listings: data portals (Kaggle/data.world dataset of the case library under CC BY), Open Food Facts community/reuse pages, personal-finance and frugal-living resource lists that take submissions.
+
+## 2026-10-15 — structured-data notification fixes
+- Expanded /cases/ Dataset description to satisfy Google's 50–5,000-character requirement.
+- Replaced tracking-page Product JSON-LD with WebPage metadata. Open Prices snapshots are historical observations, not current offers; no prices, reviews or ratings invented. Product names, brand, category, identifiers, size and price history remain visible unchanged.
+- Added validate_structured_data.py: parsed 3,801 JSON-LD blocks across all 1,744 HTML files (1,742 generated sitemap pages plus existing files); checked the Dataset and all 340 tracking pages. All passed. HTML comparison confirmed that only JSON-LD changed on the 341 affected pages.
+- Local rebuild preserved the existing og.png because its hardcoded Liberation Sans font is unavailable in this environment.
+- Search Console currently requires sign-in in the available browser; Google validation status has not been confirmed.
