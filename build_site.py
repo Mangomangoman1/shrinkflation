@@ -73,6 +73,23 @@ footer a{color:var(--ink)}
 """
 LOGO='<svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 28A24 24 0 0 1 28 4"/><path d="M10 28A18 18 0 0 1 28 10"/><path d="M16 28A12 12 0 0 1 28 16"/></g><circle cx="24" cy="21" r="3.2" fill="#c8102e"/></svg>'
 FAV='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#111"/><g fill="none" stroke="#fff" stroke-width="2.5"><path d="M4 28A24 24 0 0 1 28 4"/><path d="M10 28A18 18 0 0 1 28 10"/><path d="M16 28A12 12 0 0 1 28 16"/></g><circle cx="24" cy="21" r="3.2" fill="#ff5a5f"/></svg>'
+OG=('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#111"/><rect y="610" width="1200" height="20" fill="#ff5a5f"/>'
+    '<g fill="none" stroke="#fff" stroke-width="22" transform="translate(860 150) scale(10)"><path d="M4 28A24 24 0 0 1 28 4" stroke-width="2.5"/><path d="M10 28A18 18 0 0 1 28 10" stroke-width="2.5"/><path d="M16 28A12 12 0 0 1 28 16" stroke-width="2.5"/></g><circle cx="1100" cy="360" r="32" fill="#ff5a5f"/>'
+    '<text x="80" y="300" fill="#fff" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-weight="900" font-size="120" letter-spacing="-4">Shrink<tspan fill="#ff5a5f">Radar</tspan></text>'
+    '<text x="84" y="390" fill="#f2f0ea" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-weight="700" font-size="56">Did it shrink?</text>'
+    '<text x="84" y="520" fill="#a9a59c" font-family="Helvetica Neue,Helvetica,Arial,sans-serif" font-weight="700" font-size="30" letter-spacing="3">NET WT. WATCH · SOURCED SHRINKFLATION CASES</text></svg>')
+def og_png(path):
+    """Raster twin of OG (X/Facebook/LinkedIn ignore SVG og:image). Needs Pillow; skipped if missing."""
+    try: from PIL import Image,ImageDraw,ImageFont
+    except ImportError: return False
+    F=lambda n,sz: ImageFont.truetype(f"/usr/share/fonts/truetype/liberation/LiberationSans-{n}.ttf",sz)
+    im=Image.new("RGB",(1200,630),"#111"); d=ImageDraw.Draw(im); d.rectangle([0,610,1200,630],fill="#ff5a5f")
+    for r in (240,180,120): d.arc([1180-2*r,520-2*r,1180,520],180,270,fill="#fff",width=24)
+    d.ellipse([1068,328,1132,392],fill="#ff5a5f")
+    f=F("Bold",124); d.text((80,190),"Shrink",font=f,fill="#fff"); d.text((80+d.textlength("Shrink",font=f),190),"Radar",font=f,fill="#ff5a5f")
+    d.text((84,340),"Did it shrink?",font=F("Bold",58),fill="#f2f0ea"); d.text((84,490),"NET WT. WATCH · SOURCED SHRINKFLATION CASES",font=F("Bold",30),fill="#a9a59c")
+    im.save(path,optimize=True); return True
+OGIMG="/og.png"
 def spark(vals,small=False):
     v=[x for x in vals if x is not None]
     if not v: return ""
@@ -93,7 +110,7 @@ PAGES=[]
 SLUGS=set()
 COUNTRY={'US':'United States','UK':'United Kingdom','DE':'Germany','FR':'France','CA':'Canada','AU':'Australia','EU':'Europe','NL':'Netherlands','ES':'Spain','AT':'Austria','IT':'Italy','BR':'Brazil','IN':'India'}
 FLAG={'US':'🇺🇸','UK':'🇬🇧','DE':'🇩🇪','FR':'🇫🇷','CA':'🇨🇦','AU':'🇦🇺','EU':'🇪🇺','NL':'🇳🇱','ES':'🇪🇸','AT':'🇦🇹','IT':'🇮🇹','BR':'🇧🇷','IN':'🇮🇳'}
-NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/worst/', 'Worst offenders'), ('/calculator/', 'Calculator'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/alerts/', 'Alerts'), ('/about.html', 'About')]
+NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/worst/', 'Worst offenders'), ('/calculator/', 'Calculator'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/guides/', 'Guides'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/alerts/', 'Alerts'), ('/about.html', 'About')]
 def slug(x): return re.sub(r"[^a-z0-9]+","-",x.lower().replace("&","and")).strip("-")
 def fmt(v,u): return f"{round(v,1) if v>=10 else round(v,2):g} {u}"
 def disp(s):
@@ -107,6 +124,8 @@ def page(path,title,desc,body,ld=None,js=None):
     p.write_text(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
       f'<title>{E(title)}</title><meta name="description" content="{E(desc)}"><link rel="canonical" href="{url}">'
       f'<meta property="og:type" content="website"><meta property="og:site_name" content="{NAME}"><meta property="og:url" content="{url}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}">'
+      f'<meta property="og:image" content="{SITE}{OGIMG}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="ShrinkRadar: did it shrink?">'
+      f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{E(title)}"><meta name="twitter:description" content="{E(desc)}"><meta name="twitter:image" content="{SITE}{OGIMG}"><meta name="theme-color" content="#111">'
       f'<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="{NAME} findings" href="/feed.xml"><link rel="stylesheet" href="/style.css">{ld_s}</head><body>'
       f'<header><div class="w"><div class="top"><a class="brand" href="/">{LOGO}<span>Shrink<b>Radar</b></span></a><span class="tag">Net Wt. watch · groceries &amp; household</span></div>'
       +'<nav aria-label="Main">'+"".join(f'<a href="{u}"{' aria-current="page"' if "/"+path.replace("index.html","")==u or ("/"+path).startswith(u) and u!="/" else ""}>{n}</a>' for u,n in NAV)+'</nav></div></header>'
@@ -171,6 +190,71 @@ t('r-real',(ch>=0?'+':'−')+f(Math.abs(ch),1)+'%');t('r-fair',c+f(pb*a/b));$('r
 v=ch>0.05?`You get ${f(Math.abs(cut),1)}% ${cut>=0?'less':'more'} for ${np>=pb?f((np/pb-1)*100,1)+'% more':f((1-np/pb)*100,1)+'% less'} money: a real price rise of ${f(ch,1)}% per ${u}. At the old rate the new pack would cost ${c}${f(pb*a/b)}.`:`Per ${u} this is not more expensive than before (${f(ch,1)}%).`}
 else v=cut>0?`If the price stayed the same, you now pay ${f((b/a-1)*100,1)}% more per ${u}. Add the prices to see the real change.`:'The pack did not get smaller.';t('verdict',v)};
 F.forEach(k=>$(k).addEventListener('input',go));go()})();"""
+GUIDE_PUB="2026-10-15"
+def guides(cases,prods,bg,cg,med):
+    """Evergreen guides under /guides/. Returns [(url,title,desc)]."""
+    n=len(cases); np_=len(prods); w=max(cases,key=lambda c:c["pct"]); pr=[c for c in cases if c["real"] is not None]; up=sum(1 for c in pr if c["real"]>0.05)
+    mcut=med([c["pct"] for c in cases]); nct=len({c["country"] for c in cases})
+    art=lambda t,d,u: {"@context":"https://schema.org","@type":"Article","headline":t,"description":d,"url":SITE+u,"mainEntityOfPage":SITE+u,"datePublished":GUIDE_PUB,"dateModified":TODAY,"image":SITE+OGIMG,
+                       "author":{"@type":"Organization","name":NAME,"url":SITE+"/"},"publisher":{"@type":"Organization","name":NAME,"url":SITE+"/","logo":{"@type":"ImageObject","url":SITE+"/favicon.svg"}}}
+    faq=lambda qa: {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":re.sub("<[^>]+>","",a)}} for q,a in qa]}
+    faq_h=lambda qa: '<h2 id="faq">FAQ</h2>'+"".join(f'<h3>{E(q)}</h3><p>{a}</p>' for q,a in qa)
+    meta=f'<p class="m">By {NAME} · Updated {TODAY} · Figures from our live case library</p>'
+    out=[]
+    # what is
+    u="/guides/what-is-shrinkflation.html"; t="What is shrinkflation? Definition, examples and how it is documented"
+    d=f"Shrinkflation is when a pack gets smaller but the price stays the same or rises. Plain definition, how it differs from inflation and skimpflation, and {n} sourced examples."
+    qa=[("What is shrinkflation?","Shrinkflation is when a product’s package gets smaller (less weight, volume or count) while its price stays the same or goes up. You pay the same or more for less, so the price per unit rises."),
+        ("Is shrinkflation illegal?","Usually not, as long as the label states the correct net quantity. Some countries go further: France has required supermarkets to flag shrunken packs since July 2024, and consumer agencies in Germany, the UK and Australia publish lists of cases."),
+        ("How much does shrinkflation raise prices?",f"Cutting a pack by a fraction x at the same price raises the unit price by x ÷ (1 − x). The median cut across our {n} documented cases is {mcut:.1f}%, which is a {mcut/(100-mcut)*100:.1f}% hidden rise per unit if the price did not change."),
+        ("What is the difference between shrinkflation and skimpflation?","Shrinkflation gives you less of the same product. Skimpflation gives you the same amount of a cheaper product, such as a recipe with cheaper ingredients, or a thinner service. Both raise the real price without a higher sticker price.")]
+    body=(f'<p class="crumbs"><a href="/guides/">Guides</a> / What is shrinkflation</p><article class="prose"><h1>What is shrinkflation?</h1>{meta}'
+      f'<section class="label" aria-label="Definition"><div class="hd">Shrink Facts</div><div class="row bar"><span>Pack size</span><b class="yes">Smaller</b></div><div class="row"><span>Shelf price</span><b>Same or higher</b></div><div class="row bar"><span>Price per unit</span><b class="yes">Up</b></div>'
+      f'<p><b>Shrinkflation</b> is a price rise hidden in the package: less product for the same money, or more money.</p></section>'
+      f'<p>A box of cereal goes from 18 oz to 15.4 oz. The shelf price stays at $4.99. Nothing on the front of the box says it changed, and the box itself may be the same height. But you now pay 16.9% more per ounce. That is shrinkflation.</p>'
+      f'<p>The one number that tells the truth is the <b>net quantity</b> on the label (“Net Wt.”, “Inhalt”, sheet or pod count). If it went down and the price did not, the price per unit went up.</p>'
+      f'<h2>Shrinkflation, inflation and skimpflation</h2><ul><li><b>Inflation</b>: the sticker price goes up. You see it.</li><li><b>Shrinkflation</b>: the sticker price stays, the pack gets smaller. You have to read the label to see it.</li>'
+      f'<li><b>Skimpflation</b>: price and size stay, quality drops (cheaper ingredients, fewer features). It is the hardest to measure, and we do not track it.</li></ul>'
+      f'<p>Official inflation figures generally do count shrinkflation, because statistics agencies measure price per unit. A single shopper buying the same box every week usually does not notice it.</p>'
+      f'<h2>How common is it?</h2><p>Our library holds <a href="/cases/">{n} documented cases</a> from {nct} countries. The median cut is {mcut:.1f}%. The largest is {E(w["product"])}: {fmt(w["before"],w["unit"])} → {fmt(w["after"],w["unit"])} (<a href="/cases/{w["slug"]}.html">−{w["pct"]:.1f}%</a>). '
+      f'Where the source also recorded the shelf price before and after ({len(pr)} cases), {up} got more expensive per unit. The <a href="/worst/">worst offenders</a> page ranks them.</p>'
+      f'<h2>How ShrinkRadar documents it</h2><ul><li><b>Daily checks.</b> We record the net quantity and the most recent price of <a href="/products/">{np_} everyday products</a> every day from Open Food Facts, Open Products Facts and Open Prices. Any drop is logged as a finding on the homepage.</li>'
+      f'<li><b>Sourced cases.</b> Historical before/after cuts come from consumer agencies (e.g. Verbraucherzentrale Hamburg, Consumentenbond, Which?, CHOICE), the Mouse Print* archive, and news investigations. Each case links the source and quotes what it says. If we cannot verify a case, we leave it out.</li>'
+      f'<li><b>No estimates.</b> Missing data is shown as missing.</li></ul>'
+      f'<p>Browse by <a href="/brands/">brand</a> or <a href="/categories/">category</a>, or run your own numbers in the <a href="/calculator/">shrinkflation calculator</a>. Next: <a href="/guides/how-to-spot-shrinkflation.html">how to spot shrinkflation in the store</a>.</p>'
+      f'{faq_h(qa)}</article>')
+    page(u[1:],f"{t} | {NAME}",d,body,[crumbs(("Guides","/guides/"),("What is shrinkflation",None)),art(t,d,u),faq(qa)]); out.append((u,"What is shrinkflation?",d))
+    # how to spot
+    u="/guides/how-to-spot-shrinkflation.html"; t="How to spot shrinkflation: a 5-step checklist for the grocery store"
+    d="Practical checklist to catch shrinkflation: read the net weight, compare unit prices on shelf tags, check pack sizes, use the calculator, and search known cases."
+    qa=[("How can I tell if a product shrank?","Compare the net quantity on the label (weight, volume or count) with an older pack, a photo, or a documented case. The package itself is not reliable: boxes often keep their height and get thinner, or gain a deeper dent in the bottom."),
+        ("What is unit price and where do I find it?","Unit price is the price per ounce, 100 g, sheet or load. In most US, UK, EU and Australian supermarkets it is printed in small type on the shelf tag. It is the only fair way to compare packs of different size."),
+        ("Is the bigger pack always cheaper per unit?","No. Larger or ‘family’ packs are sometimes more expensive per unit than the regular size, especially after a shrink. Check the unit price on the tag every time."),
+        ("How do I report shrinkflation?","Keep the old and new packs or photos showing the net quantity and the price. Consumer agencies such as Verbraucherzentrale (Germany), Which? (UK) and CHOICE (Australia) collect reports; in the US, Mouse Print* covers cases.")]
+    steps=[("Read the net quantity, not the box",'Look for “Net Wt.”, “Net contents”, the sheet, roll, pod or load count. Ignore the box size, the “family size” badge and the picture. Packs shrink by getting thinner, adding a deeper punt in the bottom of a jar, or more air in a bag.'),
+           ("Compare the unit price on the shelf tag","The small print on the shelf tag gives the price per oz, 100 g, sheet or load. Note it for the things you buy every week. If it jumps while the shelf price stays the same, the pack shrank."),
+           ("Check the other sizes of the same brand","Line up the sizes side by side. A shrink often shows when the “regular” pack is now close to the smaller size, or when the multipack costs more per unit than singles."),
+           ("Do the math",f'Put the old and new size and price into the <a href="/calculator/">shrinkflation calculator</a>. It gives the real change per unit and the fair price for the new pack. A 10% smaller pack at the same price is an 11.1% price rise.'),
+           ("Look it up",f'<a href="/search.html">Search ShrinkRadar</a> for the brand or product. We track {np_} products daily and have {n} <a href="/cases/">documented cases</a>, each with a source. The <a href="/worst/">worst offenders</a> list shows the brands caught most often.')]
+    body=(f'<p class="crumbs"><a href="/guides/">Guides</a> / How to spot shrinkflation</p><article class="prose"><h1>How to spot shrinkflation</h1>{meta}'
+      f'<p>Shrinkflation is designed to be missed: the price stays, the pack looks the same, only the small number on the label changes. Five habits catch almost all of it.</p>'
+      '<section class="label" aria-label="Checklist"><div class="hd">Shrink Check</div>'+"".join(f'<div class="row{" bar" if i==len(steps) else ""}"><span>{i}. {E(h)}</span><b>✓</b></div>' for i,(h,_) in enumerate(steps,1))+'<p>Net quantity and unit price are the two numbers that matter.</p></section>'
+      +"".join(f'<h2>{i}. {E(h)}</h2><p>{b}</p>' for i,(h,b) in enumerate(steps,1))
+      +f'<h2>Where it happens most</h2><p>Categories with the most documented cases in our library: '+", ".join(f'<a href="/categories/{slug(k)}.html">{E(k)}</a> ({len(v)})' for k,v in sorted(cg.items(),key=lambda kv:-len(kv[1]))[:6])+'.</p>'
+      f'<p>Background: <a href="/guides/what-is-shrinkflation.html">what shrinkflation is</a>.</p>{faq_h(qa)}</article>')
+    page(u[1:],f"{t} | {NAME}",d,body,[crumbs(("Guides","/guides/"),("How to spot shrinkflation",None)),art(t,d,u),faq(qa),
+        {"@context":"https://schema.org","@type":"HowTo","name":"How to spot shrinkflation","step":[{"@type":"HowToStep","position":i,"name":h,"text":re.sub("<[^>]+>","",b)} for i,(h,b) in enumerate(steps,1)]}]); out.append((u,"How to spot shrinkflation",d))
+    # hub
+    tb=sorted([(k,v) for k,v in bg.items() if len(v)>=5],key=lambda kv:(-len(kv[1]),kv[1][0]["brand"]))
+    body=(f'<h1>Shrinkflation guides</h1><p class="prose">Plain explanations of shrinkflation, built on our library of {n} documented cases and daily checks of {np_} products.</p><ul class="grid">'
+      +"".join(f'<li class="card"><span class="ml">Guide</span><h3><a href="{u_}">{E(t_)}</a></h3><span class="m">{E(d_)}</span></li>' for u_,t_,d_ in out)
+      +'<li class="card"><span class="ml">Tool</span><h3><a href="/calculator/">Shrinkflation calculator</a></h3><span class="m">Old and new size and price in, real price change per unit out.</span></li>'
+      +'<li class="card"><span class="ml">Data</span><h3><a href="/worst/">Worst offenders</a></h3><span class="m">Biggest cuts, hidden per-unit price hikes and repeat brands.</span></li></ul>'
+      +'<h2>Brands caught most often</h2><ul class="chips">'+"".join(f'<li><a href="/brands/{k}.html">{E(v[0]["brand"])} <span class="m">{len(v)}</span></a></li>' for k,v in tb)+'</ul>'
+      +'<h2>Categories by documented cases</h2><ul class="chips">'+"".join(f'<li><a href="/categories/{slug(k)}.html">{E(k)} <span class="m">{len(v)}</span></a></li>' for k,v in sorted(cg.items(),key=lambda kv:-len(kv[1])))+'</ul>')
+    page("guides/index.html",f"Shrinkflation guides: what it is and how to spot it | {NAME}",f"Shrinkflation guides from {NAME}: what shrinkflation is, how to spot it in the store, and the brands and categories with the most of the {n} documented cases.",body,
+         [crumbs(("Guides",None)),{"@context":"https://schema.org","@type":"ItemList","name":"Shrinkflation guides","itemListElement":[{"@type":"ListItem","position":i+1,"url":SITE+u_,"name":t_} for i,(u_,t_,_) in enumerate(out)]}])
+    return out
 def main():
     if OUT.exists(): shutil.rmtree(OUT)
     OUT.mkdir(); (OUT/"style.css").write_text(CSS)
@@ -343,8 +427,8 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
         for k,v in g.items():
             nm=namef(k)
             page(f'{kind}/{str(k).lower()}.html',f'Shrinkflation in {nm}: {len(v)} documented cases | {NAME}',f'{len(v)} documented shrinkflation cases {"in "+nm if kind=="countries" else "from "+nm}, with before/after sizes and sources.',
-                 f'<p class="crumbs"><a href="/cases/">Known cases</a> / <a href="/{kind}/">{lab}</a></p><h1>Shrinkflation {"in "+E(nm) if kind=="countries" else "in "+E(nm)}</h1><p>{len(v)} documented cases, biggest cuts first.</p><ul class="grid">'+"".join(ccard(c) for c in sorted(v,key=lambda c:-c["pct"]))+'</ul>',
-                 [crumbs(("Known cases","/cases/"),(nm,None))])
+                 f'<p class="crumbs"><a href="/cases/">Known cases</a> / <a href="/{kind}/">{lab}</a></p><h1>Shrinkflation in {E(nm)}</h1><p>{"Has shrinkflation hit "+E(nm)+"? Yes: " if kind=="countries" else ""}{len(v)} documented cases, biggest cuts first. See also the <a href="/worst/">worst offenders</a> and <a href="/guides/how-to-spot-shrinkflation.html">how to spot shrinkflation</a>.</p><ul class="grid">'+"".join(ccard(c) for c in sorted(v,key=lambda c:-c["pct"]))+'</ul>',
+                 [crumbs(("Known cases","/cases/"),(nm,None))]+([{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":f"Has shrinkflation hit {nm}?","acceptedAnswer":{"@type":"Answer","text":f'Yes. ShrinkRadar has {len(v)} documented, sourced shrinkflation cases in {nm}. The biggest: {max(v,key=lambda c:c["pct"])["product"]}, {fmt(max(v,key=lambda c:c["pct"])["before"],max(v,key=lambda c:c["pct"])["unit"])} → {fmt(max(v,key=lambda c:c["pct"])["after"],max(v,key=lambda c:c["pct"])["unit"])} (−{max(v,key=lambda c:c["pct"])["pct"]:.1f}%).'}}]}] if kind=="countries" else []))
         page(f'{kind}/index.html',f'Shrinkflation by {lab.lower()} | {NAME}',f'Documented shrinkflation cases by {lab.lower()[:-1]}.',
              f'<h1>Cases by {lab.lower()[:-1] if lab!="Countries" else "country"}</h1><ul class="chips">'+"".join(f'<li><a href="/{kind}/{str(k).lower()}.html">{E(namef(k))} <span class="m">{len(v)}</span></a></li>' for k,v in sorted(g.items(),reverse=(kind=="years")))+'</ul>',[crumbs((lab,None))])
     def groups(kind,key,label):
@@ -352,12 +436,27 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
         for p in prods: g.setdefault(p[key],{"name":p["brand" if kind=="brands" else "category"] or "Unbranded","p":[],"c":[]})["p"].append(p)
         for c in cases: g.setdefault(c[key],{"name":c["brand" if kind=="brands" else "category"],"p":[],"c":[]})["c"].append(c)
         for k,v in g.items():
-            body=f'<p class="crumbs"><a href="/{kind}/">{label}</a></p><h1>Did {E(v["name"])} products shrink?</h1>'
-            if v["c"]: body+=f'<h2>Documented cases ({len(v["c"])})</h2><ul class="grid">'+"".join(ccard(c) for c in v["c"])+'</ul>'
+            nm=v["name"]; q=f"Did {nm} products shrink?"; np_,nc=len(v["p"]),len(v["c"])
+            if nc:
+                w=max(v["c"],key=lambda c:c["pct"]); verdict,cls="Yes","yes"
+                ans=f'{nc} documented case{"s"*(nc!=1)}. Biggest cut: {w["product"]}, {fmt(w["before"],w["unit"])} → {fmt(w["after"],w["unit"])} (−{w["pct"]:.1f}%). See cases below.'
+            elif np_: verdict,cls,ans="Not in our case library yet","",f'Not in our case library yet. We track {np_} {nm} product{"s"*(np_!=1)} daily and flag any size cut.'
+            else: verdict,cls,ans="Unknown","","No data on file yet."
+            yrs_=sorted({c["year"] for c in v["c"] if c["year"]!="n/d"}); cty=sorted({c["country"] for c in v["c"]})
+            label_=(f'<section class="label" aria-label="Size facts"><div class="hd">Size Facts</div><div class="row bar"><span>{E(q)}</span><b class="{cls}">{E(verdict) if nc else ("No case yet" if np_ else "Unknown")}</b></div>'
+                    f'<div class="row"><span>Documented cases</span><b>{nc}</b></div>'
+                    +(f'<div class="row"><span>Biggest cut</span><b class="yes">−{w["pct"]:.1f}%</b></div><div class="row"><span>Median cut</span><b>−{med([c["pct"] for c in v["c"]]):.1f}%</b></div>' if nc else "")
+                    +(f'<div class="row"><span>Years</span><b>{yrs_[0]}{"–"+yrs_[-1] if len(yrs_)>1 else ""}</b></div>' if yrs_ else "")
+                    +(f'<div class="row"><span>Countries</span><b>{" ".join(FLAG.get(c,c) for c in cty)}</b></div>' if cty else "")
+                    +f'<div class="row bar"><span>Tracked daily</span><b>{np_}</b></div><p>{E(ans)}</p></section>')
+            body=f'<p class="crumbs"><a href="/{kind}/">{label}</a></p><h1>Did {E(nm)} products shrink?</h1>{label_}'
+            if nc: body+=f'<p class="prose m">Each case links to its source. Compare with the <a href="/worst/">worst offenders</a>, or check any pack with the <a href="/calculator/">shrinkflation calculator</a>.</p>'
+            if v["c"]: body+=f'<h2>Documented cases ({len(v["c"])})</h2><ul class="grid">'+"".join(ccard(c) for c in sorted(v["c"],key=lambda c:-c["pct"]))+'</ul>'
             if v["p"]: body+=f'<h2>Tracked daily ({len(v["p"])})</h2><ul class="grid">'+"".join(pcard(p) for p in v["p"])+'</ul>'
             CUR_ALERT[:]=[('brand' if kind=='brands' else 'category',k,v['name'])]
             page(f'{kind}/{k}.html',f'{v["name"]} shrinkflation: did {v["name"]} products get smaller? | {NAME}',
-                 f'{len(v["c"])} documented cases and {len(v["p"])} {v["name"]} products tracked daily for size and unit-price changes.',body,[crumbs((label,f"/{kind}/"),(v["name"],None))])
+                 (f'Yes: {nc} documented {nm} shrinkflation case{"s"*(nc!=1)}, biggest −{w["pct"]:.0f}% ({w["product"]}). ' if nc else f'Did {nm} products shrink? ')+f'{np_} {nm} products tracked daily for size and unit-price changes.',body,
+                 [crumbs((label,f"/{kind}/"),(nm,None)),{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":(f"Yes. {ans}" if nc else ans)}}]}])
         page(f'{kind}/index.html',f'Shrinkflation by {label.lower()} | {NAME}',f'Browse shrinkflation tracking by {label.lower()}.',
              f'<h1>{label}</h1><ul class="chips">'+"".join(f'<li><a href="/{kind}/{k}.html">{E(v["name"])} <span class="m">{len(v["p"])+len(v["c"])}</span></a></li>' for k,v in sorted(g.items(),key=lambda kv:kv[1]["name"].lower()))+'</ul>',[crumbs((label,None))])
     groups("brands","bslug","Brands"); groups("categories","cslug","Categories")
@@ -369,11 +468,12 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
     page("index.html",f'{NAME}: did it shrink? Shrinkflation tracker for groceries & household goods',f'Daily tracking of package sizes and unit prices for {len(prods)} products, plus {len(cases)} documented shrinkflation cases with sources.',
          f'<h1>Did it shrink?</h1><p class="prose">We check the net weight of {len(prods)} everyday products every day and keep a sourced record of {len(cases)} known shrinkflation cases.</p>'
          f'<form class="search" action="/search.html" role="search"><label class="ml" for="q0">Search a product or brand</label><input id="q0" name="q" placeholder="Doritos, cereal, Charmin…"></form>'
-         f'<h2>Latest from daily checks</h2><ul class="feed">{feed}</ul><h2>Biggest documented shrinks</h2><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"])[:6])}</ul><p><a href="/cases/"><b>All {len(cases)} known cases →</b></a> · <a href="/worst/"><b>Worst offenders →</b></a> · <a href="/calculator/"><b>Shrinkflation calculator →</b></a></p>'
+         f'<h2>Latest from daily checks</h2><ul class="feed">{feed}</ul><h2>Biggest documented shrinks</h2><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"])[:6])}</ul><p><a href="/cases/"><b>All {len(cases)} known cases →</b></a> · <a href="/worst/"><b>Worst offenders →</b></a> · <a href="/calculator/"><b>Shrinkflation calculator →</b></a></p><p class="m">New to this? Read <a href="/guides/what-is-shrinkflation.html">what shrinkflation is</a> and <a href="/guides/how-to-spot-shrinkflation.html">how to spot it in the store</a>.</p>'
          f'<h2>Recently checked</h2><ul class="grid">{"".join(pcard(p) for p in prods[:6])}</ul>',
          [{"@context":"https://schema.org","@type":"WebSite","name":NAME,"url":SITE+"/","potentialAction":{"@type":"SearchAction","target":SITE+"/search.html?q={search_term_string}","query-input":"required name=search_term_string"}},
           {"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/","logo":SITE+"/favicon.svg"}])
-    idx=[{"t":p["title"],"u":f'/products/{p["slug"]}.html',"k":p["category"]} for p in prods]+[{"t":c["product"]+" (documented case)","u":f'/cases/{c["slug"]}.html',"k":c["category"]} for c in cases]
+    GUIDES=guides(cases,prods,bg,cg,med)
+    idx=[{"t":t,"u":u,"k":"Guide"} for u,t,_ in GUIDES]+[{"t":p["title"],"u":f'/products/{p["slug"]}.html',"k":p["category"]} for p in prods]+[{"t":c["product"]+" (documented case)","u":f'/cases/{c["slug"]}.html',"k":c["category"]} for c in cases]
     AI=[{"id":f'f:{p["code"]}:{d}:{t[:4]}',"type":"finding","date":d,"title":p["title"],"text":t,"url":f'{SITE}/products/{p["slug"]}.html',"product":p["code"],"brand":p["bslug"],"category":p["cslug"],"brand_name":p["brand"],"category_name":p["category"]} for d,p,t in findings]
     AI+=[{"id":"c:"+c["slug"],"type":"case","date":c["when"],"title":c["product"],"text":f'{fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])} ({c["pct"]:.0f}% less) · {COUNTRY.get(c["country"],c["country"])}, {c["when"]}',"url":f'{SITE}/cases/{c["slug"]}.html',"product":None,"brand":slug(c["brand"]),"category":slug(c["category"]),"brand_name":c["brand"],"category_name":c["category"]} for c in cases]
     (R/"data/alert_items.json").write_text(json.dumps(AI,ensure_ascii=False,indent=0))
@@ -390,18 +490,38 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
     page("about.html",f'About & methodology | {NAME}','How ShrinkRadar tracks shrinkflation: sources, method and corrections.',
          '<div class="prose"><h1>About ShrinkRadar</h1><p>ShrinkRadar answers one question: <i>did it shrink?</i> We check a fixed list of everyday products daily. Net quantity comes from Open Food Facts / Open Products Facts; prices come from the crowdsourced Open Prices database (most recent US price). We only publish values we actually fetched — missing data is shown as missing, never estimated.</p>'
          '<p>A <b>finding</b> is logged when a newer check shows a smaller net quantity in the same unit, or a higher price per 100 g/ml.</p><p><b>Known cases</b> are historical before/after size cuts compiled from Verbraucherzentrale Hamburg’s Mogelpackungsliste, the Mouse Print* archive (Edgar Dworsky), Which?, CHOICE, CBC, foodwatch, Consumer Reports, LendingTree’s Wayback-Machine study, the U.S. Senate/USW report, news outlets and Wikipedia. Each case shows the source we fetched and a quote of what it says; cases we could not verify are left out.</p>'
-         '<h2 id="privacy">Privacy &amp; email alerts</h2><p>No ads, cookies or analytics trackers. Email alerts (when live) store only your address, what you follow and the confirmation time. Double opt-in, one-click unsubscribe, never shared or sold. <a href="/alerts/#privacy">Details</a>.</p><p>Spotted a shrink? Corrections and tips are welcome.</p></div>',[{"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/"}])
+         '<h2 id="privacy">Privacy &amp; email alerts</h2><p>No ads, cookies or analytics trackers. Email alerts (when live) store only your address, what you follow and the confirmation time. Double opt-in, one-click unsubscribe, never shared or sold. <a href="/alerts/#privacy">Details</a>.</p><p>New to the topic? Start with <a href="/guides/what-is-shrinkflation.html">what shrinkflation is and how we document it</a>.</p><p>Spotted a shrink? Corrections and tips are welcome.</p></div>',[{"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/"}])
     # RSS: findings + cases
     items=[(d,f'{p["title"]}: {t}',f'{SITE}/products/{p["slug"]}.html') for d,p,t in findings[:50]]+[(TODAY if not findings else findings[-1][0],f'Known case: {c["product"]} {fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])}',f'{SITE}/cases/{c["slug"]}.html') for c in cases]
     rss="".join(f'<item><title>{E(t)}</title><link>{u}</link><guid>{u}</guid><pubDate>{format_datetime(datetime.datetime.fromisoformat(d).replace(tzinfo=datetime.timezone.utc))}</pubDate></item>' for d,t,u in items)
     (OUT/"feed.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{NAME}</title><link>{SITE}/</link><description>Shrinkflation findings and documented cases</description>{rss}</channel></rss>')
     (OUT/"sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+
         "".join(f'<url><loc>{SITE}/{p.replace("index.html","")}</loc><lastmod>{TODAY}</lastmod></url>' for p in PAGES)+"</urlset>")
-    (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n"); (OUT/".nojekyll").write_text(""); (OUT/"favicon.svg").write_text(FAV); (OUT/"CNAME").write_text("shrinkradar.com\n")
+    (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n"); (OUT/".nojekyll").write_text(""); (OUT/"favicon.svg").write_text(FAV); (OUT/"og.svg").write_text(OG); og_png(OUT/"og.png") or None; (OUT/"CNAME").write_text("shrinkradar.com\n")
     # retired brand slugs from earlier mis-detected brands: noindex stubs pointing at the real brands
     for old,targets in {"dr":["dr-oetker","dr-hauschka"]}.items():
         if not (OUT/f"brands/{old}.html").exists():
             (OUT/f"brands/{old}.html").write_text('<!doctype html><meta charset=utf-8><meta name=robots content=noindex><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/style.css><title>Moved</title><main class=w><h1>This brand page moved</h1><ul>'+"".join(f'<li><a href="/brands/{t}.html">{t.replace("-"," ").title()}</a></li>' for t in targets)+'</ul>')
+    (OUT/"llms.txt").write_text(f"""# {NAME}
+
+> {NAME} ({SITE}) answers "did it shrink?" for groceries and household goods. It checks the net quantity of {len(prods)} everyday products daily (Open Food Facts, Open Products Facts, Open Prices; ODbL) and keeps a library of {len(cases)} documented shrinkflation cases. Every case cites the consumer agency, advocate or news source it came from; missing data is shown as missing, never estimated.
+
+## Key pages
+- [Home: latest findings]({SITE}/)
+- [Known cases: all {len(cases)} documented before/after size cuts, filterable]({SITE}/cases/)
+- [Worst offenders: biggest cuts, hidden per-unit price hikes, repeat brands]({SITE}/worst/)
+- [Shrinkflation calculator: real price change per unit]({SITE}/calculator/)
+- [Guides: what shrinkflation is, how to spot it]({SITE}/guides/)
+- [Brands]({SITE}/brands/) · [Categories]({SITE}/categories/) · [Countries]({SITE}/countries/) · [Products tracked daily]({SITE}/products/)
+- [Methodology and sources]({SITE}/about.html)
+
+## Machine-readable
+- [RSS feed]({SITE}/feed.xml)
+- [Sitemap]({SITE}/sitemap.xml)
+- [Search index (JSON)]({SITE}/search.json)
+
+Please cite ShrinkRadar and link the case page (which links the original source) when quoting figures.
+""")
     if INDEXNOW_KEY: (OUT/f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY)
     (OUT/"404.html").write_text('<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/style.css><title>Not found</title><main class=w><h1>Not found</h1><p>Page not found. <a href="/">ShrinkRadar home</a> · <a href="/search.html">Search</a></p>')
     print(len(PAGES),"pages,",len(findings),"findings,",len(cases),"cases")
