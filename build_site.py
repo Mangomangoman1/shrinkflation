@@ -65,11 +65,14 @@ blockquote.q{margin:0;padding:var(--s3);background:var(--panel);border-left:4px 
 .alert input[type=email]{flex:1 1 14rem;font:700 1rem var(--f);padding:.6rem;border:2px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:0}.alert button{font:900 .95rem var(--f);text-transform:uppercase;letter-spacing:.04em;padding:.65rem 1rem;border:2px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:0;cursor:pointer}
 .alert [disabled]{opacity:.55;cursor:not-allowed}.alert .st{min-height:1.2em;margin:.4rem 0 0;font-weight:700}
 .calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:var(--s3);margin:var(--s3) 0}.calc fieldset{border:2px solid var(--ink);background:var(--panel);margin:0;padding:var(--s2) var(--s3) var(--s3)}.calc legend{padding:0 .3rem;background:var(--panel)}
-.calc label{display:block;font-weight:700;font-size:.875rem;margin-top:var(--s2)}.calc input,.calc select{display:block;width:100%;margin-top:.2rem;font:700 1.15rem var(--f);padding:.55rem .6rem;border:2px solid var(--ink);border-radius:0;background:var(--paper);color:var(--ink)}
+.calc label{display:block;font-weight:700;font-size:.875rem;margin-top:var(--s2)}.calc input,.calc select,.calc textarea{display:block;width:100%;margin-top:.2rem;font:700 1.15rem var(--f);padding:.55rem .6rem;border:2px solid var(--ink);border-radius:0;background:var(--paper);color:var(--ink)}.calc textarea{font-weight:400;line-height:1.45;resize:vertical;min-height:6rem}
+.submit-actions{grid-column:1/-1;margin-top:var(--s2)}.submit-actions button,.label button,#copy{font:900 .95rem var(--f);text-transform:uppercase;letter-spacing:.04em;padding:.7rem 1.1rem;border:2px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:0;cursor:pointer}.submit-actions button:hover,.label button:hover,#copy:hover{background:var(--sig);border-color:var(--sig)}
+#md{width:100%;font:400 .875rem ui-monospace,monospace;padding:.6rem;border:2px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:0;resize:vertical}
+.st{min-height:1.2em;margin:var(--s2) 0;font-weight:700}
 .label .big.no{color:var(--ok)}.label .big.yes{color:var(--sig)}[hidden]{display:none!important}
 footer{border-top:8px solid var(--ink);background:var(--panel);padding:var(--s4) 0;font-size:.875rem;color:var(--muted)}
 footer a{color:var(--ink)}
-@media(max-width:600px){.tag{display:none}.hide-s{display:none}td,th{padding:.45rem .3rem}}
+@media(max-width:600px){.tag{display:none}.hide-s{display:none}td,th{padding:.45rem .3rem}.calc{grid-template-columns:1fr;gap:var(--s2)}.calc fieldset{padding:var(--s2)}.calc input,.calc select,.calc textarea{font-size:1rem;padding:.65rem .6rem}.submit-actions button{width:100%}.alert .row{flex-direction:column;align-items:stretch}.alert input[type=email],.alert button{width:100%;flex:none}}
 """
 LOGO='<svg viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 28A24 24 0 0 1 28 4"/><path d="M10 28A18 18 0 0 1 28 10"/><path d="M16 28A12 12 0 0 1 28 16"/></g><circle cx="24" cy="21" r="3.2" fill="#c8102e"/></svg>'
 FAV='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#111"/><g fill="none" stroke="#fff" stroke-width="2.5"><path d="M4 28A24 24 0 0 1 28 4"/><path d="M10 28A18 18 0 0 1 28 10"/><path d="M16 28A12 12 0 0 1 28 16"/></g><circle cx="24" cy="21" r="3.2" fill="#ff5a5f"/></svg>'
@@ -110,7 +113,7 @@ PAGES=[]
 SLUGS=set()
 COUNTRY={'US':'United States','UK':'United Kingdom','DE':'Germany','FR':'France','CA':'Canada','AU':'Australia','EU':'Europe','NL':'Netherlands','ES':'Spain','AT':'Austria','IT':'Italy','BR':'Brazil','IN':'India'}
 FLAG={'US':'🇺🇸','UK':'🇬🇧','DE':'🇩🇪','FR':'🇫🇷','CA':'🇨🇦','AU':'🇦🇺','EU':'🇪🇺','NL':'🇳🇱','ES':'🇪🇸','AT':'🇦🇹','IT':'🇮🇹','BR':'🇧🇷','IN':'🇮🇳'}
-NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/worst/', 'Worst offenders'), ('/calculator/', 'Calculator'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/guides/', 'Guides'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/alerts/', 'Alerts'), ('/about.html', 'About')]
+NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/worst/', 'Worst offenders'), ('/calculator/', 'Calculator'), ('/submit/', 'Submit'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/guides/', 'Guides'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/alerts/', 'Alerts'), ('/about.html', 'About')]
 def slug(x): return re.sub(r"[^a-z0-9]+","-",x.lower().replace("&","and")).strip("-")
 def fmt(v,u): return f"{round(v,1) if v>=10 else round(v,2):g} {u}"
 def disp(s):
@@ -190,6 +193,57 @@ t('r-real',(ch>=0?'+':'−')+f(Math.abs(ch),1)+'%');t('r-fair',c+f(pb*a/b));$('r
 v=ch>0.05?`You get ${f(Math.abs(cut),1)}% ${cut>=0?'less':'more'} for ${np>=pb?f((np/pb-1)*100,1)+'% more':f((1-np/pb)*100,1)+'% less'} money: a real price rise of ${f(ch,1)}% per ${u}. At the old rate the new pack would cost ${c}${f(pb*a/b)}.`:`Per ${u} this is not more expensive than before (${f(ch,1)}%).`}
 else v=cut>0?`If the price stayed the same, you now pay ${f((b/a-1)*100,1)}% more per ${u}. Add the prices to see the real change.`:'The pack did not get smaller.';t('verdict',v)};
 F.forEach(k=>$(k).addEventListener('input',go));go()})();"""
+SUBMIT_JS="""(()=>{const $=id=>document.getElementById(id),f=$('sight'),st=$('st'),md=$('md'),fb=$('fallback');
+const val=id=>($(id).value||'').trim();
+const req=['product','old_size','old_unit','new_size','new_unit'];
+const build=()=>{
+  const product=val('product'),brand=val('brand'),cat=val('category'),country=val('country');
+  const when=val('when'),os=val('old_size'),ou=val('old_unit'),ns=val('new_size'),nu=val('new_unit');
+  const op=val('old_price'),np=val('new_price'),cur=val('currency'),store=val('store');
+  const src=val('source'),notes=val('notes'),email=val('email');
+  const title=`Sighting: ${product} (${os} ${ou} → ${ns} ${nu})`;
+  const lines=[
+    '## Sighting report',
+    '',
+    `| Field | Value |`,
+    `| --- | --- |`,
+    `| Product | ${product} |`,
+    `| Brand | ${brand||'—'} |`,
+    `| Category | ${cat||'—'} |`,
+    `| Country | ${country||'—'} |`,
+    `| When (approx) | ${when||'—'} |`,
+    `| Old size | ${os} ${ou} |`,
+    `| New size | ${ns} ${nu} |`,
+    `| Old price | ${op?((cur?cur+' ':'')+op):'—'} |`,
+    `| New price | ${np?((cur?cur+' ':'')+np):'—'} |`,
+    `| Store / where seen | ${store||'—'} |`,
+    `| Evidence URL | ${src||'—'} |`,
+    `| Reporter email | ${email||'(not given)'} |`,
+    '',
+    '### Notes',
+    notes||'_(none)_',
+    '',
+    '---',
+    '_Submitted via [ShrinkRadar /submit/](https://shrinkradar.com/submit/). Verify before adding to the case library._'
+  ];
+  return {title,body:lines.join('\\n')};
+};
+f.addEventListener('submit',e=>{
+  e.preventDefault();
+  for(const id of req){if(!val(id)){st.textContent='Please fill in the required fields (product, old size, new size).';$(id).focus();return}}
+  const os=parseFloat(val('old_size').replace(',','.')),ns=parseFloat(val('new_size').replace(',','.'));
+  if(!(os>0&&ns>0)){st.textContent='Sizes must be positive numbers.';return}
+  const {title,body}=build();
+  const url='https://github.com/Mangomangoman1/shrinkflation/issues/new?title='+encodeURIComponent(title)+'&body='+encodeURIComponent(body);
+  const w=window.open(url,'_blank','noopener');
+  md.value=body; fb.hidden=false;
+  st.textContent=w?'Opened a prefilled GitHub issue in a new tab. If nothing opened, copy the markdown below and paste it into a new issue.':'Pop-up blocked. Copy the markdown below and paste it into a new GitHub issue.';
+});
+$('copy').addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(md.value);$('copy').textContent='Copied';setTimeout(()=>$('copy').textContent='Copy markdown',1500)}
+  catch(_){md.select();document.execCommand('copy');$('copy').textContent='Copied'}
+});
+})();"""
 GUIDE_PUB="2026-10-15"
 def guides(cases,prods,bg,cg,med):
     """Evergreen guides under /guides/. Returns [(url,title,desc)]."""
@@ -368,7 +422,7 @@ def main():
 const go=()=>{const[c,y,k,t]=f.map(e=>e.value.toLowerCase());let v=0;rows.forEach(r=>{const ok=(!c||r.dataset.c.toLowerCase()==c)&&(!y||r.dataset.y==y)&&(!k||r.dataset.k.toLowerCase()==k)&&(!t||r.textContent.toLowerCase().includes(t));r.hidden=!ok;v+=ok});n.textContent=v};
 f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(location.search);['country','year','category','q'].forEach((k,i)=>{if(p.get(k)){f[i].value=p.get(k);}});go()})();"""
     page("cases/index.html",f'Known shrinkflation cases: {len(cases)} documented examples | {NAME}',f'{len(cases)} documented shrinkflation cases from the US, UK, Germany, France, Canada and Australia, each with before/after size, date and source.',
-         f'<h1>Known shrinkflation cases</h1><p class="prose">{len(cases)} documented before/after size cuts from consumer agencies, consumer advocates, news investigations and retailer-page archives. Every case links to the source we fetched.</p>'
+         f'<h1>Known shrinkflation cases</h1><p class="prose">{len(cases)} documented before/after size cuts from consumer agencies, consumer advocates, news investigations and retailer-page archives. Every case links to the source we fetched. Spotted one we missed? <a href="/submit/">Submit a sighting</a>.</p>'
          f'<p class="chips">'+"".join(f'<a href="/countries/{k.lower()}.html">{FLAG.get(k,"")} {E(COUNTRY.get(k,k))}</a>' for k in ctry)+'</p>'
          f'<div class="flt"><select aria-label="Country">{opt(ctry,"All countries")}</select><select aria-label="Year">{opt(yrs,"All years")}</select><select aria-label="Category">{opt(cats_c,"All categories")}</select><input type="search" placeholder="Filter by product or brand" aria-label="Filter"></div>'
          f'<p class="m"><b id="n">{len(cases)}</b> cases shown</p><div class="tw"><table id="ct"><thead><tr><th>Product</th><th class="n">Before</th><th class="n">After</th><th class="n">Cut</th><th class="n hide-s">Year</th></tr></thead><tbody>{trs}</tbody></table></div>',
@@ -400,7 +454,7 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
          f'<h2 id="brands">Repeat offenders</h2><p class="prose m">Brands and store brands with three or more documented cases. A brand with many products and much press coverage will show up more often, so treat this as “caught most often”, not a measured rate.</p>'
          f'<div class="tw"><table><thead><tr><th>#</th><th>Brand</th><th class="n">Cases</th><th class="n">Median cut</th><th class="n hide-s">Worst cut</th></tr></thead><tbody>{rep_tr}</tbody></table></div>'
          f'<h2 id="categories">By category</h2><div class="tw"><table><thead><tr><th>Category</th><th class="n">Cases</th><th class="n">Median cut</th><th class="n hide-s">Pricier per unit</th></tr></thead><tbody>{cat_tr}</tbody></table></div>'
-         f'<p class="m">Check any pack yourself with the <a href="/calculator/">shrinkflation calculator</a>.</p>',
+         f'<p class="m">Check any pack yourself with the <a href="/calculator/">shrinkflation calculator</a>. Spotted one we missed? <a href="/submit/">Submit a sighting</a>.</p>',
          [crumbs(("Worst offenders",None)),{"@context":"https://schema.org","@type":"ItemList","name":"Biggest documented shrinkflation cuts","itemListOrder":"https://schema.org/ItemListOrderDescending",
            "itemListElement":[{"@type":"ListItem","position":i+1,"url":f'{SITE}/cases/{c["slug"]}.html',"name":c["product"]} for i,c in enumerate(sorted(cases,key=lambda c:(-c["pct"],c["product"]))[:25])]}])
     # ---- Calculator ----
@@ -425,6 +479,53 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
          '<div class="prose"><h2>How it works</h2>'+"".join(f'<h3>{E(q)}</h3><p>{E(a)}</p>' for q,a in calc_faq)+'<p>See the <a href="/worst/">worst offenders</a> for the biggest real price hikes we have on record.</p></div>',
          [crumbs(("Calculator",None)),{"@context":"https://schema.org","@type":"WebApplication","name":"Shrinkflation calculator","url":SITE+"/calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":0,"priceCurrency":"USD"}},
           {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in calc_faq]}],js=CALC_JS)
+    # ---- Submit a sighting ----
+    cats_opts=sorted({c["category"] for c in cases}|{p["category"] for p in prods})
+    cat_sel="".join(f'<option value="{E(c)}">{E(c)}</option>' for c in cats_opts)
+    ctry_sel="".join(f'<option value="{k}">{E(v)}</option>' for k,v in sorted(COUNTRY.items(),key=lambda kv:kv[1]))
+    unit_opts="".join(f'<option value="{u}">{u}</option>' for u in ["g","oz","ml","fl oz","l","kg","lb","sheets","rolls","pieces","bars","loads","count","sq ft"])
+    submit_faq=[("What happens after I submit?","Your browser opens a prefilled GitHub issue on the ShrinkRadar repository. We read those issues and verify each report against a primary source (a package photo, a retailer listing, a consumer-agency post or a news article) before anything is added to the case library. There is no guarantee of inclusion."),
+                ("Do I need a GitHub account?","Yes, to open an issue on GitHub. If you do not have one, use the copy-to-clipboard button on this page and email the markdown to the maintainer, or open an account free at github.com."),
+                ("What makes a strong sighting?","A clear product name, the old and new net size (from the package), roughly when and where you saw it, and a photo or a link to a listing that shows the net weight. Shelf price before and after helps us compute the real unit-price change."),
+                ("Will you publish my email?","No. The optional email field is only so we can ask a follow-up question about the sighting. It is not shown on the public site.")]
+    page("submit/index.html",f'Submit a shrinkflation sighting | {NAME}',
+         'Report a shrinkflation sighting: product, old and new size, store and evidence. Opens a prefilled GitHub issue. We verify before adding to the case library.',
+         '<h1>Submit a sighting</h1><p class="prose">Spotted a smaller pack? Fill this in. It opens a <b>prefilled GitHub issue</b> on our public repository. We verify every report against a source before it joins the <a href="/cases/">case library</a> — inclusion is not guaranteed.</p>'
+         '<form class="calc submit" id="sight">'
+         '<fieldset><legend class="ml">Product</legend>'
+         '<label>Product name *<input id="product" name="product" required autocomplete="off" placeholder="e.g. Cadbury Dairy Milk Freddo multipack"></label>'
+         '<label>Brand<input id="brand" name="brand" autocomplete="organization" placeholder="e.g. Cadbury"></label>'
+         f'<label>Category<select id="category" name="category"><option value="">— select —</option>{cat_sel}</select></label>'
+         f'<label>Country<select id="country" name="country"><option value="">— select —</option>{ctry_sel}</select></label>'
+         '<label>Year / approx date<input id="when" name="when" placeholder="e.g. 2026-03 or Spring 2026"></label></fieldset>'
+         '<fieldset><legend class="ml">Size change</legend>'
+         f'<label>Old size *<input id="old_size" name="old_size" inputmode="decimal" required placeholder="e.g. 18"></label>'
+         f'<label>Old unit *<select id="old_unit" name="old_unit" required><option value="">—</option>{unit_opts}</select></label>'
+         f'<label>New size *<input id="new_size" name="new_size" inputmode="decimal" required placeholder="e.g. 15.4"></label>'
+         f'<label>New unit *<select id="new_unit" name="new_unit" required><option value="">—</option>{unit_opts}</select></label></fieldset>'
+         '<fieldset><legend class="ml">Price (optional)</legend>'
+         '<label>Old price<input id="old_price" name="old_price" inputmode="decimal" placeholder="e.g. 4.99"></label>'
+         '<label>New price<input id="new_price" name="new_price" inputmode="decimal" placeholder="e.g. 4.99"></label>'
+         '<label>Currency<select id="currency" name="currency"><option value="">—</option><option value="$">$</option><option value="€">€</option><option value="£">£</option><option value="A$">A$</option><option value="C$">C$</option></select></label></fieldset>'
+         '<fieldset><legend class="ml">Evidence</legend>'
+         '<label>Store / where seen<input id="store" name="store" placeholder="e.g. Tesco, Walmart aisle 4"></label>'
+         '<label>Source or evidence URL<input id="source" name="source" type="url" inputmode="url" placeholder="https://…"></label>'
+         '<label>Notes<textarea id="notes" name="notes" rows="4" placeholder="What changed on the pack? Any photo description?"></textarea></label>'
+         '<label>Your email (optional)<input id="email" name="email" type="email" autocomplete="email" placeholder="only for a follow-up question"></label></fieldset>'
+         '<div class="submit-actions"><button type="submit">Open GitHub issue</button>'
+         '<p class="m">Required fields marked *. Nothing is sent to our servers — the form only builds a GitHub issue URL in your browser.</p></div></form>'
+         '<p class="st" id="st" role="status" aria-live="polite"></p>'
+         '<section id="fallback" class="label" hidden><div class="hd">Copy if GitHub did not open</div>'
+         '<p class="m">Paste this into a <a href="https://github.com/Mangomangoman1/shrinkflation/issues/new" rel="noopener" target="_blank">new GitHub issue</a>.</p>'
+         '<textarea id="md" rows="12" readonly></textarea>'
+         '<p><button type="button" id="copy">Copy markdown</button></p></section>'
+         '<noscript><p class="empty">This form needs JavaScript to build the GitHub issue link. You can still <a href="https://github.com/Mangomangoman1/shrinkflation/issues/new">open a blank issue</a> and describe the sighting.</p></noscript>'
+         '<div class="prose"><h2>FAQ</h2>'+"".join(f'<h3>{E(q)}</h3><p>{a}</p>' for q,a in submit_faq)
+         +'<p>Prefer to run the numbers first? Use the <a href="/calculator/">shrinkflation calculator</a>. Browse existing reports in <a href="/cases/">known cases</a>.</p></div>',
+         [crumbs(("Submit a sighting",None)),
+          {"@context":"https://schema.org","@type":"WebPage","name":"Submit a shrinkflation sighting","url":SITE+"/submit/","description":"Report a shrinkflation sighting to ShrinkRadar. Opens a prefilled GitHub issue; reports are verified before inclusion."},
+          {"@context":"https://schema.org","@type":"WebApplication","name":"ShrinkRadar sighting form","url":SITE+"/submit/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":0,"priceCurrency":"USD"}},
+          {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in submit_faq]}],js=SUBMIT_JS)
     for kind,key,lab,namef in [("countries","country","Countries",lambda v:COUNTRY.get(v,v)),("years","year","Years",str)]:
         g={}
         for c in cases: g.setdefault(c[key],[]).append(c)
@@ -472,12 +573,12 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
     page("index.html",f'{NAME}: did it shrink? Shrinkflation tracker for groceries & household goods',f'Daily tracking of package sizes and unit prices for {len(prods)} products, plus {len(cases)} documented shrinkflation cases with sources.',
          f'<h1>Did it shrink?</h1><p class="prose">We check the net weight of {len(prods)} everyday products every day and keep a sourced record of {len(cases)} known shrinkflation cases.</p>'
          f'<form class="search" action="/search.html" role="search"><label class="ml" for="q0">Search a product or brand</label><input id="q0" name="q" placeholder="Doritos, cereal, Charmin…"></form>'
-         f'<h2>Latest from daily checks</h2><ul class="feed">{feed}</ul><h2>Biggest documented shrinks</h2><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"])[:6])}</ul><p><a href="/cases/"><b>All {len(cases)} known cases →</b></a> · <a href="/worst/"><b>Worst offenders →</b></a> · <a href="/calculator/"><b>Shrinkflation calculator →</b></a></p><p class="m">New to this? Read <a href="/guides/what-is-shrinkflation.html">what shrinkflation is</a> and <a href="/guides/how-to-spot-shrinkflation.html">how to spot it in the store</a>.</p>'
+         f'<h2>Latest from daily checks</h2><ul class="feed">{feed}</ul><h2>Biggest documented shrinks</h2><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"])[:6])}</ul><p><a href="/cases/"><b>All {len(cases)} known cases →</b></a> · <a href="/worst/"><b>Worst offenders →</b></a> · <a href="/calculator/"><b>Shrinkflation calculator →</b></a> · <a href="/submit/"><b>Submit a sighting →</b></a></p><p class="m">New to this? Read <a href="/guides/what-is-shrinkflation.html">what shrinkflation is</a> and <a href="/guides/how-to-spot-shrinkflation.html">how to spot it in the store</a>.</p>'
          f'<h2>Recently checked</h2><ul class="grid">{"".join(pcard(p) for p in prods[:6])}</ul>',
          [{"@context":"https://schema.org","@type":"WebSite","name":NAME,"url":SITE+"/","potentialAction":{"@type":"SearchAction","target":SITE+"/search.html?q={search_term_string}","query-input":"required name=search_term_string"}},
           {"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/","logo":SITE+"/favicon.svg"}])
     GUIDES=guides(cases,prods,bg,cg,med)
-    idx=[{"t":t,"u":u,"k":"Guide"} for u,t,_ in GUIDES]+[{"t":p["title"],"u":f'/products/{p["slug"]}.html',"k":p["category"]} for p in prods]+[{"t":c["product"]+" (documented case)","u":f'/cases/{c["slug"]}.html',"k":c["category"]} for c in cases]
+    idx=[{"t":"Submit a shrinkflation sighting","u":"/submit/","k":"Tool"},{"t":"Shrinkflation calculator","u":"/calculator/","k":"Tool"},{"t":"Worst shrinkflation offenders","u":"/worst/","k":"Tool"}]+[{"t":t,"u":u,"k":"Guide"} for u,t,_ in GUIDES]+[{"t":p["title"],"u":f'/products/{p["slug"]}.html',"k":p["category"]} for p in prods]+[{"t":c["product"]+" (documented case)","u":f'/cases/{c["slug"]}.html',"k":c["category"]} for c in cases]
     AI=[{"id":f'f:{p["code"]}:{d}:{t[:4]}',"type":"finding","date":d,"title":p["title"],"text":t,"url":f'{SITE}/products/{p["slug"]}.html',"product":p["code"],"brand":p["bslug"],"category":p["cslug"],"brand_name":p["brand"],"category_name":p["category"]} for d,p,t in findings]
     AI+=[{"id":"c:"+c["slug"],"type":"case","date":c["when"],"title":c["product"],"text":f'{fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])} ({c["pct"]:.0f}% less) · {COUNTRY.get(c["country"],c["country"])}, {c["when"]}',"url":f'{SITE}/cases/{c["slug"]}.html',"product":None,"brand":slug(c["brand"]),"category":slug(c["category"]),"brand_name":c["brand"],"category_name":c["category"]} for c in cases]
     (R/"data/alert_items.json").write_text(json.dumps(AI,ensure_ascii=False,indent=0))
@@ -494,7 +595,7 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
     page("about.html",f'About & methodology | {NAME}','How ShrinkRadar tracks shrinkflation: sources, method and corrections.',
          '<div class="prose"><h1>About ShrinkRadar</h1><p>ShrinkRadar answers one question: <i>did it shrink?</i> We check a fixed list of everyday products daily. Net quantity comes from Open Food Facts / Open Products Facts; prices come from the crowdsourced Open Prices database (most recent US price). We only publish values we actually fetched — missing data is shown as missing, never estimated.</p>'
          '<p>A <b>finding</b> is logged when a newer check shows a smaller net quantity in the same unit, or a higher price per 100 g/ml.</p><p><b>Known cases</b> are historical before/after size cuts compiled from Verbraucherzentrale Hamburg’s Mogelpackungsliste, the Mouse Print* archive (Edgar Dworsky), Which?, CHOICE, CBC, foodwatch, Consumer Reports, LendingTree’s Wayback-Machine study, the U.S. Senate/USW report, news outlets and Wikipedia. Each case shows the source we fetched and a quote of what it says; cases we could not verify are left out.</p>'
-         '<h2 id="privacy">Privacy &amp; email alerts</h2><p>No ads, cookies or analytics trackers. Email alerts (when live) store only your address, what you follow and the confirmation time. Double opt-in, one-click unsubscribe, never shared or sold. <a href="/alerts/#privacy">Details</a>.</p><p>New to the topic? Start with <a href="/guides/what-is-shrinkflation.html">what shrinkflation is and how we document it</a>.</p><p>Spotted a shrink? Corrections and tips are welcome.</p></div>',[{"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/"}])
+         '<h2 id="privacy">Privacy &amp; email alerts</h2><p>No ads, cookies or analytics trackers. Email alerts (when live) store only your address, what you follow and the confirmation time. Double opt-in, one-click unsubscribe, never shared or sold. <a href="/alerts/#privacy">Details</a>.</p><p>New to the topic? Start with <a href="/guides/what-is-shrinkflation.html">what shrinkflation is and how we document it</a>.</p><p>Spotted a shrink? <a href="/submit/"><b>Submit a sighting</b></a> — it opens a prefilled GitHub issue. We verify before adding to the case library.</p></div>',[{"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/"}])
     # RSS: findings + cases
     items=[(d,f'{p["title"]}: {t}',f'{SITE}/products/{p["slug"]}.html') for d,p,t in findings[:50]]+[(TODAY if not findings else findings[-1][0],f'Known case: {c["product"]} {fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])}',f'{SITE}/cases/{c["slug"]}.html') for c in cases]
     rss="".join(f'<item><title>{E(t)}</title><link>{u}</link><guid>{u}</guid><pubDate>{format_datetime(datetime.datetime.fromisoformat(d).replace(tzinfo=datetime.timezone.utc))}</pubDate></item>' for d,t,u in items)
@@ -515,6 +616,7 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
 - [Known cases: all {len(cases)} documented before/after size cuts, filterable]({SITE}/cases/)
 - [Worst offenders: biggest cuts, hidden per-unit price hikes, repeat brands]({SITE}/worst/)
 - [Shrinkflation calculator: real price change per unit]({SITE}/calculator/)
+- [Submit a sighting: report shrinkflation via GitHub issue]({SITE}/submit/)
 - [Guides: what shrinkflation is, how to spot it]({SITE}/guides/)
 - [Brands]({SITE}/brands/) · [Categories]({SITE}/categories/) · [Countries]({SITE}/countries/) · [Products tracked daily]({SITE}/products/)
 - [Methodology and sources]({SITE}/about.html)

@@ -41,11 +41,11 @@ DROP={"Jif still 18 oz.","Cinemark 24 oz cup"}
 CAT=[("Toilet Paper",r"toilet|bath tissue|toilettenpapier|charmin|cottonelle|quilted northern|angel soft|mega roll"),("Paper Towels",r"paper towel|küchenrolle|kitchen roll"),("Tissues",r"tissue|taschentücher|kleenex|kosmetikt|^puffs$|puffs (facial|tissue)"),
 ("Laundry",r"detergent|laundry|fabric|softener|waschmittel|weichspüler|downy|tide|gain|persil|comfort|vernel|ariel"),("Dish & Cleaning",r"dish|dawn|spülmittel|cleaner|reiniger|wipes|swiffer|febreze|lysol|somat|finish|jif cream|air fresh"),
 ("Oral Care",r"tooth|zahn|crest|colgate|listerine|mouthwash|aquafresh|sensodyne"),("Personal Care",r"shampoo|body wash|soap|duschgel|dusch|deodorant|deo|seife|lotion|creme|tresemme|dove body"),
-("Coffee & Tea",r"coffee|kaffee|tea\b|tee\b|k-cups|nescaf|folgers|maxwell|peet|jacobs|pg tips"),("Juice & Drinks",r"juice|saft|orange juice|tropicana|simply orange|drink|gatorade|powerade|cola|limo|sirup|syrup|wasser|water|beer|bier|eistee"),
+("Coffee & Tea",r"coffee|kaffee|tea\b|tee\b|k-cups|nescaf|folgers|maxwell|peet|jacobs|pg tips"),("Juice & Drinks",r"juice|saft|orange juice|tropicana|simply orange|\bdrinks?\b|gatorade|powerade|\bcola\b|limo|sirup|syrup|wasser|\bwater\b|beer|bier|eistee"),
 ("Breakfast Cereals",r"cereal|flakes|müsli|muesli|granola|oats|cheerios|puffs|loops|crunch|chex|corn pops|bran|haferflocken|knusper"),("Chips & Snacks",r"chip|crisp|doritos|tostitos|pringles|cheetos|lay|pretzel|popcorn|snack|nuts|nüsse|erdnüsse|studenten|chex mix|goldfish|gold fish"),
 ("Chocolate & Candy",r"chocolate|schoko|candy|kisses|m&m|caramel|bonbon|praline|riegel|gummi|fruchtgummi|haribo|kitkat|milka|lindt|ritter|cadbury|hershey|rolo|reese|snickers|twix|mars|milky|quality street|celebrations|toblerone|smarties|lion|merci|toffifee|kinder|duplo|mints"),
 ("Cookies & Crackers",r"cookie|cracker|keks|biscuit|kekse|oreo|ritz|wheat thins|digestive|club|waffel|zwieback|breton|keebler"),("Ice Cream",r"ice cream|eis\b|frozen yogurt|magnum|breyers|häagen|haagen|ben & jerry|cremissimo|langnese"),
-("Dairy",r"yogurt|joghurt|cheese|käse|butter|milch|milk|quark|sahne|cream cheese|margarine|spread|kiri"),("Meat & Fish",r"frank|hot dog|sausage|wurst|würstchen|schinken|ham|jambon|tuna|thunfisch|sardine|salmon|lachs|chicken|bacon"),
+("Dairy",r"yogurt|joghurt|cheese|käse|butter|milch|(?<!dairy )(?<!chocolate )\bmilk\b(?! chocolate)|quark|sahne|cream cheese|margarine|spread|kiri"),("Meat & Fish",r"frank|hot dog|sausage|wurst|würstchen|schinken|ham|jambon|tuna|thunfisch|sardine|salmon|lachs|chicken|bacon"),
 ("Pasta, Rice & Meals",r"dips?\b|hummus|meat alternative|salami|mozzarella|veggie|vegan|fleisch|pasta|spaghetti|nudeln|rice|reis|dinner|mac|soup|suppe|pizza|meal|lasagne|salad|salat|taco|sauce|soße|gravy|ketchup|mayo|dressing|pesto|würz|gewürz|fix\b"),
 ("Baking & Spreads",r"cake mix|backmischung|flour|mehl|sugar|zucker|jam|marmelade|konfitüre|honey|honig|peanut butter|nutella|spread|aufstrich|syrup|pancake"),("Bread & Bakery",r"bread|brot|bagel|toast|brötchen|muffin|tart"),
 ("Pet Food",r"dog food|cat food|katzen|hunde|whiskas|iams|sheba|pedigree|purina|felix")]
@@ -55,7 +55,7 @@ CAT=[("Health & Supplements",r"gaviscon|lanacane|venen|zirkulin|curafit|taxofit|
 ("Household",r"spee|bref|pril|kreide|always|binde|slipeinlagen|pflegetücher|babydream|nagellack|rasierklingen|gillette"),
 ("Personal Care",r"nivea|maria nila|haarspray|elnett|head & shoulders|garnier|alverde|puder|skin stories|dr\. hauschka|gesichtsöl|rituals|scrub|beauty cream bar"),
 ("Chocolate & Candy",r"lebkuchen|vivani|marabou|kägi|katjes|trolli|winegums|gums|vitaminis|hitschies|yogurette|ferrero|nocciolata|feine bitter"),
-("Dairy",r"halloumi|salakis|brunch|alpro|andros|zaziki|hirte|bedda|rama|lätta|becel|deli reform|zentis belmandel|natur$"),
+("Dairy",r"halloumi|salakis|(?<!cadbury )\bbrunch\b|alpro|andros|zaziki|hirte|bedda|rama|lätta|becel|deli reform|zentis belmandel|natur$"),
 ("Coffee & Tea",r"teekanne|kakao|kaba|nesquik|suchard"),("Juice & Drinks",r"valensina|pepsi|bitter lemon|orancia|florida"),
 ("Breakfast Cereals",r"hearts & hoops|choco balls|clusters|cini minis"),("Baking & Spreads",r"sweet ‘n low|sesam|olivenöl|paprika|cocos|zetti|rote grütze|dessert|knorr|bouillon"),
 ("Meat & Fish",r"hering|beyond meat|protein chunks|beef jerky|jack links|lammsteak"),("Cookies & Crackers",r"marmor|kuchen|christmas cake|salzbrezeln|tuc|wasa"),("Pasta, Rice & Meals",r"lentil penne"),
@@ -65,11 +65,32 @@ for c in out.values():
     t=(c["product"]+" "+(c.get("category") or "")+" "+c.get("maker","")).lower()
     c["category"]=next((k for k,r in CAT if re.search(r,t)),"Other")
 cases=[c for c in out.values() if c["product"] not in DROP]
-CATFIX={'Meat & Fish': ['Revilla chorizo'], 'Tobacco & Alcohol': ['Peroni', 'Beck', 'La Trappe'], 'Dairy': ['Philadelphia Light', 'Blue Band', 'Vache Qui Rit', 'gruyere', 'Maaslander'], 'Personal Care': ['Pantene Pro-V Curl', 'Andrélon', 'Dove Deeply'], 'Juice & Drinks': ['Dixap'], 'Cookies & Crackers': ['Jodekoek', 'Gemberkoek', 'ontbijtkoek', 'Beschuit'], 'Breakfast Cereals': ['Zonnatura', "L'Atelier"], 'Laundry': ['Seepje', 'Vanish', 'Robijn', 'Dreft', 'Lenor'], 'Frozen Foods': ['diepvriescroissants'], 'Chips & Snacks': ['Multimix', 'Johnny Cashew', 'Eat Natural'], 'Chocolate & Candy': ['Van Melle', 'Sportlife', 'Klene', 'Mentos'], 'Pasta, Rice & Meals': ['Ananas stukjes'], 'Dish & Cleaning': ['vaatwastabletten'], 'Baby': ['Pampers'], 'Household': ['Ambi Pur'], 'Coffee & Tea': ['Dolce Gusto', 'Lipton']}
+# Product-substring overrides that ALWAYS win (even when CAT already matched).
+# Use for known false positives from keyword collisions (cola⊂chocolate, milk in candy names, etc.).
+ALWAYS_FIX={
+ 'Chocolate & Candy': ['Cadbury Brunch', 'Cadbury Dairy Milk', 'Cadbury Freddo', 'Cadbury Mini Eggs', 'Cadbury Twirl', 'Cadbury Buttons', 'Cadbury medium Santa', 'Cadbury large chocolate', 'Dairy Milk Freddo', 'Milkybar', 'Terry\'s Chocolate', 'Terry\'s Chocolate Orange', 'KitKat', 'Kitkat', 'Toblerone', 'Maltesers', 'Galaxy Milk Chocolate', 'Galaxy XL', "M&M's Crispy", "M&M\'s Crispy", 'Party-size milk chocolate M&M', 'Party-size dark chocolate M&M', 'Hershey\'s Dark Chocolate', 'Hershey\'s snack size chocolate', 'Hershey\'s Halloween', 'Mars fun size', 'Twix white chocolate', 'Little Debbie Chocolate', 'Moser Roth Chocolat', 'HEJ Organic Nut Bar', 'Van Melle', 'Sportlife', 'Klene', 'Mentos'],
+ 'Cookies & Crackers': ['McVitie\'s Digestives', 'Jodekoek', 'Gemberkoek', 'ontbijtkoek', 'Beschuit'],
+ 'Ice Cream': ['Mövenpick Eis'],
+ 'Frozen Foods': ['Danerolles Chocolate', 'Danerolles Pains', 'diepvriescroissants'],
+ 'Meat & Fish': ['Revilla chorizo'],
+ 'Tobacco & Alcohol': ['Peroni', 'Beck', 'La Trappe'],
+ 'Dairy': ['Philadelphia Light', 'Blue Band', 'Vache Qui Rit', 'gruyere', 'Maaslander'],
+ 'Personal Care': ['Pantene Pro-V Curl', 'Andrélon', 'Dove Deeply'],
+ 'Juice & Drinks': ['Dixap'],
+ 'Breakfast Cereals': ['Zonnatura', "L'Atelier"],
+ 'Laundry': ['Seepje', 'Vanish', 'Robijn', 'Dreft', 'Lenor'],
+ 'Chips & Snacks': ['Multimix', 'Johnny Cashew', 'Eat Natural'],
+ 'Pasta, Rice & Meals': ['Ananas stukjes'],
+ 'Dish & Cleaning': ['vaatwastabletten'],
+ 'Baby': ['Pampers'],
+ 'Household': ['Ambi Pur'],
+ 'Coffee & Tea': ['Dolce Gusto', 'Lipton'],
+}
+CATFIX=ALWAYS_FIX  # alias: CATFIX entries now always apply
 for c in cases:
-    if c.get("category")=="Other":
-        for k,v in CATFIX.items():
-            if any(w.lower() in c["product"].lower() for w in v): c["category"]=k;break
+    for k,v in ALWAYS_FIX.items():
+        if any(w.lower() in c["product"].lower() for w in v):
+            c["category"]=k; break
 for c in cases:
     if c["brand"]=="Puffs": c["category"]="Tissues"
 json.dump(cases,open("data/cases.json","w"),indent=1,ensure_ascii=False)

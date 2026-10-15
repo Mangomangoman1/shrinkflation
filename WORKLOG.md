@@ -71,6 +71,21 @@
 - Build: 1742 pages. Internal link check: 0 broken. Published (gh-pages 17c5248). IndexNow 200 (1742 URLs). Live 200: /guides/, both guides, /og.png, /og.svg, /llms.txt. The Cadbury brand page is live with FAQPage and twitter:card.
 - Data follow-up noticed: some case categories are wrong, e.g. "Cadbury Dairy Milk Freddo multipack" is in Juice & Drinks and "Cadbury Brunch bars" is in Dairy ("Milk" keyword). These need CATFIX entries in merge_cases.py and a sweep of the "Milk"/"Drink" keyword matches.
 
+## 2026-10-15 — structured-data notification fixes
+- Expanded /cases/ Dataset description to satisfy Google's 50–5,000-character requirement.
+- Replaced tracking-page Product JSON-LD with WebPage metadata. Open Prices snapshots are historical observations, not current offers; no prices, reviews or ratings invented. Product names, brand, category, identifiers, size and price history remain visible unchanged.
+- Added validate_structured_data.py: parsed 3,801 JSON-LD blocks across all 1,744 HTML files (1,742 generated sitemap pages plus existing files); checked the Dataset and all 340 tracking pages. All passed. HTML comparison confirmed that only JSON-LD changed on the 341 affected pages.
+- Local rebuild preserved the existing og.png because its hardcoded Liberation Sans font is unavailable in this environment.
+- Published source commit 9d39eff and gh-pages commit 83b0158. GitHub Pages deployment 38809814870 succeeded. Live /cases/ and Google's affected bettergoods tortilla-chip URL both returned HTTP 200 and matched the corrected generated files exactly; Dataset description is 128 characters.
+- After Samuel signed in, verified both Search Console reports (one affected item each) and submitted Validate Fix for both. Both now show Validation Started, October 15, 2026. Final Google pass/recrawl remains pending.
+
+## 2026-10-15 — features & quality: Submit a sighting + category fixes
+- **Feature: /submit/** — static “Submit a sighting” form (client-side only). Fields: product*, brand, category, country, when, old/new size+unit*, optional prices + currency, store, evidence URL, notes, optional email. On submit: validates required fields, opens a prefilled GitHub issue (`Sighting: {product} ({old} → {new})` + markdown table body) on Mangomangoman1/shrinkflation; copy-to-clipboard fallback if the pop-up is blocked. FAQ + WebPage/WebApplication/FAQPage JSON-LD. Explains we verify before adding; no guarantee of inclusion. Linked from nav (after Calculator), homepage, About, /cases/, /worst/, search.json, sitemap, llms.txt. Form CSS + mobile (<600px) rules for full-width fields/button.
+- **Data quality:** root cause of Cadbury/etc. mis-cats was `cola` matching inside `chocolate` (Juice & Drinks before Chocolate & Candy), plus Dairy `brunch`/`milk` catching Cadbury Brunch and Dairy Milk candy. Fixes in merge_cases.py: `\bcola\b`, tightened `milk`/`brunch` lookarounds, and **ALWAYS_FIX** product-substring map that always wins (not only when category==Other). Re-ran merge_cases.py (687 cases unchanged count).
+  - **39 recategorized** from the known false-positive set: 35 → Chocolate & Candy (incl. Cadbury Dairy Milk Freddo multipack, all other Cadbury candy/eggs, KitKat, Toblerone, Hershey’s, M&M’s, Maltesers, Twix, Mars fun size, Little Debbie Chocolate Cupcakes, Moser Roth, HEJ bar, Milkybar…), 1 → Cookies (McVitie’s Digestives Dark Chocolate), 1 → Ice Cream (Mövenpick Eis Vanilla Chocolate), 2 → Frozen (Danerolles Chocolate Croissants / Pains au Chocolat). Cadbury Brunch bars → Chocolate & Candy. Juice & Drinks now 32; Chocolate & Candy 115. Remaining Juice false positives: 0 in the chocolate/candy sweep.
+- Build: 1745 pages (build_site.py). Internal link check: 0 broken (46k+ hrefs).
+- Publish + IndexNow via publish.sh (this run).
+
 ### Samuel-only asks
 - Google Search Console: verify shrinkradar.com (DNS TXT is best; an HTML file or meta tag works too, send me the token and I'll ship it) and submit /sitemap.xml. Without this we get no feedback on indexing or queries.
 - Bing Webmaster Tools: verify the site (it can import from GSC) and submit the sitemap. IndexNow already pings Bing.
@@ -81,11 +96,3 @@
 - Consumer journalists and consumer-desk tipsheets (Mouse Print*, Which?, CBC Marketplace, local TV consumer reporters) once a daily-check finding or a strong dataset angle exists, e.g. "the worst hidden per-unit price hikes".
 - Show HN when alerts are live and the daily checks have logged real findings.
 - Non-spam listings: data portals (Kaggle/data.world dataset of the case library under CC BY), Open Food Facts community/reuse pages, personal-finance and frugal-living resource lists that take submissions.
-
-## 2026-10-15 — structured-data notification fixes
-- Expanded /cases/ Dataset description to satisfy Google's 50–5,000-character requirement.
-- Replaced tracking-page Product JSON-LD with WebPage metadata. Open Prices snapshots are historical observations, not current offers; no prices, reviews or ratings invented. Product names, brand, category, identifiers, size and price history remain visible unchanged.
-- Added validate_structured_data.py: parsed 3,801 JSON-LD blocks across all 1,744 HTML files (1,742 generated sitemap pages plus existing files); checked the Dataset and all 340 tracking pages. All passed. HTML comparison confirmed that only JSON-LD changed on the 341 affected pages.
-- Local rebuild preserved the existing og.png because its hardcoded Liberation Sans font is unavailable in this environment.
-- Published source commit 9d39eff and gh-pages commit 83b0158. GitHub Pages deployment 38809814870 succeeded. Live /cases/ and Google's affected bettergoods tortilla-chip URL both returned HTTP 200 and matched the corrected generated files exactly; Dataset description is 128 characters.
-- After Samuel signed in, verified both Search Console reports (one affected item each) and submitted Validate Fix for both. Both now show Validation Started, October 15, 2026. Final Google pass/recrawl remains pending.

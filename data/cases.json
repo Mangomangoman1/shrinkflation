@@ -280,7 +280,7 @@
  {
   "brand": "Toblerone",
   "product": "Toblerone bar (UK)",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 170,
   "after": 150,
   "unit": "g",
@@ -296,7 +296,7 @@
  {
   "brand": "Toblerone",
   "product": "Toblerone large bar (UK)",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 400,
   "after": 360,
   "unit": "g",
@@ -312,7 +312,7 @@
  {
   "brand": "Terry's",
   "product": "Terry's Chocolate Orange (UK)",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 175,
   "after": 157,
   "unit": "g",
@@ -466,7 +466,7 @@
  {
   "brand": "Hershey's",
   "product": "Hershey's Dark Chocolate party-size bag",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 29,
   "after": 23.9,
   "unit": "oz",
@@ -608,7 +608,7 @@
   "source_tag": "seed"
  },
  {
-  "brand": "Kellogg's",
+  "brand": "Corn Pops",
   "product": "Kellogg's Corn Pops",
   "category": "Breakfast Cereals",
   "before": 18.1,
@@ -722,7 +722,7 @@
  {
   "brand": "Hershey's",
   "product": "Hershey's snack size chocolate bag",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 19.8,
   "after": 18,
   "unit": "oz",
@@ -802,7 +802,7 @@
  {
   "product": "Cadbury Brunch Chocolate Chip Bars",
   "brand": "Cadbury",
-  "category": "Dairy",
+  "category": "Chocolate & Candy",
   "before": 6,
   "after": 5,
   "unit": "bars",
@@ -882,7 +882,7 @@
  {
   "product": "McVitie's Digestives Dark Chocolate",
   "brand": "McVitie's",
-  "category": "Juice & Drinks",
+  "category": "Cookies & Crackers",
   "before": 433,
   "after": 400,
   "unit": "g",
@@ -914,7 +914,7 @@
  {
   "product": "Cadbury medium Santa selection box",
   "brand": "Cadbury",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 145,
   "after": 125,
   "unit": "g",
@@ -930,7 +930,7 @@
  {
   "product": "Cadbury Buttons selection box",
   "brand": "Cadbury",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 375,
   "after": 340,
   "unit": "g",
@@ -946,7 +946,7 @@
  {
   "product": "Celebrations tub",
   "brand": "Celebrations",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 600,
   "after": 550,
   "unit": "g",
@@ -994,7 +994,7 @@
  {
   "product": "Milkybar buttons giant tube",
   "brand": "Milkybar",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 90,
   "after": 80,
   "unit": "g",
@@ -1090,7 +1090,7 @@
  {
   "product": "Quality Street tub",
   "brand": "Quality Street",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 650,
   "after": 600,
   "unit": "g",
@@ -1138,7 +1138,7 @@
  {
   "product": "Quality Street tub (2023)",
   "brand": "Quality Street",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 600,
   "after": 550,
   "unit": "g",
@@ -1160,7 +1160,7 @@
  {
   "product": "Cadbury Dairy Milk Freddo multipack",
   "brand": "Cadbury",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 5,
   "after": 4,
   "unit": "bars",
@@ -1176,7 +1176,7 @@
  {
   "product": "KitKat two-finger multipack",
   "brand": "KitKat",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 21,
   "after": 18,
   "unit": "bars",
@@ -1192,7 +1192,7 @@
  {
   "product": "Terry's Chocolate Orange Ball Toffee Crunch",
   "brand": "Terry's",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 152,
   "after": 145,
   "unit": "g",
@@ -1448,7 +1448,7 @@
  {
   "product": "Lindt Christmas Medley Bag",
   "brand": "Lindt",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 414,
   "after": 390,
   "unit": "g",
@@ -1464,7 +1464,7 @@
  {
   "product": "Lindt Champagne Gala Box",
   "brand": "Lindt",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 433,
   "after": 396,
   "unit": "g",
@@ -1496,7 +1496,7 @@
  {
   "product": "Cadbury Dairy Milk hollow eggs",
   "brand": "Cadbury",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 24,
   "after": 22,
   "unit": "eggs",
@@ -1512,7 +1512,7 @@
  {
   "product": "Cadbury large chocolate egg",
   "brand": "Cadbury",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 400,
   "after": 340,
   "unit": "g",
@@ -1528,7 +1528,7 @@
  {
   "product": "KitKat mini eggs",
   "brand": "KitKat",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 110,
   "after": 90,
   "unit": "g",
@@ -1544,7 +1544,7 @@
  {
   "product": "Aldi Dairy Fine Milk mini eggs",
   "brand": "Aldi",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 400,
   "after": 300,
   "unit": "g",
@@ -1639,7 +1639,7 @@
  },
  {
   "product": "Redpath sugar (Walmart test)",
-  "brand": "Walmart",
+  "brand": "Redpath",
   "category": "Baking & Spreads",
   "before": 2000,
   "after": 1500,
@@ -1784,7 +1784,7 @@
  {
   "product": "Toblerone 360g bar (UK)",
   "brand": "Toblerone",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 360,
   "after": 340,
   "unit": "g",
@@ -1800,7 +1800,7 @@
  {
   "product": "Celebrations tub (2025)",
   "brand": "Celebrations",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 550,
   "after": 500,
   "unit": "g",
@@ -1816,7 +1816,7 @@
  {
   "product": "Quality Street Purple One (per sweet)",
   "brand": "Quality Street",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 9.59,
   "after": 8.46,
   "unit": "g",
@@ -1832,7 +1832,7 @@
  {
   "product": "Quality Street Orange Crunch (per sweet)",
   "brand": "Quality Street",
-  "category": "Juice & Drinks",
+  "category": "Breakfast Cereals",
   "before": 9.06,
   "after": 8.72,
   "unit": "g",
@@ -1848,7 +1848,7 @@
  {
   "product": "Terry's Chocolate Orange (2025)",
   "brand": "Terry's",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 157,
   "after": 145,
   "unit": "g",
@@ -1864,7 +1864,7 @@
  {
   "product": "Twix white chocolate Easter egg",
   "brand": "Twix",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 316,
   "after": 258,
   "unit": "g",
@@ -1880,7 +1880,7 @@
  {
   "product": "KitKat Chunky milk chocolate Easter egg",
   "brand": "KitKat",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 129,
   "after": 110,
   "unit": "g",
@@ -2456,7 +2456,7 @@
  {
   "product": "Mars fun size Halloween candy (65 mini bars)",
   "brand": "Mars",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 782,
   "after": 672,
   "unit": "g",
@@ -2472,7 +2472,7 @@
  {
   "product": "Hershey's Halloween 50 mini candy bars",
   "brand": "Hershey's",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 513,
   "after": 481,
   "unit": "g",
@@ -2488,7 +2488,7 @@
  {
   "product": "Maltesers XL Easter egg",
   "brand": "Maltesers",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 231,
   "after": 194,
   "unit": "g",
@@ -2507,7 +2507,7 @@
  {
   "product": "Cadbury Twirl XL Easter egg",
   "brand": "Cadbury",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 241,
   "after": 218,
   "unit": "g",
@@ -2526,7 +2526,7 @@
  {
   "product": "Cadbury Mini Eggs family pack",
   "brand": "Cadbury",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 270,
   "after": 256,
   "unit": "g",
@@ -2542,7 +2542,7 @@
  {
   "product": "Galaxy Milk Chocolate Extra Large Easter Egg",
   "brand": "Extra",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 252,
   "after": 210,
   "unit": "g",
@@ -2561,7 +2561,7 @@
  {
   "product": "M&M's Crispy Easter Egg",
   "brand": "M&M's",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 192,
   "after": 156,
   "unit": "g",
@@ -2580,7 +2580,7 @@
  {
   "product": "Cadbury Mini Eggs Milk Chocolate Easter Egg",
   "brand": "Cadbury",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 193.5,
   "after": 181,
   "unit": "g",
@@ -2599,7 +2599,7 @@
  {
   "product": "Toblerone The Edgy Egg Milk Chocolate Easter Egg",
   "brand": "Toblerone",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 298,
   "after": 256,
   "unit": "g",
@@ -2618,7 +2618,7 @@
  {
   "product": "Cadbury Dairy Milk & White Shell Egg",
   "brand": "Cadbury",
-  "category": "Juice & Drinks",
+  "category": "Chocolate & Candy",
   "before": 372,
   "after": 360,
   "unit": "g",
@@ -2968,7 +2968,7 @@
   "evidence_type": "Wayback Machine retailer-page comparison (third-party study)",
   "confidence": "high",
   "source_tag": "tables",
-  "category": "Juice & Drinks"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Party-size dark chocolate M&M's",
@@ -2984,7 +2984,7 @@
   "evidence_type": "Wayback Machine retailer-page comparison (third-party study)",
   "confidence": "high",
   "source_tag": "tables",
-  "category": "Juice & Drinks"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "FunPops freeze pops, 36 count",
@@ -3498,7 +3498,7 @@
  },
  {
   "product": "Kellogg's Special K Red Berries Cereal",
-  "brand": "Kellogg's",
+  "brand": "Special K",
   "before": 16.9,
   "after": 15.6,
   "unit": "oz",
@@ -3844,7 +3844,7 @@
  },
  {
   "product": "Kellogg's Corn Pops",
-  "brand": "Kellogg's",
+  "brand": "Corn Pops",
   "before": 14.3,
   "after": 13.1,
   "unit": "oz",
@@ -4911,7 +4911,7 @@
   "evidence_type": "consumer-advocate report (photo of old/new packages)",
   "confidence": "high",
   "source_tag": "mouseprint",
-  "category": "Juice & Drinks"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Carat Salat-Fix Kräuter italienischer Art",
@@ -5164,7 +5164,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Juice & Drinks"
+  "category": "Ice Cream"
  },
  {
   "product": "Abtei Venen Aktiv Balsam",
@@ -5394,7 +5394,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Juice & Drinks",
+  "category": "Tobacco & Alcohol",
   "also_reported": [
    {
     "url": "https://www.vzhh.de/mogelpackungsliste?page=4",
@@ -5860,7 +5860,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Juice & Drinks"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Maria Nila Extreme Spray",
@@ -6021,7 +6021,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Household"
+  "category": "Laundry"
  },
  {
   "product": "Nadler Hering in Gelee",
@@ -7574,7 +7574,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Juice & Drinks"
+  "category": "Coffee & Tea"
  },
  {
   "product": "Marabou Mjölkchoklad",
@@ -8816,7 +8816,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Juice & Drinks"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Chef Select Salat Budapester Art",
@@ -9046,7 +9046,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Juice & Drinks"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Costa GGN Lachsfilets",
@@ -12144,7 +12144,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Health & Supplements"
+  "category": "Coffee & Tea"
  },
  {
   "product": "Sante Jeden Tag Shampoo Apfel Quitte",
@@ -12890,7 +12890,7 @@
   "evidence_type": "consumer association investigation (manufacturer response)",
   "confidence": "high",
   "source_tag": "cb",
-  "category": "Juice & Drinks"
+  "category": "Other"
  },
  {
   "product": "Blue Band Vloeibaar",
@@ -12980,7 +12980,7 @@
   "evidence_type": "consumer association investigation (manufacturer response)",
   "confidence": "high",
   "source_tag": "cb",
-  "category": "Juice & Drinks"
+  "category": "Frozen Foods"
  },
  {
   "product": "Jumbo diepvriescroissants",
@@ -13556,7 +13556,7 @@
   "evidence_type": "consumer association investigation (manufacturer response)",
   "confidence": "high",
   "source_tag": "cb",
-  "category": "Juice & Drinks"
+  "category": "Other"
  },
  {
   "product": "Lenor Wasverzachter Zeebries",
@@ -13646,7 +13646,7 @@
   "evidence_type": "consumer association investigation (manufacturer response)",
   "confidence": "high",
   "source_tag": "cb",
-  "category": "Juice & Drinks"
+  "category": "Frozen Foods"
  },
  {
   "product": "AH Beschuit naturel",
