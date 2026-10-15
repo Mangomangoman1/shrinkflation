@@ -7,6 +7,7 @@
 - [Known cases: all 687 documented before/after size cuts, filterable](https://shrinkradar.com/cases/)
 - [Worst offenders: biggest cuts, hidden per-unit price hikes, repeat brands](https://shrinkradar.com/worst/)
 - [Shrinkflation calculator: real price change per unit](https://shrinkradar.com/calculator/)
+- [Submit a sighting: report shrinkflation via GitHub issue](https://shrinkradar.com/submit/)
 - [Guides: what shrinkflation is, how to spot it](https://shrinkradar.com/guides/)
 - [Brands](https://shrinkradar.com/brands/) · [Categories](https://shrinkradar.com/categories/) · [Countries](https://shrinkradar.com/countries/) · [Products tracked daily](https://shrinkradar.com/products/)
 - [Methodology and sources](https://shrinkradar.com/about.html)
