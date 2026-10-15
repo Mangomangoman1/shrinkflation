@@ -623,13 +623,6 @@
   "db": "off"
  },
  {
-  "code": "7501059285118",
-  "name": "COFFEE MATE AVELLANA",
-  "brand": "Nestl\u00e9",
-  "category": "Coffees",
-  "db": "off"
- },
- {
   "code": "0028000743079",
   "name": "Coffee",
   "brand": "Nescaf\u00e9",
@@ -2020,6 +2013,370 @@
   "name": "Pure Irish Butter",
   "brand": "Kerrygold",
   "category": "Butters",
+  "db": "off"
+ },
+ {
+  "code": "3596710527731",
+  "name": "Papier toilette 3 plis",
+  "brand": "Auchan",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "3596710478194",
+  "name": "Papier toilette rose, 2 plis",
+  "brand": "Auchan",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "3596710497386",
+  "name": "Papier toilette humide",
+  "brand": "Auchan",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "3596710478200",
+  "name": "Papier toilette blanc, 3 plis, enrichi en coton",
+  "brand": "Auchan",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "3596710497379",
+  "name": "Papier toilette humide",
+  "brand": "Auchan",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "3596710549955",
+  "name": "Mouchoir blanc 3 \u00e9paisseurs.",
+  "brand": "Pouce",
+  "category": "Facial Tissues",
+  "db": "opf"
+ },
+ {
+  "code": "0063827602567",
+  "name": "Baby Sensitive \u2022 Sulphate Free Echo Clean \u2022 2X Concentrated Laundry Detergent",
+  "brand": "Echo Clean \u2022 \ud83c\udde8\ud83c\udde6VIP Products Mission BC",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "3564706534292",
+  "name": "lessive hypoallerg\u00e9nique",
+  "brand": "Epsil perfect",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "3256228440709",
+  "name": "Lessive liquide",
+  "brand": "U",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "8909106026346",
+  "name": "Surf Excel Easy Wash Blue",
+  "brand": "Hindustan Unilever Limited (HUL)",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "3178041352130",
+  "name": "Le Chat Sensitive Aloe Vera & Marseille 4en1 Discs",
+  "brand": "Henkel",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "8001841132617",
+  "name": "Dash 2en1",
+  "brand": "Dash",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "8712561344494",
+  "name": "Persil Lessive Poudre Bouquet de Provence 45 Doses",
+  "brand": "Persil",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "0037000523666",
+  "name": "Platinum Plus Powerwash",
+  "brand": "Dawn",
+  "category": "Dish Soap",
+  "db": "opf"
+ },
+ {
+  "code": "4056489857297",
+  "name": "Dentifricio",
+  "brand": "Dentalux",
+  "category": "Toothpaste",
+  "db": "obf"
+ },
+ {
+  "code": "8718951543553",
+  "name": "ANTI-CARIES - Dentifrice Protection Caries,",
+  "brand": "Elmex",
+  "category": "Toothpaste",
+  "db": "obf"
+ },
+ {
+  "code": "3564700849460",
+  "name": "Dentifrice expert",
+  "brand": "Marque Rep\u00e8re",
+  "category": "Toothpaste",
+  "db": "obf"
+ },
+ {
+  "code": "3178040661950",
+  "name": "Bio Protection Compl\u00e8te",
+  "brand": "Vademecum",
+  "category": "Toothpaste",
+  "db": "obf"
+ },
+ {
+  "code": "8720181416316",
+  "name": "Integral 8 actions Complet",
+  "brand": "Signal",
+  "category": "Toothpaste",
+  "db": "obf"
+ },
+ {
+  "code": "3538396705102",
+  "name": "Dentifrice Fra\u00eecheur Menthol Coslys",
+  "brand": "Coslys",
+  "category": "Toothpaste",
+  "db": "obf"
+ },
+ {
+  "code": "3574669907842",
+  "name": "johnsons",
+  "brand": "shampo",
+  "category": "Shampoo",
+  "db": "obf"
+ },
+ {
+  "code": "0022796976116",
+  "name": "ogx  argan",
+  "brand": "OGX",
+  "category": "Shampoo",
+  "db": "obf"
+ },
+ {
+  "code": "6111056012986",
+  "name": "cadum",
+  "brand": "cadum",
+  "category": "Shampoo",
+  "db": "obf"
+ },
+ {
+  "code": "3600551119816",
+  "name": "Shampoing tr\u00e8s doux d\u00e9m\u00ealant karit\u00e9 pur + huile de jojoba",
+  "brand": "Mixa B\u00e9b\u00e9",
+  "category": "Shampoo",
+  "db": "obf"
+ },
+ {
+  "code": "6111242926486",
+  "name": "Vita\u00efa",
+  "brand": "",
+  "category": "Shampoo",
+  "db": "obf"
+ },
+ {
+  "code": "3610340634185",
+  "name": "ultra doux shampoo",
+  "brand": "Garnier",
+  "category": "Shampoo",
+  "db": "obf"
+ },
+ {
+  "code": "4005808837359",
+  "name": "Pearl & Beauty",
+  "brand": "Nivea",
+  "category": "Deodorant",
+  "db": "obf"
+ },
+ {
+  "code": "8718951254183",
+  "name": "Sanex Zero% sensitive deodorant stick",
+  "brand": "Sanex",
+  "category": "Deodorant",
+  "db": "obf"
+ },
+ {
+  "code": "3600551145914",
+  "name": "5 protection",
+  "brand": "Narta",
+  "category": "Deodorant",
+  "db": "obf"
+ },
+ {
+  "code": "4005900035745",
+  "name": "Black and white",
+  "brand": "Nivea",
+  "category": "Deodorant",
+  "db": "obf"
+ },
+ {
+  "code": "8714789913919",
+  "name": "Dermo Protector",
+  "brand": "Colgate-Palmolive Nederland B.V.",
+  "category": "Deodorant",
+  "db": "obf"
+ },
+ {
+  "code": "0312547427951",
+  "name": "Cool Mint Antiseptic",
+  "brand": "Listerine",
+  "category": "Mouthwash",
+  "db": "obf"
+ },
+ {
+  "code": "8850006306383",
+  "name": "Plax Peppermint",
+  "brand": "Colgate",
+  "category": "Mouthwash",
+  "db": "obf"
+ },
+ {
+  "code": "8718951544659",
+  "name": "Bain de bouche Elmex Sensitive Dents sensibles",
+  "brand": "Elmex",
+  "category": "Mouthwash",
+  "db": "obf"
+ },
+ {
+  "code": "3574661634937",
+  "name": "bain de bouche quotidien",
+  "brand": "Listerine",
+  "category": "Mouthwash",
+  "db": "obf"
+ },
+ {
+  "code": "0030772092583",
+  "name": "Ultra concentrated Tide original",
+  "brand": "Tide",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "0030772180167",
+  "name": "Pods 3 in 1",
+  "brand": "Tide",
+  "category": "Laundry Detergent",
+  "db": "opf"
+ },
+ {
+  "code": "0037000657323",
+  "name": "Platinum Plus Powerwash Dish Spray - Free & Clear",
+  "brand": "Dawn",
+  "category": "Dish Soap",
+  "db": "opf"
+ },
+ {
+  "code": "0030772009086",
+  "name": "D\u00e9tergent \u00e0 vaisselle liquide",
+  "brand": "Dawn",
+  "category": "Dish Soap",
+  "db": "opf"
+ },
+ {
+  "code": "0037000953302",
+  "name": "kids crest cavity protection sparkle fun",
+  "brand": "Crest",
+  "category": "Toothpaste",
+  "db": "obf"
+ },
+ {
+  "code": "0037000976714",
+  "name": "Pro-Health Advanced Sensitive Releif",
+  "brand": "Crest",
+  "category": "Toothpaste",
+  "db": "obf"
+ },
+ {
+  "code": "6281001112044",
+  "name": "Triple action mint toothpaste",
+  "brand": "Colgate",
+  "category": "Toothpaste",
+  "db": "obf"
+ },
+ {
+  "code": "6920354812521",
+  "name": "colgate",
+  "brand": "colgate",
+  "category": "Toothpaste",
+  "db": "obf"
+ },
+ {
+  "code": "8001090150981",
+  "name": "oil replacement",
+  "brand": "pantene",
+  "category": "Shampoo",
+  "db": "obf"
+ },
+ {
+  "code": "5410076652020",
+  "name": "Maroc",
+  "brand": "pantene",
+  "category": "Shampoo",
+  "db": "obf"
+ },
+ {
+  "code": "5010123703509",
+  "name": "Mouth Wash",
+  "brand": "Listerine",
+  "category": "Mouthwash",
+  "db": "obf"
+ },
+ {
+  "code": "0012547339017",
+  "name": "Pocket Mist Cool Mint",
+  "brand": "Listerine",
+  "category": "Mouthwash",
+  "db": "obf"
+ },
+ {
+  "code": "0058449770206",
+  "name": "Heritage Flakes",
+  "brand": "Nature's Path Organic",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0016000435094",
+  "name": "Toasted Whole Grain Oat Cereal",
+  "brand": "Cheerios",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0675625371189",
+  "name": "Sprouted Rolled Oats",
+  "brand": "One Degree Organic Foods",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0016000147652",
+  "name": "Lightly Sweetened Maple Berry Blend Cereal",
+  "brand": "Morning Summit",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0025500304212",
+  "name": "Classic Roast Ground Coffee",
+  "brand": "Folgers",
+  "category": "Coffees",
   "db": "off"
  }
 ]

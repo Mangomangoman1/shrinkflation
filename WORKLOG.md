@@ -50,3 +50,14 @@
 - Case pages: new "Real price change per <unit>" row when the source recorded both prices.
 - Nav: Worst offenders and Calculator added; homepage links to both.
 - QA fixes: brand mis-detection ("Dr." → Dr. Oetker / Dr. Hauschka; "All" matched "All in 1" on Spee, Garnier, Sun); foreign unit words normalised (Stück → pieces, Waschladungen → loads, luiers → diapers, grams → g). Old /brands/dr.html kept as a noindex stub. Internal link check: 0 broken across 1,640 pages. Screenshots: design-shots/calc-*.png, worst-*.png.
+
+## 2026-10-15 — data-expansion routine
+- products 289 → 340 (+51 net after dropping junk/misclassified rows). Household/beauty via Open Products Facts + Open Beauty Facts (OFF search was 503 early in run, later recovered for coffee/cereal): Toilet Paper 3→8, Laundry Detergent 4→13, Dish Soap 3→6, Facial Tissues 0→1, Toothpaste/Shampoo/Deodorant/Mouthwash new categories; +4 US breakfast cereals + Folgers Classic Roast. Paper Towels stayed 4 (OPF brand searches lacked product_quantity). Snapshots for all new codes today (52/52 size ok on first batch; 5 OFF adds also snapped).
+- cases 671 → 687 (+16 after merge_cases dedupe):
+  - Mouse Print* Fall 2025 Part 2 (was missing from prior mine): Ziploc 280→270 bags; Bounty Mega 180→164 sheets; Viva Triple 133→121 sheets; Cascade Platinum Plus 52→47 pods; SeaPak Popcorn Shrimp 16→14 oz; Little Debbie cupcakes 8→6.
+  - CBC Halloween 2025: Mars 65-bar fun size 782→672 g; Hershey’s 50 mini bars 513→481 g (CA).
+  - Guardian / Which? UK Easter 2026: Maltesers XL 231→194 g; Cadbury Twirl XL 241→218 g; Cadbury Mini Eggs family 270→256 g; Galaxy XL egg 252→210 g; M&M’s Crispy egg 192→156 g; Cadbury Mini Eggs Easter egg 193.5→181 g; Toblerone Edgy Egg 298→256 g; Cadbury Dairy Milk & White Shell 372→360 g.
+- OFF revision flags (6): all rejected (Roncadin data correction; Coke SKU/market mix; Nature Valley 1.5→1.49 labeling noise; Campbell’s 10.75↔10.5 contested/no clear secondary; Nixe net vs drained; Jaouda no secondary). Notes in raw/off_rev_review_2026-10-15.json; off_rev_final.json still [].
+- Tried: Wayback CDX (Folgers homepage history OK; charmin sheets empty; availability API 429 after a few calls — mining not productive yet). X posts: vague rants only (Degree 2.7→2.6 uncorroborated) — 0 accepted. Mouse Print WP REST: no newer “Here We Shrink” posts after Spring 2026 Part 2. Reddit still unusable.
+- Tiny fix: check.py HOST map now includes Open Beauty Facts (`obf`).
+- Site rebuilt (1744 pages, 687 cases). Publish + IndexNow via publish.sh.

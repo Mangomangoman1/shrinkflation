@@ -1,0 +1,38 @@
+[
+  {
+    "code": "0860012623013",
+    "product": "Mushroom & Truffle Pizza",
+    "decision": "reject",
+    "why": "Likely OFF data correction / relabel; no secondary news/advocacy source confirming a real pack-size shrink."
+  },
+  {
+    "code": "42105220",
+    "product": "Coca Cola",
+    "decision": "reject",
+    "why": "Generic short code; 500\u2192450 ml likely market/SKU mix across regions, not a verified single-SKU shrink."
+  },
+  {
+    "code": "0016000264694",
+    "product": "Nature Valley Oats 'N Honey",
+    "decision": "reject",
+    "why": "1.5\u21921.49 oz with same 42 g \u2014 labeling noise / rounding, not a real shrink."
+  },
+  {
+    "code": "0051000012616",
+    "product": "Campbell's Cream Of Mushroom",
+    "decision": "reject",
+    "why": "Contested: same UPC listed as both 10.75 and 10.5 elsewhere; food-blog claims Campbell's held 10.75 oz for decades; no clear secondary advocacy/news confirmation of replacement shrink for this UPC."
+  },
+  {
+    "code": "20403027",
+    "product": "Nixe Thon entier",
+    "decision": "reject",
+    "why": "Before label was net weight 195 g with drained 150 g; after shows 150 g \u2014 net vs drained weight confusion, not shrinkflation."
+  },
+  {
+    "code": "6111266962187",
+    "product": "Jaouda Lait frais",
+    "decision": "reject",
+    "why": "No secondary source corroborating 500\u2192450 ml pack change."
+  }
+]

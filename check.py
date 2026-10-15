@@ -5,7 +5,7 @@ Only fetched values are stored; failures are recorded with status/error, never f
 import json, pathlib, datetime, time, urllib.request, urllib.parse
 R=pathlib.Path(__file__).parent; DATA=R/"data"/"snapshots.json"; DATA.parent.mkdir(exist_ok=True)
 UA={"User-Agent":"ShrinkflationTracker/0.1 (github.com/Mangomangoman1)"}
-HOST={"off":"https://world.openfoodfacts.org","opf":"https://world.openproductsfacts.org"}
+HOST={"off":"https://world.openfoodfacts.org","opf":"https://world.openproductsfacts.org","obf":"https://world.openbeautyfacts.org"}
 def get(u):
     for i in range(3):
         try: return json.load(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30))
