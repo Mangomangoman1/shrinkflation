@@ -9,6 +9,14 @@
 - [Shrinkflation calculator: real price change per unit](https://shrinkradar.com/calculator/)
 - [Submit a sighting: report shrinkflation via GitHub issue](https://shrinkradar.com/submit/)
 - [Guides: what shrinkflation is, how to spot it](https://shrinkradar.com/guides/)
+- [Shrinkflation 2026: list of 83 examples](https://shrinkradar.com/shrinkflation-2026/)
+- [Shrinkflation 2025: list of 85 examples](https://shrinkradar.com/shrinkflation-2025/)
+- [Shrinkflation 2024: list of 146 examples](https://shrinkradar.com/shrinkflation-2024/)
+- [Shrinkflation 2023: list of 134 examples](https://shrinkradar.com/shrinkflation-2023/)
+- [Shrinkflation 2022: list of 101 examples](https://shrinkradar.com/shrinkflation-2022/)
+- [Shrinkflation 2021: list of 49 examples](https://shrinkradar.com/shrinkflation-2021/)
+- [Shrinkflation 2020: list of 42 examples](https://shrinkradar.com/shrinkflation-2020/)
+- [Open data: all 691 cases as CSV/JSON, CC BY 4.0](https://shrinkradar.com/data/)
 - [Brands](https://shrinkradar.com/brands/) · [Categories](https://shrinkradar.com/categories/) · [Countries](https://shrinkradar.com/countries/) · [Products tracked daily](https://shrinkradar.com/products/)
 - [Methodology and sources](https://shrinkradar.com/about.html)
 
@@ -16,5 +24,6 @@
 - [RSS feed](https://shrinkradar.com/feed.xml)
 - [Sitemap](https://shrinkradar.com/sitemap.xml)
 - [Search index (JSON)](https://shrinkradar.com/search.json)
+- [Case library CSV](https://shrinkradar.com/data/cases.csv) · [Case library JSON](https://shrinkradar.com/data/cases.json) (CC BY 4.0)
 
 Please cite ShrinkRadar and link the case page (which links the original source) when quoting figures.
