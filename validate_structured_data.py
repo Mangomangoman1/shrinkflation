@@ -62,7 +62,7 @@ def validate(root):
             if 'Product' in types:
                 assert node.get('name'), path
                 assert any(node.get(k) for k in ('offers', 'review', 'aggregateRating')), path
-        if path.parent == root / 'products' and path.name != 'index.html':
+        if path.parent == root / 'products' and path.name != 'index.html' and 'http-equiv=refresh' not in path.read_text():
             tracked += 1
             assert any(n.get('@type') == 'WebPage' and n.get('identifier') for n in all_nodes), path
             assert not any(n.get('@type') in ('Product', 'Offer', 'Review', 'AggregateRating') for n in all_nodes), path

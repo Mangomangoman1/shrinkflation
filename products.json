@@ -1,7 +1,7 @@
 [
  {
   "code": "0810607024244",
-  "name": "POPCORNERS",
+  "name": "PopCorners",
   "brand": "PopCorners",
   "category": "Chips",
   "db": "off"
@@ -29,8 +29,8 @@
  },
  {
   "code": "0856802008825",
-  "name": "SEA SALT & VINEGAR FLAVOR PROTEIN CHIPS",
-  "brand": "WILDE",
+  "name": "Sea Salt & Vinegar Flavor Protein Chips",
+  "brand": "Wilde",
   "category": "Chips",
   "db": "off"
  },
@@ -44,7 +44,7 @@
  {
   "code": "8425197712024",
   "name": "Chocolate con leche y almendras",
-  "brand": "CHOCOLATES MARUJA S.L.",
+  "brand": "Chocolates Maruja S.L.",
   "category": "Chocolate Candies",
   "db": "off"
  },
@@ -57,7 +57,7 @@
  },
  {
   "code": "80177616",
-  "name": "FILLED MILK CHOCOLATE WITH A MILKY FILLING",
+  "name": "Filled Milk Chocolate with a Milky Filling",
   "brand": "Kinder",
   "category": "Chocolate Candies",
   "db": "off"
@@ -93,7 +93,7 @@
  {
   "code": "0857484006611",
   "name": "dark chocolate coconut whips",
-  "brand": "UNREAL",
+  "brand": "Unreal",
   "category": "Chocolate Candies",
   "db": "off"
  },
@@ -323,7 +323,7 @@
  },
  {
   "code": "0051500720011",
-  "name": "CREAMY PEANUT BUTTER",
+  "name": "Creamy Peanut Butter",
   "brand": "Jif",
   "category": "Peanut Butters",
   "db": "off"
@@ -345,21 +345,21 @@
  {
   "code": "5449000054227",
   "name": "Coca-Cola Original Taste",
-  "brand": "COCA-COLA SERVICES SA/NV",
+  "brand": "Coca-Cola Services SA/NV",
   "category": "Sodas",
   "db": "off"
  },
  {
   "code": "5449000214799",
   "name": "Coca-Cola sans sucres",
-  "brand": "COCA-COLA SERVICES SA/NV",
+  "brand": "Coca-Cola Services SA/NV",
   "category": "Sodas",
   "db": "off"
  },
  {
   "code": "5449000000996",
   "name": "Coca-Cola Original",
-  "brand": "COCA-COLA SERVICES SA/NV",
+  "brand": "Coca-Cola Services SA/NV",
   "category": "Sodas",
   "db": "off"
  },
@@ -645,8 +645,8 @@
  },
  {
   "code": "0028000466312",
-  "name": "NESCAF\u00c9 CL\u00c1SICO",
-  "brand": "NESCAF\u00c9",
+  "name": "Nescaf\u00e9 Cl\u00e1sico",
+  "brand": "Nescaf\u00e9",
   "category": "Coffees",
   "db": "off"
  },
@@ -715,8 +715,8 @@
  },
  {
   "code": "0028000192174",
-  "name": "NESCAF\u00c9 GOLD ESPRESSO BLONDE",
-  "brand": "NESCAF\u00c9",
+  "name": "Nescaf\u00e9 Gold Espresso Blonde",
+  "brand": "Nescaf\u00e9",
   "category": "Instant Coffees",
   "db": "off"
  },
@@ -863,7 +863,7 @@
  {
   "code": "0687456213064",
   "name": "ORGANIC CHEWY GRANOLA BARS mixed berry",
-  "brand": "MADEGOOD",
+  "brand": "MadeGood",
   "category": "Granola Bars",
   "db": "off"
  },
@@ -1016,7 +1016,7 @@
  },
  {
   "code": "13356194",
-  "name": "SPICY CHICKEN & 'NDUJA PIZZA",
+  "name": "Spicy Chicken & 'Nduja Pizza",
   "brand": "",
   "category": "Breads",
   "db": "off"
@@ -1030,8 +1030,8 @@
  },
  {
   "code": "5025125000129",
-  "name": "JASON'S SOURDOUGH",
-  "brand": "JASON'S SOURDOUGH",
+  "name": "Jason's Sourdough",
+  "brand": "Jason's Sourdough",
   "category": "Breads",
   "db": "off"
  },
@@ -1044,7 +1044,7 @@
  },
  {
   "code": "0013764027138",
-  "name": "THIN-SLICED",
+  "name": "Thin-Sliced",
   "brand": "Dave\u2019s Killer Bread",
   "category": "Breads",
   "db": "off"
@@ -1128,8 +1128,8 @@
  },
  {
   "code": "0850046663079",
-  "name": "CRACKERS - SEA SALT",
-  "brand": "TOP SEEDZ",
+  "name": "Crackers - Sea Salt",
+  "brand": "Top Seedz",
   "category": "Crackers",
   "db": "off"
  },
@@ -1219,8 +1219,8 @@
  },
  {
   "code": "0850251004643",
-  "name": "ORIGINAL POPCORN",
-  "brand": "SKINNY POP",
+  "name": "Original Popcorn",
+  "brand": "Skinny Pop",
   "category": "Popcorn",
   "db": "off"
  },
@@ -1254,8 +1254,8 @@
  },
  {
   "code": "0027000488058",
-  "name": "WHOLE GRAIN POPPING CORN",
-  "brand": "CONAGRA BRANDS",
+  "name": "Whole Grain Popping Corn",
+  "brand": "Conagra Brands",
   "category": "Popcorn",
   "db": "off"
  },
@@ -1373,14 +1373,14 @@
  },
  {
   "code": "0017400140014",
-  "name": "BROWN RICE",
+  "name": "Brown Rice",
   "brand": "Minute",
   "category": "Rice",
   "db": "off"
  },
  {
   "code": "0017400118150",
-  "name": "WHITE RICE",
+  "name": "White Rice",
   "brand": "Minute",
   "category": "Rice",
   "db": "off"
@@ -1415,8 +1415,8 @@
  },
  {
   "code": "0073731071199",
-  "name": "CARB BALANCE FLOUR TORTILLA WRAPS",
-  "brand": "MISSION",
+  "name": "Carb Balance Flour Tortilla Wraps",
+  "brand": "Mission",
   "category": "Flours",
   "db": "off"
  },
@@ -1444,7 +1444,7 @@
  {
   "code": "6111029000118",
   "name": "Cosumar Sucre En Lingot Pour Le Th\u00e9 1 kg",
-  "brand": "COSUMAR",
+  "brand": "Cosumar",
   "category": "Sugars",
   "db": "off"
  },
@@ -1528,7 +1528,7 @@
  {
   "code": "0863699000108",
   "name": "MAYO Real Mayonnaise made with Avocado Oil",
-  "brand": "PRIMAL KITCHEN",
+  "brand": "Primal Kitchen",
   "category": "Mayonnaises",
   "db": "off"
  },
@@ -1548,7 +1548,7 @@
  },
  {
   "code": "0048001354500",
-  "name": "REAL MAYONNAISE",
+  "name": "Real Mayonnaise",
   "brand": "Hellmann's",
   "category": "Mayonnaises",
   "db": "off"
@@ -1576,7 +1576,7 @@
  },
  {
   "code": "0054400000245",
-  "name": "DIJON MUSTARD",
+  "name": "Dijon Mustard",
   "brand": "Grey Poupon",
   "category": "Mustards",
   "db": "off"
@@ -1625,7 +1625,7 @@
  },
  {
   "code": "0041196010121",
-  "name": "MINESTRONE",
+  "name": "Minestrone",
   "brand": "Progresso",
   "category": "Canned Soups",
   "db": "off"
@@ -1639,8 +1639,8 @@
  },
  {
   "code": "0051000132796",
-  "name": "CHICKEN BROTH",
-  "brand": "SWANSON",
+  "name": "Chicken Broth",
+  "brand": "Swanson",
   "category": "Canned Soups",
   "db": "off"
  },
@@ -1674,14 +1674,14 @@
  },
  {
   "code": "0096619977819",
-  "name": "ALBACORE SOLID WHITE TUNA IN WATER",
-  "brand": "KIRKLAND",
+  "name": "Albacore Solid White Tuna in Water",
+  "brand": "Kirkland",
   "category": "Canned Tunas",
   "db": "off"
  },
  {
   "code": "0048000002488",
-  "name": "CHUNK LIGHT TUNA",
+  "name": "Chunk Light Tuna",
   "brand": "Chicken of the Sea",
   "category": "Canned Tunas",
   "db": "off"
@@ -1710,7 +1710,7 @@
  {
   "code": "0029000076501",
   "name": "Dry Roasted Lightly Salted Peanuts",
-  "brand": "PLANTERS",
+  "brand": "Planters",
   "category": "Peanuts",
   "db": "off"
  },
@@ -1737,7 +1737,7 @@
  },
  {
   "code": "0096619885718",
-  "name": "UNSALTED MIXED NUTS",
+  "name": "Unsalted Mixed Nuts",
   "brand": "KIRKLAND signature",
   "category": "Nuts",
   "db": "off"
@@ -1779,8 +1779,8 @@
  },
  {
   "code": "0708747151930",
-  "name": "MEGA OMEGA",
-  "brand": "POWER UP PREMIUM TRAIL MIX",
+  "name": "Mega Omega",
+  "brand": "Power Up Premium Trail Mix",
   "category": "Dried Fruits",
   "db": "off"
  },
@@ -1829,7 +1829,7 @@
  {
   "code": "5000159548496",
   "name": "Eis, Snickers",
-  "brand": "SNICKERS",
+  "brand": "Snickers",
   "category": "Frozen Desserts",
   "db": "off"
  },
@@ -1856,15 +1856,15 @@
  },
  {
   "code": "0889392000313",
-  "name": "SPARKLING ORANGE",
-  "brand": "CELSIUS",
+  "name": "Sparkling Orange",
+  "brand": "Celsius",
   "category": "Energy Drinks",
   "db": "off"
  },
  {
   "code": "0012000028496",
-  "name": "DOUBLESHOT ENERGY ENERGY COFFEE BEVERAGE",
-  "brand": "STARBUCKS",
+  "name": "Doubleshot Energy Energy Coffee Beverage",
+  "brand": "Starbucks",
   "category": "Energy Drinks",
   "db": "off"
  },
@@ -1878,7 +1878,7 @@
  {
   "code": "0889392021394",
   "name": "Tropical Vibe Sparkling Starfruit Pineapple Edition",
-  "brand": "CELSIUS",
+  "brand": "Celsius",
   "category": "Energy Drinks",
   "db": "off"
  },
@@ -1920,7 +1920,7 @@
  {
   "code": "6111252421568",
   "name": "\u0627\u0643\u0648\u0627\u0641\u064a\u0646\u0627",
-  "brand": "AQUAFINA",
+  "brand": "Aquafina",
   "category": "Bottled Waters",
   "db": "off"
  },
@@ -2059,8 +2059,8 @@
  },
  {
   "code": "0063827602567",
-  "name": "Baby Sensitive \u2022 Sulphate Free Echo Clean \u2022 2X Concentrated Laundry Detergent",
-  "brand": "Echo Clean \u2022 \ud83c\udde8\ud83c\udde6VIP Products Mission BC",
+  "name": "Baby Sensitive Sulphate-Free 2X Concentrated Laundry Detergent",
+  "brand": "Echo Clean",
   "category": "Laundry Detergent",
   "db": "opf"
  },
@@ -2535,7 +2535,7 @@
  },
  {
   "code": "0016000272019",
-  "name": "LUCKY CHARMS",
+  "name": "Lucky Charms",
   "brand": "Nestl\u00e9",
   "category": "Breakfast Cereals",
   "db": "off"
@@ -2564,112 +2564,112 @@
  {
   "code": "0037000602514",
   "name": "Essentials soft - mega rolls",
-  "brand": "CHARMIN",
+  "brand": "Charmin",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0037000792468",
   "name": "Ultra soft super roll",
-  "brand": "CHARMIN",
+  "brand": "Charmin",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0037000613275",
   "name": "Ultra soft super plus rolls",
-  "brand": "CHARMIN",
+  "brand": "Charmin",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0037000412540",
   "name": "Ultra strong 24 mega plus rolls",
-  "brand": "CHARMIN",
+  "brand": "Charmin",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0037000940463",
   "name": "Ultra soft  - double rolls",
-  "brand": "CHARMIN",
+  "brand": "Charmin",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0511201717647",
   "name": "Ultra strong - jumbo strong",
-  "brand": "CHARMIN",
+  "brand": "Charmin",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0036000486056",
   "name": "Ultra  comfortcare",
-  "brand": "COTTONELLE",
+  "brand": "Cottonelle",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0036000476224",
   "name": "strong bath tissue",
-  "brand": "COTTONELLE",
+  "brand": "Cottonelle",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0036000475159",
   "name": "Ultra cleanCare toilet paper",
-  "brand": "COTTONELLE",
+  "brand": "Cottonelle",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0036000485981",
   "name": "Ultra comfortcare",
-  "brand": "COTTONELLE",
+  "brand": "Cottonelle",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0030400792700",
   "name": "mega rolls toilet paper",
-  "brand": "ANGEL SOFT",
+  "brand": "Angel Soft",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0030400792656",
   "name": "12 Mega Rolls",
-  "brand": "ANGEL SOFT",
+  "brand": "Angel Soft",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0030400792533",
   "name": "Mega rolls",
-  "brand": "ANGEL SOFT",
+  "brand": "Angel Soft",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0030400792427",
   "name": "Jumbo rolls",
-  "brand": "ANGEL SOFT",
+  "brand": "Angel Soft",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0030400792670",
   "name": "Unscented bathroom tissue",
-  "brand": "ANGEL SOFT",
+  "brand": "Angel Soft",
   "category": "Toilet Paper",
   "db": "opf"
  },
  {
   "code": "0030400793370",
   "name": "Fresh linen scent - MEGA ROLL",
-  "brand": "ANGEL SOFT",
+  "brand": "Angel Soft",
   "category": "Toilet Paper",
   "db": "opf"
  },

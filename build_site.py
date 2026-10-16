@@ -107,13 +107,13 @@ def badge(b,a,u):
     return f'<span class="badge{" flat" if pct>=0 else ""}">{b:g} → {a:g} {E(u)} <i>{"−" if pct<0 else "+"}{abs(pct):.1f}%</i></span>'
 
 SEARCH_JS="""(async()=>{const q=document.getElementById('q'),r=document.getElementById('res');const d=await (await fetch('/search.json')).json();
-const go=()=>{const t=q.value.toLowerCase().trim();r.innerHTML='';if(t.length<2)return;d.filter(x=>x.t.toLowerCase().includes(t)).slice(0,40).forEach(x=>{const li=document.createElement('li');const a=document.createElement('a');a.href=x.u;a.textContent=x.t;li.append(a,' ',Object.assign(document.createElement('span'),{className:'m',textContent:x.k}));r.append(li)})};
+const go=()=>{const t=q.value.toLowerCase().trim();r.innerHTML='';if(t.length<2)return;const dg=t.replace(/[\\s-]/g,'');if(/^\\d{8,14}$/.test(dg)){const li=document.createElement('li'),a=document.createElement('a');a.href='/barcode/?code='+dg;a.textContent='Look up barcode '+dg;li.append(a,' ',Object.assign(document.createElement('span'),{className:'m',textContent:'Barcode'}));r.append(li)}d.filter(x=>x.t.toLowerCase().includes(t)).slice(0,40).forEach(x=>{const li=document.createElement('li');const a=document.createElement('a');a.href=x.u;a.textContent=x.t;li.append(a,' ',Object.assign(document.createElement('span'),{className:'m',textContent:x.k}));r.append(li)})};
 q.addEventListener('input',go);const p=new URLSearchParams(location.search).get('q');if(p){q.value=p;go()}})();"""
 PAGES=[]
 SLUGS=set()
 COUNTRY={'US':'United States','UK':'United Kingdom','DE':'Germany','FR':'France','CA':'Canada','AU':'Australia','EU':'Europe','NL':'Netherlands','ES':'Spain','AT':'Austria','IT':'Italy','BR':'Brazil','IN':'India'}
 FLAG={'US':'🇺🇸','UK':'🇬🇧','DE':'🇩🇪','FR':'🇫🇷','CA':'🇨🇦','AU':'🇦🇺','EU':'🇪🇺','NL':'🇳🇱','ES':'🇪🇸','AT':'🇦🇹','IT':'🇮🇹','BR':'🇧🇷','IN':'🇮🇳'}
-NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/worst/', 'Worst offenders'), ('/calculator/', 'Calculator'), ('/submit/', 'Submit'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/guides/', 'Guides'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/alerts/', 'Alerts'), ('/about.html', 'About')]
+NAV=[('/', 'Findings'), ('/cases/', 'Known cases'), ('/worst/', 'Worst offenders'), ('/calculator/', 'Calculator'), ('/barcode/', 'Barcode'), ('/submit/', 'Submit'), ('/products/', 'Products'), ('/brands/', 'Brands'), ('/categories/', 'Categories'), ('/guides/', 'Guides'), ('/countries/', 'Countries'), ('/search.html', 'Search'), ('/alerts/', 'Alerts'), ('/about.html', 'About')]
 def slug(x): return re.sub(r"[^a-z0-9]+","-",x.lower().replace("&","and")).strip("-")
 def bslug(x):
     """Brand slug; non-Latin names (empty ASCII slug) get a stable hash slug instead of colliding on ''."""
@@ -246,6 +246,7 @@ const build=()=>{
   ];
   return {title,body:lines.join('\\n')};
 };
+const PQ=new URLSearchParams(location.search);['product','brand','new_size','new_unit','notes','country'].forEach(k=>{const v=PQ.get(k);if(v&&$(k)){if($(k).tagName==='SELECT'&&![...$(k).options].some(o=>o.value===v))return;$(k).value=v}});
 f.addEventListener('submit',e=>{
   e.preventDefault();
   for(const id of req){if(!val(id)){st.textContent='Please fill in the required fields (product, old size, new size).';$(id).focus();return}}
@@ -262,6 +263,48 @@ $('copy').addEventListener('click',async()=>{
   catch(_){md.select();document.execCommand('copy');$('copy').textContent='Copied'}
 });
 })();"""
+BARCODE_JS="""(()=>{const $=i=>document.getElementById(i),inp=$('code'),out=$('bres'),st=$('bst'),P=new URLSearchParams(location.search);let IDX=null;
+const el=(t,a={},...k)=>{const e=document.createElement(t);for(const x in a){if(x==='class')e.className=a[x];else if(x==='text')e.textContent=a[x];else e.setAttribute(x,a[x])}k.forEach(c=>c!=null&&e.append(c));return e};
+const row=(l,v,cls)=>el('div',{class:'row'},el('span',{text:l}),el('b',{text:v,class:cls||''}));
+const slug=s=>s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+const okGTIN=c=>{if(!/^\\d{8}$|^\\d{12,14}$/.test(c))return false;let s=0;const d=c.split('').reverse().map(Number);for(let i=1;i<d.length;i++)s+=d[i]*(i%2?3:1);return (10-s%10)%10===d[0]};
+const norm=v=>String(v||'').replace(/\\D/g,'');
+const getJ=async u=>{try{const r=await fetch(u);return r.ok?await r.json():null}catch(_){return null}};
+async function off(c){for(const h of ['world.openfoodfacts.org','world.openproductsfacts.org','world.openbeautyfacts.org']){const j=await getJ(`https://${h}/api/v2/product/${c}.json?fields=product_name,brands,quantity,product_quantity,product_quantity_unit`);if(j&&j.status===1&&j.product)return [j.product,h]}return [null,null]}
+async function look(raw){let c=norm(raw);out.innerHTML='';if(c.length<8){st.textContent='Enter the 8 to 14 digits under the barcode.';return}
+const q=c.length===12?'0'+c:c;history.replaceState(null,'','?code='+c);st.textContent='Looking up '+c+'…';
+if(!IDX)IDX=await getJ('/barcodes.json')||{p:{},b:{}};const key=c.replace(/^0+/,''),mine=IDX.p[key];
+const [[p,host],pr]=await Promise.all([off(q),getJ(`https://prices.openfoodfacts.org/api/v1/prices?product_code=${q}&order_by=-date&size=6`)]);
+st.textContent=okGTIN(c)?'':'Heads up: '+c+' fails the barcode check digit, so it may be mistyped.';
+const name=(mine&&mine[0])||(p&&p.product_name)||'',brands=(p&&p.brands)||'',qty=((p&&p.quantity)||(mine&&mine[2])||'').replace(/\\s+[e℮]$/,'');
+const box=el('section',{class:'label','aria-label':'Barcode result'},el('div',{class:'hd',text:'Size Facts'}));
+box.append(el('div',{class:'row bar'},el('span',{class:'upc',text:'Barcode '+c})));
+if(name)box.append(el('div',{class:'big',style:'font-size:1.4rem',text:(brands&&!mine&&!name.toLowerCase().includes(brands.split(',')[0].toLowerCase())?brands.split(',')[0].trim()+' ':'')+name}));
+box.append(row('Net quantity on the pack',qty||'not on file'));
+if(mine){box.append(row('Did it shrink?',mine[3],mine[3].startsWith('Yes')?'yes':'no'));box.append(el('p',{text:mine[4]}));box.append(el('p',{},el('a',{href:mine[1]},el('b',{text:'Full size and price history →'}))))}
+else box.append(el('p',{text:name?'ShrinkRadar does not check this product daily yet, so we have no size history for it. The size above is what the open database lists today.':'This barcode is not in Open Food Facts, Open Products Facts or Open Beauty Facts, and we do not track it.'}));
+const items=(pr&&pr.items)||[];
+if(items.length){box.append(el('div',{class:'row bar'},el('span',{class:'ml',text:'Recent shelf prices (Open Prices)'})));
+items.forEach(i=>{const loc=i.location?[i.location.osm_name,i.location.osm_address_city,i.location.osm_address_country_code].filter(Boolean).join(', '):'';box.append(row(i.date+(loc?' · '+loc:''),(i.price!=null?Number(i.price).toFixed(2):'?')+' '+(i.currency||'')))});
+box.append(el('p',{class:'m',text:'Open Prices records the price, not the pack size, so a jump may also be a different pack.'}))}
+const bl=brands.split(',').map(b=>b.trim()).filter(Boolean),hit=bl.map(b=>[b,IDX.b[slug(b)]]).find(x=>x[1]);
+if(hit)box.append(el('p',{},el('a',{href:'/brands/'+slug(hit[0])+'.html'},el('b',{text:`${hit[1][0]}: ${hit[1][1]} documented shrinkflation case${hit[1][1]>1?'s':''} →`}))));
+out.append(box);
+const acts=el('p',{class:'m'});const sz=p&&p.product_quantity?Math.round(p.product_quantity*100)/100:'',un=p&&p.product_quantity_unit||'';
+acts.append(el('a',{href:'/calculator/?'+new URLSearchParams(sz?{a:sz,u:un}:{})},'Compare it with the old size in the calculator'),' · ',
+el('a',{href:'/submit/?'+new URLSearchParams({product:name||('Barcode '+c),brand:bl[0]||'',new_size:sz,new_unit:un,notes:'Barcode '+c})},'Seen it shrink? Submit a sighting'));
+if(!mine&&name)acts.append(' · ',el('a',{href:'https://github.com/Mangomangoman1/shrinkflation/issues/new?'+new URLSearchParams({title:`Track product: ${name} (${c})`,body:`Please add barcode ${c} (${name}${brands?', '+brands:''}) to the daily size checks.\\n\\n_Requested from https://shrinkradar.com/barcode/?code=${c}_`}),rel:'noopener',target:'_blank'},'Ask us to track it'));
+if(host)acts.append(' · ',el('a',{href:`https://${host}/product/${q}`,rel:'nofollow noopener',target:'_blank'},'Open database entry'));
+out.append(acts)}
+$('bform').addEventListener('submit',e=>{e.preventDefault();look(inp.value)});
+document.querySelectorAll('[data-code]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();inp.value=a.dataset.code;look(a.dataset.code)}));
+if('BarcodeDetector' in window&&navigator.mediaDevices){const sb=$('scan'),v=$('cam');sb.hidden=false;let stream=null;
+const stop=()=>{if(stream){stream.getTracks().forEach(t=>t.stop());stream=null}v.hidden=true;sb.textContent='Scan with camera'};
+sb.addEventListener('click',async()=>{if(stream){stop();return}try{const det=new BarcodeDetector({formats:['ean_13','ean_8','upc_a','upc_e']});
+stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'}});v.srcObject=stream;v.hidden=false;await v.play();sb.textContent='Stop camera';st.textContent='Point the camera at the barcode.';
+const tick=async()=>{if(!stream)return;try{const r=await det.detect(v);if(r.length){const c=r[0].rawValue;stop();inp.value=c;look(c);return}}catch(_){}requestAnimationFrame(tick)};tick()}
+catch(_){stop();st.textContent='Camera not available. Type the digits instead.'}})}
+const c0=P.get('code');if(c0){inp.value=c0;look(c0)}})();"""
 GUIDE_PUB="2026-10-15"
 def guides(cases,prods,bg,cg,med,yl=()):
     """Evergreen guides under /guides/. Returns [(url,title,desc)]."""
@@ -530,7 +573,7 @@ def main():
         CUR_ALERT[:]=[('product',p['code'],p['title']),('brand',p['bslug'],p['brand'] or 'Unbranded'),('category',p['cslug'],p['category'])]
         page(f'products/{p["slug"]}.html',[f'Did {p["ttl"]} shrink? Size & price history | {NAME}',f'Did {p["ttl"]} shrink? Size history | {NAME}',f'Did {p["ttl"]} shrink? | {NAME}',f'Did {p["ttl"]} shrink?'],
              f'Has {p["ttl"]} gotten smaller? Daily-tracked package size, price and unit price history.{size_txt}',
-             f'<p class="crumbs"><a href="/categories/{p["cslug"]}.html">{E(p["category"])}</a> / <a href="/brands/{p["bslug"]}.html">{E(p["brand"] or "Unbranded")}</a> / <span class="upc">UPC {p["code"]}</span></p>'
+             f'<p class="crumbs"><a href="/categories/{p["cslug"]}.html">{E(p["category"])}</a> / <a href="/brands/{p["bslug"]}.html">{E(p["brand"] or "Unbranded")}</a> / <a class="upc" href="/barcode/?code={p["code"]}" title="Barcode lookup">UPC {p["code"]}</a></p>'
              f'<h1>Did {E(p["title"])} shrink?</h1>{label}'
              f'<h2>Size history</h2>{spark([s["size"] for s in ok])}<div class="tw"><table><thead><tr><th>Checked</th><th class="n">Net wt.</th><th class="n">Price</th><th class="n hide-s">Unit price</th></tr></thead><tbody>{tr}</tbody></table></div><p class="m">{src}</p>'
              +(f'<h2>Documented {E(p["brand"])} shrinks</h2><ul class="grid">'+"".join(ccard(c) for c in rel_cases)+'</ul>' if rel_cases else "")
@@ -628,10 +671,42 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
          '<div class="row np"><span class="ml">Real price change per unit</span></div><div class="big np" id="r-real"></div>'
          '<div class="row bar np"><span>Fair price for the new size</span><b id="r-fair"></b></div><p id="verdict"></p></section>'
          '<noscript><p class="empty">The calculator needs JavaScript. The formula: real change = (new price ÷ new size) ÷ (old price ÷ old size) − 1.</p></noscript>'
-         '<p class="m">Nothing you type leaves your browser. The link in the address bar updates as you type, so you can share a result. Every <a href="/cases/">documented case</a> has a “check the math” link that fills this in.</p>'
+         '<p class="m">Nothing you type leaves your browser. The link in the address bar updates as you type, so you can share a result. Every <a href="/cases/">documented case</a> has a “check the math” link that fills this in, and the <a href="/barcode/">barcode lookup</a> fills in the current size.</p>'
          '<div class="prose"><h2>How it works</h2>'+"".join(f'<h3>{E(q)}</h3><p>{E(a)}</p>' for q,a in calc_faq)+'<p>See the <a href="/worst/">worst offenders</a> for the biggest real price hikes we have on record.</p></div>',
          [crumbs(("Calculator",None)),{"@context":"https://schema.org","@type":"WebApplication","name":"Shrinkflation calculator","url":SITE+"/calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":0,"priceCurrency":"USD"}},
           {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in calc_faq]}],js=CALC_JS)
+    # ---- Barcode lookup ----
+    bidx={"p":{},"b":{}}
+    for p in prods:
+        h=by.get(p["code"],[]); ok=[s for s in h if s.get("size")]
+        sf=[f for f in findings if f[1] is p and f[2].startswith("Size dropped")]
+        if sf: v,a=f"Yes, it shrank",f"{sf[0][2]} (checked {sf[0][0]})."
+        elif len(ok)>1: v,a="No change so far",f'Size has stayed {fmt(ok[-1]["size"],ok[-1]["unit"])} across {len(ok)} checks since {ok[0]["date"]}.'
+        elif ok: v,a="Baseline only",f'First recorded {ok[0]["date"]}. We re-check daily and flag any shrink.'
+        else: v,a="Unknown","The open database has no net quantity on file for this item, so we cannot tell yet."
+        bidx["p"][p["code"].lstrip("0")]=[p["title"],f'/products/{p["slug"]}.html',disp(ok[-1]) if ok else "",v,a]
+    for c in cases:
+        e=bidx["b"].setdefault(c["bslug"],[c["brand"],0]); e[1]+=1
+    (OUT/"barcodes.json").write_text(json.dumps(bidx,ensure_ascii=False,separators=(",",":")))
+    ex=[p for p in prods if any(f[1] is p and f[2].startswith("Size dropped") for f in findings)][:2]+[p for p in prods if p["category"] in ("Breakfast Cereals","Toilet Paper")][:2]
+    bc_faq=[("Which barcodes work?","The 12-digit UPC on US and Canadian packs, the 13-digit EAN used in Europe, Australia and most other countries, and the short 8-digit EAN-8. Type the digits printed under the bars; spaces and dashes are ignored."),
+            ("Where does the answer come from?",f"If we check the product daily (we track {len(prods)} items), you get our own size history and a yes or no on whether it shrank. For anything else we show what Open Food Facts, Open Products Facts or Open Beauty Facts list as the net quantity today, recent shelf prices from Open Prices, and how many documented shrinkflation cases we hold for the brand."),
+            ("Why does it say we have no size history?","Because we only have a history for products we check every day. The open databases store the current pack size, not how it changed. Use the link to ask us to track it, and we will start recording it daily."),
+            ("Is the scan private?","The camera picture is read on your device and never uploaded. To look the barcode up, your browser asks the Open Food Facts and Open Prices services for that one number. ShrinkRadar itself stores nothing and uses no trackers."),
+            ("The size on the pack is different from what you show. What now?","Then the pack may have changed. That is exactly what we want to hear about: submit a sighting with the old and new size, and a photo or listing link if you have one.")]
+    page("barcode/index.html",[f"Barcode lookup: did this product shrink? | {NAME}","Barcode lookup: did this product shrink?"],
+         f"Type or scan a UPC or EAN barcode to see the product's pack size, its size history if we track it, recent shelf prices and the brand's shrinkflation record.",
+         '<h1>Barcode lookup</h1><p class="prose">Have the pack in your hand? Type the numbers under the barcode, or scan it with your phone camera, to see whether it shrank. You get our size history for the products we check daily, and the current net quantity, recent prices and brand record for nearly everything else.</p>'
+         '<form id="bform" class="calc" onsubmit="return false"><fieldset><legend class="ml">Barcode (UPC or EAN)</legend><label>Digits under the bars<input id="code" inputmode="numeric" autocomplete="off" pattern="[0-9 -]*" placeholder="e.g. 0810607024244"></label>'
+         '<div class="submit-actions"><button type="submit">Look up</button> <button type="button" id="scan" hidden>Scan with camera</button></div></fieldset></form>'
+         '<video id="cam" playsinline muted hidden style="width:100%;max-width:480px;border:2px solid var(--ink);margin-top:var(--s2)"></video>'
+         '<p class="st" id="bst" role="status" aria-live="polite"></p><div id="bres" aria-live="polite"></div>'
+         '<noscript><p class="empty">The lookup needs JavaScript. You can still <a href="/search.html">search by name</a> or browse <a href="/products/">tracked products</a>.</p></noscript>'
+         +'<p class="m">Try one: '+" · ".join([f'<a href="/barcode/?code={p["code"]}" data-code="{p["code"]}">{E(p["title"])}</a>' for p in ex]+['<a href="/barcode/?code=3017620422003" data-code="3017620422003">Nutella jar (not tracked daily)</a>'])+'</p>'+
+         '<p class="m">Camera scanning works in browsers that support barcode detection (Chrome on Android, for example). Elsewhere, type the digits.</p>'
+         '<div class="prose"><h2>FAQ</h2>'+"".join(f'<h3>{E(q)}</h3><p>{E(a)}</p>' for q,a in bc_faq)+'<p>No barcode handy? <a href="/search.html">Search by name</a>, or browse the <a href="/cases/">documented cases</a>.</p></div>',
+         [crumbs(("Barcode lookup",None)),{"@context":"https://schema.org","@type":"WebApplication","name":"ShrinkRadar barcode lookup","url":SITE+"/barcode/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":0,"priceCurrency":"USD"},"description":"Look up a UPC or EAN barcode to see pack size, size history and shrinkflation record."},
+          {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in bc_faq]}],js=BARCODE_JS)
     # ---- Submit a sighting ----
     cats_opts=sorted({c["category"] for c in cases}|{p["category"] for p in prods})
     cat_sel="".join(f'<option value="{E(c)}">{E(c)}</option>' for c in cats_opts)
@@ -733,19 +808,19 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
     page("index.html",f'{NAME}: shrinkflation tracker & {len(cases)} sourced cases',f'Daily tracking of package sizes and unit prices for {len(prods)} products, plus {len(cases)} documented shrinkflation cases with sources.',
          f'<h1>Did it shrink?</h1><p class="prose">We check the net weight of {len(prods)} everyday products every day and keep a sourced record of {len(cases)} known shrinkflation cases.</p>'
          f'<form class="search" action="/search.html" role="search"><label class="ml" for="q0">Search a product or brand</label><input id="q0" name="q" placeholder="Doritos, cereal, Charmin…"></form>'
-         f'<h2>Latest from daily checks</h2><ul class="feed">{feed}</ul><h2>Biggest documented shrinks</h2><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"])[:6])}</ul><p><a href="/cases/"><b>All {len(cases)} known cases →</b></a> · <a href="/worst/"><b>Worst offenders →</b></a> · <a href="/calculator/"><b>Shrinkflation calculator →</b></a> · <a href="/submit/"><b>Submit a sighting →</b></a></p><p class="m">'+(f'This year so far: <a href="/shrinkflation-{LAND_YEARS[0]}/"><b>shrinkflation {LAND_YEARS[0]}, {yc[LAND_YEARS[0]]} examples</b></a>. ' if LAND_YEARS else '')+f'Researchers and journalists: <a href="/data/">download the case library</a> (CSV/JSON, CC BY 4.0). New to this? Read <a href="/guides/what-is-shrinkflation.html">what shrinkflation is</a> and <a href="/guides/how-to-spot-shrinkflation.html">how to spot it in the store</a>.</p>'
+         f'<h2>Latest from daily checks</h2><ul class="feed">{feed}</ul><h2>Biggest documented shrinks</h2><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"])[:6])}</ul><p><a href="/cases/"><b>All {len(cases)} known cases →</b></a> · <a href="/worst/"><b>Worst offenders →</b></a> · <a href="/calculator/"><b>Shrinkflation calculator →</b></a> · <a href="/barcode/"><b>Barcode lookup →</b></a> · <a href="/submit/"><b>Submit a sighting →</b></a></p><p class="m">'+(f'This year so far: <a href="/shrinkflation-{LAND_YEARS[0]}/"><b>shrinkflation {LAND_YEARS[0]}, {yc[LAND_YEARS[0]]} examples</b></a>. ' if LAND_YEARS else '')+f'Researchers and journalists: <a href="/data/">download the case library</a> (CSV/JSON, CC BY 4.0). New to this? Read <a href="/guides/what-is-shrinkflation.html">what shrinkflation is</a> and <a href="/guides/how-to-spot-shrinkflation.html">how to spot it in the store</a>.</p>'
          f'<h2>Recently checked</h2><ul class="grid">{"".join(pcard(p) for p in prods[:6])}</ul>',
          [{"@context":"https://schema.org","@type":"WebSite","name":NAME,"url":SITE+"/","potentialAction":{"@type":"SearchAction","target":SITE+"/search.html?q={search_term_string}","query-input":"required name=search_term_string"}},
           {"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/","logo":SITE+"/favicon.svg"}])
     YL=year_landings(cases,ccard,med); open_data(cases)
     GUIDES=guides(cases,prods,bg,cg,med,YL)
-    idx=[{"t":"Submit a shrinkflation sighting","u":"/submit/","k":"Tool"},{"t":"Shrinkflation calculator","u":"/calculator/","k":"Tool"},{"t":"Worst shrinkflation offenders","u":"/worst/","k":"Tool"}]+[{"t":t,"u":u,"k":"Guide"} for u,t,_ in GUIDES]+[{"t":t,"u":u,"k":"List"} for u,t,_ in YL]+[{"t":"Open data: download shrinkflation cases (CSV, JSON)","u":"/data/","k":"Data"}]+[{"t":p["title"],"u":f'/products/{p["slug"]}.html',"k":p["category"]} for p in prods]+[{"t":c["product"]+" (documented case)","u":f'/cases/{c["slug"]}.html',"k":c["category"]} for c in cases]
+    idx=[{"t":"Barcode lookup: scan or type a UPC/EAN","u":"/barcode/","k":"Tool"},{"t":"Submit a shrinkflation sighting","u":"/submit/","k":"Tool"},{"t":"Shrinkflation calculator","u":"/calculator/","k":"Tool"},{"t":"Worst shrinkflation offenders","u":"/worst/","k":"Tool"}]+[{"t":t,"u":u,"k":"Guide"} for u,t,_ in GUIDES]+[{"t":t,"u":u,"k":"List"} for u,t,_ in YL]+[{"t":"Open data: download shrinkflation cases (CSV, JSON)","u":"/data/","k":"Data"}]+[{"t":p["title"],"u":f'/products/{p["slug"]}.html',"k":p["category"]} for p in prods]+[{"t":c["product"]+" (documented case)","u":f'/cases/{c["slug"]}.html',"k":c["category"]} for c in cases]
     AI=[{"id":f'f:{p["code"]}:{d}:{t[:4]}',"type":"finding","date":d,"title":p["title"],"text":t,"url":f'{SITE}/products/{p["slug"]}.html',"product":p["code"],"brand":p["bslug"],"category":p["cslug"],"brand_name":p["brand"],"category_name":p["category"]} for d,p,t in findings]
     AI+=[{"id":"c:"+c["slug"],"type":"case","date":c["when"],"title":c["product"],"text":f'{fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])} ({c["pct"]:.0f}% less) · {COUNTRY.get(c["country"],c["country"])}, {c["when"]}',"url":f'{SITE}/cases/{c["slug"]}.html',"product":None,"brand":c["bslug"],"category":slug(c["category"]),"brand_name":c["brand"],"category_name":c["category"]} for c in cases]
     (R/"data/alert_items.json").write_text(json.dumps(AI,ensure_ascii=False,indent=0))
     (OUT/"search.json").write_text(json.dumps(idx,ensure_ascii=False))
     page("search.html",f'Search: did my product shrink? | {NAME}','Search tracked products and documented shrinkflation cases.',
-         '<h1>Search</h1><label for="q" class="ml">Product, brand or category</label><input id="q" autofocus placeholder="e.g. Doritos, cereal, Charmin"><ul id="res"></ul><noscript>Search needs JavaScript; browse <a href="/products/">products</a> or <a href="/cases/">cases</a>.</noscript>',js=SEARCH_JS)
+         '<h1>Search</h1><label for="q" class="ml">Product, brand or category</label><input id="q" autofocus placeholder="e.g. Doritos, cereal, Charmin"><p class="m">Got the pack in hand? Use the <a href="/barcode/">barcode lookup</a> to type or scan its UPC.</p><ul id="res"></ul><noscript>Search needs JavaScript; browse <a href="/products/">products</a> or <a href="/cases/">cases</a>.</noscript>',js=SEARCH_JS)
     CUR_ALERT[:]=[('all','all','All new findings and documented cases')]
     page("alerts/index.html",f'Shrinkflation email alerts | {NAME}','Get an email when a product, brand or category you follow shrinks.',
          '<div class="prose"><h1>Email alerts</h1><p>Follow a product, a brand, a category, or everything. When our daily check logs a size cut or a new documented case matches what you follow, you get one digest email that day. Nothing on days with no news.</p>'
@@ -765,9 +840,15 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
         "".join(f'<url><loc>{SITE}/{p.replace("index.html","")}</loc><lastmod>{TODAY}</lastmod></url>' for p in PAGES)+"</urlset>")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n"); (OUT/".nojekyll").write_text(""); (OUT/"favicon.svg").write_text(FAV); (OUT/"og.svg").write_text(OG); og_png(OUT/"og.png") or None; (OUT/"CNAME").write_text("shrinkradar.com\n")
     # retired brand slugs from earlier mis-detected brands: noindex stubs pointing at the real brands
-    for old,targets in {"dr":["Dr. Oetker","Dr. Hauschka"],"gut":["Gut & Günstig"],"la":["La Trappe","La Vache qui rit"],"costcotuna":["Kirkland"]}.items():
+    for old,targets in {"dr":["Dr. Oetker","Dr. Hauschka"],"gut":["Gut & Günstig"],"la":["La Trappe","La Vache qui rit"],"costcotuna":["Kirkland"],"echo-clean-vip-products-mission-bc":["Echo Clean"]}.items():
         if not (OUT/f"brands/{old}.html").exists():
             (OUT/f"brands/{old}.html").write_text('<!doctype html><meta charset=utf-8><meta name=robots content=noindex><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/style.css><title>Moved</title><main class=w><h1>This brand page moved</h1><ul>'+"".join(f'<li><a href="/brands/{slug(t)}.html">{E(t)}</a></li>' for t in targets)+'</ul>')
+    # renamed product pages (junk names fixed): redirect stubs to the new slug, kept out of the sitemap
+    for oldp,code in {"echo-clean-vip-products-mission-bc-baby-sensitive-sulphate-f-602567":"0063827602567"}.items():
+        np_=next((q for q in prods if q["code"]==code),None)
+        if np_ and not (OUT/f"products/{oldp}.html").exists():
+            u=f'/products/{np_["slug"]}.html'
+            (OUT/f"products/{oldp}.html").write_text(f'<!doctype html><meta charset=utf-8><title>Moved</title><link rel=canonical href="{SITE}{u}"><meta http-equiv=refresh content="0;url={u}"><a href="{u}">{E(np_["title"])}</a>')
     (OUT/"llms.txt").write_text(f"""# {NAME}
 
 > {NAME} ({SITE}) answers "did it shrink?" for groceries and household goods. It checks the net quantity of {len(prods)} everyday products daily (Open Food Facts, Open Products Facts, Open Prices; ODbL) and keeps a library of {len(cases)} documented shrinkflation cases. Every case cites the consumer agency, advocate or news source it came from; missing data is shown as missing, never estimated.
@@ -777,6 +858,7 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
 - [Known cases: all {len(cases)} documented before/after size cuts, filterable]({SITE}/cases/)
 - [Worst offenders: biggest cuts, hidden per-unit price hikes, repeat brands]({SITE}/worst/)
 - [Shrinkflation calculator: real price change per unit]({SITE}/calculator/)
+- [Barcode lookup: type or scan a UPC/EAN to check pack size and history]({SITE}/barcode/)
 - [Submit a sighting: report shrinkflation via GitHub issue]({SITE}/submit/)
 - [Guides: what shrinkflation is, how to spot it]({SITE}/guides/)
 """+"".join(f"- [{t}]({SITE}{u})\n" for u,t,_ in YL)+f"""- [Open data: all {len(cases)} cases as CSV/JSON, CC BY 4.0]({SITE}/data/)
