@@ -1819,5 +1819,35 @@
   "before_price": 15.0,
   "after_price": 15.0,
   "currency": "GBP"
+ },
+ {
+  "product": "Cadbury hollow hunting eggs carton",
+  "brand": "Cadbury",
+  "category": "Chocolate & Candy",
+  "before": 22,
+  "after": 20,
+  "unit": "eggs",
+  "when": "2026",
+  "country": "AU",
+  "source_url": "https://www.choice.com.au/about-us/media/media-releases/2026/march/easter-shrinkflation-cadbury-chocolate-eggs-smaller-but-more-expensive-for-second-year-in-a-row",
+  "source": "CHOICE — Easter shrinkflation: Cadbury chocolate eggs smaller but more expensive (Mar 2026)",
+  "evidence": "Last year, we pointed out that Cadbury’s then 22-pack of hollow hunting eggs was coming with two fewer eggs than in 2024… Since then, the company has cut two more eggs from the carton… All up, the former 24-pack of eggs has shrunk by 68g and increased in price by $5.50 since 2024",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high"
+ },
+ {
+  "product": "Cadbury boxed hollow Easter eggs (15-pack)",
+  "brand": "Cadbury",
+  "category": "Chocolate & Candy",
+  "before": 18,
+  "after": 15,
+  "unit": "eggs",
+  "when": "2026",
+  "country": "AU",
+  "source_url": "https://www.choice.com.au/about-us/media/media-releases/2026/march/easter-shrinkflation-cadbury-chocolate-eggs-smaller-but-more-expensive-for-second-year-in-a-row",
+  "source": "CHOICE — Easter shrinkflation: Cadbury chocolate eggs smaller but more expensive (Mar 2026)",
+  "evidence": "In one case, a 15-pack currently selling for $15.00 has replaced an 18-pack that sold for $13.50 last year",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high"
  }
 ]

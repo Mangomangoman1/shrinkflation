@@ -96,3 +96,16 @@
 - Consumer journalists and consumer-desk tipsheets (Mouse Print*, Which?, CBC Marketplace, local TV consumer reporters) once a daily-check finding or a strong dataset angle exists, e.g. "the worst hidden per-unit price hikes".
 - Show HN when alerts are live and the daily checks have logged real findings.
 - Non-spam listings: data portals (Kaggle/data.world dataset of the case library under CC BY), Open Food Facts community/reuse pages, personal-finance and frugal-living resource lists that take submissions.
+
+## 2026-10-16 — data-expansion (morning)
+- **Products:** 340 → 385 (+45 net). Focus: US coffee (Dunkin', Peet's, Community, more Starbucks/Folgers), breakfast cereals (Lucky Charms, Frosted Flakes 21.7 oz, Raisin Bran, Cocoa Puffs, Special K Cinnamon & Pecan, Frosted Flakes w/ marshmallows), household (Bounty Select-A-Size, Kirkland towels, Charmin Ultra Soft/Strong, Cottonelle, Angel Soft mega rolls, Kleenex AU/EU packs with qty, Puffs Plus Lotion, Glad sandwich bags). Categories after: Breakfast Cereals 20, Ground Coffees 15, Coffees 12, Toilet Paper 24 (was 8, mostly US Charmin/Cottonelle/Angel Soft), Paper Towels 7, Facial Tissues 6, Food Storage Bags 2.
+- **Snapshots:** 1158 → 1203. Targeted check.py for 45 new codes: 19 with numeric size, 26 size_missing (typical OPF paper/TP without product_quantity). Latest unique: missing size ~39 (was ~13), missing USD price ~269 (was ~233) — rise is mostly new paper SKUs without Open Prices/OFF quantity.
+- **Cases:** 687 → 691 (+4 verified):
+  - Atkins Protein Bars 5 → 4 bars (US, Mouse Print* Winter 2026 Part 1)
+  - Finish Ultimate Dishwashing Pods 76 → 62 pods (US, same)
+  - Cadbury hollow hunting eggs carton 22 → 20 eggs (AU, CHOICE Mar 2026)
+  - Cadbury boxed hollow Easter eggs 18 → 15 eggs (AU, CHOICE Mar 2026)
+- **Sources tried:** Mouse Print WP REST (newest shrink post still Spring 2026 Part 2; Sept 2026 is skimpflation/protein — not size shrink). Winter 2026 posts re-fetched; miner had missed Atkins/Finish (no “from X to Y” pattern for pack-count). CHOICE Easter 2026 media release. LendingTree 2024 tables already fully covered. CBC Halloween 2025 Mars/Hershey already in library (Hershey 100-pack 3.8% lacked exact grams — skipped). Guardian/Which Easter 2026 Galaxy/M&M/Maltesers already present. OFF world/us search API 503 most of the run; used product-by-barcode + fr mirror when available + OPF cgi/API. Reddit not re-tried (known block). Wayback not hammered (prior 429). X not used (no clear before→after + corroboration). OFF revision flags: left off_rev_final.json empty.
+- **Rejected / not logged:** Mary's Gone Crackers (Mouse Print “>25%” without oz; company also launched 7 oz family size — ambiguous). Krusteaz “>20%” without oz. Scotts Turf Builder coverage change without clear single bag weight pair. Aldi hot cross buns “20g lighter” without prior weight. Cap'n Crunch OFF entries exist but product_quantity null. Dunkin junk (donuts, iced drinks, tea) filtered out.
+- **Build:** 1799 pages, 691 cases, 385 products. New case pages + Charmin/Angel Soft/Frosted Flakes product pages present.
+- **Publish:** see commit SHAs below (publish.sh).

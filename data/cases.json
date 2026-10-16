@@ -608,7 +608,7 @@
   "source_tag": "seed"
  },
  {
-  "brand": "Corn Pops",
+  "brand": "Kellogg's",
   "product": "Kellogg's Corn Pops",
   "category": "Breakfast Cereals",
   "before": 18.1,
@@ -2635,6 +2635,38 @@
   "source_tag": "manual"
  },
  {
+  "product": "Cadbury hollow hunting eggs carton",
+  "brand": "Cadbury",
+  "category": "Chocolate & Candy",
+  "before": 22,
+  "after": 20,
+  "unit": "eggs",
+  "when": "2026",
+  "country": "AU",
+  "source_url": "https://www.choice.com.au/about-us/media/media-releases/2026/march/easter-shrinkflation-cadbury-chocolate-eggs-smaller-but-more-expensive-for-second-year-in-a-row",
+  "source": "CHOICE — Easter shrinkflation: Cadbury chocolate eggs smaller but more expensive (Mar 2026)",
+  "evidence": "Last year, we pointed out that Cadbury’s then 22-pack of hollow hunting eggs was coming with two fewer eggs than in 2024… Since then, the company has cut two more eggs from the carton… All up, the former 24-pack of eggs has shrunk by 68g and increased in price by $5.50 since 2024",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
+  "product": "Cadbury boxed hollow Easter eggs (15-pack)",
+  "brand": "Cadbury",
+  "category": "Chocolate & Candy",
+  "before": 18,
+  "after": 15,
+  "unit": "eggs",
+  "when": "2026",
+  "country": "AU",
+  "source_url": "https://www.choice.com.au/about-us/media/media-releases/2026/march/easter-shrinkflation-cadbury-chocolate-eggs-smaller-but-more-expensive-for-second-year-in-a-row",
+  "source": "CHOICE — Easter shrinkflation: Cadbury chocolate eggs smaller but more expensive (Mar 2026)",
+  "evidence": "In one case, a 15-pack currently selling for $15.00 has replaced an 18-pack that sold for $13.50 last year",
+  "evidence_type": "consumer-group / news investigation",
+  "confidence": "high",
+  "source_tag": "manual"
+ },
+ {
   "product": "Angel Soft toilet paper, 12 mega rolls",
   "brand": "Angel Soft",
   "before": 429.0,
@@ -3498,7 +3530,7 @@
  },
  {
   "product": "Kellogg's Special K Red Berries Cereal",
-  "brand": "Special K",
+  "brand": "Kellogg's",
   "before": 16.9,
   "after": 15.6,
   "unit": "oz",
@@ -3844,7 +3876,7 @@
  },
  {
   "product": "Kellogg's Corn Pops",
-  "brand": "Corn Pops",
+  "brand": "Kellogg's",
   "before": 14.3,
   "after": 13.1,
   "unit": "oz",
@@ -4912,6 +4944,40 @@
   "confidence": "high",
   "source_tag": "mouseprint",
   "category": "Chocolate & Candy"
+ },
+ {
+  "product": "Atkins Protein Bars",
+  "brand": "Atkins",
+  "before": 5,
+  "after": 4,
+  "unit": "bars",
+  "when": "2025",
+  "date_reported": "2026-01-19",
+  "category": "Chips & Snacks",
+  "country": "US",
+  "source_url": "https://www.mouseprint.org/2026/01/19/here-we-shrink-again-winter-2026-part-1/",
+  "source": "Mouse Print* — Here We Shrink Again – Winter 2026 – Part 1",
+  "evidence": "Ace product investigator Richard G. found another shrinking product. This time it is Atkins protein bars that seem to have gone on a diet. The old five pack is now a four pack.",
+  "evidence_type": "consumer advocacy investigation (Mouse Print*)",
+  "confidence": "high",
+  "source_tag": "mouseprint"
+ },
+ {
+  "product": "Finish Ultimate Dishwashing Pods",
+  "brand": "Finish",
+  "before": 76,
+  "after": 62,
+  "unit": "pods",
+  "when": "2025",
+  "date_reported": "2026-01-19",
+  "category": "Dish & Cleaning",
+  "country": "US",
+  "source_url": "https://www.mouseprint.org/2026/01/19/here-we-shrink-again-winter-2026-part-1/",
+  "source": "Mouse Print* — Here We Shrink Again – Winter 2026 – Part 1",
+  "evidence": "At a visit to Target, MrConsumer did a double-take when he saw identical size boxes of Finish dishwashing detergents but one had 76 pods and the other just 62. And the larger package was cheaper!",
+  "evidence_type": "consumer advocacy investigation (Mouse Print*)",
+  "confidence": "high",
+  "source_tag": "mouseprint"
  },
  {
   "product": "Carat Salat-Fix Kräuter italienischer Art",

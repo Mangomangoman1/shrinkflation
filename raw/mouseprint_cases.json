@@ -1723,5 +1723,37 @@
   "evidence": "You used to get eight chocolate cupcakes in a box from Little Debbie, but now a quarter of them are gone, says Richard G.",
   "evidence_type": "consumer-advocate report (photo of old/new packages)",
   "confidence": "high"
+ },
+ {
+  "product": "Atkins Protein Bars",
+  "brand": "Atkins",
+  "before": 5,
+  "after": 4,
+  "unit": "bars",
+  "when": "2025",
+  "date_reported": "2026-01-19",
+  "category": "Snack Bars",
+  "country": "US",
+  "source_url": "https://www.mouseprint.org/2026/01/19/here-we-shrink-again-winter-2026-part-1/",
+  "source": "Mouse Print* — Here We Shrink Again – Winter 2026 – Part 1",
+  "evidence": "Ace product investigator Richard G. found another shrinking product. This time it is Atkins protein bars that seem to have gone on a diet. The old five pack is now a four pack.",
+  "evidence_type": "consumer advocacy investigation (Mouse Print*)",
+  "confidence": "high"
+ },
+ {
+  "product": "Finish Ultimate Dishwashing Pods",
+  "brand": "Finish",
+  "before": 76,
+  "after": 62,
+  "unit": "pods",
+  "when": "2025",
+  "date_reported": "2026-01-19",
+  "category": "Dish & Cleaning",
+  "country": "US",
+  "source_url": "https://www.mouseprint.org/2026/01/19/here-we-shrink-again-winter-2026-part-1/",
+  "source": "Mouse Print* — Here We Shrink Again – Winter 2026 – Part 1",
+  "evidence": "At a visit to Target, MrConsumer did a double-take when he saw identical size boxes of Finish dishwashing detergents but one had 76 pods and the other just 62. And the larger package was cheaper!",
+  "evidence_type": "consumer advocacy investigation (Mouse Print*)",
+  "confidence": "high"
  }
 ]

@@ -475,9 +475,9 @@
 "text": "18.1 oz → 16.4 oz (9% less) · United States, 2026",
 "url": "https://shrinkradar.com/cases/kellogg-s-corn-pops-us-2026.html",
 "product": null,
-"brand": "corn-pops",
+"brand": "kellogg-s",
 "category": "breakfast-cereals",
-"brand_name": "Corn Pops",
+"brand_name": "Kellogg's",
 "category_name": "Breakfast Cereals"
 },
 {
@@ -2093,6 +2093,32 @@
 "category_name": "Chocolate & Candy"
 },
 {
+"id": "c:cadbury-hollow-hunting-eggs-carton-au-2026",
+"type": "case",
+"date": "2026",
+"title": "Cadbury hollow hunting eggs carton",
+"text": "22 eggs → 20 eggs (9% less) · Australia, 2026",
+"url": "https://shrinkradar.com/cases/cadbury-hollow-hunting-eggs-carton-au-2026.html",
+"product": null,
+"brand": "cadbury",
+"category": "chocolate-and-candy",
+"brand_name": "Cadbury",
+"category_name": "Chocolate & Candy"
+},
+{
+"id": "c:cadbury-boxed-hollow-easter-eggs-15-pack-au-2026",
+"type": "case",
+"date": "2026",
+"title": "Cadbury boxed hollow Easter eggs (15-pack)",
+"text": "18 eggs → 15 eggs (17% less) · Australia, 2026",
+"url": "https://shrinkradar.com/cases/cadbury-boxed-hollow-easter-eggs-15-pack-au-2026.html",
+"product": null,
+"brand": "cadbury",
+"category": "chocolate-and-candy",
+"brand_name": "Cadbury",
+"category_name": "Chocolate & Candy"
+},
+{
 "id": "c:angel-soft-toilet-paper-12-mega-rolls-us-2024",
 "type": "case",
 "date": "2024",
@@ -2776,9 +2802,9 @@
 "text": "16.9 oz → 15.6 oz (8% less) · United States, 2024",
 "url": "https://shrinkradar.com/cases/kellogg-s-special-k-red-berries-cereal-us-2024.html",
 "product": null,
-"brand": "special-k",
+"brand": "kellogg-s",
 "category": "breakfast-cereals",
-"brand_name": "Special K",
+"brand_name": "Kellogg's",
 "category_name": "Breakfast Cereals"
 },
 {
@@ -3036,9 +3062,9 @@
 "text": "14.3 oz → 13.1 oz (8% less) · United States, 2023",
 "url": "https://shrinkradar.com/cases/kellogg-s-corn-pops-us-2023.html",
 "product": null,
-"brand": "corn-pops",
+"brand": "kellogg-s",
 "category": "breakfast-cereals",
-"brand_name": "Corn Pops",
+"brand_name": "Kellogg's",
 "category_name": "Breakfast Cereals"
 },
 {
@@ -3846,6 +3872,32 @@
 "category": "chocolate-and-candy",
 "brand_name": "Little Debbie",
 "category_name": "Chocolate & Candy"
+},
+{
+"id": "c:atkins-protein-bars-us-2025",
+"type": "case",
+"date": "2025",
+"title": "Atkins Protein Bars",
+"text": "5 bars → 4 bars (20% less) · United States, 2025",
+"url": "https://shrinkradar.com/cases/atkins-protein-bars-us-2025.html",
+"product": null,
+"brand": "atkins",
+"category": "chips-and-snacks",
+"brand_name": "Atkins",
+"category_name": "Chips & Snacks"
+},
+{
+"id": "c:finish-ultimate-dishwashing-pods-us-2025",
+"type": "case",
+"date": "2025",
+"title": "Finish Ultimate Dishwashing Pods",
+"text": "76 pods → 62 pods (18% less) · United States, 2025",
+"url": "https://shrinkradar.com/cases/finish-ultimate-dishwashing-pods-us-2025.html",
+"product": null,
+"brand": "finish",
+"category": "dish-and-cleaning",
+"brand_name": "Finish",
+"category_name": "Dish & Cleaning"
 },
 {
 "id": "c:carat-salat-fix-kr-uter-italienischer-art-de-2026",

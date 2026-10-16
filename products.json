@@ -2378,5 +2378,320 @@
   "brand": "Folgers",
   "category": "Coffees",
   "db": "off"
+ },
+ {
+  "code": "0881334016451",
+  "name": "Dunkin' French Vanilla Ground Coffee",
+  "brand": "Dunkin'",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0785357023567",
+  "name": "Major Dickason's Blend",
+  "brand": "Peet's Coffee",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0785357023604",
+  "name": "Big Bang Medium Roast Ground Coffee",
+  "brand": "Peet's Coffee",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0785357024496",
+  "name": "Alpine Blend Dark Roast Organic Coffee",
+  "brand": "Peet's Coffee",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0785357017108",
+  "name": "French roast coffee",
+  "brand": "Peet's Coffee",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0035700019083",
+  "name": "Praline",
+  "brand": "Community coffee",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0035700018000",
+  "name": "Between Roast",
+  "brand": "Community Coffee",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0762111795755",
+  "name": "Starbucks Pike Place Roast",
+  "brand": "Starbucks",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0762111934482",
+  "name": "Pike Place roast",
+  "brand": "Starbucks",
+  "category": "Ground Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0762111840028",
+  "name": "Colombia medium rost coffee",
+  "brand": "Starbucks",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0762111470546",
+  "name": "Pumpkin Spice Coffee",
+  "brand": "Starbucks",
+  "category": "Coffees",
+  "db": "off"
+ },
+ {
+  "code": "0016000275348",
+  "name": "Lucky Charms",
+  "brand": "General Mills",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0030772167748",
+  "name": "Select-A-Size White Paper Towels",
+  "brand": "Bounty",
+  "category": "Paper Towels",
+  "db": "opf"
+ },
+ {
+  "code": "5029053579276",
+  "name": "Kleenex Family maxi pack tissues",
+  "brand": "Kleenex",
+  "category": "Facial Tissues",
+  "db": "opf"
+ },
+ {
+  "code": "5029053580005",
+  "name": "Kleenex Ultra Soft Tissues Maxi 112 Stuks",
+  "brand": "Kleenex",
+  "category": "Facial Tissues",
+  "db": "opf"
+ },
+ {
+  "code": "9310088002836",
+  "name": "Kleenex Large & Thick 3 Ply Facial Tissues 95 pack",
+  "brand": "Kleenex",
+  "category": "Facial Tissues",
+  "db": "opf"
+ },
+ {
+  "code": "9310088013191",
+  "name": "Kleenex Soft & Thick 3 Ply Facial Tissues 95 pack",
+  "brand": "Kleenex",
+  "category": "Facial Tissues",
+  "db": "opf"
+ },
+ {
+  "code": "0096619188109",
+  "name": "Paper towel",
+  "brand": "Kirkland signature",
+  "category": "Paper Towels",
+  "db": "opf"
+ },
+ {
+  "code": "0196633816818",
+  "name": "Premium Towel 12 Rolls",
+  "brand": "Kirkland",
+  "category": "Paper Towels",
+  "db": "opf"
+ },
+ {
+  "code": "0038000199226",
+  "name": "Frosted Flakes with Marshmallows",
+  "brand": "Kellogg's",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0016000169395",
+  "name": "Cocoa Puffs",
+  "brand": "Cocoa Puffs",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0016000144682",
+  "name": "Lucky Charms",
+  "brand": "General Mills",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0016000272019",
+  "name": "LUCKY CHARMS",
+  "brand": "Nestl\u00e9",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0041192100192",
+  "name": "Frosted Flakes",
+  "brand": "Kellogg's",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0041192103810",
+  "name": "Raisin Bran",
+  "brand": "Kellogg's",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0041192102158",
+  "name": "Special K Cinnamon and Pecan",
+  "brand": "Kellogg's",
+  "category": "Breakfast Cereals",
+  "db": "off"
+ },
+ {
+  "code": "0037000602514",
+  "name": "Essentials soft - mega rolls",
+  "brand": "CHARMIN",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0037000792468",
+  "name": "Ultra soft super roll",
+  "brand": "CHARMIN",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0037000613275",
+  "name": "Ultra soft super plus rolls",
+  "brand": "CHARMIN",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0037000412540",
+  "name": "Ultra strong 24 mega plus rolls",
+  "brand": "CHARMIN",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0037000940463",
+  "name": "Ultra soft  - double rolls",
+  "brand": "CHARMIN",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0511201717647",
+  "name": "Ultra strong - jumbo strong",
+  "brand": "CHARMIN",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0036000486056",
+  "name": "Ultra  comfortcare",
+  "brand": "COTTONELLE",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0036000476224",
+  "name": "strong bath tissue",
+  "brand": "COTTONELLE",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0036000475159",
+  "name": "Ultra cleanCare toilet paper",
+  "brand": "COTTONELLE",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0036000485981",
+  "name": "Ultra comfortcare",
+  "brand": "COTTONELLE",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0030400792700",
+  "name": "mega rolls toilet paper",
+  "brand": "ANGEL SOFT",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0030400792656",
+  "name": "12 Mega Rolls",
+  "brand": "ANGEL SOFT",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0030400792533",
+  "name": "Mega rolls",
+  "brand": "ANGEL SOFT",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0030400792427",
+  "name": "Jumbo rolls",
+  "brand": "ANGEL SOFT",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0030400792670",
+  "name": "Unscented bathroom tissue",
+  "brand": "ANGEL SOFT",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0030400793370",
+  "name": "Fresh linen scent - MEGA ROLL",
+  "brand": "ANGEL SOFT",
+  "category": "Toilet Paper",
+  "db": "opf"
+ },
+ {
+  "code": "0037000344315",
+  "name": "Plus Lotion",
+  "brand": "Puffs",
+  "category": "Facial Tissues",
+  "db": "opf"
+ },
+ {
+  "code": "0067489302964",
+  "name": "Glad",
+  "brand": "Glad",
+  "category": "Food Storage Bags",
+  "db": "opf"
+ },
+ {
+  "code": "0012587600627",
+  "name": "GLAD sandwich zipper bags",
+  "brand": "GLAD",
+  "category": "Food Storage Bags",
+  "db": "opf"
  }
 ]
