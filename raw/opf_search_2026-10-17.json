@@ -1,0 +1,2109 @@
+{
+ "trash-bags": [
+  {
+   "brands": "Glad",
+   "code": "0012587225189",
+   "product_name": "ForceFlex MaxStrength Kitchen Drawstring Trash Bags Tall 13 Gallon, Odorshield",
+   "quantity": "34 ct.",
+   "db": "opf",
+   "cat": "trash-bags"
+  }
+ ],
+ "garbage-bags": [
+  {
+   "brands": "Huskey",
+   "code": "0008399611456",
+   "product_name": "Drawstring Trash Bags",
+   "db": "opf",
+   "cat": "garbage-bags"
+  },
+  {
+   "brands": "Glad",
+   "code": "0012587225189",
+   "product_name": "ForceFlex MaxStrength Kitchen Drawstring Trash Bags Tall 13 Gallon, Odorshield",
+   "quantity": "34 ct.",
+   "db": "opf",
+   "cat": "garbage-bags"
+  }
+ ],
+ "dishwashing-liquids": [],
+ "dish-soaps": [],
+ "dishwasher-detergents": [],
+ "laundry-detergents": [
+  {
+   "brands": "Kirkland",
+   "code": "0096619019663",
+   "product_name": "UltraClean Premium Laundry Detergent Pacs",
+   "quantity": "152 pacs",
+   "db": "opf",
+   "cat": "laundry-detergents"
+  }
+ ],
+ "fabric-softeners": [],
+ "paper-towels": [],
+ "toilet-paper": [],
+ "facial-tissues": [
+  {
+   "brands": "Up & Up",
+   "code": "0191907999075",
+   "product_name": "Ultra Soft Facial Tissue (4 Count)",
+   "quantity": "4 boxes",
+   "db": "opf",
+   "cat": "facial-tissues"
+  }
+ ],
+ "aluminium-foils": [],
+ "food-storage-bags": [
+  {
+   "brands": "Boulder",
+   "code": "4061459852400",
+   "product_name": "Gallon sized storage bags",
+   "product_quantity": 0,
+   "quantity": "30 bags",
+   "db": "opf",
+   "cat": "food-storage-bags"
+  }
+ ],
+ "cleaning-products": [
+  {
+   "brands": "Mrs. Meyer's",
+   "code": "0808124114418",
+   "product_name": "Multi-Surface Everyday Cleaner",
+   "db": "opf",
+   "cat": "cleaning-products"
+  }
+ ],
+ "sponges": [],
+ "dishwasher-tablets": [
+  {
+   "brands": "finish",
+   "code": "0051700993314",
+   "product_name": "Dishwasher Detergent",
+   "db": "opf",
+   "cat": "dishwasher-tablets"
+  },
+  {
+   "code": "0810018398224",
+   "product_quantity": 240.9709465625,
+   "product_quantity_unit": "g",
+   "quantity": "8.5 oz",
+   "db": "opf",
+   "cat": "dishwasher-tablets"
+  }
+ ],
+ "laundry-pods": [],
+ "toothpastes": [
+  {
+   "brands": "Dentitex",
+   "code": "4088600192079",
+   "product_name": "Flouride Toothpaste",
+   "quantity": "",
+   "unique_scans_n": 8,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "HiSmile",
+   "code": "93568609",
+   "product_name": "Anticavity Toothpaste, Watermelon Flavor",
+   "product_quantity": 59.5339985625,
+   "product_quantity_unit": "g",
+   "quantity": "2.1oz",
+   "unique_scans_n": 4,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "colgate",
+   "code": "0035000444349",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Baking soda & peroxide whitening",
+   "product_quantity": 113.3980925,
+   "product_quantity_unit": "g",
+   "quantity": "4 oz",
+   "unique_scans_n": 2,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "colgate",
+   "code": "0035000459862",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Total Clean Mint",
+   "product_quantity": 24.94758035,
+   "product_quantity_unit": "g",
+   "quantity": "0.88 oz (24.9 g)",
+   "unique_scans_n": 2,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "colgate",
+   "code": "0035000525031",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Kids cavity protection bubble fruit",
+   "product_quantity": 24,
+   "product_quantity_unit": "g",
+   "quantity": "24 g",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "colgate",
+   "code": "0035000510853",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Toothpaste",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest",
+   "code": "0037000772521",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "3D White",
+   "product_quantity": 170,
+   "product_quantity_unit": "g",
+   "quantity": "170 g",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "nu skin",
+   "code": "01111155",
+   "product_name": "AP24 whitening fluoride toothpaste",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Colgate",
+   "code": "0035000766120",
+   "product_name": "Pasta dental whitening",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Sensodyne",
+   "code": "0310158850007",
+   "product_name": "Pronamel Gentle Whitening",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest, Procter & Gamble",
+   "code": "0037000976677",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Toothpaste",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest",
+   "code": "0037000976592",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Toothpaste",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Arm & Hammer",
+   "code": "0033200187707",
+   "product_name": "Toothpaste",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest",
+   "code": "0037000512066",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Toothpaste",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "colgate",
+   "code": "0035000511126",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Triple Action",
+   "product_quantity": 170,
+   "product_quantity_unit": "g",
+   "quantity": "6.0 0z (170 g)",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "colgate",
+   "code": "0035000521019",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Sensitive Complete Protection",
+   "product_quantity": 170.09713875,
+   "product_quantity_unit": "g",
+   "quantity": "6.0 oz",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Boka",
+   "code": "0850075780020",
+   "product_name": "Sensitive toothpaste",
+   "product_quantity": 96.388378625,
+   "product_quantity_unit": "g",
+   "quantity": "3.4oz (96 g)",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Twice",
+   "code": "0854679008122",
+   "product_name": "Oral Wellness Toothpaste",
+   "product_quantity": 96.388378625,
+   "product_quantity_unit": "g",
+   "quantity": "3.4oz",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "code": "0198168001646",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "code": "00768184",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest",
+   "code": "0037000228813",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Complete Whitening+",
+   "product_quantity": 24,
+   "product_quantity_unit": "g",
+   "quantity": "24 g",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Colgate-palmolive, Hello",
+   "code": "0827854026402",
+   "product_name": "Hello super fresh spearmint",
+   "product_quantity": 141.747615625,
+   "product_quantity_unit": "g",
+   "quantity": "5.0oz",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "code": "0355126001272",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest, Procter & Gamble",
+   "code": "0037000820246",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "3D White toothpaste",
+   "quantity": "",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Davids",
+   "code": "0850046443121",
+   "product_name": "Hydroxi Fluoride Free Nano Hydroxyapatite Toothpaste for Enamel Health & Whitening",
+   "product_quantity": 113.3980925,
+   "product_quantity_unit": "g",
+   "quantity": "4 oz/ 113 g",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "CardioSmile",
+   "code": "0634707505546",
+   "product_name": "Fluoride Free Toothpaste",
+   "product_quantity": 113.3980925,
+   "product_quantity_unit": "g",
+   "quantity": "4oz",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "code": "0077326470183",
+   "product_name": "Toms",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Das Experten",
+   "code": "6971663564649",
+   "product_name": "Das Experten Thermo 39 \u2014 Thermo-Activated Enzyme Toothpaste",
+   "product_quantity": 75,
+   "product_quantity_unit": "ml",
+   "quantity": "75 ml",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest",
+   "code": "0037000852261",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Complete Plus",
+   "quantity": "",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "code": "0196852030392",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "BOKA",
+   "code": "0850049838757",
+   "product_name": "Nano-Hydroxyapatite Toothpaste",
+   "product_quantity": 96.388378625,
+   "product_quantity_unit": "g",
+   "quantity": "3.4oz",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Splat",
+   "code": "4603014001078",
+   "product_name": "Splat Ultra Complex Di\u015f Macunu 100 ml",
+   "product_quantity": 100,
+   "product_quantity_unit": "ml",
+   "quantity": "100 ml",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "code": "5504323003342",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "code": "5054563180179",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Tom\u2019s of Maine",
+   "code": "0077326832608",
+   "product_name": "Natural Flouride-Free Toothpaste Fresh Mint",
+   "product_quantity": 85.048569375,
+   "product_quantity_unit": "g",
+   "quantity": "3.0oz",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest",
+   "code": "0037000976783",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Whitening Gel",
+   "quantity": "",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Orajel",
+   "code": "0310310430184",
+   "product_name": "Mixed Berry Anticavity Fluoride Toothpaste",
+   "product_quantity": 119.067997125,
+   "product_quantity_unit": "g",
+   "quantity": "4.2 oz",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Oral B",
+   "code": "3014260279165",
+   "product_name": "DENTRIFICO NI\u00d1O",
+   "product_quantity": 100,
+   "product_quantity_unit": "g",
+   "quantity": "100 gr",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Now Solutions",
+   "code": "0733739080912",
+   "product_name": "XliWhite",
+   "product_quantity": 181.436948,
+   "product_quantity_unit": "g",
+   "quantity": "6.4 oz.  (181 g)",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest, Procter & Gamble",
+   "code": "0037000401285",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Glamorous White Toothpaste",
+   "quantity": "",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Colgate",
+   "code": "0035000444332",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Das Experten",
+   "code": "4270001210609",
+   "product_name": "Das Experten SCHWARZ \u2014 Activated Charcoal Toothpaste",
+   "product_quantity": 75,
+   "product_quantity_unit": "ml",
+   "quantity": "75 ml",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest",
+   "code": "0030772160558",
+   "product_name": "Toothpastes",
+   "product_quantity": 167,
+   "product_quantity_unit": "g",
+   "quantity": "167g",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Das Experten",
+   "code": "6971663562997",
+   "product_name": "Das Experten innoWeiss \u2014 5-Enzyme Whitening Toothpaste",
+   "product_quantity": 75,
+   "product_quantity_unit": "ml",
+   "quantity": "75 ml",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "code": "0803954308334",
+   "product_name": "Himalayan Pink Salt Toothpaste",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Crest",
+   "code": "0037000903994",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Sensitive & Gum",
+   "product_quantity": 24,
+   "product_quantity_unit": "g",
+   "quantity": "24 g",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Das Experten",
+   "code": "4270001210654",
+   "product_name": "Das Experten SYMBIOS \u2014 Probiotic Toothpaste",
+   "product_quantity": 75,
+   "product_quantity_unit": "ml",
+   "quantity": "75 ml",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "Aquafresh",
+   "code": "5054563199539",
+   "product_name": "Aquafresh Fresh Mint Toothpaste",
+   "product_quantity": 125,
+   "product_quantity_unit": "ml",
+   "quantity": "125 ml",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "code": "0030772059616",
+   "db": "obf",
+   "cat": "toothpastes"
+  },
+  {
+   "brands": "",
+   "code": "0035000985101",
+   "product_name": "Colgate total whitening toothpaste",
+   "quantity": "",
+   "db": "obf",
+   "cat": "toothpastes"
+  }
+ ],
+ "shampoos": [
+  {
+   "code": "8001090965721",
+   "product_name": "head&shoulders",
+   "unique_scans_n": 38,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "8901207044472",
+   "unique_scans_n": 19,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "4066447467871",
+   "unique_scans_n": 10,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Balea, Dm",
+   "code": "4066447468038",
+   "product_quantity": 300,
+   "product_quantity_unit": "ml",
+   "quantity": "300ml",
+   "unique_scans_n": 8,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Ikko Cosmetics",
+   "code": "6111273490154",
+   "product_name": "Ikko Cosmetics Shampoo for Men",
+   "product_quantity": 200,
+   "product_quantity_unit": "ml",
+   "quantity": "200ml",
+   "unique_scans_n": 6,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "4335619008397",
+   "unique_scans_n": 3,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Avalon Organics",
+   "code": "0654749361269",
+   "product_name": "Thickening Shampoo",
+   "quantity": "",
+   "unique_scans_n": 2,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Organic Prosecco",
+   "code": "5060176671089",
+   "product_name": "Organic Tea Tree Shampoo",
+   "unique_scans_n": 2,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "0190679005151",
+   "product_name": "Smooth Rose Hips Shampoo",
+   "unique_scans_n": 2,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Ogx Argan Oil Of Morocco",
+   "code": "0022796916112",
+   "product_name": "Shampoo",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Aquaphor",
+   "code": "0072140021092",
+   "product_name": "Baby Wash & Shampoo",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Redken",
+   "code": "0090174088171",
+   "product_name": "Shampoo",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Eco Warrior",
+   "code": "5060194391907",
+   "product_name": "Shampoo Bar",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Nizoral",
+   "code": "0628467002711",
+   "product_name": "Anti-Dandruff Shampoo",
+   "product_quantity": 60,
+   "product_quantity_unit": "ml",
+   "quantity": "60 mL",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "0688047130487",
+   "product_name": "Clean Freak Tapioca Dry Shampoo Warm Sugar",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Prell",
+   "code": "0735379430133",
+   "product_name": "Prell Shampoo",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "0810888025558",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "0022796913111",
+   "product_name": "renewing and argon oil of Morocco shampoo",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Straight Arrow",
+   "code": "0071409543641",
+   "product_name": "Mane 'n Tail and Body Shampoo",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "0810021202129",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "4806520631436",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "0080878192854",
+   "product_name": "pantene essential oils moisturizing shampoo",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "0012044047729",
+   "product_name": "old spuce wavy curly shampoo",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Carol's Daughter",
+   "code": "0820645006966",
+   "product_name": "Wash Day Delight w/ aloe, water to foam shampoo",
+   "product_quantity": 479.1069408125,
+   "product_quantity_unit": "g",
+   "quantity": "16.9 oz / 500 ml bottle",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "6191428601024",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "8886950035048",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "California Naturals",
+   "code": "0850056288279",
+   "product_name": "Light & Gentle Anti-Irritation Sensitive Shampoo",
+   "product_quantity": 16.5,
+   "quantity": "16.5 fl oz, 487 mL",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "code": "4806509662840",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Goldwell",
+   "code": "4021609012733",
+   "product_name": "Elumen Shampoo",
+   "product_quantity": 250,
+   "product_quantity_unit": "ml",
+   "quantity": "250 ml",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "aussie",
+   "code": "0381519183379",
+   "product_name": "Total Miracle 7in1",
+   "product_quantity": 778,
+   "product_quantity_unit": "ml",
+   "quantity": "778 ml",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Cleaf, Clear",
+   "code": "8851932399517",
+   "product_name": "Clear",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Honest",
+   "code": "0816645023966",
+   "product_name": "Shampoo + Body Wash",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Batiste",
+   "code": "5010724527351",
+   "product_name": "Pink Pineapple Dry Shampoo",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Garnier",
+   "code": "0603084459490",
+   "product_name": "Honey Treasures",
+   "product_quantity": 370,
+   "product_quantity_unit": "ml",
+   "quantity": "370 ml",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Parent's Choice",
+   "code": "0681131041409",
+   "product_name": "Baby Wash & Shampoo",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Pantene",
+   "code": "0080878190959",
+   "product_name": "Miracle Moisture Boost Rose Water",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "method men",
+   "code": "0817939018590",
+   "product_name": "Method Men Juniper   Sage Body Wash",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Young Living",
+   "code": "0030772070024",
+   "product_name": "Lavender Volumizing Shampoo",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "MONDAY",
+   "code": "0840191600722",
+   "product_name": "Original Dry Shampoo",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "TRESemm\u00e9",
+   "code": "0022400011776",
+   "product_name": "Keratin Repair Bond Plex Shampoo",
+   "product_quantity": 828,
+   "product_quantity_unit": "ml",
+   "quantity": "828 ml",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Kit-sch",
+   "code": "0343165985646",
+   "product_name": "Strengthening Solid Shampoo Rice Water Protein",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Wella Professionals",
+   "code": "4064666301945",
+   "product_name": "Invigo Nutri-Enrich Deep Nourishing Shampoo",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Aussie",
+   "code": "0381519188787",
+   "product_name": "Miracle Curls with Coconut and Jojoba Oil and Paraben Free Shampoo",
+   "product_quantity": 899.0344,
+   "product_quantity_unit": "ml",
+   "quantity": "30.4 fl oz",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Fisher-Price",
+   "code": "0850010842806",
+   "product_name": "Hello Bathtime Baby Shampoo",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Lacura hair",
+   "code": "4047247998000",
+   "product_quantity": 400,
+   "product_quantity_unit": "ml",
+   "quantity": "400ml",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "native",
+   "code": "01142778",
+   "product_name": "native shampoo",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "CeraVe",
+   "code": "3606000607019",
+   "product_name": "CeraVe Gentle Hydrating Shampoo",
+   "product_quantity": 355,
+   "product_quantity_unit": "ml",
+   "quantity": "355 mL",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Walgreens",
+   "code": "0049022942233",
+   "product_name": "Clinical Strength Dandruff Shampoo",
+   "product_quantity": 399.24225,
+   "product_quantity_unit": "ml",
+   "quantity": "13.5 fl oz",
+   "db": "obf",
+   "cat": "shampoos"
+  },
+  {
+   "brands": "Raw Sugar",
+   "code": "43239795",
+   "product_name": "The Truly Unruly Shampoo",
+   "db": "obf",
+   "cat": "shampoos"
+  }
+ ],
+ "conditioners": [],
+ "deodorants": [
+  {
+   "brands": "Old Spice",
+   "code": "0012044038918",
+   "product_name": "Desodorante",
+   "unique_scans_n": 45,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Arm & Hammer",
+   "code": "0033200197935",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Essentials Rosemary Lavender",
+   "quantity": "",
+   "unique_scans_n": 36,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "4066447750652",
+   "product_name": "",
+   "product_quantity": 50,
+   "product_quantity_unit": "ml",
+   "quantity": "50 ml",
+   "unique_scans_n": 19,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Speed Stick",
+   "code": "0022200941525",
+   "product_name": "Regular",
+   "product_quantity": 85.048569375,
+   "quantity": "3 Oz",
+   "unique_scans_n": 10,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Gellette",
+   "code": "0047400664685",
+   "product_name": "Cool Wave Antiperspirantant",
+   "quantity": "35",
+   "unique_scans_n": 8,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Old Spice",
+   "code": "0012044038697",
+   "product_name": "24/7 Lasting Scent Smell Sniffworthy",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "dermophil",
+   "code": "3204991074799",
+   "product_name": "d\u00e9odorant doux",
+   "product_quantity": 115,
+   "quantity": "115g",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Dr. Squatch",
+   "code": "0851817007641",
+   "product_name": "Fresh Falls Natural Deodorant",
+   "product_quantity": 75.12623628125,
+   "quantity": "2.65 oz",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Secret",
+   "code": "0030772149379",
+   "product_name": "Clinical Dry Spray Antiperspirant / Deodorant",
+   "product_quantity": 107.728187875,
+   "product_quantity_unit": "g",
+   "quantity": "NET WT. 3.8 OZ (107 g)",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Dove",
+   "code": "0079400352972",
+   "product_name": "Dove Women Cool Essentials",
+   "product_quantity": 74,
+   "product_quantity_unit": "g",
+   "quantity": "74g",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Ombia",
+   "code": "4061458223829",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "deodorant",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Old Spice",
+   "code": "0012044045114",
+   "product_name": "Swagger Underarm & Body Spray Aluminum Free",
+   "quantity": "can",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Amway, G&H Protect+",
+   "code": "00118120",
+   "product_name": "Deodorant & Anti-Perspirant Roll-on",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "tom's  of Maine",
+   "code": "07735745",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Tom's",
+   "product_quantity": 63.78642703125,
+   "product_quantity_unit": "g",
+   "quantity": "2.25oz.",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "8000036021712",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "0810171576255",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "0872639003413",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "DrSquatch",
+   "code": "0810171576132",
+   "product_name": "DrSquatch",
+   "product_quantity": 75.12623628125,
+   "product_quantity_unit": "g",
+   "quantity": "2.65 oz",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "0860236001741",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Old Spice",
+   "code": "0681062044630",
+   "product_name": "Old Spice Oasis Deodorant",
+   "product_quantity": 73.708760125,
+   "product_quantity_unit": "g",
+   "quantity": "2.6oz",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Nivea",
+   "code": "4006000063027",
+   "product_name": "Nivea Men Erkek Sprey Deodorant Deep Dimension Beat 150 ml",
+   "product_quantity": 150,
+   "product_quantity_unit": "ml",
+   "quantity": "150 ml",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Old Spice",
+   "code": "0012044049891",
+   "product_name": "Old Spice Swagger Spray",
+   "product_quantity": 121.9029494375,
+   "product_quantity_unit": "g",
+   "quantity": "4.3 oz",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "ban",
+   "code": "0019045001743",
+   "product_name": "ban unscented invisible roll-on",
+   "product_quantity": 103.50725,
+   "product_quantity_unit": "ml",
+   "quantity": "3.5 FL OZ (103 mL)",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Dove",
+   "code": "8683130093429",
+   "product_name": "Dove Kad\u0131n Sprey Deodorant 1/4 Nemlendirici Krem Invisible Dry 150 ml",
+   "product_quantity": 150,
+   "product_quantity_unit": "ml",
+   "quantity": "150 ml",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "power stick",
+   "code": "0810112515848",
+   "product_name": "power stick purely pistachio",
+   "product_quantity": 63.78642703125,
+   "product_quantity_unit": "g",
+   "quantity": "2.25Oz",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Algabo Foot",
+   "code": "7791274009532",
+   "product_name": "Polvo desodorante para pies",
+   "product_quantity": 200,
+   "product_quantity_unit": "g",
+   "quantity": "200g 7Oz.",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Old Spice",
+   "code": "0012044065570",
+   "product_name": "Swagger",
+   "product_quantity": 85.048569375,
+   "product_quantity_unit": "g",
+   "quantity": "3.0 oz",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Gillette",
+   "code": "0047400098190",
+   "product_name": "Cool Wave small",
+   "product_quantity": 80.79614090625,
+   "product_quantity_unit": "g",
+   "quantity": "2.85 oz (80 g)",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Dove",
+   "code": "8690637983665",
+   "product_name": "Dove Kad\u0131n Sprey Deodorant Nemlendirici Bak\u0131m Lotus \u00c7i\u00e7e\u011fi 150 ml",
+   "product_quantity": 150,
+   "product_quantity_unit": "ml",
+   "quantity": "150 ml",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Native",
+   "code": "0812154035223",
+   "product_name": "Coconut & Vanilla Deodorant Stick",
+   "product_quantity": 75.12623628125,
+   "product_quantity_unit": "g",
+   "quantity": "2.65 Oz (75g)",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Dove",
+   "code": "0079400530066",
+   "product_name": "aluminum free",
+   "product_quantity": 68.0388555,
+   "product_quantity_unit": "g",
+   "quantity": "2.4oz",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "18785035",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Gillette",
+   "code": "0047400097872",
+   "product_name": "Power Rush",
+   "product_quantity": 107.728187875,
+   "product_quantity_unit": "g",
+   "quantity": "3.8 oz (107 g)",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "6132494500279",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "0810171575975",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Native",
+   "code": "0812154030617",
+   "product_name": "Blackberry & Green Tea Deodorant",
+   "product_quantity": 75.12623628125,
+   "product_quantity_unit": "g",
+   "quantity": "2.65 oz",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Nivea",
+   "code": "42332602",
+   "product_name": "Nivea Men Erkek Roll-On Deodorant Black & White Invisible Fresh 50 ml",
+   "product_quantity": 50,
+   "product_quantity_unit": "ml",
+   "quantity": "50 ml",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Old spice",
+   "code": "0037000944799",
+   "product_name": "Sweat defence pure sport",
+   "product_quantity": 73.708760125,
+   "product_quantity_unit": "g",
+   "quantity": "2.6 oz 73g",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "0030772174180",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Nivea",
+   "code": "4005900951007",
+   "product_name": "Nivea Men Derma Control Clinical Erkek Deodorant Sprey 150 ml",
+   "product_quantity": 150,
+   "product_quantity_unit": "ml",
+   "quantity": "150 ml",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Suave",
+   "code": "0383711002502",
+   "product_quantity": 76.8911,
+   "product_quantity_unit": "ml",
+   "quantity": "2.6 fl oz / 74g",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Sprouts Essential",
+   "code": "0646670465093",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Old Spice",
+   "code": "7501001309060",
+   "product_name": "Old Spice V-I-P",
+   "product_quantity": 50,
+   "product_quantity_unit": "g",
+   "quantity": "50 gramos",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Dove",
+   "code": "8683130093481",
+   "product_name": "Dove Kad\u0131n Sprey Deodorant Even Tone Kalendula \u00d6z\u00fc 150 ml",
+   "product_quantity": 150,
+   "product_quantity_unit": "ml",
+   "quantity": "150 ml",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Baxter of California",
+   "code": "0850039793707",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "0834639000267",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Hello",
+   "code": "0827854026518",
+   "product_name": "Golden Hour Deodorant",
+   "product_quantity": 73,
+   "product_quantity_unit": "g",
+   "quantity": "73g",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "7506306214972",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "brands": "Hello",
+   "code": "0827854026549",
+   "product_name": "Wild Berry Deodorant",
+   "product_quantity": 73,
+   "product_quantity_unit": "g",
+   "quantity": "73g",
+   "db": "obf",
+   "cat": "deodorants"
+  },
+  {
+   "code": "00755085",
+   "db": "obf",
+   "cat": "deodorants"
+  }
+ ],
+ "body-washes": [],
+ "shower-gels": [
+  {
+   "brands": "",
+   "code": "3574661731889",
+   "product_name": "Gel douche",
+   "product_quantity": "400",
+   "product_quantity_unit": "ml",
+   "quantity": "40.0 cl",
+   "unique_scans_n": 3,
+   "db": "obf",
+   "cat": "shower-gels"
+  },
+  {
+   "brands": "Dove",
+   "code": "0011111051249",
+   "product_name": "Dove Men+Care Hydrating Clean Comfort Body and Face Wash",
+   "product_quantity": 532,
+   "product_quantity_unit": "ml",
+   "quantity": "532 mL",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shower-gels"
+  },
+  {
+   "brands": "Roger & Gallet",
+   "code": "3337875664233",
+   "product_name": "Gel douche C\u00e8dre",
+   "product_quantity": 0,
+   "quantity": "1pcs",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "shower-gels"
+  },
+  {
+   "brands": "Lush",
+   "code": "0684742647138",
+   "product_name": "Mother of Dragons Shower Gel",
+   "db": "obf",
+   "cat": "shower-gels"
+  },
+  {
+   "brands": "Lush",
+   "code": "0684742612488",
+   "product_name": "Sticky Dates Shower Gel",
+   "db": "obf",
+   "cat": "shower-gels"
+  },
+  {
+   "code": "8904296908885",
+   "db": "obf",
+   "cat": "shower-gels"
+  },
+  {
+   "brands": "Yves Rocher",
+   "code": "3660005170244",
+   "product_name": "Shower gel oat & buckwheat",
+   "product_quantity": 200,
+   "product_quantity_unit": "ml",
+   "quantity": "200 milliliters",
+   "db": "obf",
+   "cat": "shower-gels"
+  },
+  {
+   "brands": "Roger & Galet",
+   "code": "3337875664165",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Gel douche Menthe",
+   "product_quantity": 0,
+   "quantity": "1pcs",
+   "db": "obf",
+   "cat": "shower-gels"
+  }
+ ],
+ "mouthwashes": [
+  {
+   "brands": "Listerine",
+   "code": "0312547701525",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Original Antiseptic",
+   "quantity": "",
+   "unique_scans_n": 3,
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Listerine",
+   "code": "0312547428255",
+   "product_name": "Freshburst",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "code": "0810051084306",
+   "product_name": "Whitening pulling oil",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Crest, The Procter & Gamble Company",
+   "code": "0030772253717",
+   "product_name": "advanced complete protection",
+   "product_quantity": 1000,
+   "product_quantity_unit": "ml",
+   "quantity": "1 L",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Colgate",
+   "code": "0038341106365",
+   "product_name": "Colgate  peroxide",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "dg health",
+   "code": "0072785144965",
+   "product_name": "dg health alcohol free breath defense mild mint",
+   "product_quantity": 296,
+   "product_quantity_unit": "ml",
+   "quantity": "296ml",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Just ingredients",
+   "code": "0850044456222",
+   "product_name": "Cool mint mouth wash",
+   "product_quantity": 453.59237,
+   "product_quantity_unit": "g",
+   "quantity": "16oz",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Crest",
+   "code": "0037000943228",
+   "product_name": "Pro-health Advanced Anticavity fluoride rinse extra whitening",
+   "product_quantity": 946,
+   "product_quantity_unit": "ml",
+   "quantity": "946 mL",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "code": "3574661491875",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Nature's Answer",
+   "code": "7376333656393",
+   "product_name": "PerioBrite Mouthwash",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Listerine",
+   "code": "6001135009498",
+   "product_name": "Fresh Burst",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Crest",
+   "code": "0037000974871",
+   "product_name": "Advanced Enamel Care",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Hello",
+   "code": "0819156020028",
+   "product_name": "Kids Rinse Fresh Watermelon",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Hello",
+   "code": "0819156023432",
+   "product_name": "Peace out, plaque Antigingivitis/antiplaque mouthwash",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "DrGinger's",
+   "code": "0850013422319",
+   "product_name": "Coconut Powder Mouthwash Tablets",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "TheraBreath",
+   "code": "0697029020005",
+   "product_name": "Fresh Breath Oral Rinse",
+   "db": "obf",
+   "cat": "mouthwashes"
+  },
+  {
+   "brands": "Lavoris",
+   "code": "0870929002665",
+   "product_name": "Whitening Mouthwash",
+   "db": "obf",
+   "cat": "mouthwashes"
+  }
+ ],
+ "soaps": [
+  {
+   "code": "8909106028623",
+   "unique_scans_n": 14,
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "code": "3574661608549",
+   "unique_scans_n": 5,
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dove",
+   "code": "0011111018723",
+   "product_name": "original beauty bar",
+   "quantity": "",
+   "unique_scans_n": 3,
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dr. Bronner's, Dr. Bronner's Magic Soaps",
+   "code": "0018787788059",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "All-One Rose Pure-Castile Bar Soap",
+   "product_quantity": 141.747615625,
+   "product_quantity_unit": "g",
+   "quantity": "5 oz (140g)",
+   "unique_scans_n": 2,
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Yardley London",
+   "code": "0041840001062",
+   "product_name": "oatmeal & almond soap",
+   "product_quantity": 120.48547328125,
+   "product_quantity_unit": "g",
+   "quantity": "4.25 oz",
+   "unique_scans_n": 2,
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "code": "4801010560500",
+   "product_name": "JONSON BABY SOAP",
+   "unique_scans_n": 2,
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Unilever, Unilever norge as",
+   "code": "8000700000005",
+   "product_name": "",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Carex",
+   "code": "5000101506000",
+   "ecoscore_tags": [
+    "unknown"
+   ],
+   "product_name": "Soap",
+   "product_quantity": 500,
+   "product_quantity_unit": "ml",
+   "quantity": "500ml",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dr. Bronner's",
+   "code": "0018787761168",
+   "product_name": "Magic Soap Almond",
+   "quantity": "",
+   "unique_scans_n": 1,
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183491191",
+   "product_name": "Charcoal & Dead Sea Salt Detox Soap - Bag",
+   "product_quantity": 90,
+   "product_quantity_unit": "g",
+   "quantity": "90g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490699",
+   "product_name": "Allergic Skin Cleansing Bar - Solid Box",
+   "product_quantity": 90,
+   "product_quantity_unit": "g",
+   "quantity": "90g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490675",
+   "product_name": "Make-Up Remover Cleansing Bar - Bag",
+   "product_quantity": 90,
+   "product_quantity_unit": "g",
+   "quantity": "90g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490156",
+   "product_name": "Cocoa Butter Melting Bath Truffles Box of 28",
+   "product_quantity": 670,
+   "product_quantity_unit": "g",
+   "quantity": "670g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490057",
+   "product_name": "Moisturising Rose & Lavender Cream Soap - Box",
+   "product_quantity": 90,
+   "product_quantity_unit": "g",
+   "quantity": "90g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490750",
+   "product_name": "Moisturising Rose & Lavender Cream Soap - Bag",
+   "product_quantity": 90,
+   "product_quantity_unit": "g",
+   "quantity": "90g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dr Squatch",
+   "code": "0810095597756",
+   "product_name": "Dr Squatch Men\u2019s Natural Soap: Coastal Mist",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dersa",
+   "code": "7702166053434",
+   "product_name": "Top terra ecologico",
+   "product_quantity": 1800,
+   "product_quantity_unit": "ml",
+   "quantity": "1800 ml",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "code": "5459313362360",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Newtis",
+   "code": "0170000540258",
+   "product_name": "Milk protein hand wash",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dr. Bronner's",
+   "code": "0018787772324",
+   "product_name": "Magic Soap Baby Unscented",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dove",
+   "code": "8683130110089",
+   "product_name": "Dove Sugar Cookie S\u0131v\u0131 Sabun 450 ml",
+   "product_quantity": 450,
+   "product_quantity_unit": "ml",
+   "quantity": "450 ml",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "code": "0843536106477",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "J.R. Watkins",
+   "code": "0856294008174",
+   "product_name": "Foaming Hand Soap, Savon Moussant pur. Our les mains",
+   "product_quantity": 266.1615,
+   "product_quantity_unit": "ml",
+   "quantity": "9 FL OZ (266 mL)",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Glenn Avenue Soap Company",
+   "code": "0850861005108",
+   "product_quantity": 453.59237,
+   "product_quantity_unit": "g",
+   "quantity": "16 ounces",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "everyone",
+   "code": "0636874220826",
+   "product_name": "Meyer lemon + mandarin gentle + nourishing hand soap with calendula, chamomile, and aloe vera",
+   "product_quantity": 377.062125,
+   "product_quantity_unit": "ml",
+   "quantity": "12.75 fl oz / 377 mL",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "code": "0667659370450",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "code": "0636874220833",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490163",
+   "product_name": "Cocoa Butter Melting Bath Truffles Box of 6",
+   "product_quantity": 200,
+   "product_quantity_unit": "g",
+   "quantity": "200g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Bath and Body Works",
+   "code": "0667559287339",
+   "product_name": "Pink Champane toast soap",
+   "product_quantity": 258.768125,
+   "product_quantity_unit": "ml",
+   "quantity": "8.75FL OZ",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dr. Squatch",
+   "code": "0810095592614",
+   "product_name": "Lavender Fields Forever",
+   "product_quantity": 127.5728540625,
+   "product_quantity_unit": "g",
+   "quantity": "4.5oz(127g)",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490798",
+   "product_name": "Moisturizing Aloe Vera & Jasmine Cream Soap - Bag",
+   "product_quantity": 90,
+   "product_quantity_unit": "g",
+   "quantity": "90g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dr Squatch",
+   "code": "0810095592041",
+   "product_name": "Summer Citrus",
+   "product_quantity": 141.747615625,
+   "product_quantity_unit": "g",
+   "quantity": "5 oz",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "KIRK'S",
+   "code": "0639844110301",
+   "product_name": "CASTILE SOAP",
+   "product_quantity": 113.3980925,
+   "product_quantity_unit": "g",
+   "quantity": "4 BARS -4.0 OZ (113g) EACH",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dove",
+   "code": "8683130036105",
+   "product_name": "Dove Avokado Ya\u011f\u0131 ve Kalendula \u00d6z\u00fc S\u0131v\u0131 Sabun 450 ml",
+   "product_quantity": 450,
+   "product_quantity_unit": "ml",
+   "quantity": "450 ml",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Cheeky",
+   "code": "0850065425122",
+   "product_name": "Bahami Mommy",
+   "product_quantity": 113.3980925,
+   "product_quantity_unit": "g",
+   "quantity": "4oz",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490026",
+   "product_name": "Moisturizing Aloe Vera & Jasmine Cream Soap - Box",
+   "product_quantity": 90,
+   "product_quantity_unit": "g",
+   "quantity": "90g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "code": "0808124121218",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490286",
+   "product_name": "Allergic Skin Cleansing Bar - Bag",
+   "product_quantity": 90,
+   "product_quantity_unit": "g",
+   "quantity": "90g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Ginger Lily Farms",
+   "code": "0672047001175",
+   "product_name": "Conditioning Hand Soap",
+   "product_quantity": 354.882,
+   "product_quantity_unit": "ml",
+   "quantity": "12 FL OZ",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dr Squatch",
+   "code": "0863765000001",
+   "product_name": "Men's Pine Tar Natural Soap",
+   "product_quantity": 141.747615625,
+   "product_quantity_unit": "g",
+   "quantity": "5oz bar",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Nudy Rudy",
+   "code": "9347774002412",
+   "product_name": "Hunny Bunny Soap with Manuka Honey and Shea Butter",
+   "product_quantity": 120,
+   "product_quantity_unit": "g",
+   "quantity": "120g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dr. Squatch",
+   "code": "0851817007672",
+   "product_name": "Dr. Squatch Fresh Falls",
+   "product_quantity": 141.747615625,
+   "product_quantity_unit": "g",
+   "quantity": "5oz",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490262",
+   "product_name": "Make-Up Remover Cleansing Bar - Solid Box",
+   "product_quantity": 90,
+   "product_quantity_unit": "g",
+   "quantity": "90g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Alaffia",
+   "code": "0187132005827",
+   "product_name": "Babies & kids bubble bath on refined Shea, butter lemon lavender",
+   "product_quantity": 946.352,
+   "product_quantity_unit": "ml",
+   "quantity": "32 fl oz",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Merry Christmas",
+   "code": "8053340026089",
+   "product_name": "Green Tea (Th\u00e9 Vert) soap",
+   "product_quantity": 147.41752025,
+   "product_quantity_unit": "g",
+   "quantity": "5.2oz (150g)",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dr.Bronner\u2019s",
+   "code": "0018787767160",
+   "product_quantity": 473.176,
+   "product_quantity_unit": "ml",
+   "quantity": "16 Fluid Ounces",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "code": "0808124113633",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Swiss Toniq Geneva",
+   "code": "7640183490231",
+   "product_name": "Cream Soap On A Rope XXL",
+   "product_quantity": 230,
+   "product_quantity_unit": "g",
+   "quantity": "230g",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Dove",
+   "code": "8683130036099",
+   "product_name": "Dove Hindistan Cevizi Ya\u011f\u0131 ve Badem S\u00fct\u00fc \u00d6z\u00fc S\u0131v\u0131 Sabun 450 ml",
+   "product_quantity": 450,
+   "product_quantity_unit": "ml",
+   "quantity": "450 ml",
+   "db": "obf",
+   "cat": "soaps"
+  },
+  {
+   "brands": "Mrs. Meyer's Clean Day",
+   "code": "0808124700499",
+   "product_name": "Hand Soap Apple Cider Scent",
+   "product_quantity": 12.5,
+   "quantity": "12.5 FL OZ 370 mL",
+   "db": "obf",
+   "cat": "soaps"
+  }
+ ],
+ "hand-soaps": [],
+ "body-lotions": [
+  {
+   "brands": "Disney Resorts H2O+ Beauty",
+   "code": "0764505190351",
+   "product_name": "Bath Aquatics Body Lotion",
+   "product_quantity": 250,
+   "quantity": "250 mL",
+   "db": "obf",
+   "cat": "body-lotions"
+  }
+ ],
+ "razors": [
+  {
+   "brands": "Gillette",
+   "code": "7702018866984",
+   "product_name": "Gillette Fusion 4 Adet Yedek T\u0131ra\u015f B\u0131\u00e7a\u011f\u0131",
+   "quantity": "4 adet",
+   "db": "obf",
+   "cat": "razors"
+  },
+  {
+   "brands": "Gillette, Venus",
+   "code": "0047400319103",
+   "product_name": "Comfortglide White Tea",
+   "quantity": "6",
+   "db": "obf",
+   "cat": "razors"
+  }
+ ]
+}

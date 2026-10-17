@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
+# Cases written straight to JSON (no fetched-page snippet in raw/pages) live in raw/direct_cases.json; merge_cases.py reads both.
 """Verify raw/manual_cases.py entries: snippet must appear in fetched page raw/pages/N.html."""
 import re,html,json,sys
 sys.path.insert(0,"raw"); from manual_cases import M
+try: from manual_cases import EXTRA,FETCHED
+except ImportError: EXTRA,FETCHED={},{}
 def T(f): return re.sub(r"\s+"," ",html.unescape(re.sub(r"<[^>]+>"," ",open(f,errors="ignore").read()))).replace("\u00a0"," ")
 txt={};out=[];bad=[]
 for pg,b,p,cat,bef,aft,u,y,cc,snip in M:
@@ -11,5 +14,7 @@ for pg,b,p,cat,bef,aft,u,y,cc,snip in M:
     title=re.search(r"<title>(.*?)</title>",open(f"raw/pages/{pg}.html",errors="ignore").read(),re.S); title=html.unescape(title.group(1).strip()) if title else url
     out.append(dict(product=p,brand=b,category=cat,before=bef,after=aft,unit=u,when=y,country=cc,source_url=url,source=title[:120],
         evidence=t[max(0,i-160):i+len(snip)+120].strip(),evidence_type="consumer-group / news investigation",confidence="high"))
+    if pg in FETCHED: out[-1]["verified"]=f"Source fetched {FETCHED[pg]}"
+    out[-1].update(EXTRA.get(p,{}))
 json.dump(out,open("raw/manual_cases.json","w"),indent=1,ensure_ascii=False)
 print(len(out),"ok; failed:",bad)

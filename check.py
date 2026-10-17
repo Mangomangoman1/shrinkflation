@@ -6,6 +6,9 @@ import json, pathlib, datetime, time, urllib.request, urllib.parse
 R=pathlib.Path(__file__).parent; DATA=R/"data"/"snapshots.json"; DATA.parent.mkdir(exist_ok=True)
 UA={"User-Agent":"ShrinkflationTracker/0.1 (github.com/Mangomangoman1)"}
 HOST={"off":"https://world.openfoodfacts.org","opf":"https://world.openproductsfacts.org","obf":"https://world.openbeautyfacts.org"}
+import re
+COUNT=re.compile(r"^\s*(\d+(?:\.\d+)?)\s*(?:[a-z-]+\s+)?(sheets?|rolls?|count|ct|pods?|bags?|tissues?|stuks|wipes?|tablets?|loads?|m2)\b",re.I)
+CUNIT={"sheet":"sheets","roll":"rolls","count":"count","ct":"count","pod":"pods","bag":"bags","tissue":"tissues","stuk":"tissues","wipe":"wipes","tablet":"tablets","load":"loads","m2":"m2"}
 def get(u):
     for i in range(3):
         try: return json.load(urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=30))
@@ -23,6 +26,9 @@ def main():
             if pr.get("product_quantity"):
                 s["size"]=round(float(pr["product_quantity"]),2); s["unit"]=pr.get("product_quantity_unit") or "g"
             s["quantity_label"]=pr.get("quantity")
+            if not s["size"] and pr.get("quantity"):  # count-type label only (paper goods etc.): "400 Two-Ply Sheets", "30 rolls", "128 stuks"
+                m=COUNT.search(pr["quantity"])
+                if m: s["size"]=float(m.group(1)); s["unit"]=CUNIT[m.group(2).lower().rstrip("s")]; s["size_from"]="quantity_label"
         except Exception as e: s["size_error"]=str(e)[:120]
         try:
             q=get("https://prices.openfoodfacts.org/api/v1/prices?"+urllib.parse.urlencode({"product_code":p["code"],"currency":"USD","order_by":"-date","size":1}))
