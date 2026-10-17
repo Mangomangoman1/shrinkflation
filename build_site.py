@@ -565,7 +565,7 @@ def examples_page(cases,bg,cg,med):
       f'<h2 id="famous">The best-known examples</h2><p class="prose m">One case for each of the {len(famous)} brands caught most often in English-speaking markets.</p>{hd}'+"".join(rr(c) for c in famous)+'</tbody></table></div>'
       +"".join(f'<h2 id="{slug(cat)}">{E(cat)}</h2>{hd}'+"".join(rr(c) for c in rows)+f'</tbody></table></div><p class="m"><a href="/categories/{slug(cat)}.html">All {total} {E(cat)} cases →</a></p>' for cat,rows,total in secs)
       +(f'<h2 id="world">Examples from Europe and beyond</h2><p class="prose m">Germany and the Netherlands have the longest lists because their consumer agencies publish every case they confirm.</p>{hd}'+"".join(rr(c) for c in world)+'</tbody></table></div>' if world else "")
-      +'<p class="m">By country: '+" · ".join(f'<a href="/countries/{k.lower()}.html">{E(COUNTRY.get(k,k))}</a>' for k in sorted({c["country"] for c in cases},key=lambda k:-sum(1 for c in cases if c["country"]==k)))+'. '
+      +'<p class="m">By country: '+" · ".join(f'<a href="/countries/{k.lower()}.html">{E(COUNTRY.get(k,k))}</a>' for k in sorted({c["country"] for c in cases},key=lambda k:(-sum(1 for c in cases if c["country"]==k),k)))+'. '
       +(f'By year: '+" · ".join(f'<a href="/shrinkflation-{y}/">{y}</a>' for y in LAND_YEARS)+'. ' if LAND_YEARS else "")
       +'Biggest cuts and hidden price hikes: <a href="/worst/">worst offenders</a>. New this week: <a href="/new/">latest additions</a>.</p>'
       +faq_html(qa))
