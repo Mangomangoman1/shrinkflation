@@ -1,0 +1,9 @@
+{
+  "title": "Shrinkflation Cases (ShrinkRadar)",
+  "subtitle": "Documented package-size cuts with sources, prices and dates",
+  "id": "KAGGLE_USERNAME/shrinkflation-cases",
+  "licenses": [{"name": "CC-BY-4.0"}],
+  "keywords": ["economics", "retail and shopping", "food", "tabular"],
+  "description": "Every row is a shrinkflation case: a product whose net quantity went down, as reported by a consumer agency (Verbraucherzentrale Hamburg, Consumentenbond, Which?, CHOICE, Consumer NZ), the Mouse Print* archive or a news investigation, and checked by ShrinkRadar against the fetched source. Fields include size before/after, size cut %, hidden unit-price rise at the same price, shelf prices before/after where recorded, real per-unit price change, country, date, source and source URL. Coverage follows the sources (Germany and the Netherlands are over-represented), so it is a record of reported cases, not a random sample.\n\nLive, always-current copy and field documentation: https://shrinkradar.com/data/ . Licence CC BY 4.0: please credit ShrinkRadar (shrinkradar.com).",
+  "resources": [{"path": "cases.csv", "description": "One row per documented case (see https://shrinkradar.com/data/ for the 29 fields)."}]
+}

@@ -1,0 +1,31 @@
+---
+title: ShrinkRadar Shrinkflation Cases
+homepage: https://shrinkradar.com/data/
+category: Economics
+description: Documented shrinkflation cases (products whose package got smaller) from 14 countries, with before/after net quantity, size cut %, hidden unit-price rise, shelf prices where the source recorded them, dates, and a link to the consumer-agency or news source for each case. CSV and JSON, updated as the library grows.
+version:
+keywords: shrinkflation, consumer prices, package size, unit price, groceries, inflation
+image: https://shrinkradar.com/og.png
+temporal:
+spatial: US, UK, Germany, Netherlands, Australia, Canada, New Zealand, Italy, France, Spain, Austria, Brazil, India
+access_level: public
+copyrights:
+accrual_periodicity: daily
+specification:
+data_quality: false
+data_dictionary: https://shrinkradar.com/data/
+language: en
+license: CC BY 4.0
+publisher:
+ - name: ShrinkRadar
+   web: https://shrinkradar.com/
+organization:
+ - name:
+   web:
+issued_time: 2026.10
+sources:
+ - name: ShrinkRadar case library (CSV)
+   access_url: https://shrinkradar.com/data/cases.csv
+references:
+ - title:
+   reference:

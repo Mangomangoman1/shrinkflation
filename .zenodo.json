@@ -1,0 +1,9 @@
+{
+  "title": "ShrinkRadar documented shrinkflation cases",
+  "upload_type": "dataset",
+  "description": "Documented shrinkflation cases: before/after package sizes, dates, countries, shelf prices where recorded, and a link to the consumer-agency, consumer-advocate or news source for every case. The CSV and JSON files are in site/data/ (cases.csv, cases.json). Live version: https://shrinkradar.com/data/",
+  "creators": [{"name": "ShrinkRadar"}],
+  "license": "cc-by-4.0",
+  "keywords": ["shrinkflation", "package size", "unit price", "consumer prices", "groceries", "open data"],
+  "related_identifiers": [{"identifier": "https://shrinkradar.com/data/", "relation": "isSupplementTo", "resource_type": "dataset"}]
+}

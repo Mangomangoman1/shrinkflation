@@ -37,7 +37,7 @@ for f,tag in src:
                 o["also_reported"].append({"url":c["source_url"],"source":c["source"]})
             continue
         out[key]=c
-FIX={"costcotuna":"Kirkland tuna (Costco)","tropicana":"Tropicana orange juice","Tide 84 oz to 80 oz":"Tide","Tostitos Hint of …":"Tostitos Hint of Guacamole","Turkey Hill ice cream changes":"Turkey Hill ice cream","Publix Baby Shampoo":"Johnson's Baby Shampoo"}
+FIX={"costcotuna":"Kirkland tuna (Costco)","tropicana":"Tropicana orange juice","Tide 84 oz to 80 oz":"Tide","Tostitos Hint of …":"Tostitos Hint of Guacamole","Turkey Hill ice cream changes":"Turkey Hill ice cream","Publix Baby Shampoo":"Publix store-brand baby shampoo"}
 DROP={"Jif still 18 oz.","Cinemark 24 oz cup"}
 CAT=[("Toilet Paper",r"toilet|bath tissue|toilettenpapier|charmin|cottonelle|quilted northern|angel soft|mega roll"),("Paper Towels",r"paper towel|küchenrolle|kitchen roll"),("Tissues",r"tissue|taschentücher|kleenex|kosmetikt|^puffs$|puffs (facial|tissue)"),
 ("Laundry",r"detergent|laundry|fabric|softener|waschmittel|weichspüler|downy|tide|gain|persil|comfort|vernel|ariel"),("Dish & Cleaning",r"dish|dawn|spülmittel|cleaner|reiniger|wipes|swiffer|febreze|lysol|somat|finish|jif cream|air fresh"),
@@ -69,7 +69,7 @@ cases=[c for c in out.values() if c["product"] not in DROP]
 # Product-substring overrides that ALWAYS win (even when CAT already matched).
 # Use for known false positives from keyword collisions (cola⊂chocolate, milk in candy names, etc.).
 ALWAYS_FIX={
- 'Chocolate & Candy': ['Cadbury Brunch', 'Cadbury Dairy Milk', 'Cadbury Freddo', 'Cadbury Mini Eggs', 'Cadbury Twirl', 'Cadbury Buttons', 'Cadbury medium Santa', 'Cadbury large chocolate', 'Dairy Milk Freddo', 'Milkybar', 'Terry\'s Chocolate', 'Terry\'s Chocolate Orange', 'KitKat', 'Kitkat', 'Toblerone', 'Maltesers', 'Galaxy Milk Chocolate', 'Galaxy XL', "M&M's Crispy", "M&M\'s Crispy", 'Party-size milk chocolate M&M', 'Party-size dark chocolate M&M', 'Hershey\'s Dark Chocolate', 'Hershey\'s snack size chocolate', 'Hershey\'s Halloween', 'Mars fun size', 'Twix white chocolate', 'Little Debbie Chocolate', 'Moser Roth Chocolat', 'HEJ Organic Nut Bar', 'Van Melle', 'Sportlife', 'Klene', 'Mentos'],
+ 'Chocolate & Candy': ['Quality Street', 'Cadbury Brunch', 'Cadbury Dairy Milk', 'Cadbury Freddo', 'Cadbury Mini Eggs', 'Cadbury Twirl', 'Cadbury Buttons', 'Cadbury medium Santa', 'Cadbury large chocolate', 'Dairy Milk Freddo', 'Milkybar', 'Terry\'s Chocolate', 'Terry\'s Chocolate Orange', 'KitKat', 'Kitkat', 'Toblerone', 'Maltesers', 'Galaxy Milk Chocolate', 'Galaxy XL', "M&M's Crispy", "M&M\'s Crispy", 'Party-size milk chocolate M&M', 'Party-size dark chocolate M&M', 'Hershey\'s Dark Chocolate', 'Hershey\'s snack size chocolate', 'Hershey\'s Halloween', 'Mars fun size', 'Twix white chocolate', 'Little Debbie Chocolate', 'Moser Roth Chocolat', 'HEJ Organic Nut Bar', 'Van Melle', 'Sportlife', 'Klene', 'Mentos'],
  'Cookies & Crackers': ['McVitie\'s Digestives', 'Jodekoek', 'Gemberkoek', 'ontbijtkoek', 'Beschuit'],
  'Ice Cream': ['Mövenpick Eis'],
  'Frozen Foods': ['Danerolles Chocolate', 'Danerolles Pains', 'diepvriescroissants'],

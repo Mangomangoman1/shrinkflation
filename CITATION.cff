@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use the ShrinkRadar case library, please cite it as below and link https://shrinkradar.com/data/."
+type: dataset
+title: "ShrinkRadar documented shrinkflation cases"
+abstract: "Documented shrinkflation cases (before/after package sizes, dates, countries, shelf prices where recorded) with a link to the consumer-agency, consumer-advocate or news source that reported each one. Rebuilt whenever the library changes."
+authors:
+  - name: "ShrinkRadar"
+    website: "https://shrinkradar.com/"
+url: "https://shrinkradar.com/data/"
+repository-code: "https://github.com/Mangomangoman1/shrinkflation"
+license: CC-BY-4.0
+keywords: [shrinkflation, package size, unit price, consumer prices, groceries, open data]
