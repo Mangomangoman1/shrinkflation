@@ -177,3 +177,4 @@
 - **New, Google Search Console URL Inspection → "Request indexing"** for the 5 most important URLs: `/`, `/shrinkflation-examples/`, `/shrinkflation-2026/`, `/cases/`, `/data/`. It is 3 days after sitemap submission and still 0 indexed, and manual requests are the fastest way to get first pages in. While there, check Indexing → Pages for "Discovered – currently not indexed" and the two pending Validate Fix runs.
 - **New, optional:** the four distribution listings above (APD PR, Zenodo toggle + release, Kaggle upload, OFF reuse email). Everything is prepared in `distribution/`.
 - Social accounts: still open, and still optional.
+- Final tip after the worklog commit: source `ecf4c6b`, gh-pages `07d01dd` (the same site plus the deterministic country order on the examples page).
