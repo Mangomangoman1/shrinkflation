@@ -10,6 +10,7 @@
 - [Barcode lookup: type or scan a UPC/EAN to check pack size and history](https://shrinkradar.com/barcode/)
 - [Submit a sighting: report shrinkflation via GitHub issue](https://shrinkradar.com/submit/)
 - [Guides: what shrinkflation is, how to spot it](https://shrinkradar.com/guides/)
+- [Shrinkflation statistics: 713 cases in charts](https://shrinkradar.com/shrinkflation-statistics/)
 - [Shrinkflation examples: 129 real products that shrank](https://shrinkradar.com/shrinkflation-examples/)
 - [Shrinkflation 2026: list of 99 examples](https://shrinkradar.com/shrinkflation-2026/)
 - [Shrinkflation 2025: list of 89 examples](https://shrinkradar.com/shrinkflation-2025/)

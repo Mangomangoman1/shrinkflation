@@ -72,8 +72,8 @@
 "2026-10-16"
 ],
 "brands/always.html": [
-"050bfc48181dcea4",
-"2026-10-16"
+"d3ac377e52ab2d02",
+"2026-10-17"
 ],
 "brands/ambi.html": [
 "7663e0178c82e69d",
@@ -263,9 +263,9 @@
 "c8c7d5d284cbd6c7",
 "2026-10-16"
 ],
-"brands/billy.html": [
-"a41194019100d223",
-"2026-10-16"
+"brands/billy-boy.html": [
+"c14c6704954f7a29",
+"2026-10-17"
 ],
 "brands/biopolar.html": [
 "70edca55d7dd0570",
@@ -291,9 +291,9 @@
 "7dddbd59fcef92b2",
 "2026-10-16"
 ],
-"brands/block.html": [
-"89ad5ae4a938df9e",
-"2026-10-16"
+"brands/block-house.html": [
+"737ef92ae1b10c5a",
+"2026-10-17"
 ],
 "brands/blue-bell-ice-cream.html": [
 "48fc87286a59b469",
@@ -336,8 +336,8 @@
 "2026-10-16"
 ],
 "brands/bref.html": [
-"0e3f3cfe32b6ce14",
-"2026-10-16"
+"b4030d0eed0f2f22",
+"2026-10-17"
 ],
 "brands/breton.html": [
 "a276bba5d6e759bb",
@@ -447,9 +447,9 @@
 "99a98e122d231fcc",
 "2026-10-16"
 ],
-"brands/chef.html": [
-"a44d656f9c36f311",
-"2026-10-16"
+"brands/chef-select.html": [
+"079f67d03358561d",
+"2026-10-17"
 ],
 "brands/chex.html": [
 "adbef3266a5d001f",
@@ -716,8 +716,8 @@
 "2026-10-16"
 ],
 "brands/ebelin.html": [
-"dd3a166a32943c0b",
-"2026-10-16"
+"70374c750882c959",
+"2026-10-17"
 ],
 "brands/echo-clean.html": [
 "0bb0fc96baa7c733",
@@ -775,9 +775,9 @@
 "3f436d8f82afd192",
 "2026-10-16"
 ],
-"brands/explore.html": [
-"d5b66b977094c4fc",
-"2026-10-16"
+"brands/explore-cuisine.html": [
+"f0b9156e0665b560",
+"2026-10-17"
 ],
 "brands/exquisa.html": [
 "ca043a3485ef01d2",
@@ -916,7 +916,7 @@
 "2026-10-16"
 ],
 "brands/gillette.html": [
-"19da54ea1368f96b",
+"fdb24b7b3ff7f865",
 "2026-10-17"
 ],
 "brands/gippsland-dairy.html": [
@@ -1092,7 +1092,7 @@
 "2026-10-16"
 ],
 "brands/index.html": [
-"6ede17e723bfb75f",
+"df8f8d9b0ca98e0a",
 "2026-10-17"
 ],
 "brands/international-delight.html": [
@@ -1144,8 +1144,8 @@
 "2026-10-16"
 ],
 "brands/jumbo.html": [
-"fd96a9135aba4b02",
-"2026-10-16"
+"3f085d2d74ecf1b7",
+"2026-10-17"
 ],
 "brands/junior-mints.html": [
 "381b9ad7f34a2e20",
@@ -1248,8 +1248,8 @@
 "2026-10-16"
 ],
 "brands/kraft.html": [
-"0b9881eb02185cbd",
-"2026-10-16"
+"08704443870ae5c0",
+"2026-10-17"
 ],
 "brands/kurukahveci.html": [
 "e20b7e802b9abd92",
@@ -1479,9 +1479,9 @@
 "29ccf49a640d8e27",
 "2026-10-16"
 ],
-"brands/mein.html": [
-"c8ccdc07f603f5c7",
-"2026-10-16"
+"brands/mein-veggie-tag.html": [
+"d6b32c9db7c8bcff",
+"2026-10-17"
 ],
 "brands/mentos.html": [
 "a8cadfa8537a455d",
@@ -1883,6 +1883,10 @@
 "3172207daf0a286f",
 "2026-10-16"
 ],
+"brands/pril.html": [
+"c9eec6cbd4ab13be",
+"2026-10-17"
+],
 "brands/primal-kitchen.html": [
 "12519c393f553184",
 "2026-10-16"
@@ -1939,6 +1943,10 @@
 "57e222d56882d052",
 "2026-10-16"
 ],
+"brands/r-genwalder-m-hle.html": [
+"9fa644d9df6be4be",
+"2026-10-17"
+],
 "brands/raisin-bran.html": [
 "e58f33623304b1e9",
 "2026-10-16"
@@ -1956,8 +1964,8 @@
 "2026-10-16"
 ],
 "brands/record.html": [
-"0ad96c05e462a5ba",
-"2026-10-16"
+"f81b7f6aec19acd1",
+"2026-10-17"
 ],
 "brands/red-bull.html": [
 "c57692f2fac1b6db",
@@ -1984,8 +1992,8 @@
 "2026-10-16"
 ],
 "brands/rewe.html": [
-"6b52561ab3fbbc22",
-"2026-10-16"
+"deb953de80552684",
+"2026-10-17"
 ],
 "brands/rexim.html": [
 "4b534613dbb41275",
@@ -2092,8 +2100,8 @@
 "2026-10-16"
 ],
 "brands/schwyzer.html": [
-"c7b09d8ed234e95c",
-"2026-10-16"
+"2d5eb47ffa2b6e62",
+"2026-10-17"
 ],
 "brands/scott.html": [
 "b656d57e6402a5c6",
@@ -2156,16 +2164,20 @@
 "2026-10-16"
 ],
 "brands/simply-orange.html": [
-"dd4dbc85b7e49e42",
-"2026-10-16"
+"b5ffcb9f6e361b94",
+"2026-10-17"
+],
+"brands/simply-v.html": [
+"b3cd7ca08e47f504",
+"2026-10-17"
 ],
 "brands/simply.html": [
 "06b4556fb9232b44",
 "2026-10-16"
 ],
-"brands/skin.html": [
-"8c7ed2552f33c2c4",
-"2026-10-16"
+"brands/skin-stories.html": [
+"f605421b2309df60",
+"2026-10-17"
 ],
 "brands/skinny-pop.html": [
 "499098e34e76b962",
@@ -2196,8 +2208,8 @@
 "2026-10-16"
 ],
 "brands/sodastream.html": [
-"141030cebedacfa7",
-"2026-10-16"
+"26948339eca17828",
+"2026-10-17"
 ],
 "brands/soft-and-chewy.html": [
 "8613950bd6530e4c",
@@ -2212,8 +2224,8 @@
 "2026-10-16"
 ],
 "brands/spee.html": [
-"7c9fa85c6c4f0fdc",
-"2026-10-16"
+"24dc5dcc3f03d8a9",
+"2026-10-17"
 ],
 "brands/speed-stick.html": [
 "908ee1516f21c6b6",
@@ -2234,10 +2246,6 @@
 "brands/starbucks.html": [
 "7d9f277a26af826e",
 "2026-10-17"
-],
-"brands/steinofen-pizza.html": [
-"8a862917093bc199",
-"2026-10-16"
 ],
 "brands/stevia-in-the-raw.html": [
 "143f3784d3b8d96b",
@@ -2443,10 +2451,6 @@
 "560875b26a64f788",
 "2026-10-16"
 ],
-"brands/vegetarische.html": [
-"40435d826e4bd7a6",
-"2026-10-16"
-],
 "brands/vernel.html": [
 "7ad91201df18291f",
 "2026-10-16"
@@ -2600,20 +2604,20 @@
 "2026-10-16"
 ],
 "cases/ah-multimix-nootjes-nl-2024.html": [
-"871043e98a66f8dc",
-"2026-10-16"
+"86a1de9228744838",
+"2026-10-17"
 ],
 "cases/ah-steenoven-pizza-piccante-nl-2025.html": [
-"baa81f1e4345c072",
-"2026-10-16"
+"5f07e932d93da6d7",
+"2026-10-17"
 ],
 "cases/airwaves-cool-cassis-de-2025.html": [
-"86c75524983d672e",
-"2026-10-16"
+"eb06c841a5902451",
+"2026-10-17"
 ],
 "cases/aldi-dairy-fine-milk-mini-eggs-au-2025.html": [
-"b443a7765235a675",
-"2026-10-16"
+"71b05f03a344c820",
+"2026-10-17"
 ],
 "cases/aldi-kringle-and-co-iced-christmas-cake-au-2024.html": [
 "add04b8d9bf07186",
@@ -2632,12 +2636,12 @@
 "2026-10-16"
 ],
 "cases/alnatura-pizza-margherita-de-2023.html": [
-"5138dcf66667fa9b",
-"2026-10-16"
+"2f539c1eadafaccb",
+"2026-10-17"
 ],
 "cases/alnatura-schoko-dinkel-kugeln-de-2025.html": [
-"144b9109cd09f50b",
-"2026-10-16"
+"89c81decc32c9e80",
+"2026-10-17"
 ],
 "cases/alnatura-sesam-ungesch-lt-de-2024.html": [
 "1daebfdf27cbc19c",
@@ -2652,28 +2656,28 @@
 "2026-10-16"
 ],
 "cases/alverde-naturkosmetik-mineral-puder-de-2024.html": [
-"1658b44e8176b46c",
-"2026-10-16"
+"5f2db37a9f758f79",
+"2026-10-17"
 ],
 "cases/always-dailies-cotton-protection-slipeinlagen-normal-de-2023.html": [
-"09257040966071f9",
-"2026-10-16"
+"97d4df0a15f5fccd",
+"2026-10-17"
 ],
 "cases/ambi-pur-luchtverfrisser-nl-2025.html": [
-"2787302522e2b8a8",
-"2026-10-16"
+"3d0eb4cb2f6a7860",
+"2026-10-17"
 ],
 "cases/amica-chips-classic-it-2024.html": [
-"9c695ef65bf396f8",
-"2026-10-16"
+"f8b71bc8db445cf2",
+"2026-10-17"
 ],
 "cases/andr-lon-intense-repair-conditioner-nl-2026.html": [
-"eb114341e33ede20",
-"2026-10-16"
+"588f90be3565cdd2",
+"2026-10-17"
 ],
 "cases/andr-lon-intense-repair-shampoo-nl-2026.html": [
-"9e687a225a16bd28",
-"2026-10-16"
+"cb881303a4a36bce",
+"2026-10-17"
 ],
 "cases/andrex-classic-clean-washlets-wipes-uk-2023.html": [
 "74803a2f90715c86",
@@ -2720,24 +2724,24 @@
 "2026-10-17"
 ],
 "cases/arya-laya-aloe-vera-body-lotion-de-2020.html": [
-"7286dddb29fb35c7",
-"2026-10-16"
+"ba4ca2703be3e136",
+"2026-10-17"
 ],
 "cases/atkins-protein-bars-us-2025.html": [
-"ad5aa3c9c817e109",
-"2026-10-16"
+"9eee6cb9e33ed7d2",
+"2026-10-17"
 ],
 "cases/auchan-jambon-sup-rieur-slices-fr-2023.html": [
 "41d801b7b0df709a",
 "2026-10-16"
 ],
 "cases/b-hme-fruchtkaramellen-de-2022.html": [
-"a57bd3eb662e0768",
-"2026-10-16"
+"a85d671005a9e037",
+"2026-10-17"
 ],
 "cases/babydream-pfleget-cher-de-2020.html": [
-"b6407f33977268e9",
-"2026-10-16"
+"d9fc3f0721679712",
+"2026-10-17"
 ],
 "cases/bahlsen-waffel-de-2021.html": [
 "596837da03fe7428",
@@ -2748,20 +2752,20 @@
 "2026-10-16"
 ],
 "cases/balea-leichte-bodylotion-de-2022.html": [
-"d91614ac48f12756",
-"2026-10-16"
+"efa0dad58484c073",
+"2026-10-17"
 ],
 "cases/barilla-spaghetti-canada-ca-2021.html": [
-"2a187214f2996925",
-"2026-10-16"
+"7cfc93169e37e706",
+"2026-10-17"
 ],
 "cases/bauck-m-hle-choco-balls-de-2024.html": [
 "8b5663ef94674ba9",
 "2026-10-16"
 ],
 "cases/beba-junior-de-2021.html": [
-"985385c13518661d",
-"2026-10-16"
+"20f0fc7c17970bc1",
+"2026-10-17"
 ],
 "cases/becel-classic-de-2022.html": [
 "ff98fcda1c592265",
@@ -2792,12 +2796,12 @@
 "2026-10-17"
 ],
 "cases/bens-original-basmati-reis-de-2023.html": [
-"d60ca9eea478143e",
-"2026-10-16"
+"1aca7e15d3ced2ef",
+"2026-10-17"
 ],
 "cases/bens-original-saucen-xxl-s-ss-sauer-extra-ananas-de-2024.html": [
-"a84605659a111280",
-"2026-10-16"
+"163c91ee2566c7a6",
+"2026-10-17"
 ],
 "cases/bergader-bergbauern-k-se-mild-cremig-de-2024.html": [
 "2adc8fc466833c54",
@@ -2816,44 +2820,44 @@
 "2026-10-16"
 ],
 "cases/billy-boy-l-nger-lieben-de-2024.html": [
-"bd3a8618441294a3",
-"2026-10-16"
+"437425465ce9d340",
+"2026-10-17"
 ],
 "cases/biopolar-lagonda-mozzarella-de-2023.html": [
-"20db36c75dcb47a9",
-"2026-10-16"
+"cf22676e636f94f7",
+"2026-10-17"
 ],
 "cases/biowagner-bio-paprika-edels-de-2023.html": [
 "70d30247b713d69d",
 "2026-10-16"
 ],
 "cases/biscotto-waffelbl-ttchen-mit-zartbitterschokolade-de-2024.html": [
-"81b4da7ef62b1314",
-"2026-10-16"
+"6fce9f3b4ee3821c",
+"2026-10-17"
 ],
 "cases/bisto-best-chicken-gravy-granules-uk-2023.html": [
 "e66177d2308dada9",
 "2026-10-16"
 ],
 "cases/bisto-best-turkey-gravy-granules-uk-2023.html": [
-"434b316fbc12e87a",
-"2026-10-16"
+"d3cc9f3cbb64ed9b",
+"2026-10-17"
 ],
 "cases/blankenburger-orancia-de-2021.html": [
 "b8eba2fe7b1a2e86",
 "2026-10-16"
 ],
 "cases/block-house-american-dressing-de-2022.html": [
-"01182914746105fc",
-"2026-10-16"
+"4b4688bce8e7fe39",
+"2026-10-17"
 ],
 "cases/blue-band-vloeibaar-nl-2026.html": [
 "187500bba956b71d",
 "2026-10-16"
 ],
 "cases/bohlsener-m-hle-keksfreunde-schoko-de-2023.html": [
-"7b74cec961c39a5d",
-"2026-10-16"
+"dce2d16047d2b681",
+"2026-10-17"
 ],
 "cases/bonne-maman-haselnuss-and-kakao-creme-de-2026.html": [
 "31b8f48ab17ce95f",
@@ -2864,7 +2868,7 @@
 "2026-10-17"
 ],
 "cases/bounty-multipack-de-2026.html": [
-"ba2d61a079964512",
+"cc14d1e021933e74",
 "2026-10-17"
 ],
 "cases/bounty-paper-towels-us-2021.html": [
@@ -2888,8 +2892,8 @@
 "2026-10-16"
 ],
 "cases/bref-power-wc-kraftgel-gegen-99-9-der-bakterien-de-2021.html": [
-"cf94e3d145179217",
-"2026-10-16"
+"755aaabfe492751c",
+"2026-10-17"
 ],
 "cases/breton-crackers-us-2022.html": [
 "fbabaa1b5e1bb524",
@@ -2904,92 +2908,92 @@
 "2026-10-16"
 ],
 "cases/brut-deodorant-stick-woolworths-au-2025.html": [
-"e8df27151a410168",
-"2026-10-16"
+"89647cc9704d7817",
+"2026-10-17"
 ],
 "cases/butchers-pepper-burger-patties-de-2023.html": [
-"0cd65b4c900ebdaa",
-"2026-10-16"
+"0f82e90267cd403a",
+"2026-10-17"
 ],
 "cases/cadbury-boxed-hollow-easter-eggs-15-pack-au-2026.html": [
-"a186039ca04f898c",
-"2026-10-16"
+"6c3ce8bf42b3373f",
+"2026-10-17"
 ],
 "cases/cadbury-brunch-chocolate-chip-bars-uk-2023.html": [
-"659a17a5d6194d6a",
-"2026-10-16"
+"44c668bfb269f206",
+"2026-10-17"
 ],
 "cases/cadbury-buttons-selection-box-uk-2024.html": [
-"505946ce13de5d8c",
-"2026-10-16"
+"98c1029fe2f11910",
+"2026-10-17"
 ],
 "cases/cadbury-dairy-milk-and-white-shell-egg-uk-2026.html": [
-"6efb5783f92856f3",
-"2026-10-16"
+"7dc38538f22dfda1",
+"2026-10-17"
 ],
 "cases/cadbury-dairy-milk-freddo-multipack-uk-2023.html": [
-"445b29154fcceb92",
-"2026-10-16"
+"efd2be1ed6c333bb",
+"2026-10-17"
 ],
 "cases/cadbury-dairy-milk-hollow-eggs-au-2025.html": [
-"9d3f55b490999f69",
-"2026-10-16"
+"95049777d4b43cfa",
+"2026-10-17"
 ],
 "cases/cadbury-favourites-box-373g-new-zealand-nz-2023.html": [
-"b0db4d76de88b11f",
+"6ddf3e3b2160d7da",
 "2026-10-17"
 ],
 "cases/cadbury-favourites-box-large-new-zealand-2025-nz-2025.html": [
-"3e6d0c6f89e8532a",
+"75ea749c368a9b13",
 "2026-10-17"
 ],
 "cases/cadbury-favourites-box-large-new-zealand-nz-2023.html": [
-"35dd601a4dc611c2",
+"75917620bb1372a0",
 "2026-10-17"
 ],
 "cases/cadbury-fingers-uk-uk-2015.html": [
-"4acc4ca81b0db12f",
-"2026-10-16"
+"86a0fffb15858a0d",
+"2026-10-17"
 ],
 "cases/cadbury-hollow-hunting-eggs-carton-au-2026.html": [
-"f63592e089d18d42",
-"2026-10-16"
+"e7b68f828212b4b8",
+"2026-10-17"
 ],
 "cases/cadbury-large-chocolate-egg-au-2025.html": [
-"24f464447447b968",
-"2026-10-16"
+"598a3f9f7f6d4934",
+"2026-10-17"
 ],
 "cases/cadbury-medium-santa-selection-box-uk-2024.html": [
-"e36a0ca0f272b9ce",
-"2026-10-16"
+"9b59302d6c1eb3b9",
+"2026-10-17"
 ],
 "cases/cadbury-mini-eggs-family-pack-uk-2026.html": [
-"5a7eb0dcf46f37f9",
-"2026-10-16"
+"4da5c16b572f8135",
+"2026-10-17"
 ],
 "cases/cadbury-mini-eggs-milk-chocolate-easter-egg-uk-2026.html": [
-"dcc4f1e11d45e7d7",
-"2026-10-16"
+"4c84185d382964ab",
+"2026-10-17"
 ],
 "cases/cadbury-old-gold-70-dark-chocolate-block-new-zealand-nz-2026.html": [
-"a912e9489df42e0f",
+"eb42712b2cc9c170",
 "2026-10-17"
 ],
 "cases/cadbury-roses-chocolates-box-australia-au-2026.html": [
-"0f62d8e8e6d13dda",
+"51155a504b3af4bd",
 "2026-10-17"
 ],
 "cases/cadbury-roses-chocolates-box-new-zealand-nz-2025.html": [
-"7562d33531f70975",
+"d92c33346e0909bc",
 "2026-10-17"
 ],
 "cases/cadbury-twirl-xl-easter-egg-uk-2026.html": [
-"86aeb8eea0189ced",
-"2026-10-16"
+"1140386887b590e9",
+"2026-10-17"
 ],
 "cases/campbell-s-spaghetti-us-2015.html": [
-"04c6e8e8454e915a",
-"2026-10-16"
+"58779885e757bdb4",
+"2026-10-17"
 ],
 "cases/campofr-o-jam-n-cocido-1-pack-es-2022.html": [
 "6ee70e6e3016f2ca",
@@ -3004,32 +3008,32 @@
 "2026-10-16"
 ],
 "cases/carat-salat-fix-kr-uter-italienischer-art-de-2026.html": [
-"7bc05fa13bdac42f",
-"2026-10-16"
+"dc7d6eb45021f03f",
+"2026-10-17"
 ],
 "cases/carrefour-reflets-de-france-corsican-orange-marmalade-fr-2023.html": [
 "32854a2c4cba0967",
 "2026-10-16"
 ],
 "cases/cascade-platinum-plus-dishwashing-pods-us-2025.html": [
-"75a5b2666847fcc9",
-"2026-10-16"
+"86585f8e8bb2971e",
+"2026-10-17"
 ],
 "cases/catsan-katzenstreu-hygiene-plus-de-2020.html": [
-"9324ee715bb78636",
-"2026-10-16"
+"29188531fa336a9e",
+"2026-10-17"
 ],
 "cases/cd-seife-de-2022.html": [
-"f59d56a3d4936641",
-"2026-10-16"
+"df2f851a87aedd64",
+"2026-10-17"
 ],
 "cases/celebrations-tub-2025-uk-2025.html": [
-"4492585fb69aac5d",
-"2026-10-16"
+"87a349408c2310f7",
+"2026-10-17"
 ],
 "cases/celebrations-tub-uk-2024.html": [
-"fb5fc8fde916edc1",
-"2026-10-16"
+"3017a1aa1af20649",
+"2026-10-17"
 ],
 "cases/charmin-ultra-soft-mega-roll-2025-us-2025.html": [
 "eb17fa6aae5da6df",
@@ -3068,8 +3072,8 @@
 "2026-10-16"
 ],
 "cases/chef-select-salat-budapester-art-de-2023.html": [
-"d19e8a8291d95640",
-"2026-10-16"
+"0b69f967eb3abfd6",
+"2026-10-17"
 ],
 "cases/chex-mix-us-2024.html": [
 "445143e6fa340e49",
@@ -3096,8 +3100,8 @@
 "2026-10-16"
 ],
 "cases/classico-pesto-us-2010.html": [
-"6ea61682259315ba",
-"2026-10-16"
+"5a021648032ead26",
+"2026-10-17"
 ],
 "cases/clusters-almonds-de-2021.html": [
 "84d77fcc016855fc",
@@ -3136,8 +3140,8 @@
 "2026-10-17"
 ],
 "cases/combino-pasta-sauce-bolognese-de-2024.html": [
-"901b66e5b5d87272",
-"2026-10-16"
+"367533ee7069cd89",
+"2026-10-17"
 ],
 "cases/comfort-pure-fabric-conditioner-uk-2022.html": [
 "889b11d17fcc663c",
@@ -3232,24 +3236,24 @@
 "2026-10-16"
 ],
 "cases/dawn-dishwashing-liquid-us-2023.html": [
-"bdf44e046a6ba491",
-"2026-10-16"
+"cba1c1162d5ff046",
+"2026-10-17"
 ],
 "cases/dawn-platinum-dish-soap-us-2026.html": [
-"49235f2c3cee5253",
-"2026-10-16"
+"8671d8c38c28b35d",
+"2026-10-17"
 ],
 "cases/dawn-platinum-us-2026.html": [
-"4c81818e6a2cf75c",
-"2026-10-16"
+"866d0c5b233d89dd",
+"2026-10-17"
 ],
 "cases/dawn-ultra-dish-soap-us-2022.html": [
-"8ba14619702c53b4",
-"2026-10-16"
+"155e1f07f4973c5c",
+"2026-10-17"
 ],
 "cases/dawn-us-2015.html": [
-"2f62cbdcee0f9434",
-"2026-10-16"
+"2ae5d32fd3207b8d",
+"2026-10-17"
 ],
 "cases/dein-bestes-katzenfutter-senior-de-2020.html": [
 "909b193de9b796a7",
@@ -3264,16 +3268,16 @@
 "2026-10-16"
 ],
 "cases/dettol-original-allesreiniger-nl-2026.html": [
-"e8fa31d44729851c",
-"2026-10-16"
+"9d8655bd61fd15b6",
+"2026-10-17"
 ],
 "cases/deutsche-see-kabeljaufilet-de-2022.html": [
 "d731e44fe8511d24",
 "2026-10-16"
 ],
 "cases/dial-body-wash-us-2021.html": [
-"7725259105895742",
-"2026-10-16"
+"3fb460b0b80a5d67",
+"2026-10-17"
 ],
 "cases/dolce-gusto-latte-macchiato-vanilla-kaffeekapseln-de-2020.html": [
 "5c5bae745bf3c076",
@@ -3292,39 +3296,39 @@
 "2026-10-16"
 ],
 "cases/doritos-nacho-snack-size-canada-ca-2024.html": [
-"14537c4ac9a9311b",
-"2026-10-16"
+"2495e69a0732a2ef",
+"2026-10-17"
 ],
 "cases/doritos-regular-bag-us-2022.html": [
-"dc686d8b5d42a4e4",
-"2026-10-16"
+"cec436cc0871fa44",
+"2026-10-17"
 ],
 "cases/doritos-us-2021.html": [
-"30e05da8a04a6772",
-"2026-10-16"
+"7c0a97dbf254a79b",
+"2026-10-17"
 ],
 "cases/double-stuf-oreo-family-size-us-2023.html": [
 "361656c9601007a2",
 "2026-10-16"
 ],
 "cases/dove-advanced-care-duschcreme-reichhaltige-pflege-de-2024.html": [
-"5908b3f60b89023e",
+"14c674494047aecf",
 "2026-10-17"
 ],
 "cases/dove-beauty-bar-uk-uk-2022.html": [
-"3e85e8fdbd10361e",
+"c520528bf711b0d6",
 "2026-10-17"
 ],
 "cases/dove-beauty-cream-bar-de-2022.html": [
-"d284eccec435e418",
+"d8437a3d2f300b7b",
 "2026-10-17"
 ],
 "cases/dove-body-wash-us-2023.html": [
-"258fff9f2da75e3a",
+"e802ed417a44094f",
 "2026-10-17"
 ],
 "cases/dove-deeply-nourishing-douchegel-nl-2025.html": [
-"49bc9edf6f5c76f8",
+"7cb7e2f894a3ffb7",
 "2026-10-17"
 ],
 "cases/downy-unstoppables-us-2020.html": [
@@ -3332,8 +3336,8 @@
 "2026-10-16"
 ],
 "cases/dr-hauschka-gesichts-l-de-2020.html": [
-"345355da4df733cc",
-"2026-10-16"
+"a33d8aef7dd50a79",
+"2026-10-17"
 ],
 "cases/dr-oetker-4x-marmor-kleine-kuchen-de-2025.html": [
 "cab8420c09a3b29a",
@@ -3364,28 +3368,28 @@
 "2026-10-16"
 ],
 "cases/dulano-truthahn-salami-light-de-2018.html": [
-"411a3fce1e6ac57c",
-"2026-10-16"
+"8dc83bb669df81e3",
+"2026-10-17"
 ],
 "cases/eat-natural-fruit-and-nut-repen-nl-2025.html": [
-"b041c927d6ee9b67",
-"2026-10-16"
+"5d1fdef01e360bf6",
+"2026-10-17"
 ],
 "cases/ebelin-nagellack-entferner-acetonfrei-aloe-vera-duft-de-2020.html": [
-"7a93e6da19bfca9e",
-"2026-10-16"
+"259d78dd691aeadb",
+"2026-10-17"
 ],
 "cases/edeka-herzst-cke-hearts-and-hoops-de-2026.html": [
 "f4d6974b275b4422",
 "2026-10-16"
 ],
 "cases/elkos-med-bodylotion-urea-de-2021.html": [
-"93c9ddc5503f694f",
-"2026-10-16"
+"20a0449dc77bb5a9",
+"2026-10-17"
 ],
 "cases/elnett-haarspray-intensives-volumen-de-2021.html": [
-"16c15c0218c44f9c",
-"2026-10-16"
+"1e53c0714346590b",
+"2026-10-17"
 ],
 "cases/enerbio-erbeere-fruchtaufstrich-de-2020.html": [
 "f92414961d4152a1",
@@ -3396,31 +3400,31 @@
 "2026-10-16"
 ],
 "cases/equate-liquid-hand-soap-us-2023.html": [
-"6ead5b786558206d",
-"2026-10-16"
+"9f20c6757baf6889",
+"2026-10-17"
 ],
 "cases/escal-kaltwasser-wildkabeljau-de-2022.html": [
 "3f0d66f971e5f4ef",
 "2026-10-16"
 ],
 "cases/explore-cuisine-organic-red-lentil-penne-de-2026.html": [
-"e629808c8a79dbda",
-"2026-10-16"
+"fb6d9a3f5f3ea203",
+"2026-10-17"
 ],
 "cases/exquisa-scheiben-aus-frischk-se-de-2020.html": [
 "4bdc31d3801461ec",
 "2026-10-16"
 ],
 "cases/fa-seife-refreshing-lemon-de-2021.html": [
-"c278c68cb2422f25",
-"2026-10-16"
+"33fbaa4c6bad3397",
+"2026-10-17"
 ],
 "cases/fage-total-griechischer-joghurt-0-2-fett-de-2026.html": [
 "34797cc04229a9c3",
 "2026-10-16"
 ],
 "cases/fairy-dishwashing-liquid-australia-au-2026.html": [
-"d3163f5a92666e7d",
+"e442724a412ab4d4",
 "2026-10-17"
 ],
 "cases/family-size-apple-cinnamon-cheerios-us-2024.html": [
@@ -3444,32 +3448,32 @@
 "2026-10-16"
 ],
 "cases/farm-rich-mozzarella-bites-us-2023.html": [
-"e0ca6c63a5479d6a",
-"2026-10-16"
+"cf13de4c4576bca7",
+"2026-10-17"
 ],
 "cases/febreze-air-spray-can-us-2026.html": [
-"0c33a09e41bdf113",
-"2026-10-16"
+"2f982a6d27b4e712",
+"2026-10-17"
 ],
 "cases/ferrero-rocher-sternschnuppe-de-2019.html": [
-"d5a5bdd1c1116296",
-"2026-10-16"
+"55f4e84c259d283c",
+"2026-10-17"
 ],
 "cases/finish-powerball-ultimate-plus-maxi-pack-de-2026.html": [
-"21bfc60e75eb2698",
-"2026-10-16"
+"87f1e6c7a85e31a1",
+"2026-10-17"
 ],
 "cases/finish-quantum-all-in-one-vaatwastabletten-nl-2024.html": [
-"f2d712d5be8652f4",
-"2026-10-16"
+"1aa16c1fc90b05a6",
+"2026-10-17"
 ],
 "cases/finish-ultimate-dishwashing-pods-us-2025.html": [
-"bde37627b55d599a",
-"2026-10-16"
+"786627e48d4463a4",
+"2026-10-17"
 ],
 "cases/flamingo-estate-shampoo-us-2026.html": [
-"fa4e8da7519432ca",
-"2026-10-16"
+"e827628bb6b0b9ac",
+"2026-10-17"
 ],
 "cases/florida-s-natural-us-2018.html": [
 "82b3f182bc3ae467",
@@ -3496,20 +3500,20 @@
 "2026-10-16"
 ],
 "cases/fuchs-italienische-kr-uter-de-2024.html": [
-"567f14a6294d6a93",
-"2026-10-16"
+"ec665fa520d648ab",
+"2026-10-17"
 ],
 "cases/funny-frisch-big-erdnuss-flippies-de-2021.html": [
-"263eacce17c61260",
-"2026-10-16"
+"8dcfe6a91c587e4f",
+"2026-10-17"
 ],
 "cases/funny-frisch-chipsfrisch-ungarisch-de-2022.html": [
-"1cbb41ffaf3fb993",
-"2026-10-16"
+"3d2e5ec12b76a7e4",
+"2026-10-17"
 ],
 "cases/funny-frisch-erdnuss-flippies-de-2021.html": [
-"b87bab671c941780",
-"2026-10-16"
+"c1c366016ff35323",
+"2026-10-17"
 ],
 "cases/funny-frisch-ofen-chips-paprika-de-2022.html": [
 "22cea43d5d70be4c",
@@ -3536,19 +3540,19 @@
 "2026-10-16"
 ],
 "cases/galaxy-milk-chocolate-extra-large-easter-egg-uk-2026.html": [
-"283c24dcfee6e17a",
-"2026-10-16"
+"e16a5d32c1fac167",
+"2026-10-17"
 ],
 "cases/garnier-ambre-solaire-sensitive-expert-milch-lsf-50-de-2023.html": [
-"18db7c93fba7a418",
+"0ea1be2ea11806a4",
 "2026-10-17"
 ],
 "cases/garnier-hand-repair-de-2024.html": [
-"ec83f59326c26eb4",
+"be55d5f19c6cfc85",
 "2026-10-17"
 ],
 "cases/garnier-mizellen-reinigungswasser-all-in-1-normale-haut-de-2021.html": [
-"a1bad77f949e1bd0",
+"d5bf7666779aaf15",
 "2026-10-17"
 ],
 "cases/gatorade-thirst-quencher-bottle-us-2022.html": [
@@ -3568,7 +3572,7 @@
 "2026-10-16"
 ],
 "cases/gillette-rasierklingen-de-2020.html": [
-"2dbdef9d8bf4e4d4",
+"ba6fb35767ee7c09",
 "2026-10-17"
 ],
 "cases/gippsland-dairy-twist-yogurt-au-2026.html": [
@@ -3580,19 +3584,19 @@
 "2026-10-16"
 ],
 "cases/gol-ener-spreew-lder-vegetarischer-feinkostsalat-de-2023.html": [
-"e52784b70cfd40cc",
-"2026-10-16"
+"4c5274d079829b93",
+"2026-10-17"
 ],
 "cases/gold-peak-tea-half-gallon-us-2023.html": [
 "0f55b13dd958e3ad",
 "2026-10-16"
 ],
 "cases/graze-kinda-like-a-dark-chocolate-berry-brownie-new-zealand-nz-2026.html": [
-"a265dd198746dc15",
+"38654845265bc7e2",
 "2026-10-17"
 ],
 "cases/graze-tamari-roasted-almonds-new-zealand-nz-2026.html": [
-"01e64d6bc4935060",
+"af5223764744369e",
 "2026-10-17"
 ],
 "cases/great-value-ground-coffee-can-us-2026.html": [
@@ -3624,8 +3628,8 @@
 "2026-10-16"
 ],
 "cases/gut-and-g-nstig-big-choc-schoko-de-2025.html": [
-"1bdb86ce64492459",
-"2026-10-16"
+"9a461b3a831b8094",
+"2026-10-17"
 ],
 "cases/gut-and-g-nstig-feine-beerenmischung-de-2022.html": [
 "8c804140fb501ffa",
@@ -3656,56 +3660,56 @@
 "2026-10-17"
 ],
 "cases/haribo-color-rado-partybox-de-2024.html": [
-"a3580cc8c3d1219f",
-"2026-10-16"
+"e47b42913e40aad8",
+"2026-10-17"
 ],
 "cases/haribo-pico-balla-de-2022.html": [
-"dd8b80a0fc43cc7c",
-"2026-10-16"
+"e97cecaf8a2820f6",
+"2026-10-17"
 ],
 "cases/haribo-roulette-de-2022.html": [
-"8c54cc0e86e24fd8",
-"2026-10-16"
+"7c78d3f34fc583fc",
+"2026-10-17"
 ],
 "cases/haribo-tropifrutti-de-2022.html": [
-"f537fd2cb22287cd",
-"2026-10-16"
+"3d78d37900de3831",
+"2026-10-17"
 ],
 "cases/head-and-shoulders-2-in-1-menthol-fresh-shampoo-nl-2026.html": [
-"7549116a6d899bd4",
-"2026-10-16"
+"7afdaf1c6eab5b1a",
+"2026-10-17"
 ],
 "cases/head-and-shoulders-xxl-classic-clean-de-2024.html": [
-"b0ad5870c1719d2b",
-"2026-10-16"
+"e2a5b33264e18860",
+"2026-10-17"
 ],
 "cases/hebrew-national-franks-us-2010.html": [
 "efb63d2a6db76681",
 "2026-10-16"
 ],
 "cases/hej-organic-nut-bar-dark-chocolate-de-2025.html": [
-"dd564e998603ad81",
-"2026-10-16"
+"eb9f060a4b088af8",
+"2026-10-17"
 ],
 "cases/hershey-s-dark-chocolate-party-size-bag-us-2026.html": [
-"1533ba3885446454",
-"2026-10-16"
+"1d379a87b8df9296",
+"2026-10-17"
 ],
 "cases/hershey-s-halloween-50-mini-candy-bars-ca-2025.html": [
-"b29b2b8f0a892993",
-"2026-10-16"
+"f06c362f191c11be",
+"2026-10-17"
 ],
 "cases/hershey-s-kisses-us-2020.html": [
-"996762ba419174fb",
-"2026-10-16"
+"ef3a3be14014f1a4",
+"2026-10-17"
 ],
 "cases/hershey-s-snack-size-chocolate-bag-us-2025.html": [
-"f1db2287799790ed",
-"2026-10-16"
+"3be619a3c25e9b5d",
+"2026-10-17"
 ],
 "cases/hertog-ijssalon-drie-chocolades-nl-2025.html": [
-"9e401c050396c53d",
-"2026-10-16"
+"96586e7b5407daec",
+"2026-10-17"
 ],
 "cases/hipp-100-bio-direktsaft-karotte-de-2019.html": [
 "9825e2c12f284689",
@@ -3716,8 +3720,8 @@
 "2026-10-16"
 ],
 "cases/hitschler-hitschies-de-2020.html": [
-"f234ca3df0cbfc79",
-"2026-10-16"
+"c592e6606fbcfc04",
+"2026-10-17"
 ],
 "cases/hofgut-basism-sli-zum-selbermischen-de-2020.html": [
 "714114ef01209e27",
@@ -3744,8 +3748,8 @@
 "2026-10-16"
 ],
 "cases/hustenbonbons-de-2022.html": [
-"692bb389dee02cda",
-"2026-10-16"
+"f0e71f53c3084f51",
+"2026-10-17"
 ],
 "cases/iams-xl-dry-dog-food-bag-us-2026.html": [
 "f705988da18987f2",
@@ -3772,7 +3776,7 @@
 "2026-10-16"
 ],
 "cases/index.html": [
-"b477f7e6ad09b300",
+"fbcb0a40df82174b",
 "2026-10-17"
 ],
 "cases/ivory-dish-detergent-us-2010.html": [
@@ -3820,7 +3824,7 @@
 "2026-10-16"
 ],
 "cases/jif-cream-cleanser-au-2024.html": [
-"d00432f01f345dcd",
+"7940a9eecdff5f4a",
 "2026-10-17"
 ],
 "cases/jif-peanut-butter-to-go-cups-us-2024.html": [
@@ -3828,32 +3832,32 @@
 "2026-10-17"
 ],
 "cases/johma-rundvleessalade-nl-2026.html": [
-"a58fbf1ef5b2dc30",
-"2026-10-16"
+"dbcabfe1c7005e79",
+"2026-10-17"
 ],
 "cases/johnny-cashew-honing-zeezout-nl-2025.html": [
-"0c4ea3b9d4d70692",
-"2026-10-16"
+"438e3a7faf52c793",
+"2026-10-17"
 ],
 "cases/johnson-s-baby-shampoo-us-2018.html": [
-"73f125f9c7af385b",
+"5639a8da95ae6eb8",
 "2026-10-17"
 ],
 "cases/jumbo-ananas-stukjes-nl-2024.html": [
-"3c73b6064a9cbc75",
-"2026-10-16"
+"9b3e7c9ebd8f085d",
+"2026-10-17"
 ],
 "cases/jumbo-diepvriescroissants-nl-2024.html": [
 "bbf181a5b63137c8",
 "2026-10-16"
 ],
 "cases/jumbo-macadamiamix-gezouten-nl-2026.html": [
-"3c5433d3871e05da",
-"2026-10-16"
+"f428de5df0b9a227",
+"2026-10-17"
 ],
 "cases/k-gi-fret-classic-de-2024.html": [
-"21697c81c20cf12c",
-"2026-10-16"
+"536340e7b0d09023",
+"2026-10-17"
 ],
 "cases/k-lln-das-original-schoko-hafer-m-sli-de-2024.html": [
 "154468a94b1766ea",
@@ -3868,20 +3872,20 @@
 "2026-10-16"
 ],
 "cases/katjes-family-milchkater-de-2022.html": [
-"963977eecece28d5",
-"2026-10-16"
+"fd3c3580d4ef2793",
+"2026-10-17"
 ],
 "cases/katjes-family-winegums-de-2023.html": [
-"1b9311e7bce0ad87",
-"2026-10-16"
+"33daec59c0e41455",
+"2026-10-17"
 ],
 "cases/katjes-vitaminis-de-2023.html": [
-"103b4d35198ad4d2",
-"2026-10-16"
+"323eca07a002c890",
+"2026-10-17"
 ],
 "cases/katjes-yoghurt-gums-de-2023.html": [
-"881de3c34a12351b",
-"2026-10-16"
+"7b931c9480895934",
+"2026-10-17"
 ],
 "cases/katlenburger-johannisbeer-weinschorle-de-2026.html": [
 "ac1463db36015d6f",
@@ -3940,24 +3944,24 @@
 "2026-10-17"
 ],
 "cases/kettle-chips-sea-salt-and-black-peppercorn-uk-2023.html": [
-"6a1a67d2592dd9a3",
-"2026-10-16"
+"241f28671854983c",
+"2026-10-17"
 ],
 "cases/kettle-chips-sea-salt-de-2023.html": [
-"95d94ec1e24e5a46",
-"2026-10-16"
+"d04ee99663a2c9ad",
+"2026-10-17"
 ],
 "cases/kettle-potato-chips-us-2023.html": [
-"df68968c6449d0bc",
-"2026-10-16"
+"059cc29523a9bde9",
+"2026-10-17"
 ],
 "cases/kinder-brioss-it-2022.html": [
-"72e6118a4aafd895",
-"2026-10-16"
+"631c47657b74e3ef",
+"2026-10-17"
 ],
 "cases/kinder-schokolade-de-2020.html": [
-"2984852d9290e907",
-"2026-10-16"
+"86eff5adec535346",
+"2026-10-17"
 ],
 "cases/kiri-cheese-portion-fr-2021.html": [
 "44e282f6b0122cd5",
@@ -3980,56 +3984,56 @@
 "2026-10-17"
 ],
 "cases/kitkat-chunky-milk-chocolate-easter-egg-uk-2025.html": [
-"64d8a282658f925c",
-"2026-10-16"
+"ad198a077d1f4b0f",
+"2026-10-17"
 ],
 "cases/kitkat-chunky-sammelpack-de-2020.html": [
-"437dd20e70541f0a",
-"2026-10-16"
+"2938d941649a06f8",
+"2026-10-17"
 ],
 "cases/kitkat-mini-eggs-au-2025.html": [
-"8d3c284dfe3b9296",
-"2026-10-16"
+"45dae592f952300a",
+"2026-10-17"
 ],
 "cases/kitkat-minis-de-2021.html": [
-"18eed9dcccb6822d",
-"2026-10-16"
+"5d2493c12522219d",
+"2026-10-17"
 ],
 "cases/kitkat-minis-de-2026.html": [
-"071140ed762d80cd",
-"2026-10-16"
+"71b0958e9f3db4f1",
+"2026-10-17"
 ],
 "cases/kitkat-sammelpackung-de-2021.html": [
-"9b58b02f3f7dd6d5",
-"2026-10-16"
+"a4fcc635b2eb782d",
+"2026-10-17"
 ],
 "cases/kitkat-two-finger-multipack-uk-2023.html": [
-"876cbd719e4023d0",
-"2026-10-16"
+"1ed0b54baf699e93",
+"2026-10-17"
 ],
 "cases/kleenex-box-balsam-de-2021.html": [
-"cca2e7f6ce340211",
+"d6b4ed3993d3bf70",
 "2026-10-17"
 ],
 "cases/kleenex-kosmetikt-cher-ultra-soft-box-de-2022.html": [
-"e0ad20de3da37cbb",
+"e26e372e27099ae1",
 "2026-10-17"
 ],
 "cases/kleenex-kosmetikt-cher-ultra-soft-w-rfelbox-de-2022.html": [
-"a0ee27023aa6ef2a",
+"31ab169ea984f2e9",
 "2026-10-17"
 ],
 "cases/kleenex-original-box-de-2022.html": [
-"ffbda93fb01c9b3a",
+"3e1a986b43e053cd",
 "2026-10-17"
 ],
 "cases/kleenex-ultra-soft-small-box-us-2023.html": [
-"40e1c448d671757e",
+"69d63da8932e1dd3",
 "2026-10-17"
 ],
 "cases/klene-puur-drop-nl-2024.html": [
-"9b736dead7d1549e",
-"2026-10-16"
+"23f917ce2d363ed9",
+"2026-10-17"
 ],
 "cases/knorr-bouillon-mit-rind-de-2022.html": [
 "8e78c883f1f764af",
@@ -4068,8 +4072,8 @@
 "2026-10-16"
 ],
 "cases/kraft-dinner-original-ca-2023.html": [
-"a2a66a2da80b2538",
-"2026-10-16"
+"51dc88005135d286",
+"2026-10-17"
 ],
 "cases/krumiri-bistefani-it-2022.html": [
 "313a64ac8dd74e68",
@@ -4104,24 +4108,24 @@
 "2026-10-17"
 ],
 "cases/lay-s-max-chips-nl-2025.html": [
-"00c03100f6c15d46",
+"924d618d31dff89a",
 "2026-10-17"
 ],
 "cases/lay-s-potato-chips-us-2020.html": [
-"dccaa8c048fea3bc",
+"9c21a06713b909c5",
 "2026-10-17"
 ],
 "cases/lebensbaum-tomaten-gew-rzsalz-de-2024.html": [
-"fb95d4923bdcd57e",
-"2026-10-16"
+"62533a42c96312a2",
+"2026-10-17"
 ],
 "cases/lebkuchen-de-2023.html": [
-"5b03b84e1f86d094",
-"2026-10-16"
+"1a76c4b54f6130d6",
+"2026-10-17"
 ],
 "cases/lebkuchen-schmidt-festtags-dose-de-2025.html": [
-"d6cbf923a61ec359",
-"2026-10-16"
+"923f2a5875d3785f",
+"2026-10-17"
 ],
 "cases/leerdammer-caract-re-de-2022.html": [
 "3ef25035225e0dd7",
@@ -4148,28 +4152,28 @@
 "2026-10-16"
 ],
 "cases/lindt-champagne-gala-box-au-2024.html": [
-"bec19726e022125d",
+"8a7641bf0ec94f78",
 "2026-10-17"
 ],
 "cases/lindt-christmas-medley-bag-au-2024.html": [
-"04afc818eeeefac9",
+"6b950cef7f0f34c7",
 "2026-10-17"
 ],
 "cases/lindt-excellence-cacao-pur-82-cacao-de-2025.html": [
-"c4168f251a9581f4",
+"d5da0e672ca4a839",
 "2026-10-17"
 ],
 "cases/lion-minis-de-2021.html": [
-"0b01b2c949677707",
-"2026-10-16"
+"c197f80abffa812c",
+"2026-10-17"
 ],
 "cases/lion-minis-de-2026.html": [
-"861f7950b450ce1e",
-"2026-10-16"
+"d0731651912ab990",
+"2026-10-17"
 ],
 "cases/lion-sammelpack-de-2021.html": [
-"591a073efd7b26c0",
-"2026-10-16"
+"fb295d94bf1ac1da",
+"2026-10-17"
 ],
 "cases/lipton-russian-earl-grey-nl-2025.html": [
 "8b7176b665af6bda",
@@ -4188,44 +4192,44 @@
 "2026-10-16"
 ],
 "cases/little-debbie-chocolate-cupcakes-us-2025.html": [
-"a1e21c6351b8d9f2",
-"2026-10-16"
+"5376a10010986184",
+"2026-10-17"
 ],
 "cases/lorenz-chipsletten-de-2018.html": [
-"df3ade72163d4b78",
-"2026-10-16"
+"d69a0774035be3fb",
+"2026-10-17"
 ],
 "cases/lorenz-crunchips-cheese-and-onion-de-2022.html": [
 "1ad57035c0131952",
 "2026-10-16"
 ],
 "cases/lorenz-nic-nac-s-original-xl-fun-pack-de-2023.html": [
-"c41a321908b947e1",
-"2026-10-16"
+"9ed3c7e524bb8d3c",
+"2026-10-17"
 ],
 "cases/lorenz-nicnacs-de-2022.html": [
-"42e2689a14e8a0cf",
-"2026-10-16"
+"a7f08e63e16f420a",
+"2026-10-17"
 ],
 "cases/lorenz-saltletts-cocktail-mix-de-2023.html": [
-"9d336aeea397d5ac",
-"2026-10-16"
+"2002f41bcee01a95",
+"2026-10-17"
 ],
 "cases/lorenz-snack-hits-de-2024.html": [
-"feb0069413082b20",
-"2026-10-16"
+"142468fea7fd6d99",
+"2026-10-17"
 ],
 "cases/love-nature-sp-lmittel-verbena-de-2022.html": [
-"fa3861055a3e018c",
-"2026-10-16"
+"1ac2cdb9b8232276",
+"2026-10-17"
 ],
 "cases/ltje-erdn-sse-ger-stet-and-gesalzen-de-2022.html": [
-"03dd1350e8fa0b01",
-"2026-10-16"
+"bca819115fd60fd7",
+"2026-10-17"
 ],
 "cases/ltje-studenten-futter-original-de-2026.html": [
-"c36bf5e6ce3c482e",
-"2026-10-16"
+"c370a03695e1b1d3",
+"2026-10-17"
 ],
 "cases/lurpak-block-butter-uk-2022.html": [
 "353eebd69fdd16ff",
@@ -4236,8 +4240,8 @@
 "2026-10-16"
 ],
 "cases/lysol-wipes-us-2018.html": [
-"f5c6fe22ad7a1ebc",
-"2026-10-16"
+"68f975b9a6f82f3a",
+"2026-10-17"
 ],
 "cases/lyttos-halloumi-de-2023.html": [
 "32a69a19bdc5ca4b",
@@ -4248,8 +4252,8 @@
 "2026-10-16"
 ],
 "cases/m-lange-du-jardin-gew-rzmischung-de-2020.html": [
-"28c861c918a18f67",
-"2026-10-16"
+"4e62fd9f553b2813",
+"2026-10-17"
 ],
 "cases/m-venpick-eis-vanilla-chocolate-de-2026.html": [
 "2dd1b54872f1bae5",
@@ -4268,24 +4272,24 @@
 "2026-10-16"
 ],
 "cases/maltesers-box-of-chocolates-australia-au-2026.html": [
-"f29ca3156ce2a17b",
+"9470fea9ccd93824",
 "2026-10-17"
 ],
 "cases/maltesers-xl-easter-egg-uk-2026.html": [
-"4921677f253b14c1",
-"2026-10-16"
+"999f3e90a0754a2c",
+"2026-10-17"
 ],
 "cases/mandm-s-crispy-easter-egg-uk-2026.html": [
-"6093b85125d1c2c5",
-"2026-10-16"
+"6ae1db08eeb79a43",
+"2026-10-17"
 ],
 "cases/mandm-s-milk-chocolate-fun-size-mini-bags-new-zealand-nz-2026.html": [
-"71824934e4d31042",
+"490d156b8d343012",
 "2026-10-17"
 ],
 "cases/mandm-s-peanut-nl-2026.html": [
-"3fb4e9b1b7630857",
-"2026-10-16"
+"d5c64f99c633041e",
+"2026-10-17"
 ],
 "cases/manhattan-lasting-perfection-compact-make-up-009-honey-de-2024.html": [
 "674fb175508f8e4d",
@@ -4296,20 +4300,20 @@
 "2026-10-16"
 ],
 "cases/marabou-mj-lkchoklad-de-2024.html": [
-"24f01accd39974fd",
-"2026-10-16"
+"dbeabce025054a70",
+"2026-10-17"
 ],
 "cases/maria-nila-extreme-spray-de-2025.html": [
-"7700fe39a5dad02f",
-"2026-10-16"
+"6f771a20a2acb5b4",
+"2026-10-17"
 ],
 "cases/mars-bar-australia-au-2026.html": [
-"ebb9401e9af10e5c",
+"3e5ecf3c389601d6",
 "2026-10-17"
 ],
 "cases/mars-fun-size-halloween-candy-65-mini-bars-ca-2025.html": [
-"e153be39473fccb3",
-"2026-10-16"
+"028b3e9af5beb898",
+"2026-10-17"
 ],
 "cases/maxwell-house-us-2012.html": [
 "39150cc21781545f",
@@ -4340,12 +4344,12 @@
 "2026-10-16"
 ],
 "cases/mein-veggie-tag-veganer-bio-aufschnitt-de-2021.html": [
-"bc6592267e7c63ce",
-"2026-10-16"
+"4510bb737c52ede8",
+"2026-10-17"
 ],
 "cases/mentos-pepermuntballen-nl-2025.html": [
-"d909f8e3c94c9500",
-"2026-10-16"
+"5456f1036e2b3bd5",
+"2026-10-17"
 ],
 "cases/merl-verpoortoccino-dessert-de-2022.html": [
 "8ba5b4a6de1dd8be",
@@ -4356,32 +4360,32 @@
 "2026-10-16"
 ],
 "cases/milka-weihnachtsmann-45-g-de-2020.html": [
-"1387ac0f80339c4c",
-"2026-10-16"
+"75e01da70e9340a2",
+"2026-10-17"
 ],
 "cases/milka-weihnachtsmann-90-g-de-2020.html": [
-"83f1db184f6ad7cd",
-"2026-10-16"
+"e39d7ec655397504",
+"2026-10-17"
 ],
 "cases/milkana-runddose-k-se-vielfalt-de-2023.html": [
-"91fe9333c34c9a2c",
-"2026-10-16"
+"cf88e6939f87ebb2",
+"2026-10-17"
 ],
 "cases/milky-way-nl-2026.html": [
-"1f9cfd359d0fb64f",
-"2026-10-16"
+"07fc8fbd3bc89df3",
+"2026-10-17"
 ],
 "cases/milky-way-us-2021.html": [
-"2cb9c186400041e3",
-"2026-10-16"
+"d1fca4c3345f0472",
+"2026-10-17"
 ],
 "cases/milkybar-buttons-giant-tube-uk-2023.html": [
-"5aa190d7a286f06f",
-"2026-10-16"
+"bacfddd921304657",
+"2026-10-17"
 ],
 "cases/milkyway-multipack-de-2026.html": [
-"5572a096939a2fa9",
-"2026-10-16"
+"39ee17aa66a6aa13",
+"2026-10-17"
 ],
 "cases/milram-fr-hlingsquark-de-2020.html": [
 "0d0ade818463c787",
@@ -4392,16 +4396,16 @@
 "2026-10-16"
 ],
 "cases/mir-coli-pasta-sauce-xxl-basilikum-de-2024.html": [
-"8cd166012e55c3c9",
-"2026-10-16"
+"c8d1b58185a8e53b",
+"2026-10-17"
 ],
 "cases/moser-roth-chocolat-amandes-edel-marzipan-zartbitter-aldi-de-2023.html": [
-"29fd6ff327b0ef80",
-"2026-10-16"
+"684072c5f25bce54",
+"2026-10-17"
 ],
 "cases/moser-roth-chocolat-amandes-mozart-aldi-de-2023.html": [
-"4049092109c8b3b1",
-"2026-10-16"
+"314079bcf9a3ef7b",
+"2026-10-17"
 ],
 "cases/mychoco-mandel-honig-meersalz-de-2023.html": [
 "dc6c1656f4a7aaf6",
@@ -4416,8 +4420,8 @@
 "2026-10-16"
 ],
 "cases/nadler-kartoffelsalat-de-2021.html": [
-"6ff3d95a02899cbc",
-"2026-10-16"
+"2d1a9c5646ee0ffb",
+"2026-10-17"
 ],
 "cases/nathan-s-frankfurters-us-2016.html": [
 "835a8221ba6a4e25",
@@ -4428,24 +4432,24 @@
 "2026-10-16"
 ],
 "cases/naturals-chips-de-2018.html": [
-"fe19c7467d6e46c0",
-"2026-10-16"
+"29a2efa40097dd8e",
+"2026-10-17"
 ],
 "cases/naturals-chips-leicht-de-2018.html": [
-"e039b1a554d1d934",
-"2026-10-16"
+"5811d31e63c7ddf2",
+"2026-10-17"
 ],
 "cases/naturata-sweet-chili-sauce-de-2023.html": [
-"8dd4e659f1e82f7a",
-"2026-10-16"
+"b5594e10e962aafc",
+"2026-10-17"
 ],
 "cases/nature-box-feste-duschpflege-de-2021.html": [
-"54ffd3b55ccab5ad",
-"2026-10-16"
+"56ce406a6e590839",
+"2026-10-17"
 ],
 "cases/naturgut-bio-steinofen-pizza-spinat-feta-de-2026.html": [
-"0ad7488c3e612999",
-"2026-10-16"
+"d5b4aa0751b9dd43",
+"2026-10-17"
 ],
 "cases/nelsen-dish-detergent-it-2022.html": [
 "d961a7b1eff742e3",
@@ -4480,44 +4484,44 @@
 "2026-10-16"
 ],
 "cases/nestl-schokolade-die-weisse-crisp-de-2023.html": [
-"49cdc97d6bc0ca7d",
-"2026-10-16"
+"5bc53f2fa670101d",
+"2026-10-17"
 ],
 "cases/neutrogena-body-lotion-gel-hydro-boost-de-2024.html": [
-"cd279f61abfbac2c",
-"2026-10-16"
+"082905cd77f43c96",
+"2026-10-17"
 ],
 "cases/nidra-soap-bar-it-2024.html": [
-"ef1c4c1790f81c12",
-"2026-10-16"
+"8a8b784014e7a35e",
+"2026-10-17"
 ],
 "cases/nivea-hand-creme-intensive-pflege-de-2021.html": [
-"2999c1be4e8dc3a4",
-"2026-10-16"
+"d213daa2c87ab742",
+"2026-10-17"
 ],
 "cases/nivea-sun-uv-gesicht-anti-age-lsf-50-de-2026.html": [
-"9f055d95ab085351",
-"2026-10-16"
+"83d32295930cf861",
+"2026-10-17"
 ],
 "cases/nocciolata-de-2023.html": [
-"ad378f88970cd698",
-"2026-10-16"
+"53566bdcc3c896bb",
+"2026-10-17"
 ],
 "cases/nocciolata-rigoni-di-asiago-270g-jar-it-2024.html": [
-"e8d6f43daebeb316",
-"2026-10-16"
+"be1f70adb95979aa",
+"2026-10-17"
 ],
 "cases/nocciolata-rigoni-di-asiago-350g-jar-it-2024.html": [
-"4186d186d067efce",
-"2026-10-16"
+"b611f723b06bd5d5",
+"2026-10-17"
 ],
 "cases/nocciolata-rigoni-di-asiago-700g-jar-it-2024.html": [
-"6e515e2f7172feba",
-"2026-10-16"
+"72ccbdf8623a7cb7",
+"2026-10-17"
 ],
 "cases/numis-med-ph-5-5-waschlotion-de-2024.html": [
-"38a78428ddd99e09",
-"2026-10-16"
+"31663dcb11a4f542",
+"2026-10-17"
 ],
 "cases/nutri-source-dog-food-us-2023.html": [
 "9138d504838fc707",
@@ -4528,12 +4532,12 @@
 "2026-10-16"
 ],
 "cases/olivano-s-linsen-bulgursalat-pikant-de-2022.html": [
-"e8fb1a75ded7306b",
-"2026-10-16"
+"579f3d8041bdf056",
+"2026-10-17"
 ],
 "cases/ombia-med-dusch-l-aldi-de-2022.html": [
-"32a227782e7f9b98",
-"2026-10-16"
+"292477bc81dfe3ff",
+"2026-10-17"
 ],
 "cases/oreo-us-2024.html": [
 "f68ca7e673a2a2f6",
@@ -4544,8 +4548,8 @@
 "2026-10-16"
 ],
 "cases/ortega-taco-shells-us-2023.html": [
-"9477d78a1232331b",
-"2026-10-16"
+"1d091d2ff0e9d70d",
+"2026-10-17"
 ],
 "cases/oryza-milchreis-de-2023.html": [
 "95e92bba79301a8d",
@@ -4556,40 +4560,40 @@
 "2026-10-16"
 ],
 "cases/ostmann-b-rlauch-de-2024.html": [
-"c85704a9e2085d23",
-"2026-10-16"
+"0f7f64edc77275bc",
+"2026-10-17"
 ],
 "cases/ostmann-gartenkr-uter-de-2024.html": [
-"68fd173b348f61f3",
-"2026-10-16"
+"d56bd3e3f7c38bf4",
+"2026-10-17"
 ],
 "cases/ostmann-italienische-kr-uter-de-2024.html": [
-"c4d77278e80d1672",
-"2026-10-16"
+"b3073e033035d195",
+"2026-10-17"
 ],
 "cases/ostmann-knoblauch-de-2024.html": [
-"dc24cafb670f0763",
-"2026-10-16"
+"b3883f04a37a0f22",
+"2026-10-17"
 ],
 "cases/ostmann-kr-uter-der-provence-de-2024.html": [
-"6f3e11d59d4c7293",
-"2026-10-16"
+"c57d97ada5bae2ba",
+"2026-10-17"
 ],
 "cases/ostmann-salatkr-uter-de-2024.html": [
-"a832c5a7bb5c388f",
-"2026-10-16"
+"131c26152679dfb1",
+"2026-10-17"
 ],
 "cases/ostmann-schnittlauch-de-2024.html": [
-"6c1ed8e9e7d80e94",
-"2026-10-16"
+"8043c92cb97fe90d",
+"2026-10-17"
 ],
 "cases/ostmann-suppengew-rz-de-2024.html": [
-"6c20827c877e574b",
-"2026-10-16"
+"c287b2d318565a04",
+"2026-10-17"
 ],
 "cases/ostmann-zwiebel-de-2024.html": [
-"a238294d7954966f",
-"2026-10-16"
+"b84bd51b569b37ed",
+"2026-10-17"
 ],
 "cases/ovomaltine-cocoa-austria-at-2023.html": [
 "39a1da72153a99f6",
@@ -4600,72 +4604,72 @@
 "2026-10-16"
 ],
 "cases/pampers-baby-dry-maat-5-nl-2024.html": [
-"895011a624aea019",
-"2026-10-16"
+"d896ea00724cf5b4",
+"2026-10-17"
 ],
 "cases/pantene-pro-v-curl-perfection-conditioner-us-2022.html": [
-"0d890dd7a0f8882a",
-"2026-10-16"
+"e4fb9db37acef585",
+"2026-10-17"
 ],
 "cases/party-pack-hershey-s-miniatures-assortment-us-2024.html": [
-"553e63d1e28c8ead",
-"2026-10-16"
+"bebdbb7cca2edf53",
+"2026-10-17"
 ],
 "cases/party-pack-rolo-chewy-caramels-us-2024.html": [
-"a89c1657ab2cff95",
-"2026-10-16"
+"c13e9931ccce7aac",
+"2026-10-17"
 ],
 "cases/party-size-cheetos-us-2024.html": [
-"c60f9d4b6eec7f64",
-"2026-10-16"
+"6e1d9a78152b7851",
+"2026-10-17"
 ],
 "cases/party-size-dark-chocolate-mandm-s-us-2024.html": [
-"52f9e5a16687962d",
-"2026-10-16"
+"2ca10e3bd5410a9e",
+"2026-10-17"
 ],
 "cases/party-size-milk-chocolate-mandm-s-us-2024.html": [
-"b34d1e5a5db3cdb2",
-"2026-10-16"
+"9248586772200263",
+"2026-10-17"
 ],
 "cases/party-size-nacho-cheese-doritos-us-2024.html": [
-"dd4f278c79a3a004",
-"2026-10-16"
+"2f24346b117bc5d3",
+"2026-10-17"
 ],
 "cases/party-size-original-tostitos-us-2024.html": [
-"50af5aac6676458f",
-"2026-10-16"
+"a16534b35601a1a2",
+"2026-10-17"
 ],
 "cases/party-size-reese-s-miniatures-us-2024.html": [
-"7036da91cf064a15",
-"2026-10-16"
+"94f90e9b14b710b6",
+"2026-10-17"
 ],
 "cases/party-size-sour-cream-and-onion-lay-s-us-2024.html": [
-"39e567bea6a4f298",
+"23a2299584423350",
 "2026-10-17"
 ],
 "cases/peanut-mandms-us-2023.html": [
-"4ea626329264125e",
-"2026-10-16"
+"fe7fd9466377ad80",
+"2026-10-17"
 ],
 "cases/pearl-milling-company-maple-syrup-lite-ca-2021.html": [
 "a196dc73d982675d",
 "2026-10-16"
 ],
 "cases/peberbolcher-zuckerfreie-bonbons-de-2022.html": [
-"45b52015310c371e",
-"2026-10-16"
+"28283288732218fd",
+"2026-10-17"
 ],
 "cases/pedigree-adult-dog-food-brazil-br-2023.html": [
 "b26e53c035aefd0d",
 "2026-10-16"
 ],
 "cases/pedigree-jumbone-riesenknochen-de-2020.html": [
-"1b3adb658ca8fa3e",
-"2026-10-16"
+"9b12ba836422554a",
+"2026-10-17"
 ],
 "cases/pedigree-schmackos-de-2020.html": [
-"ba329a4cb02ea0a3",
-"2026-10-16"
+"df5917d577c7b838",
+"2026-10-17"
 ],
 "cases/peet-s-coffee-us-2022.html": [
 "4432e2eea456d42e",
@@ -4692,8 +4696,8 @@
 "2026-10-16"
 ],
 "cases/pepperidge-farm-gold-fish-us-2023.html": [
-"1b490577e5a00ddf",
-"2026-10-16"
+"005a6b1cbc17f5b6",
+"2026-10-17"
 ],
 "cases/pepsi-cola-large-bottle-spain-es-2022.html": [
 "b713e3bc0af09322",
@@ -4728,8 +4732,8 @@
 "2026-10-16"
 ],
 "cases/piasten-schokolinsen-de-2022.html": [
-"1e3bb55104e7c1cc",
-"2026-10-16"
+"5ceff7b920d4c36a",
+"2026-10-17"
 ],
 "cases/piraqu-maizena-biscuits-br-2023.html": [
 "34fb0e07afef5f3c",
@@ -4740,12 +4744,12 @@
 "2026-10-16"
 ],
 "cases/pommels-original-family-pack-de-2023.html": [
-"3279bce5b3f07008",
-"2026-10-16"
+"45d809f0a5a023dc",
+"2026-10-17"
 ],
 "cases/popp-delikatess-mayonnaise-de-2024.html": [
-"5717430c73012fb7",
-"2026-10-16"
+"36d7b77299364989",
+"2026-10-17"
 ],
 "cases/post-honey-bunches-of-oats-us-2022.html": [
 "bd5f25eed1d654f7",
@@ -4760,35 +4764,35 @@
 "2026-10-16"
 ],
 "cases/pril-kraft-gel-ultra-plus-de-2021.html": [
-"35d8d1b253d4178e",
-"2026-10-16"
+"3280367a67300336",
+"2026-10-17"
 ],
 "cases/primadonna-natives-oliven-l-extra-aus-griechenland-de-2024.html": [
 "02509f98a07b83a4",
 "2026-10-16"
 ],
 "cases/pringles-original-de-2022.html": [
-"46222fa271e636a0",
+"f780c7c5657f5c6e",
 "2026-10-17"
 ],
 "cases/pringles-original-de-2024.html": [
-"a01f7fab41ad3eda",
+"4a380b3b770cd9e3",
 "2026-10-17"
 ],
 "cases/pringles-originals-italy-it-2024.html": [
-"1196d3367ba82dbb",
+"e956a70eeb468b40",
 "2026-10-17"
 ],
 "cases/pringles-tube-australia-au-2015.html": [
-"7499a521492f8aec",
+"c4f0b5fa5d30cc85",
 "2026-10-17"
 ],
 "cases/pringles-tube-uk-uk-2022.html": [
-"dde6314bcbcb76e9",
+"3d849411528ae390",
 "2026-10-17"
 ],
 "cases/pringles-us-2017.html": [
-"9a254a69c8de2017",
+"7c65b915deae500c",
 "2026-10-17"
 ],
 "cases/protein-chunks-hack-de-2023.html": [
@@ -4796,12 +4800,12 @@
 "2026-10-16"
 ],
 "cases/publix-store-brand-baby-shampoo-us-2020.html": [
-"dc2e1846822fb1ca",
+"113045d3af58d660",
 "2026-10-17"
 ],
 "cases/puffs-us-2020.html": [
-"37b42ef4b27f49f4",
-"2026-10-16"
+"8f73bf0f0eac2f7b",
+"2026-10-17"
 ],
 "cases/pure-leaf-tea-half-gallon-us-2025.html": [
 "58b2821f5aa7b748",
@@ -4820,24 +4824,24 @@
 "2026-10-16"
 ],
 "cases/quality-street-orange-crunch-per-sweet-uk-2025.html": [
-"7ae745b3e20ee963",
+"66a4aa89bf692dc9",
 "2026-10-17"
 ],
 "cases/quality-street-purple-one-per-sweet-uk-2025.html": [
-"3d2a32bce477d031",
-"2026-10-16"
+"f93bc0c205daaa6c",
+"2026-10-17"
 ],
 "cases/quality-street-tub-2023-uk-2023.html": [
-"35d180a4421c89da",
-"2026-10-16"
+"26a82b0e6f9e3d8f",
+"2026-10-17"
 ],
 "cases/quality-street-tub-uk-2022.html": [
-"01a272fd83f5d2af",
-"2026-10-16"
+"759df2986b0e9a92",
+"2026-10-17"
 ],
 "cases/quero-tarantella-tomato-sauce-br-2023.html": [
-"af946fb045292d66",
-"2026-10-16"
+"dc1e8612732452cc",
+"2026-10-17"
 ],
 "cases/quilted-northern-mega-roll-us-2026.html": [
 "09685fd7cf2697d9",
@@ -4864,12 +4868,12 @@
 "2026-10-16"
 ],
 "cases/record-normal-binde-de-2022.html": [
-"808f072d0efa66ec",
-"2026-10-16"
+"a5e2aca8f1169eb5",
+"2026-10-17"
 ],
 "cases/red-rock-deli-dips-au-2024.html": [
-"ec17b56cf44c4b7e",
-"2026-10-16"
+"f018dbc385990575",
+"2026-10-17"
 ],
 "cases/redpath-sugar-walmart-test-ca-2024.html": [
 "413db56cb29f881f",
@@ -4884,56 +4888,56 @@
 "2026-10-16"
 ],
 "cases/rewe-beste-wahl-schnitzel-vegan-de-2023.html": [
-"b8d6851e392bb9e2",
-"2026-10-16"
+"99797f3d155abf86",
+"2026-10-17"
 ],
 "cases/rewe-bio-5-korn-m-sli-de-2022.html": [
 "eeb501d93f07d6fb",
 "2026-10-16"
 ],
 "cases/rewe-bio-mehrkorn-landbr-tchen-de-2023.html": [
-"6b1e501d4401299e",
-"2026-10-16"
+"bf35905043ea39e0",
+"2026-10-17"
 ],
 "cases/rewe-bio-mini-salami-de-2026.html": [
-"f8b5d8f1c01f05d2",
-"2026-10-16"
+"f80f1a00682186c4",
+"2026-10-17"
 ],
 "cases/rewe-frei-von-landbrot-de-2026.html": [
-"f6d5c28052fbfa3b",
-"2026-10-16"
+"c969e77542b4c5a3",
+"2026-10-17"
 ],
 "cases/rexim-schulkreide-de-2023.html": [
-"a68d7001472fb8e4",
-"2026-10-16"
+"794434f32b127b67",
+"2026-10-17"
 ],
 "cases/richmond-meat-free-sausages-uk-2022.html": [
 "2a6eb376c053ee74",
 "2026-10-16"
 ],
 "cases/ringsalami-pur-porc-de-2020.html": [
-"b911b4b194ca21d0",
-"2026-10-16"
+"b0ba45e98a1f8dc4",
+"2026-10-17"
 ],
 "cases/rittersport-edelkakao-klasse-die-aromatische-74-de-2026.html": [
 "9e96ca44e8b456c9",
 "2026-10-16"
 ],
 "cases/rituals-dao-body-scrub-de-2020.html": [
-"18ea5313139b181a",
-"2026-10-16"
+"bf05c0cb18109cfa",
+"2026-10-17"
 ],
 "cases/robijn-wascapsules-color-nl-2024.html": [
 "8fe9a4f240967a58",
 "2026-10-16"
 ],
 "cases/romy-kokos-de-2026.html": [
-"1a31bdb0cd74836b",
-"2026-10-16"
+"463edc612f2e3869",
+"2026-10-17"
 ],
 "cases/rowntree-s-jelly-tots-giant-tube-uk-2023.html": [
-"df9a8680ba34f5fd",
-"2026-10-16"
+"05e37a5520ea0f0e",
+"2026-10-17"
 ],
 "cases/sahnekefir-mild-auf-pfirsich-maracuja-de-2022.html": [
 "56b87d7ce9bdb4ef",
@@ -4960,16 +4964,16 @@
 "2026-10-16"
 ],
 "cases/sante-jeden-tag-shampoo-apfel-quitte-de-2020.html": [
-"9246d401ea5d012e",
-"2026-10-16"
+"84951721390efbf4",
+"2026-10-17"
 ],
 "cases/schwip-schwap-zero-cola-and-orange-de-2024.html": [
 "804cbe4a4d4fc4db",
 "2026-10-16"
 ],
 "cases/schwyzer-kr-uterli-sanddorn-orange-de-2024.html": [
-"ccdfcb6a3d543b86",
-"2026-10-16"
+"620a71ed4ea2fa45",
+"2026-10-17"
 ],
 "cases/scott-choose-a-sheet-paper-towels-6-double-rolls-us-2024.html": [
 "7ffa5b7cd2374d9b",
@@ -4980,15 +4984,15 @@
 "2026-10-16"
 ],
 "cases/seapak-popcorn-shrimp-us-2025.html": [
-"2e2ccc3ffde19900",
-"2026-10-16"
+"b55422c05b8d91bb",
+"2026-10-17"
 ],
 "cases/season-sardines-us-2021.html": [
 "32eb489b25cbd9d7",
 "2026-10-16"
 ],
 "cases/secret-deodorant-us-2024.html": [
-"c3c8860bb894160e",
+"34887a3700fbf928",
 "2026-10-17"
 ],
 "cases/seepje-wasmiddel-universeel-nl-2026.html": [
@@ -5020,44 +5024,44 @@
 "2026-10-16"
 ],
 "cases/simply-v-gerieben-pasta-de-2024.html": [
-"1557f1949b21818d",
-"2026-10-16"
+"995e56633271c71b",
+"2026-10-17"
 ],
 "cases/simply-v-gerieben-pizza-de-2024.html": [
-"4d1f9419d6b20234",
-"2026-10-16"
+"795fc39b59142782",
+"2026-10-17"
 ],
 "cases/skin-stories-tattoo-repair-balm-de-2023.html": [
-"0591cb9abc0147f7",
-"2026-10-16"
+"7df435f249a94128",
+"2026-10-17"
 ],
 "cases/smarties-mini-de-2021.html": [
-"dc03927810a06e4f",
-"2026-10-16"
+"fd2f00a9e9087c04",
+"2026-10-17"
 ],
 "cases/smarties-minis-de-2026.html": [
-"df28d6048b0ff8ff",
-"2026-10-16"
+"8143e82a41e9ed6b",
+"2026-10-17"
 ],
 "cases/smarties-sammelpackung-de-2021.html": [
-"1f77f8c6bd9b0df2",
-"2026-10-16"
+"a8530c78f8f29d5e",
+"2026-10-17"
 ],
 "cases/smucker-s-strawberry-jam-large-jar-us-2026.html": [
 "bf271d750d7e065e",
 "2026-10-16"
 ],
 "cases/snickers-ijs-nl-2026.html": [
-"084a6a190fb38658",
-"2026-10-16"
+"2676f0719463d72a",
+"2026-10-17"
 ],
 "cases/sodastream-orangen-geschmack-de-2023.html": [
-"e1688d5d47302af4",
-"2026-10-16"
+"683f1f3a84b6e832",
+"2026-10-17"
 ],
 "cases/somat-gold-multi-aktiv-de-2020.html": [
-"5fd1f5180cfa4628",
-"2026-10-16"
+"6f3d790f1f61fb37",
+"2026-10-17"
 ],
 "cases/sparkle-pick-a-size-paper-towels-6-double-rolls-us-2024.html": [
 "146b53ed63dfed87",
@@ -5068,44 +5072,44 @@
 "2026-10-16"
 ],
 "cases/spee-color-gel-all-in-1-de-2026.html": [
-"663d09972764ab4a",
-"2026-10-16"
+"30f8f5f18b00c0eb",
+"2026-10-17"
 ],
 "cases/spee-megaperls-color-all-in-1-de-2026.html": [
-"c9843b3e4eba06ef",
-"2026-10-16"
+"b75d228c6d022bc9",
+"2026-10-17"
 ],
 "cases/spee-universal-caps-all-in-1-de-2026.html": [
-"d44ca8fdd5d3b62d",
-"2026-10-16"
+"de50b21feb6a15c1",
+"2026-10-17"
 ],
 "cases/sportlife-kauwgum-nl-2024.html": [
-"f5a08d9592f37483",
-"2026-10-16"
+"c72194b2e09ebd67",
+"2026-10-17"
 ],
 "cases/st-hubert-omega-3-margarine-fr-2022.html": [
 "16b09bad3eeaad96",
 "2026-10-16"
 ],
 "cases/steinofen-pizza-mozzarella-spinat-and-feta-de-2022.html": [
-"b60036f320447c1d",
-"2026-10-16"
+"9189acc9d8ff8cf9",
+"2026-10-17"
 ],
 "cases/suchard-express-kakao-de-2023.html": [
 "9a08c56a549610ff",
 "2026-10-16"
 ],
 "cases/sun-all-in-one-vaatwastabletten-nl-2024.html": [
-"f752e2e2656cbae4",
-"2026-10-16"
+"5e0f5d3591dcf19e",
+"2026-10-17"
 ],
 "cases/sweet-n-low-us-2018.html": [
 "806bf592fe24f760",
 "2026-10-16"
 ],
 "cases/swiffer-duster-refills-us-2026.html": [
-"f7c0fab1c280e23c",
-"2026-10-16"
+"fee33578282ae85f",
+"2026-10-17"
 ],
 "cases/syoss-renew-7-sp-lung-wasserlilie-de-2020.html": [
 "dba2170b237d8f97",
@@ -5132,28 +5136,28 @@
 "2026-10-16"
 ],
 "cases/terry-s-chocolate-orange-2025-uk-2025.html": [
-"237daf477bf318cb",
-"2026-10-16"
+"dbc9452ffe3c0047",
+"2026-10-17"
 ],
 "cases/terry-s-chocolate-orange-ball-toffee-crunch-uk-2023.html": [
-"b8f0ef9177c010f1",
-"2026-10-16"
+"286f646dbb21406b",
+"2026-10-17"
 ],
 "cases/terry-s-chocolate-orange-uk-uk-2016.html": [
-"7167f752dc9e4920",
-"2026-10-16"
+"6e45bb52f54d1d95",
+"2026-10-17"
 ],
 "cases/tetesept-johanniskraut-kapseln-de-2023.html": [
 "dd1ce793b8df77f8",
 "2026-10-16"
 ],
 "cases/thomas-bagels-6-pack-us-2026.html": [
-"359055ab6c696b11",
-"2026-10-16"
+"79bdb6664064d1c0",
+"2026-10-17"
 ],
 "cases/thomas-bagels-us-2026.html": [
-"1559f4618a037e34",
-"2026-10-16"
+"55a3954194410200",
+"2026-10-17"
 ],
 "cases/tide-oxi-us-2023.html": [
 "0357dbcf8861b452",
@@ -5168,48 +5172,48 @@
 "2026-10-16"
 ],
 "cases/toblerone-360g-bar-uk-uk-2025.html": [
-"70a7553a6abe418b",
-"2026-10-16"
+"9d7b17204fb9b7b1",
+"2026-10-17"
 ],
 "cases/toblerone-bar-uk-uk-2016.html": [
-"68adca3a6dc3b51a",
-"2026-10-16"
+"f620098363eabab2",
+"2026-10-17"
 ],
 "cases/toblerone-large-bar-uk-uk-2016.html": [
-"60bdfcee03611d77",
-"2026-10-16"
+"f4c738a84f9d3209",
+"2026-10-17"
 ],
 "cases/toblerone-the-edgy-egg-milk-chocolate-easter-egg-uk-2026.html": [
-"78157af58571ebe8",
-"2026-10-16"
+"ec3e83974321dfbe",
+"2026-10-17"
 ],
 "cases/tostitos-hint-of-guacamole-us-2021.html": [
-"e5c386becbf64285",
-"2026-10-16"
+"bc188ab80cffed8b",
+"2026-10-17"
 ],
 "cases/tostitos-hint-of-lime-us-2021.html": [
-"1f54f222b860830a",
-"2026-10-16"
+"fe809a5038230ca0",
+"2026-10-17"
 ],
 "cases/treets-cornflakes-and-peanuts-de-2024.html": [
 "43796fa70cd4b674",
 "2026-10-16"
 ],
 "cases/treets-crispy-de-2024.html": [
-"a678c75a7e1b53c7",
-"2026-10-16"
+"fb8af4c3aa11ee39",
+"2026-10-17"
 ],
 "cases/treets-peanuts-de-2024.html": [
-"a4700d0566429757",
-"2026-10-16"
+"341fae808dc8fdad",
+"2026-10-17"
 ],
 "cases/tresemme-keratin-shampoo-us-2021.html": [
-"e987e2b0d5c19d07",
-"2026-10-16"
+"c61bbc73ba84b95f",
+"2026-10-17"
 ],
 "cases/trolli-saure-gl-hw-rmchen-de-2023.html": [
-"092bff49da6e4726",
-"2026-10-16"
+"91b648ff2793228e",
+"2026-10-17"
 ],
 "cases/tropicana-orange-juice-us-2008.html": [
 "4af1d535bdd9de47",
@@ -5220,8 +5224,8 @@
 "2026-10-16"
 ],
 "cases/trumpf-edle-tropfen-in-nuss-obstbr-nde-de-2026.html": [
-"3f0e82141ea4b468",
-"2026-10-16"
+"b1d3ccf055a2a152",
+"2026-10-17"
 ],
 "cases/tuc-bake-rolls-meersalz-ehemals-7-days-de-2023.html": [
 "a33585d98c46ac27",
@@ -5240,8 +5244,8 @@
 "2026-10-17"
 ],
 "cases/twix-white-chocolate-easter-egg-uk-2025.html": [
-"7692f7197616d9ef",
-"2026-10-16"
+"ca8cd083d9ddb0bd",
+"2026-10-17"
 ],
 "cases/umpqua-frozen-yogurt-us-2023.html": [
 "aac834cf7c58ef66",
@@ -5260,8 +5264,8 @@
 "2026-10-16"
 ],
 "cases/van-melle-toffees-nl-2024.html": [
-"e3771f8b440f7f4e",
-"2026-10-16"
+"6910711ade5ee78c",
+"2026-10-17"
 ],
 "cases/vanish-oxi-action-nl-2024.html": [
 "23f7b3c9c2afd64f",
@@ -5272,28 +5276,28 @@
 "2026-10-16"
 ],
 "cases/vegetarische-m-hlen-salami-minis-de-2023.html": [
-"00a2f18964ef9edc",
-"2026-10-16"
+"3ae66acc1562cd1c",
+"2026-10-17"
 ],
 "cases/vegetarische-m-hlen-w-rstchen-de-2023.html": [
-"52507b6ee0d74186",
-"2026-10-16"
+"7cbbaf770a9ddb77",
+"2026-10-17"
 ],
 "cases/verkade-extra-puur-chocoladereep-nl-2026.html": [
-"65e2f513e54f7c13",
-"2026-10-16"
+"7270d21ea6adeaae",
+"2026-10-17"
 ],
 "cases/vernel-weichsp-ler-hautsensitiv-de-2022.html": [
 "030698a7adcb241e",
 "2026-10-16"
 ],
 "cases/vidal-muschio-bianco-body-wash-large-it-2024.html": [
-"f686e734c0312747",
-"2026-10-16"
+"89571ffc697bf217",
+"2026-10-17"
 ],
 "cases/vim-dish-soap-bar-india-in-2022.html": [
-"61d4486712157f83",
-"2026-10-16"
+"eae1d1d249fdca29",
+"2026-10-17"
 ],
 "cases/vision-zonnebrandmiddel-nl-2024.html": [
 "93e27e7edf869d79",
@@ -5312,12 +5316,12 @@
 "2026-10-16"
 ],
 "cases/vivani-feine-bitter-85-cacao-de-2025.html": [
-"f976707475077f37",
-"2026-10-16"
+"353d306cfdcfe2f3",
+"2026-10-17"
 ],
 "cases/vivil-cremelife-caramel-de-2024.html": [
-"94f80e737b4da8ff",
-"2026-10-16"
+"10df73e1487db3f4",
+"2026-10-17"
 ],
 "cases/walmart-chicken-caesar-salad-us-2021.html": [
 "c87e25d0d9cbe78e",
@@ -5332,12 +5336,12 @@
 "2026-10-16"
 ],
 "cases/werder-bio-tomaten-ketchup-de-2023.html": [
-"91c599b8c744a673",
-"2026-10-16"
+"4d8386b492be4f25",
+"2026-10-17"
 ],
 "cases/werther-s-original-hard-caramels-us-2023.html": [
-"c8cce50279781137",
-"2026-10-16"
+"6c504b33978680e0",
+"2026-10-17"
 ],
 "cases/west-red-tabak-de-2023.html": [
 "577528bb1a555829",
@@ -5364,16 +5368,16 @@
 "2026-10-16"
 ],
 "cases/wiltmann-bio-rein-rind-salami-de-2025.html": [
-"43f790b6242a4c30",
-"2026-10-16"
+"14236edd289106ea",
+"2026-10-17"
 ],
 "cases/wiltmann-rein-rind-salami-de-2025.html": [
-"68f4d0779664e34e",
-"2026-10-16"
+"e0e7f0ff2f7f980e",
+"2026-10-17"
 ],
 "cases/wiltmann-westf-lische-salami-de-2024.html": [
-"ba55b09b666d9cc0",
-"2026-10-16"
+"d2e0fb32252def53",
+"2026-10-17"
 ],
 "cases/winston-volume-tabak-red-de-2020.html": [
 "527b5cce233508a9",
@@ -5396,8 +5400,8 @@
 "2026-10-16"
 ],
 "cases/woolworths-original-salted-corn-chips-au-2024.html": [
-"4cc8c3fbd7bd0a96",
-"2026-10-16"
+"00585a41cca08bc9",
+"2026-10-17"
 ],
 "cases/woolworths-rocky-road-tarts-au-2024.html": [
 "57c1d9f5c766d8c8",
@@ -5412,8 +5416,8 @@
 "2026-10-16"
 ],
 "cases/yogurette-de-2020.html": [
-"8046418027a17381",
-"2026-10-16"
+"54d9b5f370b2bc9d",
+"2026-10-17"
 ],
 "cases/zentis-belmandel-de-2023.html": [
 "7faf3ebd567e906e",
@@ -5428,8 +5432,8 @@
 "2026-10-16"
 ],
 "cases/ziploc-sandwich-bags-us-2025.html": [
-"afcea5d83361ef3c",
-"2026-10-16"
+"55e30c9288da3c19",
+"2026-10-17"
 ],
 "cases/zirkulin-schneller-einschlafen-de-2026.html": [
 "31fd0d203f662561",
@@ -5492,7 +5496,7 @@
 "2026-10-17"
 ],
 "categories/chips-and-snacks.html": [
-"2f4542de353bf2e6",
+"79cde1c3079ae050",
 "2026-10-17"
 ],
 "categories/chips.html": [
@@ -5500,7 +5504,7 @@
 "2026-10-17"
 ],
 "categories/chocolate-and-candy.html": [
-"23ea140c1d816e2b",
+"860447b403159966",
 "2026-10-17"
 ],
 "categories/chocolate-candies.html": [
@@ -5540,7 +5544,7 @@
 "2026-10-17"
 ],
 "categories/dish-and-cleaning.html": [
-"38582a35b432b588",
+"f75aea73d544b4bf",
 "2026-10-17"
 ],
 "categories/dish-soap.html": [
@@ -5592,8 +5596,8 @@
 "2026-10-16"
 ],
 "categories/household.html": [
-"f84033ea0ee7f3dd",
-"2026-10-16"
+"56d48b40083b1df6",
+"2026-10-17"
 ],
 "categories/ice-cream.html": [
 "4afbefc709747ee3",
@@ -5604,7 +5608,7 @@
 "2026-10-17"
 ],
 "categories/index.html": [
-"c41e4cb01d91b4a0",
+"d1af6db780eea9de",
 "2026-10-17"
 ],
 "categories/instant-coffees.html": [
@@ -5612,7 +5616,7 @@
 "2026-10-17"
 ],
 "categories/juice-and-drinks.html": [
-"04bd52cb40090e29",
+"ddb59b958c428151",
 "2026-10-17"
 ],
 "categories/juices.html": [
@@ -5628,8 +5632,8 @@
 "2026-10-16"
 ],
 "categories/laundry.html": [
-"f186d055e73d9b21",
-"2026-10-16"
+"bc4ed8ab29599200",
+"2026-10-17"
 ],
 "categories/mayonnaises.html": [
 "df8c150b36c1c641",
@@ -5668,8 +5672,8 @@
 "2026-10-17"
 ],
 "categories/pasta-rice-and-meals.html": [
-"f63d12be6a9b9519",
-"2026-10-16"
+"813ef6e7527991ef",
+"2026-10-17"
 ],
 "categories/pastas.html": [
 "3baf9763ae4e0ca1",
@@ -5684,7 +5688,7 @@
 "2026-10-16"
 ],
 "categories/personal-care.html": [
-"b6cfac8e6ac9d747",
+"38ce17be2ef24b76",
 "2026-10-17"
 ],
 "categories/pet-food.html": [
@@ -5764,7 +5768,7 @@
 "2026-10-17"
 ],
 "countries/de.html": [
-"e40989650e4dd2cf",
+"081a98c19f71ebbc",
 "2026-10-17"
 ],
 "countries/es.html": [
@@ -5792,7 +5796,7 @@
 "2026-10-17"
 ],
 "countries/nl.html": [
-"8eb48ffcf9fc5382",
+"002e4d87d43e1bc7",
 "2026-10-17"
 ],
 "countries/nz.html": [
@@ -5808,23 +5812,23 @@
 "2026-10-17"
 ],
 "data/index.html": [
-"7737818009f737de",
+"0fe8eacc2e8de2db",
 "2026-10-17"
 ],
 "guides/how-to-spot-shrinkflation.html": [
-"da8dc9229aac509c",
+"15734d9fe669fdf8",
 "2026-10-17"
 ],
 "guides/index.html": [
-"00d5e285f1e45d72",
+"90c6982656c5f329",
 "2026-10-17"
 ],
 "guides/what-is-shrinkflation.html": [
-"3cd43c9d486cde10",
+"0ee6fab3a20199e7",
 "2026-10-17"
 ],
 "index.html": [
-"7da4ae0d3b52938b",
+"717415512938234c",
 "2026-10-17"
 ],
 "new/index.html": [
@@ -6500,7 +6504,7 @@
 "2026-10-17"
 ],
 "products/gillette-cool-wave-deodorant-098190.html": [
-"50b9c426e5aa18c5",
+"91417a0473cb8814",
 "2026-10-17"
 ],
 "products/glad-302964.html": [
@@ -6864,11 +6868,11 @@
 "2026-10-17"
 ],
 "products/kraft-mac-and-cheese-658831.html": [
-"908ada17c7a52b07",
+"7e7bdc558258cdc5",
 "2026-10-17"
 ],
 "products/kraft-real-mayo-creamy-and-smooth-026326.html": [
-"0d79d5114e88062e",
+"1bd69b6766a6b2f4",
 "2026-10-17"
 ],
 "products/kurukahveci-turkish-coffee-023500.html": [
@@ -7632,23 +7636,23 @@
 "2026-10-16"
 ],
 "shrinkflation-2020/index.html": [
-"6cb1b7768da61e95",
+"424b62c706d98ca3",
 "2026-10-17"
 ],
 "shrinkflation-2021/index.html": [
-"5a133f0a9e387952",
+"4aba86aa73fef990",
 "2026-10-17"
 ],
 "shrinkflation-2022/index.html": [
-"360d17f80a798c82",
+"7e4a8631c61c8ef8",
 "2026-10-17"
 ],
 "shrinkflation-2023/index.html": [
-"50c17d23514ecb5c",
+"b986d39134b7cae7",
 "2026-10-17"
 ],
 "shrinkflation-2024/index.html": [
-"cba6b7d45dcd500b",
+"62ec82809a542dfd",
 "2026-10-17"
 ],
 "shrinkflation-2025/index.html": [
@@ -7656,11 +7660,15 @@
 "2026-10-17"
 ],
 "shrinkflation-2026/index.html": [
-"4f16a2d46a8ae118",
+"9d5a3607c3efb75d",
 "2026-10-17"
 ],
 "shrinkflation-examples/index.html": [
-"0ccfefa43b17a134",
+"3d37694a7e06aaeb",
+"2026-10-17"
+],
+"shrinkflation-statistics/index.html": [
+"71870a848baa19f8",
 "2026-10-17"
 ],
 "submit/index.html": [
@@ -7668,7 +7676,7 @@
 "2026-10-17"
 ],
 "worst/index.html": [
-"6e4fe7cfaccb17c5",
+"1fdc4b9d7405d58c",
 "2026-10-17"
 ],
 "years/2008.html": [

@@ -4376,9 +4376,9 @@
 "url": "https://shrinkradar.com/cases/spee-universal-caps-all-in-1-de-2026.html",
 "product": null,
 "brand": "spee",
-"category": "household",
+"category": "laundry",
 "brand_name": "Spee",
-"category_name": "Household"
+"category_name": "Laundry"
 },
 {
 "id": "c:spee-color-gel-all-in-1-de-2026",
@@ -4389,9 +4389,9 @@
 "url": "https://shrinkradar.com/cases/spee-color-gel-all-in-1-de-2026.html",
 "product": null,
 "brand": "spee",
-"category": "household",
+"category": "laundry",
 "brand_name": "Spee",
-"category_name": "Household"
+"category_name": "Laundry"
 },
 {
 "id": "c:bounty-multipack-de-2026",
@@ -4467,9 +4467,9 @@
 "url": "https://shrinkradar.com/cases/spee-megaperls-color-all-in-1-de-2026.html",
 "product": null,
 "brand": "spee",
-"category": "household",
+"category": "laundry",
 "brand_name": "Spee",
-"category_name": "Household"
+"category_name": "Laundry"
 },
 {
 "id": "c:zirkulin-schneller-einschlafen-de-2026",
@@ -4570,9 +4570,9 @@
 "text": "250 g → 225 g (10% less) · Germany, 2026",
 "url": "https://shrinkradar.com/cases/explore-cuisine-organic-red-lentil-penne-de-2026.html",
 "product": null,
-"brand": "explore",
+"brand": "explore-cuisine",
 "category": "pasta-rice-and-meals",
-"brand_name": "Explore",
+"brand_name": "Explore Cuisine",
 "category_name": "Pasta, Rice & Meals"
 },
 {
@@ -5052,9 +5052,9 @@
 "url": "https://shrinkradar.com/cases/schwyzer-kr-uterli-sanddorn-orange-de-2024.html",
 "product": null,
 "brand": "schwyzer",
-"category": "pasta-rice-and-meals",
+"category": "chocolate-and-candy",
 "brand_name": "Schwyzer",
-"category_name": "Pasta, Rice & Meals"
+"category_name": "Chocolate & Candy"
 },
 {
 "id": "c:pfiff-salzbrezeln-de-2024",
@@ -5519,9 +5519,9 @@
 "text": "12 pieces → 10 pieces (17% less) · Germany, 2024",
 "url": "https://shrinkradar.com/cases/billy-boy-l-nger-lieben-de-2024.html",
 "product": null,
-"brand": "billy",
+"brand": "billy-boy",
 "category": "health-and-supplements",
-"brand_name": "Billy",
+"brand_name": "Billy Boy",
 "category_name": "Health & Supplements"
 },
 {
@@ -5831,9 +5831,9 @@
 "text": "100 g → 80 g (20% less) · Germany, 2024",
 "url": "https://shrinkradar.com/cases/simply-v-gerieben-pasta-de-2024.html",
 "product": null,
-"brand": "simply-orange",
+"brand": "simply-v",
 "category": "pasta-rice-and-meals",
-"brand_name": "Simply Orange",
+"brand_name": "Simply V",
 "category_name": "Pasta, Rice & Meals"
 },
 {
@@ -5844,9 +5844,9 @@
 "text": "200 g → 180 g (10% less) · Germany, 2024",
 "url": "https://shrinkradar.com/cases/simply-v-gerieben-pizza-de-2024.html",
 "product": null,
-"brand": "simply-orange",
+"brand": "simply-v",
 "category": "pasta-rice-and-meals",
-"brand_name": "Simply Orange",
+"brand_name": "Simply V",
 "category_name": "Pasta, Rice & Meals"
 },
 {
@@ -5909,9 +5909,9 @@
 "text": "50 ml → 40 ml (20% less) · Germany, 2023",
 "url": "https://shrinkradar.com/cases/skin-stories-tattoo-repair-balm-de-2023.html",
 "product": null,
-"brand": "skin",
+"brand": "skin-stories",
 "category": "health-and-supplements",
-"brand_name": "Skin",
+"brand_name": "Skin Stories",
 "category_name": "Health & Supplements"
 },
 {
@@ -5935,9 +5935,9 @@
 "text": "180 g → 165 g (8% less) · Germany, 2023",
 "url": "https://shrinkradar.com/cases/vegetarische-m-hlen-salami-minis-de-2023.html",
 "product": null,
-"brand": "vegetarische",
+"brand": "r-genwalder-m-hle",
 "category": "pasta-rice-and-meals",
-"brand_name": "Vegetarische",
+"brand_name": "Rügenwalder Mühle",
 "category_name": "Pasta, Rice & Meals"
 },
 {
@@ -5948,9 +5948,9 @@
 "text": "200 g → 165 g (18% less) · Germany, 2023",
 "url": "https://shrinkradar.com/cases/vegetarische-m-hlen-w-rstchen-de-2023.html",
 "product": null,
-"brand": "vegetarische",
+"brand": "r-genwalder-m-hle",
 "category": "meat-and-fish",
-"brand_name": "Vegetarische",
+"brand_name": "Rügenwalder Mühle",
 "category_name": "Meat & Fish"
 },
 {
@@ -6157,9 +6157,9 @@
 "url": "https://shrinkradar.com/cases/sodastream-orangen-geschmack-de-2023.html",
 "product": null,
 "brand": "sodastream",
-"category": "pasta-rice-and-meals",
+"category": "juice-and-drinks",
 "brand_name": "Sodastream",
-"category_name": "Pasta, Rice & Meals"
+"category_name": "Juice & Drinks"
 },
 {
 "id": "c:protein-chunks-hack-de-2023",
@@ -6235,9 +6235,9 @@
 "url": "https://shrinkradar.com/cases/always-dailies-cotton-protection-slipeinlagen-normal-de-2023.html",
 "product": null,
 "brand": "always",
-"category": "household",
+"category": "personal-care",
 "brand_name": "Always",
-"category_name": "Household"
+"category_name": "Personal Care"
 },
 {
 "id": "c:kovital-bio-helix-lakritzschnecken-de-2023",
@@ -6390,9 +6390,9 @@
 "text": "250 g → 200 g (20% less) · Germany, 2023",
 "url": "https://shrinkradar.com/cases/chef-select-salat-budapester-art-de-2023.html",
 "product": null,
-"brand": "chef",
+"brand": "chef-select",
 "category": "pasta-rice-and-meals",
-"brand_name": "Chef",
+"brand_name": "Chef Select",
 "category_name": "Pasta, Rice & Meals"
 },
 {
@@ -7054,9 +7054,9 @@
 "url": "https://shrinkradar.com/cases/record-normal-binde-de-2022.html",
 "product": null,
 "brand": "record",
-"category": "household",
+"category": "personal-care",
 "brand_name": "Record",
-"category_name": "Household"
+"category_name": "Personal Care"
 },
 {
 "id": "c:zetti-cocos-flocken-de-2022",
@@ -7144,9 +7144,9 @@
 "text": "250 ml → 240 ml (4% less) · Germany, 2022",
 "url": "https://shrinkradar.com/cases/block-house-american-dressing-de-2022.html",
 "product": null,
-"brand": "block",
+"brand": "block-house",
 "category": "pasta-rice-and-meals",
-"brand_name": "Block",
+"brand_name": "Block House",
 "category_name": "Pasta, Rice & Meals"
 },
 {
@@ -7456,9 +7456,9 @@
 "text": "460 g → 410 g (11% less) · Germany, 2022",
 "url": "https://shrinkradar.com/cases/steinofen-pizza-mozzarella-spinat-and-feta-de-2022.html",
 "product": null,
-"brand": "steinofen-pizza",
+"brand": "rewe",
 "category": "pasta-rice-and-meals",
-"brand_name": "Steinofen-Pizza",
+"brand_name": "Rewe",
 "category_name": "Pasta, Rice & Meals"
 },
 {
@@ -7937,9 +7937,9 @@
 "text": "140 g → 70 g (50% less) · Germany, 2021",
 "url": "https://shrinkradar.com/cases/mein-veggie-tag-veganer-bio-aufschnitt-de-2021.html",
 "product": null,
-"brand": "mein",
+"brand": "mein-veggie-tag",
 "category": "pasta-rice-and-meals",
-"brand_name": "Mein",
+"brand_name": "Mein Veggie Tag",
 "category_name": "Pasta, Rice & Meals"
 },
 {
@@ -7951,9 +7951,9 @@
 "url": "https://shrinkradar.com/cases/bref-power-wc-kraftgel-gegen-99-9-der-bakterien-de-2021.html",
 "product": null,
 "brand": "bref",
-"category": "household",
+"category": "dish-and-cleaning",
 "brand_name": "Bref",
-"category_name": "Household"
+"category_name": "Dish & Cleaning"
 },
 {
 "id": "c:pril-kraft-gel-ultra-plus-de-2021",
@@ -7963,10 +7963,10 @@
 "text": "500 ml → 450 ml (10% less) · Germany, 2021",
 "url": "https://shrinkradar.com/cases/pril-kraft-gel-ultra-plus-de-2021.html",
 "product": null,
-"brand": "kraft",
-"category": "household",
-"brand_name": "Kraft",
-"category_name": "Household"
+"brand": "pril",
+"category": "dish-and-cleaning",
+"brand_name": "Pril",
+"category_name": "Dish & Cleaning"
 },
 {
 "id": "c:penny-happy-end-feuchtes-toilettenpapier-de-2021",
@@ -8055,9 +8055,9 @@
 "url": "https://shrinkradar.com/cases/ebelin-nagellack-entferner-acetonfrei-aloe-vera-duft-de-2020.html",
 "product": null,
 "brand": "ebelin",
-"category": "household",
+"category": "personal-care",
 "brand_name": "Ebelin",
-"category_name": "Household"
+"category_name": "Personal Care"
 },
 {
 "id": "c:iglo-rahm-spinat-de-2020",
@@ -8393,9 +8393,9 @@
 "url": "https://shrinkradar.com/cases/gillette-rasierklingen-de-2020.html",
 "product": null,
 "brand": "gillette",
-"category": "household",
+"category": "personal-care",
 "brand_name": "Gillette",
-"category_name": "Household"
+"category_name": "Personal Care"
 },
 {
 "id": "c:pedigree-jumbone-riesenknochen-de-2020",
@@ -8731,9 +8731,9 @@
 "url": "https://shrinkradar.com/cases/jumbo-macadamiamix-gezouten-nl-2026.html",
 "product": null,
 "brand": "jumbo",
-"category": "pasta-rice-and-meals",
+"category": "chips-and-snacks",
 "brand_name": "Jumbo",
-"category_name": "Pasta, Rice & Meals"
+"category_name": "Chips & Snacks"
 },
 {
 "id": "c:dettol-original-allesreiniger-nl-2026",

@@ -70,6 +70,12 @@ blockquote.q{margin:0;padding:var(--s3);background:var(--panel);border-left:4px 
 #md{width:100%;font:400 .875rem ui-monospace,monospace;padding:.6rem;border:2px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:0;resize:vertical}
 .st{min-height:1.2em;margin:var(--s2) 0;font-weight:700}
 .label .big.no{color:var(--ok)}.label .big.yes{color:var(--sig)}[hidden]{display:none!important}
+.bars td.bc{width:60%}.bars .bw{display:flex;align-items:center;gap:.4rem}.bars .bar{display:block;flex:none;height:.9rem;background:var(--ink)}.bars tr.mx .bar{background:var(--sig)}.bars tbody tr:first-child td{font-weight:400}.bars td.bc b{font-weight:900}
+.cols{margin:var(--s3) 0;background:var(--panel);border:1px solid var(--hair);border-bottom:4px solid var(--ink);padding:var(--s3) var(--s2) 0}.cols .cw{display:flex;align-items:flex-end;gap:2px;height:14rem}
+.cols .col{flex:1 1 0;min-width:0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}.cols .cb{display:block;width:100%;max-width:3rem;background:var(--ink)}.cols .col.pt .cb{background:repeating-linear-gradient(45deg,var(--ink) 0 4px,var(--muted) 4px 8px)}
+.cols figcaption{padding:.3rem 0 .4rem}.cols .cv{font-size:.75rem;font-weight:900;margin-bottom:2px}.cols .cx{font-size:.7rem;color:var(--muted);padding:.3rem 0;writing-mode:horizontal-tb}
+details{margin:var(--s2) 0}summary{cursor:pointer;font-weight:700;font-size:.875rem}
+@media(max-width:600px){.cols .cx{font-size:.6rem;transform:rotate(-45deg);transform-origin:center;padding:.6rem 0 .2rem}.cols .cv{font-size:.6rem}.bars td.bc{width:50%}}
 footer{border-top:8px solid var(--ink);background:var(--panel);padding:var(--s4) 0;font-size:.875rem;color:var(--muted)}
 footer a{color:var(--ink)}
 @media(max-width:600px){.tag{display:none}.hide-s{display:none}td,th{padding:.45rem .3rem}.calc{grid-template-columns:1fr;gap:var(--s2)}.calc fieldset{padding:var(--s2)}.calc input,.calc select,.calc textarea{font-size:1rem;padding:.65rem .6rem}.submit-actions button{width:100%}.alert .row{flex-direction:column;align-items:stretch}.alert input[type=email],.alert button{width:100%;flex:none}}
@@ -339,7 +345,7 @@ def guides(cases,prods,bg,cg,med,yl=()):
       f'<li><b>Skimpflation</b>: price and size stay, quality drops (cheaper ingredients, fewer features). It is the hardest to measure, and we do not track it.</li></ul>'
       f'<p>Official inflation figures generally do count shrinkflation, because statistics agencies measure price per unit. A single shopper buying the same box every week usually does not notice it.</p>'
       f'<h2>How common is it?</h2><p>Our library holds <a href="/cases/">{n} documented cases</a> from {nct} countries. The median cut is {mcut:.1f}%. The largest is {E(w["product"])}: {fmt(w["before"],w["unit"])} → {fmt(w["after"],w["unit"])} (<a href="/cases/{w["slug"]}.html">−{w["pct"]:.1f}%</a>). '
-      f'Where the source also recorded the shelf price before and after ({len(pr)} cases), {up} got more expensive per unit. The <a href="/worst/">worst offenders</a> page ranks them.</p>'
+      f'Where the source also recorded the shelf price before and after ({len(pr)} cases), {up} got more expensive per unit. The <a href="/worst/">worst offenders</a> page ranks them, and <a href="/shrinkflation-statistics/">shrinkflation statistics</a> charts the whole library by year, category and country.</p>'
       f'<h2>How ShrinkRadar documents it</h2><ul><li><b>Daily checks.</b> We record the net quantity and the most recent price of <a href="/products/">{np_} everyday products</a> every day from Open Food Facts, Open Products Facts and Open Prices. Any drop is logged as a finding on the homepage.</li>'
       f'<li><b>Sourced cases.</b> Historical before/after cuts come from consumer agencies (e.g. Verbraucherzentrale Hamburg, Consumentenbond, Which?, CHOICE), the Mouse Print* archive, and news investigations. Each case links the source and quotes what it says. If we cannot verify a case, we leave it out.</li>'
       f'<li><b>No estimates.</b> Missing data is shown as missing.</li></ul>'
@@ -434,7 +440,7 @@ def open_data(cases):
       '<li>Daily product snapshots (sizes and prices of the products we track) derive from Open Food Facts, Open Products Facts and Open Prices under the ODbL and are not part of this download.</li></ul>'
       f'<h2>How to cite</h2><blockquote class="q">{E(cite)}</blockquote><p>When you quote a single case, link its case page or the original source in the <code>source_url</code> column.</p>'
       '<h2>Corrections</h2><p>Found an error or a missing case? <a href="/submit/">Submit a sighting</a> or open an issue on <a href="https://github.com/Mangomangoman1/shrinkflation/issues">GitHub</a>.</p>'
-      '<p>Browse the same data as a table in <a href="/cases/">known cases</a>, ranked in <a href="/worst/">worst offenders</a>, or by year: '+", ".join(f'<a href="/shrinkflation-{y}/">{y}</a>' for y in LAND_YEARS)+'.</p></div>')
+      '<p>See it in charts on <a href="/shrinkflation-statistics/">shrinkflation statistics</a>. Browse the same data as a table in <a href="/cases/">known cases</a>, ranked in <a href="/worst/">worst offenders</a>, or by year: '+", ".join(f'<a href="/shrinkflation-{y}/">{y}</a>' for y in LAND_YEARS)+'.</p></div>')
     page("data/index.html",[f'Shrinkflation open data: {len(rows)} cases (CSV, JSON) | {NAME}',f'Shrinkflation open data: {len(rows)} cases (CSV, JSON)'],
          f'Download {len(rows)} documented shrinkflation cases as CSV or JSON: before/after sizes, prices, dates, countries and sources. Free under CC BY 4.0.',body,
          [crumbs(("Known cases","/cases/"),("Open data",None)),dataset_ld(cases,SITE+"/data/")])
@@ -567,7 +573,7 @@ def examples_page(cases,bg,cg,med):
       +(f'<h2 id="world">Examples from Europe and beyond</h2><p class="prose m">Germany and the Netherlands have the longest lists because their consumer agencies publish every case they confirm.</p>{hd}'+"".join(rr(c) for c in world)+'</tbody></table></div>' if world else "")
       +'<p class="m">By country: '+" · ".join(f'<a href="/countries/{k.lower()}.html">{E(COUNTRY.get(k,k))}</a>' for k in sorted({c["country"] for c in cases},key=lambda k:(-sum(1 for c in cases if c["country"]==k),k)))+'. '
       +(f'By year: '+" · ".join(f'<a href="/shrinkflation-{y}/">{y}</a>' for y in LAND_YEARS)+'. ' if LAND_YEARS else "")
-      +'Biggest cuts and hidden price hikes: <a href="/worst/">worst offenders</a>. New this week: <a href="/new/">latest additions</a>.</p>'
+      +'Biggest cuts and hidden price hikes: <a href="/worst/">worst offenders</a>. Charts by year, category and country: <a href="/shrinkflation-statistics/">shrinkflation statistics</a>. New this week: <a href="/new/">latest additions</a>.</p>'
       +faq_html(qa))
     ld=[crumbs(("Known cases","/cases/"),("Shrinkflation examples",None)),article_ld(t,d,u,EX_PUB),
         {"@context":"https://schema.org","@type":"ItemList","name":"Shrinkflation examples","numberOfItems":n,"itemListElement":[{"@type":"ListItem","position":i+1,"url":f'{SITE}/cases/{c["slug"]}.html',"name":c["product"]} for i,c in enumerate(uniq)]},faq_ld(qa)]
@@ -647,6 +653,109 @@ def country_page(k,v,cases,ccard,med):
     t=f"Shrinkflation in {nm}: {n} documented case{'s'*(n!=1)}"
     d=f'Yes, shrinkflation has hit {nm}: {n} documented case{"s"*(n!=1)}{f" ({span})" if span else ""}, median cut {mc:.0f}%, biggest {w["product"]} (−{w["pct"]:.0f}%). Before/after sizes and sources.'
     page(f'countries/{k.lower()}.html',[f"{t} | {NAME}",t,f"Shrinkflation in {nm}: {n} cases"],d,body,[crumbs(("Known cases","/cases/"),("Countries","/countries/"),(COUNTRY.get(k,k),None)),faq_ld(qa)])
+ST_PUB="2026-10-17"
+def bars_table(rows,head,vmax=None,cls=""):
+    """Horizontal bar chart as a real table: rows=[(label_html,value,value_text,extra_html)]. Readable without CSS and by screen readers."""
+    vmax=vmax or max((r[1] for r in rows),default=1) or 1; top=max((r[1] for r in rows),default=None)
+    hs=bool(rows) and "hide-s" in rows[0][3]
+    return (f'<div class="tw"><table class="bars{(" "+cls) if cls else ""}"><thead><tr>'+"".join(f'<th{(" class=\"n hide-s\"" if hs and i==len(head)-1 and i>1 else " class=n") if i>1 else ""}>{h}</th>' for i,h in enumerate(head))+'</tr></thead><tbody>'
+      +"".join(f'<tr{" class=mx" if v==top else ""}><td>{l}</td><td class="bc"><div class="bw"><span class="bar" style="width:{max(v/vmax*85,0.8):.1f}%"></span><b>{vt}</b></div></td>{x}</tr>' for l,v,vt,x in rows)+'</tbody></table></div>')
+def cols_chart(pts,label,fmt_=lambda v:str(v),hi=None):
+    """Vertical column chart (CSS). pts=[(x_label,value)]; hi = x label to highlight (e.g. partial year)."""
+    vmax=max((v for _,v in pts),default=1) or 1
+    return (f'<figure class="cols" role="img" aria-label="{E(label)}"><div class="cw">'
+      +"".join(f'<div class="col{" pt" if x==hi else ""}"><span class="cv">{fmt_(v)}</span><span class="cb" style="height:{max(v/vmax*100,1):.1f}%"></span><span class="cx">{E(x)}</span></div>' for x,v in pts)
+      +'</div>'+(f'<figcaption class="m">Hatched bar: {E(hi)} so far (partial year).</figcaption>' if hi else '')+'</figure>')
+def stats_page(cases,prods,bg,cg,med):
+    """/shrinkflation-statistics/: charts and key numbers computed from the live case library."""
+    n=len(cases); pct=[c["pct"] for c in cases]; mc=med(pct); mean=sum(pct)/n; mr=med([unit_rise(c) for c in cases])
+    yrs={}
+    for c in cases:
+        if c["year"]!="n/d": yrs.setdefault(c["year"],[]).append(c)
+    y0=min(int(y) for y in yrs); y1=max(int(y) for y in yrs)
+    yfrom=next(y for y in range(y0,y1+1) if sum(len(yrs.get(str(k),[])) for k in range(y,y1+1))>=0.9*sum(len(v) for v in yrs.values()))
+    ypts=[(str(y),len(yrs.get(str(y),[]))) for y in range(max(yfrom,2015),y1+1)]
+    early=sum(len(v) for k,v in yrs.items() if int(k)<max(yfrom,2015))
+    peak=max(ypts,key=lambda p:p[1])
+    myr=[(y,med([c["pct"] for c in yrs[y]]),len(yrs[y])) for y,_ in ypts if len(yrs.get(y,[]))>=10]
+    priced=[c for c in cases if c["real"] is not None]; up=[c for c in priced if c["real"]>0.05]; same=[c for c in priced if abs(c["real"])<=0.05]
+    pup=len(up)/len(priced)*100 if priced else 0; mreal=med([c["real"] for c in up]) if up else 0
+    # cut-size histogram
+    edges=[(0,5),(5,10),(10,15),(15,20),(20,25),(25,30),(30,40),(40,101)]
+    hist=[(f"{a}–{b}%" if b<101 else f"{a}% or more",sum(1 for p in pct if a<=p<b)) for a,b in edges]
+    small=sum(1 for p in pct if p<10); big=sum(1 for p in pct if p>=20)
+    # units
+    W={"g","oz","kg","lb"}; V={"ml","fl oz","l","cl"}
+    ug={"Weight (g, oz)":0,"Volume (ml, fl oz)":0,"Count (sheets, pieces, loads…)":0}
+    for c in cases: ug["Weight (g, oz)" if c["unit"] in W else "Volume (ml, fl oz)" if c["unit"] in V else "Count (sheets, pieces, loads…)"]+=1
+    # categories, countries, brands, sources
+    cats=sorted([(k,v) for k,v in cg.items() if k!="Other"],key=lambda kv:(-len(kv[1]),kv[0]))
+    ctry={}
+    for c in cases: ctry.setdefault(c["country"],[]).append(c)
+    ctr=sorted(ctry.items(),key=lambda kv:(-len(kv[1]),kv[0]))
+    reps=sorted([(k,v) for k,v in bg.items() if len(v)>=4],key=lambda kv:(-len(kv[1]),kv[1][0]["brand"]))[:15]
+    srcs={}
+    for c in cases: srcs.setdefault(dom_of(c),[]).append(c)
+    srcl=sorted(srcs.items(),key=lambda kv:(-len(kv[1]),kv[0]))[:10]
+    deep=[(k,med([c["pct"] for c in v]),len(v)) for k,v in cats if len(v)>=8]; deep.sort(key=lambda x:-x[1])
+    nb=len(bg); topc=cats[0]; topctry=ctr[0]; enc=[kv for kv in ctr if kv[0] in EN_MARKETS]
+    u="/shrinkflation-statistics/"
+    t=f"Shrinkflation statistics {y1}: {n} cases in charts"
+    d=(f"Shrinkflation statistics from {n} documented cases: the median pack got {mc:.1f}% smaller (a {mr:.1f}% hidden price rise). Charts by year, category, country and brand, with sources.")
+    allup=priced and len(up)==len(priced)
+    pr_line=((f"Where the source also recorded the shelf price ({len(priced)} cases), <b>every one</b> got more expensive per unit, by a median of {mreal:.1f}%." if allup else
+              f"Where the source also recorded the shelf price ({len(priced)} cases), <b>{pup:.0f}%</b> got more expensive per unit, by a median of {mreal:.1f}%.") if priced else "")
+    qa=[("How common is shrinkflation?",f"Very common in packaged groceries. We have documented {n} cases from {len(ctry)} countries and {nb} brands, each with a source, and they are only the cases that a consumer agency, advocate or reporter caught and published. The real number is much higher."),
+        ("How much do products shrink on average?",f"The median documented pack got {mc:.1f}% smaller (mean {mean:.1f}%). That is a {mr:.1f}% price rise per gram, millilitre or sheet if the shelf price stayed the same. {small} cases ({small/n*100:.0f}%) cut less than 10%, small enough to go unnoticed, and {big} ({big/n*100:.0f}%) cut 20% or more."),
+        ("Which products shrink the most?",f"By number of cases: {', '.join(f'{k.lower()} ({len(v)})' for k,v in cats[:4])}. By size of the cut, the deepest median cuts are in "+", ".join(f"{k.lower()} (−{m:.1f}%)" for k,m,_ in deep[:3])+"."),
+        ("Is shrinkflation getting worse?",f"Documented cases jumped from 2020 on: {', '.join(f'{y}: {v}' for y,v in ypts if int(y)>=2020)}. The peak so far is {peak[0]} with {peak[1]} cases. {y1} is only counted up to {TODAY}, so it is not a full year yet. Part of the rise is more reporting, since agencies and newspapers started tracking shrinkflation closely during the 2021–2023 inflation spike."),
+        ("Which country has the most shrinkflation?",f"In our library, {COUNTRY.get(topctry[0],topctry[0])} ({len(topctry[1])} cases), because Verbraucherzentrale Hamburg publishes every case it confirms. Among English-speaking markets: "+", ".join(f"{COUNTRY.get(k,k)} {len(v)}" for k,v in enc)+". That reflects who reports cases, not a measured rate per country."),
+        ("Does the price go down when the pack shrinks?",((f"Not in our records. {pr_line.replace('<b>','').replace('</b>','')} " if allup else f"Rarely. {pr_line.replace('<b>','').replace('</b>','')} Only {len(priced)-len(up)} stayed the same per unit or got cheaper. ")+"Most of these prices come from consumer agencies that log a pack only when it got dearer per unit, so this shows how big the hidden rises are, not how often a smaller pack comes with a fair price cut.") if priced else "Most sources record only the size."),
+        ("Can I use these statistics?",f'Yes. The whole case library is free to download as CSV or JSON under CC BY 4.0 on <a href="/data/">open data</a>. Please cite "{NAME}" and link this page or the case page.')]
+    redges=[(0,10),(10,20),(20,30),(30,50),(50,100),(100,10**6)]
+    rh=[(f"+{a}–{b}%" if b<10**6 else f"+{a}% or more",sum(1 for c in up if a<=c["real"]<b)) for a,b in redges]
+    rise_tbl=bars_table([(l,v,str(v),f'<td class="n hide-s">{v/len(up)*100:.0f}%</td>') for l,v in rh],["Real rise per unit","Cases","Share"]) if up else ""
+    stat_row=lambda l,v,cls="": f'<div class="row"><span>{l}</span><b{f" class={cls}" if cls else ""}>{v}</b></div>'
+    ymed={y:med([c["pct"] for c in v]) for y,v in yrs.items()}
+    yr_tbl=bars_table([(y,v,str(v),f'<td class="n hide-s">−{ymed[y]:.1f}%</td>' if y in ymed else '<td class="n hide-s">—</td>') for y,v in ypts],["Year","Cases","Median cut"])
+    body=(f'<p class="crumbs"><a href="/guides/">Guides</a> / Statistics</p><h1>Shrinkflation statistics</h1>'
+      f'<p class="m">By {NAME} · Updated {TODAY} · Computed from our live case library on every build</p>'
+      f'<p class="prose">These numbers come from <b>{n} documented shrinkflation cases</b>: packs that got smaller while the price stayed the same or rose, each recorded by a consumer agency, consumer advocate or news report that we link. The typical pack lost <b>{mc:.1f}%</b> of its contents, which is a <b>{mr:.1f}% hidden price rise</b> per unit. {pr_line}</p>'
+      f'<section class="label" aria-label="Key numbers"><div class="hd">Shrinkflation Facts</div>'
+      +stat_row("Documented cases",f"{n}")+stat_row("Brands",f"{nb}")+stat_row("Countries",f"{len(ctry)}")+stat_row("Years covered",f"{y0}–{y1}")
+      +f'<div class="row bar"><span>Median size cut</span><b class="yes">−{mc:.1f}%</b></div>'
+      +stat_row("Hidden price rise (median, same price)",f"+{mr:.1f}%")+stat_row("Biggest cut",f'−{max(pct):.1f}%')
+      +(stat_row("Real price rise per unit (median, priced cases)",f"+{mreal:.1f}%") if priced else "")
+      +stat_row("Busiest year so far",f"{peak[0]} ({peak[1]})")
+      +f'<p>Cases only count once we can source them. See <a href="#method">how these are counted</a>.</p></section>'
+      +'<p class="chips"><a href="#year">By year</a><a href="#size">Size of the cut</a><a href="#category">By category</a><a href="#country">By country</a><a href="#brands">Brands</a><a href="#price">Price per unit</a><a href="#sources">Sources</a><a href="#faq">FAQ</a></p>'
+      +f'<h2 id="year">Shrinkflation cases by year</h2><p class="prose">Documented cases by the year the pack changed (or was reported). The jump starts in 2020 and peaks in {peak[0]}. {y1} counts cases up to {TODAY} only.'+(f' {early} older cases from {y0} to {max(yfrom,2015)-1} are left off the chart.' if early else "")+'</p>'
+      +cols_chart(ypts,f"Bar chart of documented shrinkflation cases per year, {ypts[0][0]} to {ypts[-1][0]}. Peak {peak[0]} with {peak[1]} cases.",hi=str(y1))
+      +f'<details><summary>Cases and median cut by year (table)</summary>{yr_tbl}</details>'
+      +(f'<p class="prose">The typical cut per year has ranged from −{min(m for _,m,_ in myr):.1f}% to −{max(m for _,m,_ in myr):.1f}%: '+", ".join(f"{y} −{m:.1f}%" for y,m,_ in myr)+' (median, years with 10 or more cases).</p>' if myr else "")
+      +f'<h2 id="size">How much smaller do packs get?</h2><p class="prose">Many cuts are small enough to miss on the shelf. {small} of {n} cases ({small/n*100:.0f}%) took away less than 10%, and the most common range is {max(hist,key=lambda h:h[1])[0]}. {big} cases ({big/n*100:.0f}%) cut 20% or more.</p>'
+      +bars_table([(l,v,str(v),f'<td class="n hide-s">{v/n*100:.0f}%</td>') for l,v in hist],["Size cut","Cases","Share"])
+      +'<p class="prose m">A cut of x% raises the price per unit by x ÷ (100 − x) if the price stays put: 10% smaller is 11.1% dearer, 25% smaller is 33.3% dearer. Try it with the <a href="/calculator/">calculator</a>.</p>'
+      +'<p class="prose">What shrinks: '+", ".join(f"{k.split(' (')[0].lower()} {v} ({v/n*100:.0f}%)" for k,v in ug.items())+'.</p>'
+      +f'<h2 id="category">Shrinkflation by category</h2><p class="prose">{E(topc[0])} leads with {len(topc[1])} cases. Bars show the number of cases; the median cut is how much the typical pack in that category lost.</p>'
+      +bars_table([(f'<a href="/categories/{slug(k)}.html">{E(k)}</a>',len(v),str(len(v)),f'<td class="n">−{med([c["pct"] for c in v]):.1f}%</td>') for k,v in cats],["Category","Cases","Median cut"])
+      +(f'<p class="prose">Deepest median cuts (categories with 8 or more cases): '+", ".join(f'<a href="/categories/{slug(k)}.html">{E(k)}</a> −{m:.1f}%' for k,m,_ in deep[:5])+'.</p>' if deep else "")
+      +f'<h2 id="country">Shrinkflation by country</h2><p class="prose">These counts show where shrinkflation gets <i>recorded</i>, not where it is worst. Germany is on top because Verbraucherzentrale Hamburg logs every case it confirms. The Netherlands has Consumentenbond, and in the US most cases come from the Mouse Print* archive and news reports.</p>'
+      +bars_table([(f'<a href="/countries/{k.lower()}.html">{FLAG.get(k,"")} {E(COUNTRY.get(k,k))}</a>',len(v),str(len(v)),f'<td class="n">−{med([c["pct"] for c in v]):.1f}%</td>') for k,v in ctr],["Country","Cases","Median cut"])
+      +f'<h2 id="brands">Brands caught most often</h2><p class="prose">Brands and store brands with four or more cases. Big brands sell more products and get more press, so this is “caught most often”, not a rate. The full ranking is on <a href="/worst/#brands">worst offenders</a>.</p>'
+      +bars_table([(f'<a href="/brands/{k}.html">{E(v[0]["brand"])}</a>',len(v),str(len(v)),f'<td class="n">−{med([c["pct"] for c in v]):.1f}%</td>') for k,v in reps],["Brand","Cases","Median cut"])
+      +(f'<h2 id="price">Did the price per unit go up?</h2><p class="prose">{len(priced)} cases have the shelf price before and after, mostly from German and Dutch consumer agencies. '+(f'All of them got more expensive per unit, with a median real increase of <b>{mreal:.1f}%</b>. That is partly by design: Verbraucherzentrale Hamburg and Consumentenbond list a smaller pack when it ends up dearer per unit, so read this as how big the hidden rises are, not how often they happen.</p>'+rise_tbl if allup else f'{len(up)} of them ({pup:.0f}%) got more expensive per unit, with a median real increase of <b>{mreal:.1f}%</b>. Only {len(same)} stayed the same per unit and {len(priced)-len(up)-len(same)} got cheaper.</p>'
+         +bars_table([("Pricier per unit",len(up),str(len(up)),f'<td class="n">{len(up)/len(priced)*100:.0f}%</td>'),("Same per unit",len(same),str(len(same)),f'<td class="n">{len(same)/len(priced)*100:.0f}%</td>'),("Cheaper per unit",len(priced)-len(up)-len(same),str(len(priced)-len(up)-len(same)),f'<td class="n">{(len(priced)-len(up)-len(same))/len(priced)*100:.0f}%</td>')],["Outcome","Cases","Share"]))
+         +'<p class="m">The biggest real price hikes are listed on <a href="/worst/#hidden">worst offenders</a>.</p>' if priced else "")
+      +f'<h2 id="sources">Who reports shrinkflation</h2><p class="prose">The ten sources behind the most cases. Every case page quotes and links its source.</p>'
+      +bars_table([(E(k),len(v),str(len(v)),"") for k,v in srcl],["Source","Cases"])
+      +f'<h2 id="method">How these numbers are counted</h2><div class="prose"><p>One row in our library is one product whose pack got smaller, as recorded by one source (other sources reporting the same change are linked on the case page, not counted again). The cut is (1 − new size ÷ old size). The year is the year the source gives for the change. The real price change uses the shelf prices the source recorded. We do not estimate missing prices.</p>'
+      f'<p>The library mixes sources with different habits, so compare shares and medians, not raw counts between countries. Figures update automatically when cases are added; see the <a href="/new/">latest additions</a>. Download everything on <a href="/data/">open data</a> (CSV/JSON, CC BY 4.0). Browse: <a href="/cases/">all cases</a> · <a href="/shrinkflation-examples/">best-known examples</a> · '+" · ".join(f'<a href="/shrinkflation-{y}/">{y}</a>' for y in LAND_YEARS)+'.</p>'
+      f'<p class="m">Cite as: {NAME}, “Shrinkflation statistics”, {SITE}{u}, accessed {TODAY}.</p></div>'
+      +faq_html(qa))
+    ld=[crumbs(("Guides","/guides/"),("Shrinkflation statistics",None)),article_ld(t,d,u,ST_PUB),faq_ld(qa)]
+    page("shrinkflation-statistics/index.html",[f"{t} | {NAME}",t,f"Shrinkflation statistics: {n} cases in charts"],d,body,ld)
+    return (u,f"Shrinkflation statistics: {n} cases in charts",d)
 def main():
     if OUT.exists(): shutil.rmtree(OUT)
     OUT.mkdir(); (OUT/"style.css").write_text(CSS)
@@ -820,7 +929,7 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
          f'<h2 id="brands">Repeat offenders</h2><p class="prose m">Brands and store brands with three or more documented cases. A brand with many products and much press coverage will show up more often, so treat this as “caught most often”, not a measured rate.</p>'
          f'<div class="tw"><table><thead><tr><th>#</th><th>Brand</th><th class="n">Cases</th><th class="n">Median cut</th><th class="n hide-s">Worst cut</th></tr></thead><tbody>{rep_tr}</tbody></table></div>'
          f'<h2 id="categories">By category</h2><div class="tw"><table><thead><tr><th>Category</th><th class="n">Cases</th><th class="n">Median cut</th><th class="n hide-s">Pricier per unit</th></tr></thead><tbody>{cat_tr}</tbody></table></div>'
-         f'<p class="m">Check any pack yourself with the <a href="/calculator/">shrinkflation calculator</a>. Spotted one we missed? <a href="/submit/">Submit a sighting</a>.</p>',
+         f'<p class="m">The same library in charts: <a href="/shrinkflation-statistics/">shrinkflation statistics</a>. Check any pack yourself with the <a href="/calculator/">shrinkflation calculator</a>. Spotted one we missed? <a href="/submit/">Submit a sighting</a>.</p>',
          [crumbs(("Worst offenders",None)),{"@context":"https://schema.org","@type":"ItemList","name":"Biggest documented shrinkflation cuts","itemListOrder":"https://schema.org/ItemListOrderDescending",
            "itemListElement":[{"@type":"ListItem","position":i+1,"url":f'{SITE}/cases/{c["slug"]}.html',"name":c["product"]} for i,c in enumerate(sorted(cases,key=lambda c:(-c["pct"],c["product"]))[:25])]}])
     # ---- Calculator ----
@@ -979,17 +1088,18 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
     page("index.html",f'{NAME}: shrinkflation tracker & {len(cases)} sourced cases',f'Daily tracking of package sizes and unit prices for {len(prods)} products, plus {len(cases)} documented shrinkflation cases with sources.',
          f'<h1>Did it shrink?</h1><p class="prose">We check the net weight of {len(prods)} everyday products every day and keep a sourced record of {len(cases)} known shrinkflation cases.</p>'
          f'<form class="search" action="/search.html" role="search"><label class="ml" for="q0">Search a product or brand</label><input id="q0" name="q" placeholder="Doritos, cereal, Charmin…"></form>'
-         f'<h2>Latest from daily checks</h2><ul class="feed">{feed}</ul><h2>Newly added cases</h2><ul class="grid">{"".join(ccard(c) for c in newest[:6])}</ul><p><a href="/new/"><b>Latest additions ({sum(1 for c in cases if c["added"]==newest[0]["added"])} on {newest[0]["added"]}) →</b></a> · <a href="/shrinkflation-examples/"><b>Best-known shrinkflation examples →</b></a></p><h2>Biggest documented shrinks</h2><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"])[:6])}</ul><p><a href="/cases/"><b>All {len(cases)} known cases →</b></a> · <a href="/worst/"><b>Worst offenders →</b></a> · <a href="/calculator/"><b>Shrinkflation calculator →</b></a> · <a href="/barcode/"><b>Barcode lookup →</b></a> · <a href="/submit/"><b>Submit a sighting →</b></a></p><p class="m">'+(f'This year so far: <a href="/shrinkflation-{LAND_YEARS[0]}/"><b>shrinkflation {LAND_YEARS[0]}, {yc[LAND_YEARS[0]]} examples</b></a>. ' if LAND_YEARS else '')+f'Researchers and journalists: <a href="/data/">download the case library</a> (CSV/JSON, CC BY 4.0). New to this? Read <a href="/guides/what-is-shrinkflation.html">what shrinkflation is</a> and <a href="/guides/how-to-spot-shrinkflation.html">how to spot it in the store</a>.</p>'
+         f'<h2>Latest from daily checks</h2><ul class="feed">{feed}</ul><h2>Newly added cases</h2><ul class="grid">{"".join(ccard(c) for c in newest[:6])}</ul><p><a href="/new/"><b>Latest additions ({sum(1 for c in cases if c["added"]==newest[0]["added"])} on {newest[0]["added"]}) →</b></a> · <a href="/shrinkflation-examples/"><b>Best-known shrinkflation examples →</b></a> · <a href="/shrinkflation-statistics/"><b>Shrinkflation statistics in charts →</b></a></p><h2>Biggest documented shrinks</h2><ul class="grid">{"".join(ccard(c) for c in sorted(cases,key=lambda c:-c["pct"])[:6])}</ul><p><a href="/cases/"><b>All {len(cases)} known cases →</b></a> · <a href="/worst/"><b>Worst offenders →</b></a> · <a href="/calculator/"><b>Shrinkflation calculator →</b></a> · <a href="/barcode/"><b>Barcode lookup →</b></a> · <a href="/submit/"><b>Submit a sighting →</b></a></p><p class="m">'+(f'This year so far: <a href="/shrinkflation-{LAND_YEARS[0]}/"><b>shrinkflation {LAND_YEARS[0]}, {yc[LAND_YEARS[0]]} examples</b></a>. ' if LAND_YEARS else '')+f'Researchers and journalists: <a href="/data/">download the case library</a> (CSV/JSON, CC BY 4.0). New to this? Read <a href="/guides/what-is-shrinkflation.html">what shrinkflation is</a> and <a href="/guides/how-to-spot-shrinkflation.html">how to spot it in the store</a>.</p>'
          f'<h2>Recently checked</h2><ul class="grid">{"".join(pcard(p) for p in prods[:6])}</ul>',
          [{"@context":"https://schema.org","@type":"WebSite","name":NAME,"url":SITE+"/","potentialAction":{"@type":"SearchAction","target":SITE+"/search.html?q={search_term_string}","query-input":"required name=search_term_string"}},
           {"@context":"https://schema.org","@type":"Organization","name":NAME,"url":SITE+"/","logo":SITE+"/favicon.svg"}])
     YL=year_landings(cases,ccard,med); open_data(cases)
     EXL=examples_page(cases,bg,cg,med)
+    STL=stats_page(cases,prods,bg,cg,med)
     prow=lambda p: (lambda l: f'<tr><td>{plink(p)}<br><span class="m">{E(p["brand"] or "Unbranded")}</span></td><td><a href="/categories/{p["cslug"]}.html">{E(p["category"])}</a></td><td class="n">{E(disp(l)) if l else "—"}</td></tr>')(latest(p))
     new_page(cases,prods,prow)
     NEWL=("/new/","Latest additions: newest shrinkflation cases",f"The {sum(1 for c in cases if c['added']==newest[0]['added'])} cases added on {newest[0]['added']} and earlier additions, with sources.")
-    GUIDES=guides(cases,prods,bg,cg,med,[EXL]+list(YL)+[NEWL])
-    idx=[{"t":"Barcode lookup: scan or type a UPC/EAN","u":"/barcode/","k":"Tool"},{"t":"Submit a shrinkflation sighting","u":"/submit/","k":"Tool"},{"t":"Shrinkflation calculator","u":"/calculator/","k":"Tool"},{"t":"Worst shrinkflation offenders","u":"/worst/","k":"Tool"}]+[{"t":t,"u":u,"k":"Guide"} for u,t,_ in GUIDES]+[{"t":t,"u":u,"k":"List"} for u,t,_ in [EXL]+list(YL)+[NEWL]]+[{"t":"Open data: download shrinkflation cases (CSV, JSON)","u":"/data/","k":"Data"}]+[{"t":p["title"],"u":f'/products/{p["slug"]}.html',"k":p["category"]} for p in prods]+[{"t":c["product"]+" (documented case)","u":f'/cases/{c["slug"]}.html',"k":c["category"]} for c in cases]
+    GUIDES=guides(cases,prods,bg,cg,med,[STL,EXL]+list(YL)+[NEWL])
+    idx=[{"t":"Barcode lookup: scan or type a UPC/EAN","u":"/barcode/","k":"Tool"},{"t":"Submit a shrinkflation sighting","u":"/submit/","k":"Tool"},{"t":"Shrinkflation calculator","u":"/calculator/","k":"Tool"},{"t":"Worst shrinkflation offenders","u":"/worst/","k":"Tool"}]+[{"t":t,"u":u,"k":"Guide"} for u,t,_ in GUIDES]+[{"t":t,"u":u,"k":"List"} for u,t,_ in [EXL]+list(YL)+[NEWL]]+[{"t":STL[1],"u":STL[0],"k":"Data"}]+[{"t":"Open data: download shrinkflation cases (CSV, JSON)","u":"/data/","k":"Data"}]+[{"t":p["title"],"u":f'/products/{p["slug"]}.html',"k":p["category"]} for p in prods]+[{"t":c["product"]+" (documented case)","u":f'/cases/{c["slug"]}.html',"k":c["category"]} for c in cases]
     AI=[{"id":f'f:{p["code"]}:{d}:{t[:4]}',"type":"finding","date":d,"title":p["title"],"text":t,"url":f'{SITE}/products/{p["slug"]}.html',"product":p["code"],"brand":p["bslug"],"category":p["cslug"],"brand_name":p["brand"],"category_name":p["category"]} for d,p,t in findings]
     AI+=[{"id":"c:"+c["slug"],"type":"case","date":c["when"],"title":c["product"],"text":f'{fmt(c["before"],c["unit"])} → {fmt(c["after"],c["unit"])} ({c["pct"]:.0f}% less) · {COUNTRY.get(c["country"],c["country"])}, {c["when"]}',"url":f'{SITE}/cases/{c["slug"]}.html',"product":None,"brand":c["bslug"],"category":slug(c["category"]),"brand_name":c["brand"],"category_name":c["category"]} for c in cases]
     (R/"data/alert_items.json").write_text(json.dumps(AI,ensure_ascii=False,indent=0))
@@ -1026,7 +1136,7 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
         "".join(f'<url><loc>{SITE}/{p.replace("index.html","")}</loc><lastmod>{LM2[p][1]}</lastmod></url>' for p in PAGES)+"</urlset>")
     (OUT/"robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n"); (OUT/".nojekyll").write_text(""); (OUT/"favicon.svg").write_text(FAV); (OUT/"og.svg").write_text(OG); og_png(OUT/"og.png") or None; (OUT/"CNAME").write_text("shrinkradar.com\n")
     # retired brand slugs from earlier mis-detected brands: noindex stubs pointing at the real brands
-    for old,targets in {"dr":["Dr. Oetker","Dr. Hauschka"],"gut":["Gut & Günstig"],"la":["La Trappe","La Vache qui rit"],"costcotuna":["Kirkland"],"echo-clean-vip-products-mission-bc":["Echo Clean"]}.items():
+    for old,targets in {"dr":["Dr. Oetker","Dr. Hauschka"],"gut":["Gut & Günstig"],"la":["La Trappe","La Vache qui rit"],"costcotuna":["Kirkland"],"echo-clean-vip-products-mission-bc":["Echo Clean"],"all":["Spee","Garnier","Sun"],"billy":["Billy Boy"],"skin":["Skin Stories"],"mein":["Mein Veggie Tag"],"chef":["Chef Select"],"block":["Block House"],"vegetarische":["Rügenwalder Mühle"],"steinofen-pizza":["Rewe"],"explore":["Explore Cuisine"]}.items():
         if not (OUT/f"brands/{old}.html").exists():
             (OUT/f"brands/{old}.html").write_text('<!doctype html><meta charset=utf-8><meta name=robots content=noindex><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/style.css><title>Moved</title><main class=w><h1>This brand page moved</h1><ul>'+"".join(f'<li><a href="/brands/{slug(t)}.html">{E(t)}</a></li>' for t in targets)+'</ul>')
     # renamed case pages: redirect stubs (canonical + refresh), kept out of the sitemap
@@ -1051,7 +1161,7 @@ f.forEach(e=>e.addEventListener('input',go));const p=new URLSearchParams(locatio
 - [Barcode lookup: type or scan a UPC/EAN to check pack size and history]({SITE}/barcode/)
 - [Submit a sighting: report shrinkflation via GitHub issue]({SITE}/submit/)
 - [Guides: what shrinkflation is, how to spot it]({SITE}/guides/)
-"""+"".join(f"- [{t}]({SITE}{u})\n" for u,t,_ in [EXL]+list(YL)+[NEWL])+f"""- [Open data: all {len(cases)} cases as CSV/JSON, CC BY 4.0]({SITE}/data/)
+"""+"".join(f"- [{t}]({SITE}{u})\n" for u,t,_ in [STL,EXL]+list(YL)+[NEWL])+f"""- [Open data: all {len(cases)} cases as CSV/JSON, CC BY 4.0]({SITE}/data/)
 - [Brands]({SITE}/brands/) · [Categories]({SITE}/categories/) · [Countries]({SITE}/countries/) · [Products tracked daily]({SITE}/products/)
 - [Methodology and sources]({SITE}/about.html)
 

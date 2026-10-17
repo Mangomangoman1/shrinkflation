@@ -5783,7 +5783,7 @@
  },
  {
   "product": "Spee Universal Caps All in 1",
-  "brand": "All",
+  "brand": "Spee",
   "maker": "Henkel AG & Co KGaA",
   "before": 18.0,
   "after": 16.0,
@@ -5802,11 +5802,11 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Household"
+  "category": "Laundry"
  },
  {
   "product": "Spee Color Gel All in 1",
-  "brand": "All",
+  "brand": "Spee",
   "maker": "Henkel AG & Co. KGaA",
   "before": 22.0,
   "after": 20.0,
@@ -5825,7 +5825,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Household"
+  "category": "Laundry"
  },
  {
   "product": "Bounty Multipack",
@@ -5950,7 +5950,7 @@
  },
  {
   "product": "Spee Megaperls Color All in 1",
-  "brand": "All",
+  "brand": "Spee",
   "maker": "Henkel AG & Co. KGaA",
   "before": 19.0,
   "after": 17.0,
@@ -5969,7 +5969,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Household"
+  "category": "Laundry"
  },
  {
   "product": "Zirkulin Schneller Einschlafen",
@@ -6134,7 +6134,7 @@
  },
  {
   "product": "Explore Cuisine Organic Red Lentil Penne",
-  "brand": "Explore",
+  "brand": "Explore Cuisine",
   "maker": "FoodArt GmbH",
   "before": 250.0,
   "after": 225.0,
@@ -7016,7 +7016,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Pasta, Rice & Meals"
+  "category": "Chocolate & Candy"
  },
  {
   "product": "Pfiff Salzbrezeln",
@@ -7825,7 +7825,7 @@
  },
  {
   "product": "Billy Boy Länger Lieben",
-  "brand": "Billy",
+  "brand": "Billy Boy",
   "maker": "Mapa GmbH",
   "before": 12.0,
   "after": 10.0,
@@ -8377,7 +8377,7 @@
  },
  {
   "product": "Simply V gerieben Pasta",
-  "brand": "Simply Orange",
+  "brand": "Simply V",
   "maker": "E.V.A. GmbH",
   "before": 100.0,
   "after": 80.0,
@@ -8400,7 +8400,7 @@
  },
  {
   "product": "Simply V gerieben Pizza",
-  "brand": "Simply Orange",
+  "brand": "Simply V",
   "maker": "E.V.A. GmbH",
   "before": 200.0,
   "after": 180.0,
@@ -8515,7 +8515,7 @@
  },
  {
   "product": "Skin Stories Tattoo Repair Balm",
-  "brand": "Skin",
+  "brand": "Skin Stories",
   "maker": "Beiersdorf AG",
   "before": 50.0,
   "after": 40.0,
@@ -8561,7 +8561,7 @@
  },
  {
   "product": "Vegetarische Mühlen Salami Minis",
-  "brand": "Vegetarische",
+  "brand": "Rügenwalder Mühle",
   "maker": "Rügenwalder Mühle Carl Müller GmbH und Co. KG",
   "before": 180.0,
   "after": 165.0,
@@ -8584,7 +8584,7 @@
  },
  {
   "product": "Vegetarische Mühlen Würstchen",
-  "brand": "Vegetarische",
+  "brand": "Rügenwalder Mühle",
   "maker": "Rügenwalder Mühle Carl Müller GmbH und Co. KG",
   "before": 200.0,
   "after": 165.0,
@@ -8971,7 +8971,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Pasta, Rice & Meals"
+  "category": "Juice & Drinks"
  },
  {
   "product": "Protein Chunks Hack",
@@ -9109,7 +9109,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Household"
+  "category": "Personal Care"
  },
  {
   "product": "Ökovital Bio-Helix Lakritzschnecken",
@@ -9366,7 +9366,7 @@
  },
  {
   "product": "Chef Select Salat Budapester Art",
-  "brand": "Chef",
+  "brand": "Chef Select",
   "maker": "Sutter GmbH",
   "before": 250.0,
   "after": 200.0,
@@ -10558,7 +10558,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Household"
+  "category": "Personal Care"
  },
  {
   "product": "Zetti Cocos Flocken",
@@ -10700,7 +10700,7 @@
  },
  {
   "product": "Block House American Dressing",
-  "brand": "Block",
+  "brand": "Block House",
   "maker": "Block House AG",
   "before": 250.0,
   "after": 240.0,
@@ -11252,7 +11252,7 @@
  },
  {
   "product": "Steinofen-Pizza Mozzarella, Spinat & Feta",
-  "brand": "Steinofen-Pizza",
+  "brand": "Rewe",
   "maker": "REWE Group",
   "before": 460.0,
   "after": 410.0,
@@ -11574,7 +11574,7 @@
  },
  {
   "product": "Garnier Mizellen Reinigungswasser All-in-1 Normale Haut",
-  "brand": "All",
+  "brand": "Garnier",
   "maker": "L’Oreal",
   "before": 400.0,
   "after": 375.0,
@@ -12113,7 +12113,7 @@
  },
  {
   "product": "Mein Veggie Tag Veganer Bio Aufschnitt",
-  "brand": "Mein",
+  "brand": "Mein Veggie Tag",
   "maker": "Tofu Life",
   "before": 140.0,
   "after": 70.0,
@@ -12155,11 +12155,11 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Household"
+  "category": "Dish & Cleaning"
  },
  {
   "product": "Pril Kraft-Gel Ultra Plus",
-  "brand": "Kraft",
+  "brand": "Pril",
   "maker": "Henkel",
   "before": 500.0,
   "after": 450.0,
@@ -12178,7 +12178,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Household"
+  "category": "Dish & Cleaning"
  },
  {
   "product": "Penny Happy End Feuchtes Toilettenpapier",
@@ -12345,7 +12345,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Household"
+  "category": "Personal Care"
  },
  {
   "product": "Iglo Rahm-Spinat",
@@ -12943,7 +12943,7 @@
   "evidence_type": "consumer-protection agency list (purchased packages, manufacturer statement)",
   "confidence": "high",
   "source_tag": "vzhh",
-  "category": "Household"
+  "category": "Personal Care"
  },
  {
   "product": "Pedigree Jumbone Riesenknochen",
@@ -13472,7 +13472,7 @@
   "evidence_type": "consumer association investigation (manufacturer response)",
   "confidence": "high",
   "source_tag": "cb",
-  "category": "Pasta, Rice & Meals"
+  "category": "Chips & Snacks"
  },
  {
   "product": "Dettol Original Allesreiniger",
@@ -13728,7 +13728,7 @@
  },
  {
   "product": "Sun All-in-one vaatwastabletten",
-  "brand": "All",
+  "brand": "Sun",
   "before": 25.0,
   "after": 21.0,
   "unit": "pieces",

@@ -63,6 +63,12 @@ blockquote.q{margin:0;padding:var(--s3);background:var(--panel);border-left:4px 
 #md{width:100%;font:400 .875rem ui-monospace,monospace;padding:.6rem;border:2px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:0;resize:vertical}
 .st{min-height:1.2em;margin:var(--s2) 0;font-weight:700}
 .label .big.no{color:var(--ok)}.label .big.yes{color:var(--sig)}[hidden]{display:none!important}
+.bars td.bc{width:60%}.bars .bw{display:flex;align-items:center;gap:.4rem}.bars .bar{display:block;flex:none;height:.9rem;background:var(--ink)}.bars tr.mx .bar{background:var(--sig)}.bars tbody tr:first-child td{font-weight:400}.bars td.bc b{font-weight:900}
+.cols{margin:var(--s3) 0;background:var(--panel);border:1px solid var(--hair);border-bottom:4px solid var(--ink);padding:var(--s3) var(--s2) 0}.cols .cw{display:flex;align-items:flex-end;gap:2px;height:14rem}
+.cols .col{flex:1 1 0;min-width:0;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}.cols .cb{display:block;width:100%;max-width:3rem;background:var(--ink)}.cols .col.pt .cb{background:repeating-linear-gradient(45deg,var(--ink) 0 4px,var(--muted) 4px 8px)}
+.cols figcaption{padding:.3rem 0 .4rem}.cols .cv{font-size:.75rem;font-weight:900;margin-bottom:2px}.cols .cx{font-size:.7rem;color:var(--muted);padding:.3rem 0;writing-mode:horizontal-tb}
+details{margin:var(--s2) 0}summary{cursor:pointer;font-weight:700;font-size:.875rem}
+@media(max-width:600px){.cols .cx{font-size:.6rem;transform:rotate(-45deg);transform-origin:center;padding:.6rem 0 .2rem}.cols .cv{font-size:.6rem}.bars td.bc{width:50%}}
 footer{border-top:8px solid var(--ink);background:var(--panel);padding:var(--s4) 0;font-size:.875rem;color:var(--muted)}
 footer a{color:var(--ink)}
 @media(max-width:600px){.tag{display:none}.hide-s{display:none}td,th{padding:.45rem .3rem}.calc{grid-template-columns:1fr;gap:var(--s2)}.calc fieldset{padding:var(--s2)}.calc input,.calc select,.calc textarea{font-size:1rem;padding:.65rem .6rem}.submit-actions button{width:100%}.alert .row{flex-direction:column;align-items:stretch}.alert input[type=email],.alert button{width:100%;flex:none}}

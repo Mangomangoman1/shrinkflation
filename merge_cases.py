@@ -94,6 +94,18 @@ for c in cases:
             c["category"]=k; break
 for c in cases:
     if c["brand"]=="Puffs": c["category"]="Tissues"
+# Brand overrides for names where brand_of() grabs a generic word ("All" in "All in 1", "Kraft" in "Kraft-Gel", "Simply" in "Simply V").
+BRAND_FIX=[("Spee ","Spee"),("Garnier Mizellen","Garnier"),("Sun All-in-one","Sun"),("Pril Kraft","Pril"),("Simply V ","Simply V"),("Billy Boy","Billy Boy"),
+ ("Skin Stories","Skin Stories"),("Mein Veggie Tag","Mein Veggie Tag"),("Vegetarische Mühlen","Rügenwalder Mühle"),("Chef Select","Chef Select"),("Block House","Block House"),
+ ("Explore Cuisine","Explore Cuisine"),("Steinofen-Pizza Mozzarella","Rewe"),("Olivano","Olivano's")]
+# Category overrides found in the 2026-10-17 statistics QA (catch-all keywords put these in the wrong aisle).
+CAT_FIX2=[("Schwyzer Kräuterli","Chocolate & Candy"),("Sodastream","Juice & Drinks"),("Macadamiamix","Chips & Snacks"),("Slipeinlagen","Personal Care"),("Normal-Binde","Personal Care"),
+ ("Nagellack","Personal Care"),("Rasierklingen","Personal Care"),("Spee ","Laundry"),("Pril ","Dish & Cleaning"),("Bref ","Dish & Cleaning")]
+for c in cases:
+    for k,b in BRAND_FIX:
+        if c["product"].startswith(k) or k in c["product"]: c["brand"]=b; break
+    for k,cat in CAT_FIX2:
+        if k in c["product"]: c["category"]=cat; break
 json.dump(cases,open("data/cases.json","w"),indent=1,ensure_ascii=False)
 import collections
 print(len(cases),collections.Counter(c["source_tag"] for c in cases),collections.Counter(c["country"] for c in cases))
