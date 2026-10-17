@@ -1,23 +1,23 @@
 # ShrinkRadar
 
-> ShrinkRadar (https://shrinkradar.com) answers "did it shrink?" for groceries and household goods. It checks the net quantity of 385 everyday products daily (Open Food Facts, Open Products Facts, Open Prices; ODbL) and keeps a library of 691 documented shrinkflation cases. Every case cites the consumer agency, advocate or news source it came from; missing data is shown as missing, never estimated.
+> ShrinkRadar (https://shrinkradar.com) answers "did it shrink?" for groceries and household goods. It checks the net quantity of 448 everyday products daily (Open Food Facts, Open Products Facts, Open Prices; ODbL) and keeps a library of 713 documented shrinkflation cases. Every case cites the consumer agency, advocate or news source it came from; missing data is shown as missing, never estimated.
 
 ## Key pages
 - [Home: latest findings](https://shrinkradar.com/)
-- [Known cases: all 691 documented before/after size cuts, filterable](https://shrinkradar.com/cases/)
+- [Known cases: all 713 documented before/after size cuts, filterable](https://shrinkradar.com/cases/)
 - [Worst offenders: biggest cuts, hidden per-unit price hikes, repeat brands](https://shrinkradar.com/worst/)
 - [Shrinkflation calculator: real price change per unit](https://shrinkradar.com/calculator/)
 - [Barcode lookup: type or scan a UPC/EAN to check pack size and history](https://shrinkradar.com/barcode/)
 - [Submit a sighting: report shrinkflation via GitHub issue](https://shrinkradar.com/submit/)
 - [Guides: what shrinkflation is, how to spot it](https://shrinkradar.com/guides/)
-- [Shrinkflation 2026: list of 83 examples](https://shrinkradar.com/shrinkflation-2026/)
-- [Shrinkflation 2025: list of 85 examples](https://shrinkradar.com/shrinkflation-2025/)
+- [Shrinkflation 2026: list of 99 examples](https://shrinkradar.com/shrinkflation-2026/)
+- [Shrinkflation 2025: list of 89 examples](https://shrinkradar.com/shrinkflation-2025/)
 - [Shrinkflation 2024: list of 146 examples](https://shrinkradar.com/shrinkflation-2024/)
-- [Shrinkflation 2023: list of 134 examples](https://shrinkradar.com/shrinkflation-2023/)
+- [Shrinkflation 2023: list of 136 examples](https://shrinkradar.com/shrinkflation-2023/)
 - [Shrinkflation 2022: list of 101 examples](https://shrinkradar.com/shrinkflation-2022/)
 - [Shrinkflation 2021: list of 49 examples](https://shrinkradar.com/shrinkflation-2021/)
 - [Shrinkflation 2020: list of 42 examples](https://shrinkradar.com/shrinkflation-2020/)
-- [Open data: all 691 cases as CSV/JSON, CC BY 4.0](https://shrinkradar.com/data/)
+- [Open data: all 713 cases as CSV/JSON, CC BY 4.0](https://shrinkradar.com/data/)
 - [Brands](https://shrinkradar.com/brands/) · [Categories](https://shrinkradar.com/categories/) · [Countries](https://shrinkradar.com/countries/) · [Products tracked daily](https://shrinkradar.com/products/)
 - [Methodology and sources](https://shrinkradar.com/about.html)
 
